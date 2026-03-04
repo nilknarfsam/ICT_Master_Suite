@@ -1,0 +1,34 @@
+/* style.qss */
+#lbl_header { font-size: 18px; font-weight: bold; color: #333; }
+#btn_hide { background-color: #e0e0e0; }
+#lbl_credito { color: #777; font-size: 11px; }
+
+#txt_history_log_viewer { font-family: Consolas, monospace; font-size: 12px; }
+#lbl_obs { font-weight: bold; margin-top: 10px; color: #333; }
+
+#tab_dash { background-color: #f4f7f6; }
+
+#dash_card {
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+}
+#dash_card:hover {
+    border: 1px solid #2980b9;
+}
+
+#dash_title { font-size: 14px; font-weight: bold; color: #7f8c8d; }
+#lbl_dash_total_hoje { font-size: 48px; font-weight: bold; color: #e74c3c; }
+#chart_view { background-color: transparent; }
+#table_recentes { border: none; }
+
+#input_serial { font-size: 14px; }
+#btn_go { background-color: #2196F3; color: white; font-weight: bold; }
+#lbl_hist { font-weight: bold; }
+#list_logs { font-size: 12px; }
+#lbl_info { background-color: #eceff1; padding: 10px; border-radius: 4px; border: 1px solid #cfd8dc; }
+#lbl_log { margin-top: 5px; font-weight: bold; color: #555; }
+#text_raw { font-family: Consolas, monospace; font-size: 12px; }
+#lbl_table_title { font-weight: bold; margin-top: 5px; color: #555; }
+#lbl_obs_title { font-weight: bold; margin-top: 10px; color: #333; }
+#txt_observacao { font-family: Consolas, monospace; font-size: 12px; }

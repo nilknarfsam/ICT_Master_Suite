@@ -1,0 +1,15 @@
+# Ambientes Virtuais
+.venv/
+venv/
+env/
+# Arquivos compilados do Python
+__pycache__/
+*.pyc
+# Pastas de Build do PyInstaller
+build/
+dist/
+*.spec
+# Banco de Dados local e arquivos de SO
+*.db
+*.sqlite3
+.DS_Store
