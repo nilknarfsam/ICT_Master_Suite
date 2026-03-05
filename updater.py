@@ -16,12 +16,15 @@ def get_current_version():
 def verificar_atualizacao(caminho_rede=None, versao_atual="1.0.0"):
     try:
         if not caminho_rede:
-            # Tenta ler do config.json
-            if os.path.exists("ict_config.json"):
-                with open("ict_config.json", "r", encoding="utf-8") as f:
-                    data = json.load(f)
-                    caminho_rede = data.get("caminho_update_rede", "")
-                    
+            try:
+                from models import CONFIG_FILE
+                if os.path.exists(CONFIG_FILE):
+                    with open(CONFIG_FILE, "r", encoding="utf-8") as f:
+                        data = json.load(f)
+                        caminho_rede = data.get("caminho_update_rede", "")
+            except ImportError:
+                pass
+                
         if not caminho_rede or not os.path.exists(caminho_rede):
             return False
             
@@ -50,7 +53,7 @@ def aplicar_atualizacao(caminho_exe_rede):
         bat_content = f"""@echo off
 timeout /t 3 /nobreak
 copy /Y "{caminho_exe_rede}" "{local_path}"
-start "" "{local_path}"
+start "" "ICT_Master_Suite.exe"
 del "%~f0"
 """
         temp_dir = os.environ.get('TEMP', 'C:\\Windows\\Temp')

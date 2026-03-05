@@ -22,6 +22,17 @@ from models import carregar_config, salvar_config, salvar_falha_db, salvar_obser
 from threads import BuscaThread, FileLoaderThread, DashboardThread
 import updater
 
+def get_resource_path(relative_path):
+    """
+    Retorna o caminho absoluto do recurso, compatível com PyInstaller --onefile
+    """
+    import sys
+    import os
+    try:
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.dirname(os.path.abspath(__file__))
+    return os.path.join(base_path, relative_path)
 
 def set_windows_startup(enable):
     # ... (código existente, sem alterações)
@@ -84,7 +95,7 @@ class MainApp(QWidget):
     def __init__(self, usuario_logado=None, start_minimized=False):
         super().__init__()
         self.setWindowTitle("ICT Master Suite - V5.3 (Polished UI)")
-        self.setWindowIcon(QIcon('icon.ico'))
+        self.setWindowIcon(QIcon(get_resource_path('icon.ico')))
         self.setGeometry(100, 100, 1280, 800)
         self.config = carregar_config()
         
@@ -136,7 +147,7 @@ class MainApp(QWidget):
 
     def load_stylesheet(self):
         try:
-            style_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "style.qss")
+            style_path = get_resource_path("style.qss")
             with open(style_path, "r", encoding="utf-8") as f:
                 self.setStyleSheet(f.read())
         except Exception as e:
@@ -1180,7 +1191,7 @@ class MainApp(QWidget):
     def init_tray(self):
         # ... (código existente, sem alterações)
         self.tray_icon = QSystemTrayIcon(self)
-        self.tray_icon.setIcon(QIcon('icon.ico'))
+        self.tray_icon.setIcon(QIcon(get_resource_path('icon.ico')))
         menu = QMenu()
         menu.addAction(QAction("Abrir", self, triggered=self.showNormal))
         menu.addAction(QAction("Sair", self, triggered=QApplication.quit))

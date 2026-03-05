@@ -1,4 +1,5 @@
 import os
+import sys
 import json
 import sqlite3
 import time
@@ -6,8 +7,13 @@ import hashlib
 from datetime import datetime
 from collections import Counter
 
+def get_base_path():
+    if getattr(sys, 'frozen', False):
+        return os.path.dirname(sys.executable)
+    return os.path.dirname(os.path.abspath(__file__))
+
 # --- Constantes ---
-CONFIG_FILE = "ict_config.json"
+CONFIG_FILE = os.path.join(get_base_path(), 'ict_config.json')
 DEFAULT_CONFIG = {
     "finder_tri": r"\\147.1.0.95\teste_ict\ict02",
     "finder_agilent": r"\\147.1.0.95\teste_ict\ict01",
