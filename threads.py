@@ -11,8 +11,7 @@ from models import (
     parse_metadata_inteligente,
     obter_estatisticas_ict,
     salvar_falha_db,
-    init_db,
-    PASTA_REDE_DB
+    init_db
 )
 
 def _wait_file_stable(path, retries=6, delay=0.35):

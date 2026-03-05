@@ -13,18 +13,29 @@ DEFAULT_CONFIG = {
     "finder_agilent": r"\\147.1.0.95\teste_ict\ict01",
     "backup_local_dir": r"C:\app_chamados\backup_logs",
     "caminho_update_rede": r"\\147.1.0.95\teste_ict\app_updates",
+    "caminho_banco_rede": r"\\147.1.0.95\teste_ict\banco_dados_falhas.db",
     "auto_start_windows": False,
     "dias_retencao_cache": 30
 }
-PASTA_REDE_DB = ""
-DB_NAME = "banco_dados_falhas.db"
-DB_PATH = os.path.join(PASTA_REDE_DB, DB_NAME) if PASTA_REDE_DB else DB_NAME
+
+# Inicializa o caminho do banco lendo do config.json se existir.
+# Fallback SEMPRE para rede para evitar bancos locais fragmentados.
+DB_PATH = r"\\147.1.0.95\teste_ict\banco_dados_falhas.db"
+try:
+    if os.path.exists(CONFIG_FILE):
+        with open(CONFIG_FILE, 'r') as f:
+            _config_temp = json.load(f)
+            if "caminho_banco_rede" in _config_temp:
+                DB_PATH = _config_temp["caminho_banco_rede"]
+except Exception:
+    pass
 
 def init_db():
     """Inicializa o banco de dados, cria a tabela 'falhas' e adiciona a coluna 'observacao' se não existir."""
-    if PASTA_REDE_DB:
+    pasta_db = os.path.dirname(DB_PATH)
+    if pasta_db:
         try:
-            os.makedirs(PASTA_REDE_DB, exist_ok=True)
+            os.makedirs(pasta_db, exist_ok=True)
         except OSError as e:
             print(f"Erro ao criar diretório do banco de dados: {e}")
     try:

@@ -13,8 +13,15 @@ def get_current_version():
         pass
     return "1.0.0"
 
-def verificar_atualizacao(caminho_rede, versao_atual):
+def verificar_atualizacao(caminho_rede=None, versao_atual="1.0.0"):
     try:
+        if not caminho_rede:
+            # Tenta ler do config.json
+            if os.path.exists("ict_config.json"):
+                with open("ict_config.json", "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                    caminho_rede = data.get("caminho_update_rede", "")
+                    
         if not caminho_rede or not os.path.exists(caminho_rede):
             return False
             

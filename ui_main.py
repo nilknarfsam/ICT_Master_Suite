@@ -163,13 +163,11 @@ class MainApp(QWidget):
         btn_logout.clicked.connect(self.fazer_logout)
         h.addWidget(btn_logout)
         
+        # Botão rápido para a aba (se admin) ou minimizar
         btn_hide = QPushButton("📥 Minimizar para Bandeja")
         btn_hide.clicked.connect(self.hide)
         btn_hide.setObjectName("btn_hide")
         h.addWidget(btn_hide)
-        btn_cfg = QPushButton("⚙️ Config")
-        btn_cfg.clicked.connect(self.abrir_config)
-        h.addWidget(btn_cfg)
         main_layout.addLayout(h)
 
         self.tabs = QTabWidget()
@@ -193,10 +191,16 @@ class MainApp(QWidget):
         self.setup_admin_tab()
         self.tabs.addTab(self.tab_admin, "🔒 Gestão de Usuários")
         
-        # Esconde a aba se não for admin
+        # Aba Configurações do Sistema (Apenas Admin)
+        self.tab_config = QWidget()
+        self.setup_config_tab()
+        self.tabs.addTab(self.tab_config, "⚙️ Configurações do Sistema")
+        
+        # Esconde as abas se não for admin
         is_admin = self.usuario_logado and self.usuario_logado.get('is_admin', False)
         if not is_admin:
             self.tabs.setTabVisible(self.tabs.indexOf(self.tab_admin), False)
+            self.tabs.setTabVisible(self.tabs.indexOf(self.tab_config), False)
         
         main_layout.addWidget(self.tabs)
 
@@ -209,6 +213,96 @@ class MainApp(QWidget):
         lbl_credito.setObjectName("lbl_credito")
         footer.addWidget(lbl_credito)
         main_layout.addLayout(footer)
+
+    def setup_config_tab(self):
+        layout = QVBoxLayout(self.tab_config)
+        
+        frame = QFrame()
+        frame.setStyleSheet("background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 5px; padding: 15px;")
+        form_layout = QGridLayout(frame)
+        form_layout.setSpacing(15)
+        
+        self.inputs_config = {}
+        
+        # Mapeamento dos campos: (chave_json, Label_UI)
+        campos = [
+            ("finder_tri", "Diretório Local/Rede - Finder TRI:"),
+            ("finder_agilent", "Diretório Local/Rede - Finder Agilent:"),
+            ("backup_local_dir", "Diretório Cópia/Cache (Backup Local):"),
+            ("caminho_update_rede", "Caminho P/ Atualizações (Rede/OTA):"),
+            ("caminho_banco_rede", "Caminho do Banco de Dados (.db):")
+        ]
+        
+        row = 0
+        for chave, texto in campos:
+            form_layout.addWidget(QLabel(texto), row, 0)
+            edt = QLineEdit(self.config.get(chave, ""))
+            self.inputs_config[chave] = edt
+            
+            btn_browser = QPushButton("📁")
+            btn_browser.setFixedWidth(40)
+            # Dica: Se for o banco de dados, escolhe arquivo em vez de diretório
+            if chave == "caminho_banco_rede":
+                 btn_browser.clicked.connect(lambda _, e=edt: e.setText(QFileDialog.getOpenFileName(self, "Selecionar Banco de Dados", e.text(), "Banco SQLite (*.db);;Todos os Arquivos (*)")[0] or e.text()))
+            else:
+                 btn_browser.clicked.connect(lambda _, e=edt: e.setText(QFileDialog.getExistingDirectory(self, "Selecionar Pasta", e.text()) or e.text()))
+            
+            h = QHBoxLayout()
+            h.addWidget(edt)
+            h.addWidget(btn_browser)
+            form_layout.addLayout(h, row, 1)
+            row += 1
+            
+        # Spinbox: Dias de Retenção
+        form_layout.addWidget(QLabel("Dias de Retenção (Backup Local):"), row, 0)
+        self.spin_retencao = QSpinBox()
+        self.spin_retencao.setMinimum(1)
+        self.spin_retencao.setMaximum(365)
+        self.spin_retencao.setValue(self.config.get("dias_retencao_cache", 30))
+        h_spin = QHBoxLayout()
+        h_spin.addWidget(self.spin_retencao)
+        h_spin.addStretch()
+        form_layout.addLayout(h_spin, row, 1)
+        row += 1
+        
+        # Checkboxes 
+        self.check_auto_start = QCheckBox("Iniciar sistema com o Windows (Oculto na Bandeja)")
+        self.check_auto_start.setChecked(self.config.get("auto_start_windows", False))
+        form_layout.addWidget(self.check_auto_start, row, 0, 1, 2)
+        row += 1
+        
+        self.check_keep_tray = QCheckBox("Minimizar para bandeja ao fechar no 'X'")
+        self.check_keep_tray.setChecked(self.config.get("keep_in_tray", True))
+        form_layout.addWidget(self.check_keep_tray, row, 0, 1, 2)
+        row += 1
+
+        # Botão Salvar
+        btn_salvar = QPushButton("💾 Salvar Configurações Globais")
+        btn_salvar.setStyleSheet("background-color: #007bff; color: white; font-weight: bold; padding: 8px; font-size: 14px;")
+        btn_salvar.clicked.connect(self.salvar_painel_config)
+        form_layout.addWidget(btn_salvar, row, 0, 1, 2)
+        
+        layout.addWidget(frame)
+        layout.addStretch()
+
+    def salvar_painel_config(self):
+        # Atualiza os caminhos de texto
+        for chave, input_box in self.inputs_config.items():
+            self.config[chave] = input_box.text().strip()
+            
+        # Atualiza valores extras
+        self.config["dias_retencao_cache"] = self.spin_retencao.value()
+        
+        auto_start = self.check_auto_start.isChecked()
+        self.config["auto_start_windows"] = auto_start
+        set_windows_startup(auto_start)
+        
+        self.config["keep_in_tray"] = self.check_keep_tray.isChecked()
+        
+        # Persiste no JSON
+        salvar_config(self.config)
+        
+        QMessageBox.information(self, "Sucesso", "Configurações Globais salvas com sucesso em 'ict_config.json'.\n\nPor favor, reinicie a aplicação para aplicar as novas rotas do Banco e Updater.")
 
     def setup_admin_tab(self):
         layout = QVBoxLayout(self.tab_admin)
@@ -1081,59 +1175,7 @@ class MainApp(QWidget):
         self.purge_old_backups(days=14)
         
         
-    def abrir_config(self):
-        # ... (código existente, sem alterações)
-        d = QDialog(self)
-        d.setWindowTitle("Configurações"); d.resize(560, 380)
-        l = QVBoxLayout(d)
-        edits = {}
-        for key, text in [("finder_tri", "Finder TRI:"), ("finder_agilent", "Finder Agilent:"), ("backup_local_dir", "Backup Local:")]:
-            l.addWidget(QLabel(text))
-            edt = QLineEdit(self.config[key])
-            btn = QPushButton("...")
-            btn.clicked.connect(lambda _, e=edt: e.setText(QFileDialog.getExistingDirectory(self, "Selecionar Pasta", e.text()) or e.text()))
-            h = QHBoxLayout(); h.addWidget(edt); h.addWidget(btn)
-            l.addLayout(h); edits[key] = edt
-        
-        l.addSpacing(10)
-        
-        # --- Configuração do Garbage Collector ---
-        h_spin = QHBoxLayout()
-        h_spin.addWidget(QLabel("Dias de Retenção do Cache Local:"))
-        spin_retencao = QSpinBox()
-        spin_retencao.setMinimum(1)
-        spin_retencao.setMaximum(365)
-        spin_retencao.setValue(self.config.get("dias_retencao_cache", 30))
-        h_spin.addWidget(spin_retencao)
-        h_spin.addStretch()
-        l.addLayout(h_spin)
 
-        l.addSpacing(10)
-        
-        c_win = QCheckBox("Iniciar com Windows")
-        c_win.setChecked(self.config.get("auto_start_windows", False))
-        l.addWidget(c_win)
-
-        c_tray = QCheckBox("Manter na bandeja ao fechar")
-        c_tray.setChecked(self.config.get("keep_in_tray", True))
-        l.addWidget(c_tray)
-
-        l.addStretch()
-
-        btn_ok = QPushButton("Salvar"); 
-        btn_ok.clicked.connect(lambda: (
-            [
-                self.config.update({k: e.text() for k, e in edits.items()}), 
-                self.config.update({"dias_retencao_cache": spin_retencao.value()}),
-                self.config.update({"auto_start_windows": c_win.isChecked()}),
-                self.config.update({"keep_in_tray": c_tray.isChecked()}),
-                set_windows_startup(c_win.isChecked()), 
-                salvar_config(self.config), 
-                d.accept()
-            ]
-        ))
-        l.addWidget(btn_ok)
-        d.exec_()
         
     def init_tray(self):
         # ... (código existente, sem alterações)
