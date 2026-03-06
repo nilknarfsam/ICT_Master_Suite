@@ -1,39 +1,36 @@
-🏭 ICT Master Suite
-Sistema Avançado de Gestão de Tratativa de Falhas (MES - Manufacturing Execution System)
+# 🏭 ICT Master Suite
+**Sistema Avançado de Gestão de Tratativa de Falhas (MES - Manufacturing Execution System)**
 
-🎯 Sobre o Projeto
-O ICT Master Suite é uma solução de software desenvolvida sob medida para revolucionar a forma como a linha de produção gerencia, analisa e rastreia placas com falhas. Substituindo processos manuais e descentralizados, o sistema atua como um Cérebro Central na rede da fábrica, garantindo comunicação em tempo real entre os turnos e rastreabilidade total de cada componente testado.
+## 🎯 Sobre o Projeto
+O **ICT Master Suite** é uma solução de software desenvolvida sob medida para revolucionar a forma como a linha de produção gerencia, analisa e rastreia placas com falhas. Substituindo planilhas descentralizadas e processos manuais, o sistema atua como o Cérebro Central da fábrica, garantindo comunicação em tempo real, retenção de conhecimento e rastreabilidade total de cada componente.
 
-✨ Principais Funcionalidades
-🔐 1. Rastreabilidade e Controle de Acesso (RBAC)
-Autenticação Segura: Sistema de login individual para cada técnico.
+## ✨ Principais Funcionalidades
 
-Assinatura Digital Automática: Toda análise salva no sistema é automaticamente vinculada ao usuário logado, garantindo 100% de responsabilidade e auditoria (Saber quem analisou, quando e o que foi feito).
+### 🔐 1. Rastreabilidade e Controle de Acesso (RBAC)
+* **Autenticação Segura:** Login individual para cada técnico.
+* **Assinatura Digital Automática:** Toda análise salva no sistema é vinculada ao usuário logado, garantindo 100% de responsabilidade e auditoria (Saber *quem* analisou, *quando* e *o que* foi feito).
+* **Gestão de Usuários:** Módulo exclusivo para a gerência cadastrar, editar credenciais e resetar senhas de técnicos diretamente pelo sistema.
 
-Painel de Administração: Módulo exclusivo para a gerência cadastrar, editar e remover acessos de técnicos de forma intuitiva.
+### 📚 2. Base de Conhecimento (Wiki de Reparos Colaborativa)
+* **Retenção de Capital Intelectual:** Um motor de busca dinâmico onde os técnicos registram os sintomas (FCT/ICT) e as soluções aplicadas para cada modelo de placa (ex: M70Q5, M75Q5 SH).
+* **Busca Instantânea:** Filtros inteligentes que permitem encontrar soluções anteriores em milissegundos, evitando retrabalho e transformando o conhecimento individual em patrimônio da empresa.
 
-🔄 2. Comunicação Inter-Turnos (Histórico Colaborativo)
-Alerta de Reincidência: Ao bipar o serial de uma placa, o sistema consulta o servidor em milissegundos. Se a placa já houver sido tratada por outro técnico em um turno anterior, um alerta visual destacará o histórico, evitando retrabalho e perda de tempo.
+### 📊 3. Relatórios Gerenciais e Exportação (Data Analytics)
+* **Exportação com 1 Clique:** Integração nativa com a biblioteca `pandas` para compilar todo o banco de dados e gerar relatórios em `.xlsx` formatados.
+* **Métricas Reais:** Permite à gerência criar KPIs precisos de produção, incidência de falhas e desempenho de reparo.
 
-⚡ 3. Motor de Busca Assíncrono e Otimizado
-Leitura de Logs Inteligente: O sistema varre diretórios de logs de teste instantaneamente sem congelar a tela do usuário.
+### ⚙️ 4. Configurações Dinâmicas e Proteção de Infraestrutura
+* **Painel Admin-Only:** O administrador pode reconfigurar IPs de servidores, caminhos de banco de dados e pastas de logs diretamente pela interface do sistema, tornando o software imune a mudanças repentinas na infraestrutura de TI.
 
-Gestão de Cache: Sistema autolimpante que evita o acúmulo de arquivos desnecessários no disco local das máquinas da linha.
+### 🚀 5. Motor de Atualização Automática (OTA - Over-The-Air)
+* **Zero Downtime para a TI:** O sistema detecta novas versões no servidor, desvia dos bloqueios do Windows e atualiza todas as máquinas da fábrica automaticamente, garantindo que toda a linha rode sempre a versão mais recente.
 
-📈 4. Dashboard e Métricas em Tempo Real
-Painel de visualização imutável (Read-Only) que apresenta o volume de placas tratadas, permitindo à gerência um acompanhamento rápido do fluxo de trabalho diário.
+## 🛠️ Arquitetura e Tecnologia
+* **Interface:** PyQt5 (Design responsivo e à prova de falhas operacionais).
+* **Banco de Dados:** SQLite em Rede (Modo WAL) para concorrência múltipla.
+* **Análise de Dados:** Pandas e OpenPyXL.
+* **Deploy:** PyInstaller OneFile (Executável autônomo, não exige instalação).
 
-🚀 5. Atualização Automática (Over-The-Air / OTA)
-Zero Downtime para a TI: O sistema possui um módulo de Auto-Update inteligente. Quando uma nova melhoria é lançada pela Engenharia, o software detecta, contorna os bloqueios de segurança do Windows (File Lock) e atualiza todas as máquinas da fábrica automaticamente com apenas um clique do operador.
-
-🛠️ Arquitetura e Tecnologia
-Construído com base nos mais altos padrões da Indústria 4.0:
-
-Interface: Desenvolvida em PyQt5, oferecendo uma experiência de usuário (UX) moderna, fluida e à prova de erros de operação.
-
-Banco de Dados (Cérebro Central): Utiliza SQLite em Rede com modo WAL (Write-Ahead Logging), garantindo que múltiplos técnicos possam salvar análises simultaneamente sem corromper os dados ou gerar travamentos no servidor.
-
-Deploy: Empacotado em um executável autônomo (.exe), não exigindo instalação de bibliotecas ou Python nas máquinas da produção.
-
-Desenvolvido por: Franklin Carvalho
-Status: Pronto para Produção (V 1.0.0)
+---
+**Desenvolvido por:** Franklin Carvalho
+**Status:** Produção Ativa (V 1.1.0)
