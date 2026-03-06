@@ -12,13 +12,16 @@ from PyQt5.QtWidgets import (
     QListWidget, QTableWidget, QTableWidgetItem, QTextEdit, QFileDialog, QDialog, 
     QLabel, QHeaderView, QMessageBox, QFrame, QTabWidget, QSplitter, QSystemTrayIcon,
     QMenu, QAction, QStyle, QCheckBox, QGridLayout, QFileSystemModel, QTreeView, QSpinBox,
-    QAbstractItemView
+    QAbstractItemView, QRadioButton, QButtonGroup, QInputDialog, QListWidgetItem, QComboBox
 )
 from PyQt5.QtCore import Qt, QTimer, QDir
 from PyQt5.QtGui import QColor, QFont, QIcon
 from PyQt5.QtChart import QChart, QChartView, QBarSet, QBarSeries, QBarCategoryAxis, QValueAxis, QPieSeries, QPieSlice
 
-from models import carregar_config, salvar_config, salvar_falha_db, salvar_observacao, ler_observacao, obter_ultimas_analises, obter_estatisticas_progresso, limpar_analises_db, verificar_conexao_db, limpar_cache_local, buscar_historico_serial, validar_login, listar_usuarios, cadastrar_usuario, deletar_usuario
+from models import (carregar_config, salvar_config, salvar_falha_db, salvar_observacao, ler_observacao, 
+                    obter_ultimas_analises, obter_estatisticas_progresso, limpar_analises_db, verificar_conexao_db, 
+                    limpar_cache_local, buscar_historico_serial, validar_login, listar_usuarios, 
+                    cadastrar_usuario, deletar_usuario, atualizar_usuario, adicionar_modelo, listar_modelos, adicionar_solucao_wiki, buscar_solucoes_wiki, editar_modelo, gerar_relatorio_excel)
 from threads import BuscaThread, FileLoaderThread, DashboardThread
 import updater
 
@@ -91,6 +94,55 @@ class LoginDialog(QDialog):
         else:
             QMessageBox.critical(self, "Acesso Negado", "Usuário ou senha inválidos.")
 
+class DialogNovaSolucao(QDialog):
+    def __init__(self, parent=None, modelo_nome=""):
+        super().__init__(parent)
+        self.setWindowTitle(f"Nova Solução - Modelo: {modelo_nome}")
+        self.setFixedSize(500, 400)
+        
+        layout = QVBoxLayout(self)
+        
+        # Fase
+        layout.addWidget(QLabel("Fase de Teste:"))
+        self.combo_fase = QComboBox()
+        self.combo_fase.addItems(["ICT", "FCT"])
+        layout.addWidget(self.combo_fase)
+        
+        # Sintoma
+        layout.addWidget(QLabel("Sintoma / Defeito (Resumo):"))
+        self.input_sintoma = QLineEdit()
+        self.input_sintoma.setPlaceholderText("Ex: Equipamento não liga / Led não acende")
+        layout.addWidget(self.input_sintoma)
+        
+        # Solução
+        layout.addWidget(QLabel("Solução Aplicada (Detalhes):"))
+        self.text_solucao = QTextEdit()
+        self.text_solucao.setPlaceholderText("Descreva os passos realizados, ex: Troca do capacitor C12, ressolda no pino 3 do U4...")
+        layout.addWidget(self.text_solucao)
+        
+        # Botões
+        h_btn = QHBoxLayout()
+        h_btn.addStretch()
+        
+        btn_salvar = QPushButton("💾 Salvar")
+        btn_salvar.setStyleSheet("background-color: #28a745; color: white; font-weight: bold; padding: 5px 15px;")
+        btn_salvar.clicked.connect(self.aceitar)
+        
+        btn_cancelar = QPushButton("❌ Cancelar")
+        btn_cancelar.setStyleSheet("background-color: #dc3545; color: white; padding: 5px 15px;")
+        btn_cancelar.clicked.connect(self.reject)
+        
+        h_btn.addWidget(btn_salvar)
+        h_btn.addWidget(btn_cancelar)
+        layout.addLayout(h_btn)
+        
+    def aceitar(self):
+        # Validação básica
+        if not self.input_sintoma.text().strip() or not self.text_solucao.toPlainText().strip():
+            QMessageBox.warning(self, "Aviso", "Preencha o sintoma e a solução.")
+            return
+        self.accept()
+
 class MainApp(QWidget):
     def __init__(self, usuario_logado=None, start_minimized=False):
         super().__init__()
@@ -131,11 +183,8 @@ class MainApp(QWidget):
         self.init_tray()
         self._maybe_purge_backups()
         
-        # Timer para o Dashboard
-        self.timer_dash = QTimer(self)
-        self.timer_dash.timeout.connect(self.atualizar_estatisticas)
-        self.timer_dash.start(60000) # 60 segundos
-        self.atualizar_estatisticas() # Chama uma vez no início
+        # Removido timer do Dashboard (Substituído por Wiki)
+        pass
 
         self.load_stylesheet()
 
@@ -187,10 +236,10 @@ class MainApp(QWidget):
         self.setup_finder()
         self.tabs.addTab(self.tab_finder, "🔍 Finder Logs")
         # Aba Monitor removida.
-        # Aba Dashboard
+        # Aba Base de Conhecimento (Wiki)
         self.tab_dash = QWidget()
-        self.setup_dashboard()
-        self.tabs.addTab(self.tab_dash, "📊 Dashboard")
+        self.setup_knowledge_base()
+        self.tabs.addTab(self.tab_dash, "� Base de Conhecimento")
 
         # Aba Histórico
         self.tab_history = QWidget()
@@ -356,10 +405,17 @@ class MainApp(QWidget):
         self.table_usuarios.setAlternatingRowColors(True)
         layout.addWidget(self.table_usuarios)
         
-        # Botão de atualizar tabela manual (opcional, já atualiza auto no cadastro)
+        # Botões de Ação na Tabela
+        h_buttons = QHBoxLayout()
         btn_atualizar = QPushButton("Atualizar Lista")
         btn_atualizar.clicked.connect(self.carregar_tabela_usuarios)
-        layout.addWidget(btn_atualizar)
+        h_buttons.addWidget(btn_atualizar)
+        
+        btn_editar = QPushButton("✏️ Editar Selecionado")
+        btn_editar.clicked.connect(self.editar_usuario_selecionado)
+        h_buttons.addWidget(btn_editar)
+        
+        layout.addLayout(h_buttons)
         
         self.carregar_tabela_usuarios()
 
@@ -413,12 +469,71 @@ class MainApp(QWidget):
             else:
                 QMessageBox.warning(self, "Aviso", "Não foi possível excluir o usuário. (O último administrador não pode ser removido!)")
 
+    def editar_usuario_selecionado(self):
+        selected_items = self.table_usuarios.selectedItems()
+        if not selected_items:
+            QMessageBox.warning(self, "Aviso", "Selecione um usuário na tabela para editar.")
+            return
+
+        row = selected_items[0].row()
+        id_usuario = int(self.table_usuarios.item(row, 0).text())
+        nome_atual = self.table_usuarios.item(row, 1).text()
+        login_atual = self.table_usuarios.item(row, 2).text()
+
+        dialog = QDialog(self)
+        dialog.setWindowTitle("Editar Usuário")
+        dialog.setFixedSize(300, 250)
+        layout = QVBoxLayout(dialog)
+
+        layout.addWidget(QLabel("Novo Nome:"))
+        input_nome = QLineEdit(nome_atual)
+        layout.addWidget(input_nome)
+
+        layout.addWidget(QLabel("Novo Login:"))
+        input_login = QLineEdit(login_atual)
+        layout.addWidget(input_login)
+
+        layout.addWidget(QLabel("Nova Senha (deixe em branco para manter):"))
+        input_senha = QLineEdit()
+        input_senha.setEchoMode(QLineEdit.Password)
+        layout.addWidget(input_senha)
+
+        h_buttons = QHBoxLayout()
+        btn_salvar = QPushButton("Salvar")
+        btn_salvar.clicked.connect(dialog.accept)
+        btn_cancelar = QPushButton("Cancelar")
+        btn_cancelar.clicked.connect(dialog.reject)
+        h_buttons.addWidget(btn_salvar)
+        h_buttons.addWidget(btn_cancelar)
+        layout.addLayout(h_buttons)
+
+        if dialog.exec_() == QDialog.Accepted:
+            novo_nome = input_nome.text().strip()
+            novo_login = input_login.text().strip()
+            nova_senha = input_senha.text().strip()
+
+            if not novo_nome or not novo_login:
+                QMessageBox.warning(self, "Aviso", "Nome e Login não podem ficar vazios.")
+                return
+
+            if atualizar_usuario(id_usuario, novo_nome, novo_login, nova_senha if nova_senha else None):
+                QMessageBox.information(self, "Sucesso", "Usuário atualizado com sucesso!")
+                self.carregar_tabela_usuarios()
+            else:
+                QMessageBox.critical(self, "Erro", "Erro ao atualizar usuário. O login já pode estar em uso.")
+
     def setup_history_tab(self):
         layout = QVBoxLayout(self.tab_history)
 
         # --- BARRA DE FERRAMENTAS ---
         tools_bar = QHBoxLayout()
         tools_bar.addStretch()
+        
+        # Botão Exportar Excel
+        self.btn_exportar_excel = QPushButton("📊 Exportar Relatório Excel")
+        self.btn_exportar_excel.setStyleSheet("background-color: #198754; color: white; font-weight: bold; padding: 5px;")
+        self.btn_exportar_excel.clicked.connect(self.exportar_dados_excel)
+        tools_bar.addWidget(self.btn_exportar_excel)
         
         tools_button = QPushButton("🛠️ Ferramentas")
         tools_menu = QMenu(self)
@@ -532,6 +647,15 @@ class MainApp(QWidget):
         else:
             QMessageBox.critical(self, "Erro no Banco de Dados", "Não foi possível salvar a análise. O banco de dados pode estar bloqueado por outro usuário. Tente novamente.")
 
+    def exportar_dados_excel(self):
+        caminho_destino, _ = QFileDialog.getSaveFileName(self, "Salvar Relatório", "Relatorio_ICT_Master.xlsx", "Excel Files (*.xlsx)")
+        
+        if caminho_destino:
+            if gerar_relatorio_excel(caminho_destino):
+                QMessageBox.information(self, "Sucesso", f"O relatório foi exportado com sucesso para:\n{caminho_destino}")
+            else:
+                QMessageBox.critical(self, "Erro", "Houve um problema ao gerar o relatório Excel. Verifique se o arquivo destino não está aberto ou bloqueado pelo sistema.")
+
     def limpar_historico_local(self):
         """Limpa o cache de logs locais e reseta as análises no banco de dados."""
         if not verificar_conexao_db():
@@ -576,224 +700,242 @@ class MainApp(QWidget):
 
 
 
-    def setup_dashboard(self):
-        self.tab_dash.setObjectName("tab_dash")
-        layout = QGridLayout(self.tab_dash)
-        layout.setSpacing(25)
-        layout.setContentsMargins(25, 25, 25, 25)
-
-        # Card 1: Falhas Hoje
-        card1 = QFrame()
-        card1.setObjectName("dash_card")
-        card1_layout = QVBoxLayout(card1)
-        lbl_title1 = QLabel("FALHAS (HOJE)")
-        lbl_title1.setObjectName("dash_title")
-        lbl_title1.setAlignment(Qt.AlignCenter)
-        self.lbl_dash_total_hoje = QLabel("...")
-        self.lbl_dash_total_hoje.setObjectName("lbl_dash_total_hoje")
-        self.lbl_dash_total_hoje.setAlignment(Qt.AlignCenter)
-        card1_layout.addWidget(lbl_title1)
-        card1_layout.addStretch()
-        card1_layout.addWidget(self.lbl_dash_total_hoje)
-        card1_layout.addStretch()
-        layout.addWidget(card1, 0, 0)
-
-        # Card 2: Top 5 Componentes Críticos
-        card2 = QFrame()
-        card2.setObjectName("dash_card")
-        card2_layout = QVBoxLayout(card2)
-        lbl_title2 = QLabel("TOP 5 COMPONENTES (HOJE)")
-        lbl_title2.setObjectName("dash_title")
-        lbl_title2.setAlignment(Qt.AlignCenter)
-        card2_layout.addWidget(lbl_title2)
-
-        chart_bar = QChart()
-        chart_bar.setAnimationOptions(QChart.SeriesAnimations)
-        chart_bar.legend().setVisible(False)
+    def setup_knowledge_base(self):
+        self.tab_dash.setObjectName("tab_knowledge_base")
+        layout = QVBoxLayout(self.tab_dash)
         
-        self.chart_view_bar = QChartView(chart_bar)
-        self.chart_view_bar.setObjectName("chart_view")
-        card2_layout.addWidget(self.chart_view_bar)
+        splitter = QSplitter(Qt.Horizontal)
         
-        layout.addWidget(card2, 0, 1)
-
-        # Card 3: Progresso de Análise (Donut Chart)
-        card3 = QFrame()
-        card3.setObjectName("dash_card")
-        card3_layout = QVBoxLayout(card3)
-        lbl_title3 = QLabel("PROGRESSO DE ANÁLISE (HOJE)")
-        lbl_title3.setObjectName("dash_title")
-        lbl_title3.setAlignment(Qt.AlignCenter)
-        card3_layout.addWidget(lbl_title3)
-
-        chart_donut = QChart()
-        chart_donut.setAnimationOptions(QChart.SeriesAnimations)
-        chart_donut.legend().setVisible(True)
-        chart_donut.legend().setAlignment(Qt.AlignBottom)
-
-        self.chart_view_donut = QChartView(chart_donut)
-        self.chart_view_donut.setObjectName("chart_view")
-        card3_layout.addWidget(self.chart_view_donut)
-
-        layout.addWidget(card3, 0, 2)
+        # --- Lado Esquerdo: Lista de Modelos (20%) ---
+        left_widget = QWidget()
+        left_layout = QVBoxLayout(left_widget)
+        left_layout.setContentsMargins(0, 0, 0, 0)
         
-        # Card 4: Atividade Recente
-        card4 = QFrame()
-        card4.setObjectName("dash_card")
-        card4_layout = QVBoxLayout(card4)
-        lbl_title4 = QLabel("ATIVIDADE RECENTE")
-        lbl_title4.setObjectName("dash_title")
-        lbl_title4.setAlignment(Qt.AlignCenter)
-        card4_layout.addWidget(lbl_title4)
+        left_layout.addWidget(QLabel("🔍 Buscar Modelo:"))
+        self.input_busca_modelo = QLineEdit()
+        self.input_busca_modelo.setPlaceholderText("Ex: XYZ-1234")
+        left_layout.addWidget(self.input_busca_modelo)
+        
+        self.lista_modelos = QListWidget()
+        self.lista_modelos.itemSelectionChanged.connect(self.carregar_solucoes_do_modelo)
+        left_layout.addWidget(self.lista_modelos)
+        
+        self.btn_novo_modelo = QPushButton("➕ Novo Modelo")
+        self.btn_novo_modelo.setStyleSheet("background-color: #007bff; color: white; font-weight: bold; padding: 5px;")
+        self.btn_novo_modelo.clicked.connect(self.adicionar_novo_modelo_ui)
+        left_layout.addWidget(self.btn_novo_modelo)
+        
+        # Botão de Editar Modelo (Apenas Admin)
+        self.btn_editar_modelo = QPushButton("✏️ Editar Modelo")
+        self.btn_editar_modelo.setStyleSheet("background-color: #6c757d; color: white; padding: 5px;")
+        self.btn_editar_modelo.clicked.connect(self.editar_modelo_selecionado)
+        
+        is_admin = self.usuario_logado and self.usuario_logado.get('is_admin', False)
+        self.btn_editar_modelo.setVisible(is_admin)
+        left_layout.addWidget(self.btn_editar_modelo)
+        
+        splitter.addWidget(left_widget)
+        
+        # --- Lado Direito: Tabela de Soluções (80%) ---
+        right_widget = QWidget()
+        right_layout = QVBoxLayout(right_widget)
+        right_layout.setContentsMargins(0, 0, 0, 0)
+        
+        # Painel Superior (Filtros)
+        painel_filtros = QFrame()
+        painel_filtros.setStyleSheet("background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 5px; padding: 5px;")
+        filtros_layout = QHBoxLayout(painel_filtros)
+        
+        filtros_layout.addWidget(QLabel("Fase:"))
+        self.bg_fase = QButtonGroup(self)
+        self.rb_todos = QRadioButton("Todos")
+        self.rb_ict = QRadioButton("ICT")
+        self.rb_fct = QRadioButton("FCT")
+        
+        self.rb_todos.setChecked(True)
+        self.bg_fase.addButton(self.rb_todos)
+        self.bg_fase.addButton(self.rb_ict)
+        self.bg_fase.addButton(self.rb_fct)
+        
+        self.rb_todos.toggled.connect(self.aplicar_filtros_wiki)
+        self.rb_ict.toggled.connect(self.aplicar_filtros_wiki)
+        self.rb_fct.toggled.connect(self.aplicar_filtros_wiki)
+        
+        filtros_layout.addWidget(self.rb_todos)
+        filtros_layout.addWidget(self.rb_ict)
+        filtros_layout.addWidget(self.rb_fct)
+        filtros_layout.addSpacing(20)
+        
+        filtros_layout.addWidget(QLabel("Busca Sintoma/Defeito:"))
+        self.input_busca_sintoma = QLineEdit()
+        self.input_busca_sintoma.setPlaceholderText("Ex: capacitor c12 em curto")
+        self.input_busca_sintoma.textChanged.connect(self.aplicar_filtros_wiki)
+        filtros_layout.addWidget(self.input_busca_sintoma)
+        
+        right_layout.addWidget(painel_filtros)
+        
+        # Tabela Wiki
+        self.table_solucoes = QTableWidget()
+        self.table_solucoes.setColumnCount(5)
+        self.table_solucoes.setHorizontalHeaderLabels(["Fase", "Sintoma", "Solução", "Técnico", "Data"])
+        self.table_solucoes.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
+        self.table_solucoes.setEditTriggers(QAbstractItemView.NoEditTriggers)
+        self.table_solucoes.setSelectionBehavior(QAbstractItemView.SelectRows)
+        self.table_solucoes.setAlternatingRowColors(True)
+        right_layout.addWidget(self.table_solucoes)
+        
+        # Botão Adicionar Solução
+        self.btn_nova_solucao = QPushButton("💡 Adicionar Nova Solução")
+        self.btn_nova_solucao.setStyleSheet("background-color: #28a745; color: white; font-weight: bold; padding: 8px;")
+        self.btn_nova_solucao.clicked.connect(self.adicionar_nova_solucao_ui)
+        right_layout.addWidget(self.btn_nova_solucao)
+        
+        splitter.addWidget(right_widget)
+        splitter.setSizes([200, 800])
+        layout.addWidget(splitter)
+        
+        # Popula a lista inicial
+        self.carregar_lista_modelos()
 
-        self.table_recentes = QTableWidget()
-        self.table_recentes.setColumnCount(4)
-        self.table_recentes.setHorizontalHeaderLabels(["Data", "Serial", "Componente", "Status"])
-        self.table_recentes.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
-        self.table_recentes.verticalHeader().setVisible(False)
-        self.table_recentes.setAlternatingRowColors(True)
-        self.table_recentes.setObjectName("table_recentes")
-        # Bloqueia edição e seleciona a linha inteira
-        self.table_recentes.setEditTriggers(QAbstractItemView.NoEditTriggers)
-        self.table_recentes.setSelectionBehavior(QAbstractItemView.SelectRows)
-        card4_layout.addWidget(self.table_recentes)
-
-        layout.addWidget(card4, 1, 0, 1, 3) # Ocupa a largura de 3 colunas na linha de baixo
-
-        layout.setRowStretch(0, 0)
-        layout.setRowStretch(1, 1)
-
-    def atualizar_tabela_recentes(self, dados):
-        self.table_recentes.setRowCount(0)
-        if not dados:
-            return
-
-        self.table_recentes.setRowCount(len(dados))
-        bold_font = QFont()
-        bold_font.setBold(True)
-
-        for i, row in enumerate(dados):
-            data_str, serial, componente, status = row
+    def carregar_lista_modelos(self):
+        """Popula o QListWidget com os modelos do banco de dados na inicialização."""
+        self.lista_modelos.clear()
+        modelos = listar_modelos()
+        for m in modelos:
+            # Salvar o ID do modelo como userData é uma boa prática
+            item = QListWidgetItem(m["nome"])
+            item.setData(Qt.UserRole, m["id"])
+            self.lista_modelos.addItem(item)
             
-            # Formata a data
-            try:
-                data_dt = datetime.strptime(data_str, '%Y-%m-%d %H:%M:%S.%f')
-                item_data = QTableWidgetItem(data_dt.strftime('%d/%m/%y %H:%M'))
-            except ValueError:
-                item_data = QTableWidgetItem(data_str) # Fallback para o formato original
+    def adicionar_novo_modelo_ui(self):
+        nome_modelo, ok = QInputDialog.getText(self, "Novo Modelo", "Digite o nome do novo modelo:")
+        if ok and nome_modelo.strip():
+            nome_modelo_upper = nome_modelo.strip().upper()
             
-            item_serial = QTableWidgetItem(serial)
-            item_componente = QTableWidgetItem(componente)
-            item_status = QTableWidgetItem(status)
-            item_status.setTextAlignment(Qt.AlignCenter)
+            # Verifica localmente de forma rápida se já está na lista atual para diminuir queries (opcional, mas bom)
+            existente = False
+            for i in range(self.lista_modelos.count()):
+                if self.lista_modelos.item(i).text().upper() == nome_modelo_upper:
+                    existente = True
+                    break
+            
+            if existente:
+                QMessageBox.warning(self, "Aviso", f"O modelo '{nome_modelo_upper}' já está cadastrado.")
+                return
 
-            # Colore o status para destaque visual
-            if status == "ABERTO":
-                item_status.setForeground(QColor("#e74c3c"))
-                item_status.setFont(bold_font)
-            elif status in ["TRATADO", "RESOLVIDO"]:
-                item_status.setForeground(QColor("#27ae60"))
+            novo_id = adicionar_modelo(nome_modelo_upper)
+            if novo_id:
+                self.carregar_lista_modelos()
+                # Seleciona o modelo recém criado
+                items = self.lista_modelos.findItems(nome_modelo_upper, Qt.MatchExactly)
+                if items:
+                    self.lista_modelos.setCurrentItem(items[0])
+            else:
+                 QMessageBox.warning(self, "Erro", f"Não foi possível adicionar o modelo '{nome_modelo_upper}'. Ele já pode existir.")
 
-            self.table_recentes.setItem(i, 0, item_data)
-            self.table_recentes.setItem(i, 1, item_serial)
-            self.table_recentes.setItem(i, 2, item_componente)
-            self.table_recentes.setItem(i, 3, item_status)
-
-    def atualizar_grafico(self, top_5_data):
-        chart = self.chart_view_bar.chart() # Alterado para chart_view_bar
-        chart.removeAllSeries()
-        for axis in chart.axes():
-            chart.removeAxis(axis)
-        if not top_5_data:
-            chart.setTitle("Nenhuma falha registrada hoje.")
+    def editar_modelo_selecionado(self):
+        currentItem = self.lista_modelos.currentItem()
+        if not currentItem:
+            QMessageBox.warning(self, "Aviso", "Selecione um modelo na lista para editar.")
             return
 
-        chart.setTitle("")
-        
-        series = QBarSeries()
-        series.setLabelsVisible(True) # Mostra os valores acima das barras
-        
-        bar_set = QBarSet("Falhas")
-        bar_set.setColor(QColor("#e74c3c"))
-        
-        nomes_componentes = []
-        max_val = 0
-        for comp, count in top_5_data:
-            bar_set.append(count)
-            nomes_componentes.append(comp)
-            if count > max_val:
-                max_val = count
+        id_modelo = currentItem.data(Qt.UserRole)
+        nome_atual = currentItem.text()
 
-        series.append(bar_set)
-        chart.addSeries(series)
+        novo_nome, ok = QInputDialog.getText(self, "Editar Modelo", "Novo nome para o modelo:", QLineEdit.Normal, nome_atual)
+        if ok and novo_nome.strip():
+            novo_nome_upper = novo_nome.strip().upper()
+            if novo_nome_upper == nome_atual.upper():
+                return # Nenhuma alteração real
+                
+            if editar_modelo(id_modelo, novo_nome_upper):
+                self.carregar_lista_modelos()
+                # Tenta re-selecionar
+                items = self.lista_modelos.findItems(novo_nome_upper, Qt.MatchExactly)
+                if items:
+                    self.lista_modelos.setCurrentItem(items[0])
+            else:
+                QMessageBox.critical(self, "Erro", "Erro ao atualizar o modelo. Verifique se o nome já está em uso.")
 
-        axis_x = QBarCategoryAxis()
-        axis_x.append(nomes_componentes)
-        chart.addAxis(axis_x, Qt.AlignBottom)
-        series.attachAxis(axis_x)
+    def carregar_solucoes_do_modelo(self):
+        """Apenas limpa a busca de texto e chama os filtros para recarregar do zero para o modelo atual"""
+        self.input_busca_sintoma.blockSignals(True)
+        self.input_busca_sintoma.clear()
+        self.input_busca_sintoma.blockSignals(False)
+        self.aplicar_filtros_wiki()
 
-        axis_y = QValueAxis()
-        # Aumenta a margem superior para 50% para a barra não tocar o teto
-        axis_y.setRange(0, max_val * 1.5 if max_val > 0 else 10) 
-        axis_y.setTickCount(min(max_val + 2, 12)) # Ajusta os ticks para serem inteiros
-        axis_y.setLabelFormat("%d") # Garante que o eixo Y mostre números inteiros
-        chart.addAxis(axis_y, Qt.AlignLeft)
-        series.attachAxis(axis_y)
-
-    def atualizar_estatisticas(self):
-        self.dash_thread = DashboardThread()
-        self.dash_thread.stats_updated.connect(self.on_stats_updated)
-        self.dash_thread.start()
-
-    def on_stats_updated(self, stats):
-        # Card 1
-        self.lbl_dash_total_hoje.setText(str(stats['total_hoje']))
-        
-        # Card 2
-        self.atualizar_grafico(stats.get('top_5_componentes', []))
-
-        # Card 3 (Donut) - busca novos dados
-        progresso_stats = obter_estatisticas_progresso()
-        self.atualizar_grafico_progresso(progresso_stats)
-
-        # Status Bar
-        db_status_text = "DB: 🟢 ONLINE" if stats['db_online'] else "DB: 🔴 OFFLINE"
-        self.status_bar.setText(f"Pronto. | {db_status_text}")
-
-        # Card 4
-        ultimas_analises = obter_ultimas_analises(limite=15)
-        self.atualizar_tabela_recentes(ultimas_analises)
-
-    def atualizar_grafico_progresso(self, progresso_stats):
-        chart = self.chart_view_donut.chart()
-        chart.removeAllSeries()
-        
-        series = QPieSeries()
-        series.setHoleSize(0.40)
-
-        abertos = progresso_stats.get('abertos', 0)
-        tratados = progresso_stats.get('tratados', 0)
-
-        if abertos == 0 and tratados == 0:
-            chart.setTitle("Nenhuma atividade hoje.")
+    def aplicar_filtros_wiki(self):
+        currentItem = self.lista_modelos.currentItem()
+        if not currentItem:
+            self.table_solucoes.setRowCount(0)
             return
-        else:
-            chart.setTitle("")
-
-        # Fatia de Abertos
-        slice_abertos = QPieSlice(f"Abertos: {abertos}", abertos)
-        slice_abertos.setColor(QColor("#f1c40f")) # Amarelo
-        slice_abertos.setLabelVisible(True)
+            
+        modelo_id = currentItem.data(Qt.UserRole)
         
-        # Fatia de Tratados
-        slice_tratados = QPieSlice(f"Tratados: {tratados}", tratados)
-        slice_tratados.setColor(QColor("#27ae60")) # Verde
-        slice_tratados.setLabelVisible(True)
-
-        series.append(slice_abertos)
-        series.append(slice_tratados)
+        self.table_solucoes.setRowCount(0)
         
-        chart.addSeries(series)
+        fase_filtro = "Todos"
+        if self.rb_ict.isChecked(): fase_filtro = "ICT"
+        if self.rb_fct.isChecked(): fase_filtro = "FCT"
+        busca_texto = self.input_busca_sintoma.text().strip()
+
+        solucoes = buscar_solucoes_wiki(modelo_id, fase_filtro if fase_filtro != "Todos" else None, busca_texto)
+        
+        if solucoes:
+            self.table_solucoes.setRowCount(len(solucoes))
+            for row, sol in enumerate(solucoes):
+                # ["Fase", "Sintoma", "Solução", "Técnico", "Data"]
+                item_fase = QTableWidgetItem(sol["fase"])
+                if sol["fase"] == "ICT":
+                    item_fase.setForeground(QColor("blue"))
+                else:
+                    item_fase.setForeground(QColor("purple"))
+                item_fase.setTextAlignment(Qt.AlignCenter)
+                
+                self.table_solucoes.setItem(row, 0, item_fase)
+                self.table_solucoes.setItem(row, 1, QTableWidgetItem(sol["sintoma"]))
+                self.table_solucoes.setItem(row, 2, QTableWidgetItem(sol["solucao"]))
+                self.table_solucoes.setItem(row, 3, QTableWidgetItem(sol["tecnico"] or "Desconhecido"))
+                
+                # Formata Data
+                data_str = sol["data"]
+                try:
+                    data_dt = datetime.strptime(data_str, '%Y-%m-%d %H:%M:%S')
+                    item_data = QTableWidgetItem(data_dt.strftime('%d/%m/%y %H:%M'))
+                except ValueError:
+                    item_data = QTableWidgetItem(data_str) # Fallback para o formato original
+                self.table_solucoes.setItem(row, 4, item_data)
+                
+            self.table_solucoes.resizeColumnToContents(0) # Fase
+            self.table_solucoes.horizontalHeader().setSectionResizeMode(1, QHeaderView.ResizeToContents) # Sintoma
+            self.table_solucoes.horizontalHeader().setSectionResizeMode(2, QHeaderView.Stretch) # Solução (Expande)
+            self.table_solucoes.resizeColumnToContents(3) # Tecnico
+            self.table_solucoes.resizeColumnToContents(4) # Data
+
+    def adicionar_nova_solucao_ui(self):
+        currentItem = self.lista_modelos.currentItem()
+        if not currentItem:
+            QMessageBox.warning(self, "Aviso", "Selecione um modelo na lista à esquerda antes de adicionar uma solução.")
+            return
+
+        modelo_id = currentItem.data(Qt.UserRole)
+        modelo_nome = currentItem.text()
+        
+        dialog = DialogNovaSolucao(self, modelo_nome)
+        if dialog.exec_() == QDialog.Accepted:
+            fase = dialog.combo_fase.currentText()
+            sintoma = dialog.input_sintoma.text().strip()
+            solucao = dialog.text_solucao.toPlainText().strip()
+            
+            # Obtém o autor (logado ou Local)
+            autor = self.usuario_logado['nome'] if self.usuario_logado else "Local"
+            
+            if adicionar_solucao_wiki(modelo_id, fase, sintoma, solucao, autor):
+                QMessageBox.information(self, "Sucesso", "Solução adicionada à Base de Conhecimento!")
+                # Recarrega a tabela para mostrar a nova solução
+                self.carregar_solucoes_do_modelo()
+            else:
+                QMessageBox.critical(self, "Erro", "Erro ao salvar a solução no banco de dados.")
 
     def setup_finder(self):
         layout = QVBoxLayout(self.tab_finder)

@@ -6,6 +6,7 @@ import time
 import hashlib
 from datetime import datetime
 from collections import Counter
+import pandas as pd
 
 def get_base_path():
     if getattr(sys, 'frozen', False):
@@ -81,6 +82,28 @@ def init_db():
                 )
             """)
 
+            # Tabela de Modelos (Mission 28)
+            cursor.execute("""
+                CREATE TABLE IF NOT EXISTS modelos (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    nome_modelo TEXT UNIQUE
+                )
+            """)
+
+            # Tabela da Base de Conhecimento (Wiki) (Mission 28)
+            cursor.execute("""
+                CREATE TABLE IF NOT EXISTS wiki_reparos (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    modelo_id INTEGER,
+                    fase TEXT,
+                    sintoma TEXT,
+                    solucao TEXT,
+                    tecnico_id TEXT,
+                    data_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                    FOREIGN KEY (modelo_id) REFERENCES modelos(id)
+                )
+            """)
+
             # Verifica se a tabela usuários está vazia e insere admin padrão
             cursor.execute("SELECT COUNT(*) FROM usuarios")
             if cursor.fetchone()[0] == 0:
@@ -95,8 +118,21 @@ def init_db():
             cursor.execute("CREATE INDEX IF NOT EXISTS idx_componente ON falhas (componente);")
             cursor.execute("CREATE INDEX IF NOT EXISTS idx_arquivo ON falhas (arquivo);")
             conn.commit()
+            
+            # Popular modelos iniciais se o DB for novo ou modelos não existirem
+            popular_modelos_iniciais(cursor)
+            
     except (sqlite3.OperationalError, OSError) as e:
         print(f"Erro ao inicializar o banco de dados: {e}")
+
+def popular_modelos_iniciais(cursor):
+    """Insere a lista inicial de modelos na base de conhecimento se não existirem."""
+    modelos_iniciais = ['M70Q5', 'M70Q6', 'M70S5', 'M70S6', 'M75S5', 'M75Q5 SH', 'T14Gen6', 'T14Gen7', 'E14Gen7', 'LOQ IRX9', 'LOQ IAX9E']
+    for modelo in modelos_iniciais:
+        try:
+            cursor.execute("INSERT OR IGNORE INTO modelos (nome_modelo) VALUES (?)", (modelo,))
+        except sqlite3.Error as e:
+            print(f"Erro ao inserir modelo inicial {modelo}: {e}")
 
 def validar_login(login, senha_texto):
     """Valida o login e a senha (comparando o hash) no banco de dados."""
@@ -166,6 +202,127 @@ def deletar_usuario(id_usuario):
     except sqlite3.OperationalError as e:
         print(f"Erro ao deletar usuário no banco de dados: {e}")
         return False
+
+def atualizar_usuario(id_usuario, novo_nome, novo_login, nova_senha=None):
+    """Atualiza um usuário existente. Se nova_senha for fornecida, atualiza a senha também."""
+    try:
+        with sqlite3.connect(DB_PATH, timeout=5) as conn:
+            cursor = conn.cursor()
+            if nova_senha:
+                senha_hash = hashlib.sha256(nova_senha.encode()).hexdigest()
+                cursor.execute("""
+                    UPDATE usuarios 
+                    SET nome = ?, login = ?, senha_hash = ?
+                    WHERE id = ?
+                """, (novo_nome, novo_login, senha_hash, id_usuario))
+            else:
+                cursor.execute("""
+                    UPDATE usuarios 
+                    SET nome = ?, login = ?
+                    WHERE id = ?
+                """, (novo_nome, novo_login, id_usuario))
+            conn.commit()
+            return True
+    except sqlite3.IntegrityError:
+        print(f"Erro: O login '{novo_login}' já existe no banco de dados.")
+        return False
+    except sqlite3.OperationalError as e:
+        print(f"Erro ao atualizar usuário no banco de dados: {e}")
+        return False
+
+def adicionar_modelo(nome_modelo):
+    """Adiciona um novo modelo à base de conhecimento."""
+    try:
+        with sqlite3.connect(DB_PATH, timeout=5) as conn:
+            cursor = conn.cursor()
+            cursor.execute("INSERT INTO modelos (nome_modelo) VALUES (?)", (nome_modelo,))
+            conn.commit()
+            return cursor.lastrowid
+    except sqlite3.IntegrityError:
+        print(f"Erro: O modelo '{nome_modelo}' já existe.")
+        return None
+    except sqlite3.OperationalError as e:
+        print(f"Erro ao adicionar modelo: {e}")
+        return None
+
+def editar_modelo(id_modelo, novo_nome):
+    """Edita o nome de um modelo existente."""
+    try:
+        with sqlite3.connect(DB_PATH, timeout=5) as conn:
+            cursor = conn.cursor()
+            cursor.execute("""
+                UPDATE modelos 
+                SET nome_modelo = ?
+                WHERE id = ?
+            """, (novo_nome, id_modelo))
+            conn.commit()
+            return True
+    except sqlite3.IntegrityError:
+        print(f"Erro: O modelo '{novo_nome}' já existe no banco de dados.")
+        return False
+    except sqlite3.OperationalError as e:
+        print(f"Erro ao editar modelo no banco de dados: {e}")
+        return False
+
+def listar_modelos():
+    """Retorna uma lista de todos os modelos cadastrados."""
+    try:
+        with sqlite3.connect(DB_PATH, timeout=5) as conn:
+            cursor = conn.cursor()
+            cursor.execute("SELECT id, nome_modelo FROM modelos ORDER BY nome_modelo")
+            return [{"id": row[0], "nome": row[1]} for row in cursor.fetchall()]
+    except sqlite3.OperationalError as e:
+        print(f"Erro ao listar modelos: {e}")
+        return []
+
+def adicionar_solucao_wiki(modelo_id, fase, sintoma, solucao, tecnico_id):
+    """Adiciona uma nova solução à base de conhecimento."""
+    try:
+        with sqlite3.connect(DB_PATH, timeout=5) as conn:
+            cursor = conn.cursor()
+            cursor.execute("""
+                INSERT INTO wiki_reparos (modelo_id, fase, sintoma, solucao, tecnico_id)
+                VALUES (?, ?, ?, ?, ?)
+            """, (modelo_id, fase, sintoma, solucao, tecnico_id))
+            conn.commit()
+            return True
+    except sqlite3.OperationalError as e:
+        print(f"Erro ao adicionar solução: {e}")
+        return False
+
+def buscar_solucoes_wiki(modelo_id, fase=None, busca_texto=None):
+    """Busca soluções na wiki com base nos filtros fornecidos."""
+    try:
+        with sqlite3.connect(DB_PATH, timeout=5) as conn:
+            cursor = conn.cursor()
+            query = """
+                SELECT w.id, m.nome_modelo, w.fase, w.sintoma, w.solucao, w.tecnico_id, w.data_registro
+                FROM wiki_reparos w
+                JOIN modelos m ON w.modelo_id = m.id
+                WHERE 1=1
+            """
+            params = []
+            if modelo_id:
+                query += " AND w.modelo_id = ?"
+                params.append(modelo_id)
+            if fase and fase != 'Todos':
+                query += " AND w.fase = ?"
+                params.append(fase)
+            if busca_texto:
+                query += " AND (w.sintoma LIKE ? OR w.solucao LIKE ?)"
+                params.extend([f"%{busca_texto}%", f"%{busca_texto}%"])
+                
+            query += " ORDER BY w.data_registro DESC"
+            cursor.execute(query, params)
+            
+            return [{
+                "id": row[0], "modelo": row[1], "fase": row[2], 
+                "sintoma": row[3], "solucao": row[4], 
+                "tecnico": row[5], "data": row[6]
+            } for row in cursor.fetchall()]
+    except sqlite3.OperationalError as e:
+        print(f"Erro ao buscar soluções: {e}")
+        return []
 
 def salvar_falha_db(falha_dict):
     """Salva um dicionário de falha no banco de dados SQLite com retentativa."""
