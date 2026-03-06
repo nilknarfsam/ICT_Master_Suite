@@ -14,7 +14,7 @@ def get_base_path():
     return os.path.dirname(os.path.abspath(__file__))
 
 # --- Constantes ---
-CONFIG_FILE = os.path.join(get_base_path(), 'ict_config.json')
+CONFIG_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'config.json')
 DEFAULT_CONFIG = {
     "finder_tri": r"\\147.1.0.95\teste_ict\ict02",
     "finder_agilent": r"\\147.1.0.95\teste_ict\ict01",
@@ -416,9 +416,15 @@ def buscar_historico_serial(serial):
         return None
 
 def verificar_conexao_db():
-    """Verifica se o arquivo do banco de dados está acessível."""
+    """Verifica se o arquivo do banco de dados está acessível na rede estipulada."""
+    pasta_db = os.path.dirname(DB_PATH)
+    
+    # Requisito rigoroso: se a pasta de rede não existe, aborta. NUNCA crie db local de fallback.
+    if not os.path.exists(pasta_db):
+        return False
+        
     if not os.path.exists(DB_PATH):
-        init_db() # Tenta criar o diretório e inicializar o DB se não existir
+        init_db() # Tenta inicializar apenas se o destino na rede estiver online
     
     if not os.path.exists(DB_PATH):
          return False
@@ -440,8 +446,12 @@ def obter_estatisticas_ict():
         'db_online': False
     }
 
+    pasta_db = os.path.dirname(DB_PATH)
+    if not os.path.exists(pasta_db):
+        return stats # Se a rede está offline, não tenta inicializar banco falso
+        
     if not os.path.exists(DB_PATH):
-        # Tenta inicializar o DB caso o arquivo não exista
+        # Tenta inicializar o DB caso a rede exista mas o arquivo DB foi deletado
         init_db()
         if not os.path.exists(DB_PATH):
             return stats

@@ -151,18 +151,24 @@ class MainApp(QWidget):
         self.setGeometry(100, 100, 1280, 800)
         self.config = carregar_config()
         
-        # --- VERIFICAÇÃO DE ATUALIZAÇÕES ---
-        versao_atual = updater.get_current_version()
-        caminho_rede = self.config.get("caminho_update_rede", "")
-        if updater.verificar_atualizacao(caminho_rede, versao_atual):
-            resp = QMessageBox.question(self, "Atualização Disponível", 
-                                        "Uma nova versão do sistema está disponível. Deseja atualizar agora?", 
-                                        QMessageBox.Yes | QMessageBox.No)
-            if resp == QMessageBox.Yes:
-                import sys
-                caminho_exe_rede = os.path.join(caminho_rede, os.path.basename(sys.argv[0]))
-                if updater.aplicar_atualizacao(caminho_exe_rede):
-                    sys.exit(0)
+        # --- VERIFICAÇÃO DE ATUALIZAÇÕES (Desativado temporariamente para otimização onedir) ---
+        # versao_atual = updater.get_current_version()
+        # caminho_rede = self.config.get("caminho_update_rede", "")
+        # if updater.verificar_atualizacao(caminho_rede, versao_atual):
+        #     resp = QMessageBox.question(self, "Atualização Disponível", 
+        #                                 "Uma nova versão do sistema está disponível. Deseja atualizar agora?", 
+        #                                 QMessageBox.Yes | QMessageBox.No)
+        #     if resp == QMessageBox.Yes:
+        #         import sys
+        #         caminho_exe_rede = os.path.join(caminho_rede, os.path.basename(sys.argv[0]))
+        #         if updater.aplicar_atualizacao(caminho_exe_rede):
+        #             sys.exit(0)
+        
+        # --- CHECAGEM BLOQUEANTE DE BANCO DE DADOS ---
+        if not verificar_conexao_db():
+            QMessageBox.critical(None, "Erro Crítico de Rede", "Erro de Conexão: Não foi possível acessar o banco de dados no servidor rede.\n\nVerifique sua conexão e tente novamente.")
+            import sys
+            sys.exit(1)
         
         # Executa o Garbage Collector do cache na inicialização
         limpar_cache_local()

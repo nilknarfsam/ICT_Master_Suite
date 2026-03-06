@@ -2,17 +2,16 @@
 chcp 65001 >nul
 
 echo =========================================================
-echo Iniciando a compilação do ICT Master Suite (OneFile)...
+echo Iniciando a compilação do ICT Master Suite (OneDir)...
 echo =========================================================
 
 call .venv\Scripts\activate
-pip install pyinstaller
 
 echo Limpando builds antigos e compilando...
-pyinstaller --clean --onefile --noconsole --add-data "style.qss;." --add-data "icon.ico;." -n "ICT_Master_Suite" ui_main.py
+pyinstaller --clean --onedir --noconsole -n "ICT_Master_Suite" ui_main.py
 
 echo =========================================================
 echo Compilação concluída!
-echo O executável único estará na pasta "dist".
+echo A pasta do sistema estará dentro de "dist".
 echo =========================================================
 pause
