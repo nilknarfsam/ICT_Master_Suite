@@ -17,8 +17,8 @@ def get_base_path():
 # --- Constantes ---
 CONFIG_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'ict_config.json')
 DEFAULT_CONFIG = {
-    "finder_tri": r"\\147.1.0.95\teste_ict\ict02",
-    "finder_agilent": r"\\147.1.0.95\teste_ict\ict01",
+    "caminho_logs_tri": "O:/ict02",
+    "caminho_logs_agilent": "O:/ict01/defeitos",
     "backup_local_dir": r"C:\app_chamados\backup_logs",
     "caminho_update_rede": r"\\147.1.0.95\teste_ict\app_updates",
     "caminho_banco_rede": "O:/teste_ict/banco_dados_falhas.db",

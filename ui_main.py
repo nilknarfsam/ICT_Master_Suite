@@ -292,8 +292,8 @@ class MainApp(QWidget):
         
         # Mapeamento dos campos: (chave_json, Label_UI)
         campos = [
-            ("finder_tri", "Diretório Local/Rede - Finder TRI:"),
-            ("finder_agilent", "Diretório Local/Rede - Finder Agilent:"),
+            ("caminho_logs_tri", "Diretório Local/Rede - Finder TRI:"),
+            ("caminho_logs_agilent", "Diretório Local/Rede - Finder Agilent:"),
             ("backup_local_dir", "Diretório Cópia/Cache (Backup Local):"),
             ("caminho_update_rede", "Caminho P/ Atualizações (Rede/OTA):"),
             ("caminho_banco_rede", "Caminho do Banco de Dados (.db):")
@@ -355,7 +355,7 @@ class MainApp(QWidget):
         # Atualiza os caminhos de texto
         for chave, input_box in self.inputs_config.items():
             texto = input_box.text().strip()
-            if chave in ["finder_tri", "finder_agilent", "backup_local_dir", "caminho_update_rede", "caminho_banco_rede"]:
+            if chave in ["caminho_logs_tri", "caminho_logs_agilent", "backup_local_dir", "caminho_update_rede", "caminho_banco_rede"]:
                 # Normaliza para barras simples (forward slashes) que o Windows e JSON interpretam perfeitamente sem 'escaping' duplicado
                 texto = texto.replace('\\', '/')
             self.config[chave] = texto
@@ -623,7 +623,9 @@ class MainApp(QWidget):
                     content = f.read()
                 self.txt_history_log_viewer.setPlainText(content)
             except Exception as e:
-                self.txt_history_log_viewer.setPlainText(f"--- ERRO AO LER O ARQUIVO ---\n\n{str(e)}")
+                import PyQt5.QtWidgets as QtWidgets
+                QtWidgets.QMessageBox.warning(self, "Erro de Leitura", f"Não foi possível abrir o arquivo de log no caminho especificado.\nVerifique a conexão de rede.\n\nDetalhe do erro: {str(e)}")
+                self.txt_history_log_viewer.setPlainText("")
 
             # Carrega a observação do banco de dados
             file_name = os.path.basename(file_path)
@@ -1039,7 +1041,7 @@ class MainApp(QWidget):
         self.input_serial.setText(serial_limpo)
         termo = serial_limpo
         
-        if not self.config.get("finder_tri") or not self.config.get("finder_agilent"):
+        if not self.config.get("caminho_logs_tri") or not self.config.get("caminho_logs_agilent"):
             QMessageBox.information(self, "Caminhos Não Configurados", 
                                     "Os caminhos para a busca de logs na rede não estão configurados.\n\n"
                                     "Por favor, clique no botão '⚙️ Config' no canto superior direito para definir os diretórios do 'Finder TRI' e 'Finder Agilent'.")
@@ -1055,7 +1057,7 @@ class MainApp(QWidget):
         self.lbl_historico_alerta.setVisible(False)
         self.lbl_info.setText("Buscando...")
         self.status_bar.setText("Aguarde...")
-        dirs = [self.config["finder_tri"], self.config["finder_agilent"]]
+        dirs = [self.config["caminho_logs_tri"], self.config["caminho_logs_agilent"]]
         self.thread_busca = BuscaThread(termo, dirs)
         self.thread_busca.lista_arquivos.connect(self.popular_lista)
         self.thread_busca.start()
@@ -1138,8 +1140,8 @@ class MainApp(QWidget):
         else:
             self.lbl_historico_alerta.setVisible(False)
         
-        # BUGFIX: Força a atualização do Dashboard e da árvore de Histórico
-        self.atualizar_estatisticas()
+        # BUGFIX: O Dashboard foi removido na versão nova (substituído pela Wiki).
+        # A árvore de Histórico (QFileSystemModel) se auto-atualiza via observador nativo.
         
         try:
             nome_arquivo = self.current_file_name
@@ -1156,6 +1158,8 @@ class MainApp(QWidget):
         
     def on_file_load_error(self, error_msg):
         # ... (código existente, sem alterações)
+        import PyQt5.QtWidgets as QtWidgets
+        QtWidgets.QMessageBox.warning(self, "Erro de Leitura", f"Não foi possível abrir o arquivo de log no caminho especificado.\nVerifique a conexão de rede.\n\nDetalhe do erro: {error_msg}")
         self.current_file_name = None
         self.lbl_info.setText(f"<font color='red'><b>Erro:</b> {error_msg}</font>")
         self.text_raw.clear()
