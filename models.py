@@ -324,6 +324,19 @@ def buscar_solucoes_wiki(modelo_id, fase=None, busca_texto=None):
         print(f"Erro ao buscar soluções: {e}")
         return []
 
+def gerar_relatorio_excel(caminho_destino):
+    """Gera um arquivo Excel contendo todos os dados de falhas."""
+    try:
+        with sqlite3.connect(DB_PATH, timeout=5) as conn:
+            # Lemos a tabela falhas principal
+            df = pd.read_sql_query("SELECT * FROM falhas", conn)
+            # Salva no arquivo designado pelo usuário
+            df.to_excel(caminho_destino, index=False)
+            return True
+    except Exception as e:
+        print(f"Erro ao gerar relatório Excel: {e}")
+        return False
+
 def salvar_falha_db(falha_dict):
     """Salva um dicionário de falha no banco de dados SQLite com retentativa."""
     max_retries = 3
