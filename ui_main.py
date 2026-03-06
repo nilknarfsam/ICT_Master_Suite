@@ -354,7 +354,11 @@ class MainApp(QWidget):
     def salvar_painel_config(self):
         # Atualiza os caminhos de texto
         for chave, input_box in self.inputs_config.items():
-            self.config[chave] = input_box.text().strip()
+            texto = input_box.text().strip()
+            if chave in ["finder_tri", "finder_agilent", "backup_local_dir", "caminho_update_rede", "caminho_banco_rede"]:
+                # Normaliza para barras simples (forward slashes) que o Windows e JSON interpretam perfeitamente sem 'escaping' duplicado
+                texto = texto.replace('\\', '/')
+            self.config[chave] = texto
             
         # Atualiza valores extras
         self.config["dias_retencao_cache"] = self.spin_retencao.value()

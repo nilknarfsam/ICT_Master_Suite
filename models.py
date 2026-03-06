@@ -5,8 +5,9 @@ import sqlite3
 import time
 import hashlib
 from datetime import datetime
-from collections import Counter
+import collections
 import pandas as pd
+import ctypes
 
 def get_base_path():
     if getattr(sys, 'frozen', False):
@@ -14,20 +15,20 @@ def get_base_path():
     return os.path.dirname(os.path.abspath(__file__))
 
 # --- Constantes ---
-CONFIG_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'config.json')
+CONFIG_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'ict_config.json')
 DEFAULT_CONFIG = {
     "finder_tri": r"\\147.1.0.95\teste_ict\ict02",
     "finder_agilent": r"\\147.1.0.95\teste_ict\ict01",
     "backup_local_dir": r"C:\app_chamados\backup_logs",
     "caminho_update_rede": r"\\147.1.0.95\teste_ict\app_updates",
-    "caminho_banco_rede": r"\\147.1.0.95\teste_ict\banco_dados_falhas.db",
+    "caminho_banco_rede": "O:/teste_ict/banco_dados_falhas.db",
     "auto_start_windows": False,
     "dias_retencao_cache": 30
 }
 
 # Inicializa o caminho do banco lendo do config.json se existir.
 # Fallback SEMPRE para rede para evitar bancos locais fragmentados.
-DB_PATH = r"\\147.1.0.95\teste_ict\banco_dados_falhas.db"
+DB_PATH = "O:/teste_ict/banco_dados_falhas.db"
 try:
     if os.path.exists(CONFIG_FILE):
         with open(CONFIG_FILE, 'r') as f:
@@ -36,6 +37,19 @@ try:
                 DB_PATH = _config_temp["caminho_banco_rede"]
 except Exception:
     pass
+
+def conectar_banco(timeout=20, bypass_check=False):
+    """Wrapper corporativo para conexões SQLite com trava anti-criação na raiz/local."""
+    caminho_db = carregar_config().get("caminho_banco_rede", "O:/teste_ict/banco_dados_falhas.db")
+    if not bypass_check:
+        # Se o arquivo não existir fisicamente, a rede caiu ou o O: não está mapeado.
+        if not os.path.isfile(caminho_db):
+            import ctypes
+            ctypes.windll.user32.MessageBoxW(0, f"Erro Crítico: Banco de dados não encontrado no caminho:\n{caminho_db}\n\nVerifique se a unidade O: está conectada e se você tem rede.", "Erro de Conexão - ICT Master Suite", 0x10)
+            sys.exit(1) # Mata o processo imediatamente para não criar banco local.
+            
+    # NUNCA usar caminhos relativos na string de conexão do SQLite em produção.
+    return sqlite3.connect(caminho_db, timeout=timeout)
 
 def init_db():
     """Inicializa o banco de dados, cria a tabela 'falhas' e adiciona a coluna 'observacao' se não existir."""
@@ -46,7 +60,7 @@ def init_db():
         except OSError as e:
             print(f"Erro ao criar diretório do banco de dados: {e}")
     try:
-        with sqlite3.connect(DB_PATH, timeout=20) as conn:
+        with conectar_banco(timeout=20, bypass_check=True) as conn:
             cursor = conn.cursor()
             cursor.execute("PRAGMA journal_mode=WAL;")
             cursor.execute("""
@@ -137,7 +151,7 @@ def popular_modelos_iniciais(cursor):
 def validar_login(login, senha_texto):
     """Valida o login e a senha (comparando o hash) no banco de dados."""
     try:
-        with sqlite3.connect(DB_PATH, timeout=5) as conn:
+        with conectar_banco(timeout=5) as conn:
             cursor = conn.cursor()
             cursor.execute("SELECT id, nome, is_admin, senha_hash FROM usuarios WHERE login = ?", (login,))
             user = cursor.fetchone()
@@ -154,7 +168,7 @@ def validar_login(login, senha_texto):
 def listar_usuarios():
     """Retorna uma lista com todos os usuários do banco de dados (sem a senha)."""
     try:
-        with sqlite3.connect(DB_PATH, timeout=5) as conn:
+        with conectar_banco(timeout=5) as conn:
             cursor = conn.cursor()
             cursor.execute("SELECT id, nome, login, is_admin FROM usuarios ORDER BY nome")
             return [{"id": row[0], "nome": row[1], "login": row[2], "is_admin": bool(row[3])} for row in cursor.fetchall()]
@@ -166,7 +180,7 @@ def cadastrar_usuario(nome, login, senha, is_admin):
     """Cadastra um novo usuário no banco de dados. Retorna True se sucesso, False caso contrário."""
     senha_hash = hashlib.sha256(senha.encode()).hexdigest()
     try:
-        with sqlite3.connect(DB_PATH, timeout=5) as conn:
+        with conectar_banco(timeout=5) as conn:
             cursor = conn.cursor()
             cursor.execute("""
                 INSERT INTO usuarios (nome, login, senha_hash, is_admin)
@@ -184,7 +198,7 @@ def cadastrar_usuario(nome, login, senha, is_admin):
 def deletar_usuario(id_usuario):
     """Deleta um usuário pelo ID. Impede a exclusão do último admin."""
     try:
-        with sqlite3.connect(DB_PATH, timeout=5) as conn:
+        with conectar_banco(timeout=5) as conn:
             cursor = conn.cursor()
             
             # Verifica se é o último admin tentando ser excluído
@@ -206,7 +220,7 @@ def deletar_usuario(id_usuario):
 def atualizar_usuario(id_usuario, novo_nome, novo_login, nova_senha=None):
     """Atualiza um usuário existente. Se nova_senha for fornecida, atualiza a senha também."""
     try:
-        with sqlite3.connect(DB_PATH, timeout=5) as conn:
+        with conectar_banco(timeout=5) as conn:
             cursor = conn.cursor()
             if nova_senha:
                 senha_hash = hashlib.sha256(nova_senha.encode()).hexdigest()
@@ -233,7 +247,7 @@ def atualizar_usuario(id_usuario, novo_nome, novo_login, nova_senha=None):
 def adicionar_modelo(nome_modelo):
     """Adiciona um novo modelo à base de conhecimento."""
     try:
-        with sqlite3.connect(DB_PATH, timeout=5) as conn:
+        with conectar_banco(timeout=5) as conn:
             cursor = conn.cursor()
             cursor.execute("INSERT INTO modelos (nome_modelo) VALUES (?)", (nome_modelo,))
             conn.commit()
@@ -248,7 +262,7 @@ def adicionar_modelo(nome_modelo):
 def editar_modelo(id_modelo, novo_nome):
     """Edita o nome de um modelo existente."""
     try:
-        with sqlite3.connect(DB_PATH, timeout=5) as conn:
+        with conectar_banco(timeout=5) as conn:
             cursor = conn.cursor()
             cursor.execute("""
                 UPDATE modelos 
@@ -267,7 +281,7 @@ def editar_modelo(id_modelo, novo_nome):
 def listar_modelos():
     """Retorna uma lista de todos os modelos cadastrados."""
     try:
-        with sqlite3.connect(DB_PATH, timeout=5) as conn:
+        with conectar_banco(timeout=5) as conn:
             cursor = conn.cursor()
             cursor.execute("SELECT id, nome_modelo FROM modelos ORDER BY nome_modelo")
             return [{"id": row[0], "nome": row[1]} for row in cursor.fetchall()]
@@ -278,7 +292,7 @@ def listar_modelos():
 def adicionar_solucao_wiki(modelo_id, fase, sintoma, solucao, tecnico_id):
     """Adiciona uma nova solução à base de conhecimento."""
     try:
-        with sqlite3.connect(DB_PATH, timeout=5) as conn:
+        with conectar_banco(timeout=5) as conn:
             cursor = conn.cursor()
             cursor.execute("""
                 INSERT INTO wiki_reparos (modelo_id, fase, sintoma, solucao, tecnico_id)
@@ -293,7 +307,7 @@ def adicionar_solucao_wiki(modelo_id, fase, sintoma, solucao, tecnico_id):
 def buscar_solucoes_wiki(modelo_id, fase=None, busca_texto=None):
     """Busca soluções na wiki com base nos filtros fornecidos."""
     try:
-        with sqlite3.connect(DB_PATH, timeout=5) as conn:
+        with conectar_banco(timeout=5) as conn:
             cursor = conn.cursor()
             query = """
                 SELECT w.id, m.nome_modelo, w.fase, w.sintoma, w.solucao, w.tecnico_id, w.data_registro
@@ -327,7 +341,7 @@ def buscar_solucoes_wiki(modelo_id, fase=None, busca_texto=None):
 def gerar_relatorio_excel(caminho_destino):
     """Gera um arquivo Excel contendo todos os dados de falhas."""
     try:
-        with sqlite3.connect(DB_PATH, timeout=5) as conn:
+        with conectar_banco(timeout=5) as conn:
             # Lemos a tabela falhas principal
             df = pd.read_sql_query("SELECT * FROM falhas", conn)
             # Salva no arquivo designado pelo usuário
@@ -343,7 +357,7 @@ def salvar_falha_db(falha_dict):
     retry_delay = 1  # segundos
     for attempt in range(max_retries):
         try:
-            with sqlite3.connect(DB_PATH, timeout=20) as conn:
+            with conectar_banco(timeout=20) as conn:
                 cursor = conn.cursor()
                 sql = """
                     INSERT OR IGNORE INTO falhas (id, data_registro, data_falha, arquivo, serial, modelo, componente, step, status_tratativa)
@@ -365,7 +379,7 @@ def salvar_falha_db(falha_dict):
 def salvar_observacao(nome_arquivo, texto_obs, tecnico=None):
     """Salva a observação do técnico e atualiza o status de acordo."""
     try:
-        with sqlite3.connect(DB_PATH, timeout=20) as conn:
+        with conectar_banco(timeout=20) as conn:
             cursor = conn.cursor()
             # Se houver texto na observação, o status vira TRATADO, senão volta para ABERTO.
             status = 'TRATADO' if texto_obs else 'ABERTO'
@@ -384,7 +398,7 @@ def salvar_observacao(nome_arquivo, texto_obs, tecnico=None):
 def ler_observacao(nome_arquivo):
     """Lê a observação do técnico associada a um arquivo."""
     try:
-        with sqlite3.connect(DB_PATH, timeout=20) as conn:
+        with conectar_banco(timeout=20) as conn:
             cursor = conn.cursor()
             sql = "SELECT observacao FROM falhas WHERE arquivo = ? AND observacao IS NOT NULL LIMIT 1"
             cursor.execute(sql, (nome_arquivo,))
@@ -397,7 +411,7 @@ def ler_observacao(nome_arquivo):
 def buscar_historico_serial(serial):
     """Busca o histórico de análise (última observação) de um determinado serial."""
     try:
-        with sqlite3.connect(DB_PATH, timeout=20) as conn:
+        with conectar_banco(timeout=20) as conn:
             cursor = conn.cursor()
             sql = """
                 SELECT data_registro, observacao, tecnico 
@@ -431,7 +445,7 @@ def verificar_conexao_db():
 
     try:
         # Tenta uma conexão simples para garantir que não está corrupto ou bloqueado
-        with sqlite3.connect(DB_PATH, timeout=5) as conn:
+        with conectar_banco(timeout=5) as conn:
             conn.cursor().execute("PRAGMA quick_check")
         return True
     except (sqlite3.OperationalError, OSError):
@@ -457,7 +471,7 @@ def obter_estatisticas_ict():
             return stats
 
     try:
-        with sqlite3.connect(DB_PATH, timeout=20) as conn:
+        with conectar_banco(timeout=20) as conn:
             cursor = conn.cursor()
             stats['db_online'] = True
             hoje_str = datetime.now().strftime("%Y-%m-%d")
@@ -492,7 +506,7 @@ def obter_estatisticas_ict():
 def obter_ultimas_analises(limite=10):
     """Busca as últimas 'N' análises/falhas, calculando o status de tratativa."""
     try:
-        with sqlite3.connect(DB_PATH, timeout=20) as conn:
+        with conectar_banco(timeout=20) as conn:
             cursor = conn.cursor()
             # O status é definido como 'TRATADO' se houver qualquer texto na observação.
             sql = """
@@ -515,7 +529,7 @@ def obter_estatisticas_progresso():
     """Calcula o progresso de análise de falhas do dia (Abertos vs. Tratados)."""
     stats = {'abertos': 0, 'tratados': 0}
     try:
-        with sqlite3.connect(DB_PATH, timeout=20) as conn:
+        with conectar_banco(timeout=20) as conn:
             cursor = conn.cursor()
             hoje_str = datetime.now().strftime("%Y-%m-%d")
 
@@ -545,7 +559,7 @@ def obter_estatisticas_progresso():
 def limpar_analises_db():
     """Reseta todas as observações e status no banco de dados."""
     try:
-        with sqlite3.connect(DB_PATH, timeout=20) as conn:
+        with conectar_banco(timeout=20) as conn:
             cursor = conn.cursor()
             # Limpa o texto da análise e reseta o status para ABERTO
             sql = "UPDATE falhas SET observacao = NULL, status_tratativa = 'ABERTO'"

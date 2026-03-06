@@ -3,6 +3,7 @@
     "finder_agilent": "//147.1.0.95/teste_ict/ict01/defeitos",
     "monitor_source": "\\\\147.1.0.95\\teste_ict\\ict02",
     "monitor_dest": "\\\\147.1.0.95\\teste_ict\\ict02\\defeitos_tri",
+    "caminho_banco_rede": "O:/teste_ict/banco_dados_falhas.db",
     "auto_start_windows": false,
     "monitor_active": true,
     "backup_local_dir": "C:/Users/fcampos/Documents/backup_app_finder_logs",

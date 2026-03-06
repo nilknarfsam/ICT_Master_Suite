@@ -1,0 +1,9 @@
+{
+    "finder_tri": "\\\\147.1.0.95\\teste_ict\\ict02",
+    "finder_agilent": "\\\\147.1.0.95\\teste_ict\\ict01",
+    "backup_local_dir": "C:\\app_chamados\\backup_logs",
+    "caminho_update_rede": "\\\\147.1.0.95\\teste_ict\\app_updates",
+    "caminho_banco_rede": "O:/teste_ict/banco_dados_falhas.db",
+    "auto_start_windows": false,
+    "dias_retencao_cache": 30
+}
