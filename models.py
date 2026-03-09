@@ -41,12 +41,8 @@ except Exception:
 def conectar_banco(timeout=20, bypass_check=False):
     """Wrapper corporativo para conexões SQLite com trava anti-criação na raiz/local."""
     caminho_db = carregar_config().get("caminho_banco_rede", "O:/teste_ict/banco_dados_falhas.db")
-    if not bypass_check:
-        # Se o arquivo não existir fisicamente, a rede caiu ou o O: não está mapeado.
-        if not os.path.isfile(caminho_db):
-            import ctypes
-            ctypes.windll.user32.MessageBoxW(0, f"Erro Crítico: Banco de dados não encontrado no caminho:\n{caminho_db}\n\nVerifique se a unidade O: está conectada e se você tem rede.", "Erro de Conexão - ICT Master Suite", 0x10)
-            sys.exit(1) # Mata o processo imediatamente para não criar banco local.
+    if not bypass_check and not os.path.isfile(caminho_db):
+        raise OSError("Banco de dados inacessível na rede devido a queda de conexão.")
             
     # NUNCA usar caminhos relativos na string de conexão do SQLite em produção.
     return sqlite3.connect(caminho_db, timeout=timeout)

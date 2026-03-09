@@ -1,13 +1,9 @@
 {
-    "finder_tri": "//147.1.0.95/teste_ict/ict02",
-    "finder_agilent": "//147.1.0.95/teste_ict/ict01/defeitos",
-    "monitor_source": "\\\\147.1.0.95\\teste_ict\\ict02",
-    "monitor_dest": "\\\\147.1.0.95\\teste_ict\\ict02\\defeitos_tri",
+    "caminho_logs_tri": "O:/ict02",
+    "caminho_logs_agilent": "O:/ict01/defeitos",
+    "backup_local_dir": "C:\\app_chamados\\backup_logs",
+    "caminho_update_rede": "\\\\147.1.0.95\\teste_ict\\app_updates",
     "caminho_banco_rede": "O:/teste_ict/banco_dados_falhas.db",
     "auto_start_windows": false,
-    "monitor_active": true,
-    "backup_local_dir": "C:/Users/fcampos/Documents/backup_app_finder_logs",
-    "backup_mode": "on_open",
-    "keep_in_tray": false,
     "dias_retencao_cache": 30
 }

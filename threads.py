@@ -118,10 +118,13 @@ class FileLoaderThread(QThread):
     def run(self):
         try:
             self._backup_opened_file()
-            with open(self.caminho, 'r', encoding='latin1') as f:
+            # Blindagem de encodings e permissões: utf-8 com perdas controladas (ignore)
+            with open(self.caminho, 'r', encoding='utf-8', errors='ignore') as f:
                 content = f.read()
             meta = parse_metadata_inteligente(self.caminho, self.nome, content)
             self.file_loaded.emit(meta, content)
+        except PermissionError:
+            self.file_load_error.emit("Acesso negado: O arquivo está sendo gravado pelo verificador (Agilent/TRI) ou bloqueado pelo Windows.")
         except Exception as e:
             self.file_load_error.emit(f"Erro ao carregar o arquivo: {str(e)}")
 

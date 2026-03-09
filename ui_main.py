@@ -1058,6 +1058,11 @@ class MainApp(QWidget):
         self.lbl_info.setText("Buscando...")
         self.status_bar.setText("Aguarde...")
         dirs = [self.config["caminho_logs_tri"], self.config["caminho_logs_agilent"]]
+    
+        if hasattr(self, 'thread_busca') and self.thread_busca.isRunning():
+            self.thread_busca.parar()
+            self.thread_busca.wait(2000) # Aguarda até 2s para a thread antiga morrer em paz
+
         self.thread_busca = BuscaThread(termo, dirs)
         self.thread_busca.lista_arquivos.connect(self.popular_lista)
         self.thread_busca.start()
@@ -1371,6 +1376,15 @@ class MainApp(QWidget):
             QApplication.quit()
 
 if __name__ == "__main__":
+    import traceback
+    def global_exception_handler(exc_type, exc_value, exc_traceback):
+        """Captura quedas silenciosas e escreve o erro no crash_log.txt"""
+        log_path = os.path.join(os.path.dirname(os.path.abspath(sys.argv[0])), "crash_log.txt")
+        with open(log_path, "a", encoding="utf-8") as f:
+            f.write(f"\n[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] CRASH CRÍTICO:\n")
+            traceback.print_exception(exc_type, exc_value, exc_traceback, file=f)
+    sys.excepthook = global_exception_handler
+
     app = QApplication(sys.argv)
     
     while True:
