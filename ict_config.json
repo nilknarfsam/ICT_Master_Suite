@@ -5,5 +5,6 @@
     "caminho_update_rede": "\\\\147.1.0.95\\teste_ict\\app_updates",
     "caminho_banco_rede": "O:/teste_ict/banco_dados_falhas.db",
     "auto_start_windows": false,
-    "dias_retencao_cache": 30
+    "dias_retencao_cache": 30,
+    "lembrar_login": false
 }

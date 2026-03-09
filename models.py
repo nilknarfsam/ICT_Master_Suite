@@ -19,7 +19,7 @@ CONFIG_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'ict_conf
 DEFAULT_CONFIG = {
     "caminho_logs_tri": "O:/ict02",
     "caminho_logs_agilent": "O:/ict01/defeitos",
-    "backup_local_dir": r"C:\app_chamados\backup_logs",
+    "backup_local_dir": os.path.join(get_base_path(), "backup_local").replace('\\', '/'),
     "caminho_update_rede": r"\\147.1.0.95\teste_ict\app_updates",
     "caminho_banco_rede": "O:/teste_ict/banco_dados_falhas.db",
     "auto_start_windows": False,
@@ -159,6 +159,22 @@ def validar_login(login, senha_texto):
             return None
     except sqlite3.OperationalError as e:
         print(f"Erro ao validar login no banco de dados: {e}")
+        return None
+
+
+def obter_usuario_por_login(login):
+    """Busca um usuário no banco apenas pelo login, sem verificar a senha (Lembrar de Mim)."""
+    try:
+        with conectar_banco(timeout=5) as conn:
+            cursor = conn.cursor()
+            cursor.execute("SELECT id, nome, is_admin FROM usuarios WHERE login = ?", (login,))
+            user = cursor.fetchone()
+            if user:
+                id_user, nome, is_admin = user
+                return {"id": id_user, "nome": nome, "login": login, "is_admin": bool(is_admin)}
+            return None
+    except sqlite3.OperationalError as e:
+        print(f"Erro ao tentar recuperar usuario por login: {e}")
         return None
 
 def listar_usuarios():
@@ -373,23 +389,80 @@ def salvar_falha_db(falha_dict):
     return False
 
 def salvar_observacao(nome_arquivo, texto_obs, tecnico=None):
-    """Salva a observação do técnico e atualiza o status de acordo."""
+    """Salva a observação do técnico e atualiza o status de acordo em um Histórico Acumulativo."""
+    if not texto_obs.strip():
+        return True # Não salva observações vazias
+        
     try:
         with conectar_banco(timeout=20) as conn:
             cursor = conn.cursor()
-            # Se houver texto na observação, o status vira TRATADO, senão volta para ABERTO.
-            status = 'TRATADO' if texto_obs else 'ABERTO'
+            
+            # Pega a observação atual
+            cursor.execute("SELECT observacao FROM falhas WHERE arquivo = ?", (nome_arquivo,))
+            row = cursor.fetchone()
+            obs_antiga = row[0] if row and row[0] else ""
+            
+            # Cria o bloco de texto novo formatado
+            agora = datetime.now().strftime("%d/%m/%Y %H:%M")
+            nome_tecnico = tecnico if tecnico else "Local"
+            novo_bloco = f"[{agora}] Técnico: {nome_tecnico}\n{texto_obs}"
+            
+            # Concatena com a antiga, se houver
+            texto_final = f"{obs_antiga.strip()}\n\n{novo_bloco}" if obs_antiga.strip() else novo_bloco
+            status = 'TRATADO'
+            
             if tecnico is not None:
                 sql = "UPDATE falhas SET observacao = ?, status_tratativa = ?, tecnico = ? WHERE arquivo = ?"
-                cursor.execute(sql, (texto_obs, status, tecnico, nome_arquivo))
+                cursor.execute(sql, (texto_final, status, tecnico, nome_arquivo))
             else:
                 sql = "UPDATE falhas SET observacao = ?, status_tratativa = ? WHERE arquivo = ?"
-                cursor.execute(sql, (texto_obs, status, nome_arquivo))
+                cursor.execute(sql, (texto_final, status, nome_arquivo))
             conn.commit()
             return True
-    except sqlite3.OperationalError as e:
+    except (sqlite3.OperationalError, OSError) as e:
         print(f"Erro ao salvar observação no DB: {e}")
-        return False
+        try:
+            with sqlite3.connect(DB_LOCAL_PATH) as conn_local:
+                cursor_local = conn_local.cursor()
+                tipo_acao = 'NOVA_OBSERVACAO'
+                payload_json = json.dumps({"arquivo": nome_arquivo, "texto": texto_obs, "tecnico": tecnico})
+                cursor_local.execute("INSERT INTO fila_sync (tipo_acao, payload_json) VALUES (?, ?)", (tipo_acao, payload_json))
+                conn_local.commit()
+            return "OFFLINE"
+        except Exception as ex_local:
+            print(f"Erro ao salvar na fila offline: {ex_local}")
+            return False
+
+def sincronizar_fila_offline():
+    """Processa a fila de ações salvas localmente quando a rede volta."""
+    try:
+        if not os.path.exists(DB_LOCAL_PATH):
+            return
+            
+        with sqlite3.connect(DB_LOCAL_PATH) as conn_local:
+            cursor = conn_local.cursor()
+            cursor.execute("SELECT id, tipo_acao, payload_json FROM fila_sync ORDER BY data_registro ASC")
+            registros = cursor.fetchall()
+            
+            if not registros:
+                return
+                
+            if not verificar_conexao_db():
+                return
+                
+            for reg in registros:
+                id_reg, tipo_acao, payload_json = reg
+                if tipo_acao == 'NOVA_OBSERVACAO':
+                    dados = json.loads(payload_json)
+                    sucesso = salvar_observacao(dados.get("arquivo"), dados.get("texto"), dados.get("tecnico"))
+                    
+                    if sucesso is True:
+                        cursor.execute("DELETE FROM fila_sync WHERE id = ?", (id_reg,))
+                        conn_local.commit()
+                    else:
+                        break # Interrompe se a rede cair ou ocorrer outro erro
+    except Exception as e:
+        print(f"Erro no sincronizador offline: {e}")
 
 def ler_observacao(nome_arquivo):
     """Lê a observação do técnico associada a um arquivo."""
@@ -730,3 +803,26 @@ def parse_metadata_inteligente(caminho_completo, nome_arquivo, conteudo):
 
 # Chama a inicialização do DB quando o módulo é carregado para garantir que o DB e a tabela existam
 init_db()
+
+# --- Fila Offline ---
+DB_LOCAL_PATH = os.path.join(carregar_config().get("backup_local_dir", get_base_path()), "fila_offline.db").replace('\\', '/')
+
+def init_db_local():
+    """Inicializa localmente a fila de sincronizacao (Store-and-Forward)"""
+    try:
+        os.makedirs(os.path.dirname(DB_LOCAL_PATH), exist_ok=True)
+        with sqlite3.connect(DB_LOCAL_PATH) as conn:
+            cursor = conn.cursor()
+            cursor.execute("""
+                CREATE TABLE IF NOT EXISTS fila_sync (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT, 
+                    tipo_acao TEXT, 
+                    payload_json TEXT, 
+                    data_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                )
+            """)
+            conn.commit()
+    except (sqlite3.OperationalError, OSError) as e:
+        print(f"Erro ao inicializar DB local offline: {e}")
+
+init_db_local()

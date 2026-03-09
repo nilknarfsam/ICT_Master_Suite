@@ -1,0 +1,13 @@
+
+[2026-03-09 10:52:57] CRASH CRÍTICO:
+Traceback (most recent call last):
+  File "c:\finder_logs\ui_main.py", line 1459, in <module>
+    win = MainApp(start_minimized="--minimized" in sys.argv)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\finder_logs\ui_main.py", line 205, in __init__
+    self.init_ui()
+  File "c:\finder_logs\ui_main.py", line 266, in init_ui
+    self.setup_knowledge_base()
+  File "c:\finder_logs\ui_main.py", line 774, in setup_knowledge_base
+    self.btn_editar_modelo.setVisible(is_admin)
+TypeError: setVisible(self, visible: bool): argument 1 has unexpected type 'NoneType'

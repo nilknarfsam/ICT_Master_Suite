@@ -75,6 +75,9 @@ class LoginDialog(QDialog):
         self.input_senha.setEchoMode(QLineEdit.Password)
         layout.addWidget(self.input_senha)
         
+        self.chk_lembrar = QCheckBox("Manter conectado nesta máquina")
+        layout.addWidget(self.chk_lembrar)
+        
         self.btn_entrar = QPushButton("Entrar")
         self.btn_entrar.clicked.connect(self.tentar_login)
         layout.addWidget(self.btn_entrar)
@@ -90,6 +93,13 @@ class LoginDialog(QDialog):
         usuario = validar_login(login, senha)
         if usuario:
             self.usuario_logado = usuario
+            
+            from models import carregar_config, salvar_config
+            config = carregar_config()
+            config["lembrar_login"] = self.chk_lembrar.isChecked()
+            config["ultimo_login"] = login if self.chk_lembrar.isChecked() else ""
+            salvar_config(config)
+            
             self.accept()
         else:
             QMessageBox.critical(self, "Acesso Negado", "Usuário ou senha inválidos.")
@@ -183,7 +193,19 @@ class MainApp(QWidget):
         self._last_purge_date = None
         
         self.usuario_logado = usuario_logado
+        if self.config.get("lembrar_login") and self.config.get("ultimo_login"):
+            if not self.usuario_logado:
+                from models import obter_usuario_por_login
+                usr = obter_usuario_por_login(self.config["ultimo_login"])
+                if usr:
+                    self.usuario_logado = usr
+
         self.logout_solicitado = False
+        
+        # Motor de Sincronização (Store-and-Forward)
+        self.timer_sync = QTimer(self)
+        self.timer_sync.timeout.connect(self.processar_sincronizacao_background)
+        self.timer_sync.start(15000)
         
         self.init_ui()
         self.init_tray()
@@ -218,16 +240,18 @@ class MainApp(QWidget):
         h.addStretch()
         
         # Perfil do Usuário e Logout
-        nome_usuario = self.usuario_logado['nome'] if self.usuario_logado else "Local"
-        lbl_perfil = QLabel(f"👤 Técnico: {nome_usuario}")
-        lbl_perfil.setStyleSheet("font-weight: bold; color: #333; margin-right: 10px;")
-        h.addWidget(lbl_perfil)
+        nome_usuario = self.usuario_logado['nome'] if self.usuario_logado else "Visitante (Somente Leitura)"
+        self.lbl_perfil = QLabel(f"👤 Técnico: {nome_usuario}" if self.usuario_logado else f"👤 {nome_usuario}")
+        self.lbl_perfil.setObjectName("lbl_perfil")
+        self.lbl_perfil.setStyleSheet("font-weight: bold; color: #333; margin-right: 10px;")
+        h.addWidget(self.lbl_perfil)
         
-        btn_logout = QPushButton("Sair")
-        btn_logout.setObjectName("btn_logout")
-        btn_logout.setStyleSheet("background-color: #dc3545; color: white; border: none; padding: 5px 15px; border-radius: 4px; font-weight: bold;")
-        btn_logout.clicked.connect(self.fazer_logout)
-        h.addWidget(btn_logout)
+        texto_btn = "Sair" if self.usuario_logado else "Entrar"
+        self.btn_logout = QPushButton(texto_btn)
+        self.btn_logout.setObjectName("btn_logout")
+        self.btn_logout.setStyleSheet("background-color: #dc3545; color: white; border: none; padding: 5px 15px; border-radius: 4px; font-weight: bold;")
+        self.btn_logout.clicked.connect(self.fazer_logout)
+        h.addWidget(self.btn_logout)
         
         # Botão rápido para a aba (se admin) ou minimizar
         btn_hide = QPushButton("📥 Minimizar para Bandeja")
@@ -263,7 +287,7 @@ class MainApp(QWidget):
         self.tabs.addTab(self.tab_config, "⚙️ Configurações do Sistema")
         
         # Esconde as abas se não for admin
-        is_admin = self.usuario_logado and self.usuario_logado.get('is_admin', False)
+        is_admin = bool(self.usuario_logado and self.usuario_logado.get('is_admin', False))
         if not is_admin:
             self.tabs.setTabVisible(self.tabs.indexOf(self.tab_admin), False)
             self.tabs.setTabVisible(self.tabs.indexOf(self.tab_config), False)
@@ -591,15 +615,21 @@ class MainApp(QWidget):
         self.txt_history_log_viewer.setObjectName("txt_history_log_viewer")
         right_layout.addWidget(self.txt_history_log_viewer)
 
-        lbl_obs = QLabel("Observações / Análise Técnica:")
+        lbl_obs = QLabel("Histórico de Análises:")
         lbl_obs.setObjectName("lbl_obs")
         right_layout.addWidget(lbl_obs)
 
+        self.txt_history_chat = QTextEdit()
+        self.txt_history_chat.setReadOnly(True)
+        self.txt_history_chat.setObjectName("txt_history_chat")
+        right_layout.addWidget(self.txt_history_chat)
+
         self.txt_history_obs = QTextEdit()
-        self.txt_history_obs.setPlaceholderText("Digite sua análise sobre este log...")
+        self.txt_history_obs.setPlaceholderText("Digite sua nova análise aqui...")
+        self.txt_history_obs.setFixedHeight(60)
         right_layout.addWidget(self.txt_history_obs)
 
-        btn_salvar = QPushButton("💾 Atualizar Análise")
+        btn_salvar = QPushButton("� Adicionar ao Histórico")
         btn_salvar.clicked.connect(self.salvar_edicao_historico)
         right_layout.addWidget(btn_salvar)
         
@@ -630,10 +660,11 @@ class MainApp(QWidget):
             # Carrega a observação do banco de dados
             file_name = os.path.basename(file_path)
             observacao = ler_observacao(file_name)
-            self.txt_history_obs.setPlainText(observacao)
+            self.txt_history_chat.setPlainText(observacao)
 
 
     def salvar_edicao_historico(self):
+        if not self.requerer_login(): return
         if not verificar_conexao_db():
             QMessageBox.critical(self, "Rede Offline", "O banco de dados na rede está inacessível.\n\n- Verifique sua conexão com a internet/rede da empresa.\n- Certifique-se de que o servidor de arquivos está online.\n\nTente novamente em alguns instantes.")
             return
@@ -654,7 +685,14 @@ class MainApp(QWidget):
         texto_analise = self.txt_history_obs.toPlainText().strip()
         nome_usuario = self.usuario_logado['nome'] if self.usuario_logado else "Local"
 
-        if salvar_observacao(file_name, texto_analise, tecnico=nome_usuario):
+        resultado = salvar_observacao(file_name, texto_analise, tecnico=nome_usuario)
+        if resultado == "OFFLINE":
+            self.txt_history_obs.clear()
+            QMessageBox.warning(self, "Modo Offline", "Rede indisponível. Sua análise foi salva na fila local e será sincronizada assim que a rede voltar!")
+            self.status_bar.setText("Aviso: Modo Offline.")
+        elif resultado:
+            self.txt_history_obs.clear()
+            self.txt_history_chat.setPlainText(ler_observacao(file_name))
             QMessageBox.information(self, "Sucesso", "Análise atualizada com sucesso!")
         else:
             QMessageBox.critical(self, "Erro no Banco de Dados", "Não foi possível salvar a análise. O banco de dados pode estar bloqueado por outro usuário. Tente novamente.")
@@ -742,7 +780,7 @@ class MainApp(QWidget):
         self.btn_editar_modelo.setStyleSheet("background-color: #6c757d; color: white; padding: 5px;")
         self.btn_editar_modelo.clicked.connect(self.editar_modelo_selecionado)
         
-        is_admin = self.usuario_logado and self.usuario_logado.get('is_admin', False)
+        is_admin = bool(self.usuario_logado and self.usuario_logado.get('is_admin', False))
         self.btn_editar_modelo.setVisible(is_admin)
         left_layout.addWidget(self.btn_editar_modelo)
         
@@ -820,6 +858,7 @@ class MainApp(QWidget):
             self.lista_modelos.addItem(item)
             
     def adicionar_novo_modelo_ui(self):
+        if not self.requerer_login(): return
         nome_modelo, ok = QInputDialog.getText(self, "Novo Modelo", "Digite o nome do novo modelo:")
         if ok and nome_modelo.strip():
             nome_modelo_upper = nome_modelo.strip().upper()
@@ -925,6 +964,7 @@ class MainApp(QWidget):
             self.table_solucoes.resizeColumnToContents(4) # Data
 
     def adicionar_nova_solucao_ui(self):
+        if not self.requerer_login(): return
         currentItem = self.lista_modelos.currentItem()
         if not currentItem:
             QMessageBox.warning(self, "Aviso", "Selecione um modelo na lista à esquerda antes de adicionar uma solução.")
@@ -1014,17 +1054,22 @@ class MainApp(QWidget):
         self.l_right.addWidget(self.lbl_historico_alerta)
 
         # Seção de Observações do Técnico
-        lbl_obs_title = QLabel("Observações do Técnico:")
+        lbl_obs_title = QLabel("Histórico de Análises:")
         lbl_obs_title.setObjectName("lbl_obs_title")
         self.l_right.addWidget(lbl_obs_title)
 
+        self.txt_historico_chat = QTextEdit()
+        self.txt_historico_chat.setReadOnly(True)
+        self.txt_historico_chat.setObjectName("txt_historico_chat")
+        self.l_right.addWidget(self.txt_historico_chat)
+
         self.txt_observacao = QTextEdit()
-        self.txt_observacao.setPlaceholderText("Digite a análise técnica, causa da falha, solução aplicada, etc.")
+        self.txt_observacao.setPlaceholderText("Digite sua nova análise aqui...")
         self.txt_observacao.setObjectName("txt_observacao")
-        self.txt_observacao.setMinimumHeight(80)
+        self.txt_observacao.setFixedHeight(60)
         self.l_right.addWidget(self.txt_observacao)
 
-        self.btn_salvar_obs = QPushButton("Salvar Análise")
+        self.btn_salvar_obs = QPushButton("📤 Adicionar ao Histórico")
         self.btn_salvar_obs.clicked.connect(self.salvar_analise_tecnico)
         self.l_right.addWidget(self.btn_salvar_obs)
         
@@ -1132,7 +1177,7 @@ class MainApp(QWidget):
             
         # Carrega a observação existente, se houver
         obs_existente = ler_observacao(self.current_file_name)
-        self.txt_observacao.setPlainText(obs_existente)
+        self.txt_historico_chat.setPlainText(obs_existente)
         
         # Verifica histórico colaborativo da placa
         historico = buscar_historico_serial(meta.get("serial", ""))
@@ -1302,6 +1347,7 @@ class MainApp(QWidget):
 
     def salvar_analise_tecnico(self):
         """Salva o texto de análise do técnico no banco de dados."""
+        if not self.requerer_login(): return
         if not verificar_conexao_db():
             QMessageBox.critical(self, "Rede Offline", "O banco de dados na rede está inacessível.\n\n- Verifique sua conexão com a internet/rede da empresa.\n- Certifique-se de que o servidor de arquivos está online.\n\nTente novamente em alguns instantes.")
             return
@@ -1316,7 +1362,15 @@ class MainApp(QWidget):
             return
             
         nome_usuario = self.usuario_logado['nome'] if self.usuario_logado else "Local"
-        if salvar_observacao(self.current_file_name, texto, tecnico=nome_usuario):
+        
+        resultado = salvar_observacao(self.current_file_name, texto, tecnico=nome_usuario)
+        if resultado == "OFFLINE":
+            self.txt_observacao.clear()
+            QMessageBox.warning(self, "Modo Offline", "Rede indisponível. Sua observação foi salva na fila local e será sincronizada assim que a rede voltar!")
+            self.status_bar.setText("Aviso: Modo Offline.")
+        elif resultado:
+            self.txt_observacao.clear()
+            self.txt_historico_chat.setPlainText(ler_observacao(self.current_file_name))
             QMessageBox.information(self, "Sucesso", "Observação salva com sucesso no banco de dados.")
             self.status_bar.setText("Observação salva.")
         else:
@@ -1360,10 +1414,49 @@ class MainApp(QWidget):
         self.tray_icon.activated.connect(lambda r: self.showNormal() if r == QSystemTrayIcon.DoubleClick else None)
         self.tray_icon.show()
         
+    def processar_sincronizacao_background(self):
+        try:
+            from models import sincronizar_fila_offline
+            sincronizar_fila_offline()
+        except:
+            pass
+
     def fazer_logout(self):
-        """Prepara a aplicação para voltar à tela de login"""
-        self.logout_solicitado = True
-        self.close()
+        """Prepara a aplicação para voltar à tela de login ou apenas entra"""
+        if not self.usuario_logado:
+            self.requerer_login()
+            return
+            
+        self.usuario_logado = None
+        self.config["lembrar_login"] = False
+        from models import salvar_config
+        salvar_config(self.config)
+        
+        self.lbl_perfil.setText("👤 Visitante (Somente Leitura)")
+        self.btn_logout.setText("Entrar")
+        
+        self.tabs.setTabVisible(self.tabs.indexOf(self.tab_admin), False)
+        self.tabs.setTabVisible(self.tabs.indexOf(self.tab_config), False)
+        
+    def requerer_login(self):
+        """Impede o visitante de executar a ação a menos que consiga se logar."""
+        if self.usuario_logado:
+            return True
+            
+        dialog = LoginDialog()
+        if dialog.exec_() == QDialog.Accepted:
+            self.usuario_logado = dialog.usuario_logado
+            
+            # Atualiza interface
+            self.lbl_perfil.setText(f"👤 Técnico: {self.usuario_logado['nome']}")
+            self.btn_logout.setText("Sair")
+            
+            if self.usuario_logado.get('is_admin', False):
+                self.tabs.setTabVisible(self.tabs.indexOf(self.tab_admin), True)
+                self.tabs.setTabVisible(self.tabs.indexOf(self.tab_config), True)
+                
+            return True
+        return False
 
     def closeEvent(self, e):
         if self.logout_solicitado:
@@ -1386,30 +1479,5 @@ if __name__ == "__main__":
     sys.excepthook = global_exception_handler
 
     app = QApplication(sys.argv)
-    
-    while True:
-        # Evita que o app morra ao fechar o dialog de login
-        app.setQuitOnLastWindowClosed(False)
-        
-        dialog_login = LoginDialog()
-        if dialog_login.exec_() == QDialog.Accepted:
-            # O usuário logou com sucesso. Libera o fechamento de janelas novamente.
-            app.setQuitOnLastWindowClosed(True)
-
-            # Instancia a janela principal passando os dados do login
-            win = MainApp(usuario_logado=dialog_login.usuario_logado, start_minimized="--minimized" in sys.argv)
-            
-            app.exec_() # O aplicativo fica rodando aqui até a janela ser fechada
-            
-            # Verifica como a janela foi fechada
-            if hasattr(win, 'logout_solicitado') and win.logout_solicitado:
-                # Se foi via botão de logout, o loop reinicia e volta pro login
-                continue 
-            else:
-                # Se clicou no X da janela principal, quebra o loop e encerra
-                break 
-        else:
-            # Se fechou a tela de login no X ou cancelou, encerra
-            break 
-            
-    sys.exit()
+    win = MainApp(start_minimized="--minimized" in sys.argv)
+    sys.exit(app.exec_())
