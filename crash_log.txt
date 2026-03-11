@@ -11,3 +11,17 @@ Traceback (most recent call last):
   File "c:\finder_logs\ui_main.py", line 774, in setup_knowledge_base
     self.btn_editar_modelo.setVisible(is_admin)
 TypeError: setVisible(self, visible: bool): argument 1 has unexpected type 'NoneType'
+
+[2026-03-11 09:51:06] CRASH CRÍTICO:
+Traceback (most recent call last):
+  File "c:\finder_logs\ui_main.py", line 1414, in processar_sincronizacao_background
+    def processar_sincronizacao_background(self):
+    
+KeyboardInterrupt
+
+[2026-03-11 09:58:10] CRASH CRÍTICO:
+Traceback (most recent call last):
+  File "c:\finder_logs\ui_main.py", line 1419, in processar_sincronizacao_background
+    def processar_sincronizacao_background(self):
+    
+KeyboardInterrupt

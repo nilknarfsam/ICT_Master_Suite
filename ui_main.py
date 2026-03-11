@@ -175,10 +175,7 @@ class MainApp(QWidget):
         #             sys.exit(0)
         
         # --- CHECAGEM BLOQUEANTE DE BANCO DE DADOS ---
-        if not verificar_conexao_db():
-            QMessageBox.critical(None, "Erro Crítico de Rede", "Erro de Conexão: Não foi possível acessar o banco de dados no servidor rede.\n\nVerifique sua conexão e tente novamente.")
-            import sys
-            sys.exit(1)
+        # Removido para permitir inicialização offline
         
         # Executa o Garbage Collector do cache na inicialização
         limpar_cache_local()
@@ -982,7 +979,12 @@ class MainApp(QWidget):
             # Obtém o autor (logado ou Local)
             autor = self.usuario_logado['nome'] if self.usuario_logado else "Local"
             
-            if adicionar_solucao_wiki(modelo_id, fase, sintoma, solucao, autor):
+            resultado = adicionar_solucao_wiki(modelo_id, fase, sintoma, solucao, autor)
+            
+            if resultado == "OFFLINE":
+                QMessageBox.warning(self, "Modo Offline", "Rede indisponível. Sua solução foi salva na fila local e será sincronizada assim que a rede voltar!")
+                self.carregar_solucoes_do_modelo()
+            elif resultado:
                 QMessageBox.information(self, "Sucesso", "Solução adicionada à Base de Conhecimento!")
                 # Recarrega a tabela para mostrar a nova solução
                 self.carregar_solucoes_do_modelo()
@@ -1092,8 +1094,8 @@ class MainApp(QWidget):
                                     "Por favor, clique no botão '⚙️ Config' no canto superior direito para definir os diretórios do 'Finder TRI' e 'Finder Agilent'.")
             return
 
-        if len(termo) not in [10, 23]:
-            QMessageBox.warning(self, "Formato Inválido", "O serial deve ter exatamente 10 caracteres (Placa) ou 23 caracteres (Painel).")
+        if len(termo) < 5:
+            QMessageBox.warning(self, "Formato Inválido", "Digite pelo menos 5 caracteres do serial para realizar a busca.")
             return
 
         self.list_logs.clear()
@@ -1102,7 +1104,7 @@ class MainApp(QWidget):
         self.lbl_historico_alerta.setVisible(False)
         self.lbl_info.setText("Buscando...")
         self.status_bar.setText("Aguarde...")
-        dirs = [self.config["caminho_logs_tri"], self.config["caminho_logs_agilent"]]
+        dirs = [self.config.get("caminho_logs_tri", ""), self.config.get("caminho_logs_agilent", ""), self.config.get("backup_local_dir", "")]
     
         if hasattr(self, 'thread_busca') and self.thread_busca.isRunning():
             self.thread_busca.parar()

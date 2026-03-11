@@ -1,10 +1,11 @@
 {
-    "caminho_logs_tri": "O:/ict02",
-    "caminho_logs_agilent": "O:/ict01/defeitos",
-    "backup_local_dir": "C:\\app_chamados\\backup_logs",
-    "caminho_update_rede": "\\\\147.1.0.95\\teste_ict\\app_updates",
-    "caminho_banco_rede": "O:/teste_ict/banco_dados_falhas.db",
+    "caminho_logs_tri": "//147.1.0.95/teste_ict/ict02",
+    "caminho_logs_agilent": "//147.1.0.95/teste_ict/ict01/defeitos",
+    "backup_local_dir": "c:/finder_logs/backup_local",
+    "caminho_update_rede": "//147.1.0.95/teste_ict/app_updates",
+    "caminho_banco_rede": "//147.1.0.95/teste_ict/banco_dados_falhas.db",
     "auto_start_windows": false,
     "dias_retencao_cache": 30,
-    "lembrar_login": false
+    "lembrar_login": false,
+    "ultimo_login": ""
 }

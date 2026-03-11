@@ -17,18 +17,18 @@ def get_base_path():
 # --- Constantes ---
 CONFIG_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'ict_config.json')
 DEFAULT_CONFIG = {
-    "caminho_logs_tri": "O:/ict02",
-    "caminho_logs_agilent": "O:/ict01/defeitos",
+    "caminho_logs_tri": "//147.1.0.95/teste_ict/ict02",
+    "caminho_logs_agilent": "//147.1.0.95/teste_ict/ict01/defeitos",
     "backup_local_dir": os.path.join(get_base_path(), "backup_local").replace('\\', '/'),
-    "caminho_update_rede": r"\\147.1.0.95\teste_ict\app_updates",
-    "caminho_banco_rede": "O:/teste_ict/banco_dados_falhas.db",
+    "caminho_update_rede": "//147.1.0.95/teste_ict/app_updates",
+    "caminho_banco_rede": "//147.1.0.95/teste_ict/banco_dados_falhas.db",
     "auto_start_windows": False,
     "dias_retencao_cache": 30
 }
 
 # Inicializa o caminho do banco lendo do config.json se existir.
 # Fallback SEMPRE para rede para evitar bancos locais fragmentados.
-DB_PATH = "O:/teste_ict/banco_dados_falhas.db"
+DB_PATH = "//147.1.0.95/teste_ict/banco_dados_falhas.db"
 try:
     if os.path.exists(CONFIG_FILE):
         with open(CONFIG_FILE, 'r') as f:
@@ -40,7 +40,7 @@ except Exception:
 
 def conectar_banco(timeout=20, bypass_check=False):
     """Wrapper corporativo para conexões SQLite com trava anti-criação na raiz/local."""
-    caminho_db = carregar_config().get("caminho_banco_rede", "O:/teste_ict/banco_dados_falhas.db")
+    caminho_db = carregar_config().get("caminho_banco_rede", "//147.1.0.95/teste_ict/banco_dados_falhas.db")
     if not bypass_check and not os.path.isfile(caminho_db):
         raise OSError("Banco de dados inacessível na rede devido a queda de conexão.")
             
@@ -129,11 +129,55 @@ def init_db():
             cursor.execute("CREATE INDEX IF NOT EXISTS idx_arquivo ON falhas (arquivo);")
             conn.commit()
             
-            # Popular modelos iniciais se o DB for novo ou modelos não existirem
+            # Popula modelos iniciais se o DB for novo ou modelos não existirem
             popular_modelos_iniciais(cursor)
+            
+        sincronizar_espelho_local()
             
     except (sqlite3.OperationalError, OSError) as e:
         print(f"Erro ao inicializar o banco de dados: {e}")
+
+def sincronizar_espelho_local():
+    """Sincroniza os dados essenciais (usuários, modelos e wiki_reparos) para uso offline."""
+    if not verificar_conexao_db(): return
+    try:
+        with conectar_banco(timeout=5) as conn_rede:
+            usuarios_rede = conn_rede.cursor().execute("SELECT * FROM usuarios").fetchall()
+            modelos_rede = conn_rede.cursor().execute("SELECT * FROM modelos").fetchall()
+            wiki_rede = conn_rede.cursor().execute("SELECT * FROM wiki_reparos").fetchall()
+            
+        with sqlite3.connect(DB_ESPELHO_PATH) as conn_local:
+            c = conn_local.cursor()
+            
+            # Espelha Usuários
+            c.execute("CREATE TABLE IF NOT EXISTS usuarios (id INTEGER PRIMARY KEY, nome TEXT, login TEXT UNIQUE, senha_hash TEXT, is_admin INTEGER)")
+            c.execute("DELETE FROM usuarios")
+            c.executemany("INSERT INTO usuarios VALUES (?,?,?,?,?)", usuarios_rede)
+            
+            # Espelha Modelos
+            c.execute("CREATE TABLE IF NOT EXISTS modelos (id INTEGER PRIMARY KEY AUTOINCREMENT, nome_modelo TEXT UNIQUE NOT NULL)")
+            c.execute("DELETE FROM modelos")
+            c.executemany("INSERT INTO modelos VALUES (?,?)", modelos_rede)
+            
+            # Espelha Wiki Reparos
+            c.execute("""
+                CREATE TABLE IF NOT EXISTS wiki_reparos (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    modelo_id INTEGER,
+                    fase TEXT,
+                    sintoma TEXT,
+                    solucao TEXT,
+                    tecnico_id TEXT,
+                    data_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                    FOREIGN KEY (modelo_id) REFERENCES modelos(id)
+                )
+            """)
+            c.execute("DELETE FROM wiki_reparos")
+            c.executemany("INSERT INTO wiki_reparos VALUES (?,?,?,?,?,?,?)", wiki_rede)
+            
+            conn_local.commit()
+    except Exception as e:
+        print(f"Erro no espelho local: {e}")
 
 def popular_modelos_iniciais(cursor):
     """Insere a lista inicial de modelos na base de conhecimento se não existirem."""
@@ -157,9 +201,22 @@ def validar_login(login, senha_texto):
                 if senha_sujeito_hash == senha_hash_db:
                     return {"id": id_user, "nome": nome, "login": login, "is_admin": bool(is_admin)}
             return None
-    except sqlite3.OperationalError as e:
-        print(f"Erro ao validar login no banco de dados: {e}")
-        return None
+    except (sqlite3.OperationalError, OSError) as e:
+        print(f"Erro ao validar login na rede, tentando espelho local: {e}")
+        try:
+            with sqlite3.connect(DB_ESPELHO_PATH, timeout=5) as conn:
+                cursor = conn.cursor()
+                cursor.execute("SELECT id, nome, is_admin, senha_hash FROM usuarios WHERE login = ?", (login,))
+                user = cursor.fetchone()
+                if user:
+                    id_user, nome, is_admin, senha_hash_db = user
+                    senha_sujeito_hash = hashlib.sha256(senha_texto.encode()).hexdigest()
+                    if senha_sujeito_hash == senha_hash_db:
+                        return {"id": id_user, "nome": nome, "login": login, "is_admin": bool(is_admin)}
+                return None
+        except sqlite3.OperationalError as e_local:
+            print(f"Erro ao validar login no espelho local: {e_local}")
+            return None
 
 
 def obter_usuario_por_login(login):
@@ -173,9 +230,20 @@ def obter_usuario_por_login(login):
                 id_user, nome, is_admin = user
                 return {"id": id_user, "nome": nome, "login": login, "is_admin": bool(is_admin)}
             return None
-    except sqlite3.OperationalError as e:
-        print(f"Erro ao tentar recuperar usuario por login: {e}")
-        return None
+    except (sqlite3.OperationalError, OSError) as e:
+        print(f"Erro ao tentar recuperar usuario por login na rede, tentando espelho: {e}")
+        try:
+            with sqlite3.connect(DB_ESPELHO_PATH, timeout=5) as conn:
+                cursor = conn.cursor()
+                cursor.execute("SELECT id, nome, is_admin FROM usuarios WHERE login = ?", (login,))
+                user = cursor.fetchone()
+                if user:
+                    id_user, nome, is_admin = user
+                    return {"id": id_user, "nome": nome, "login": login, "is_admin": bool(is_admin)}
+                return None
+        except sqlite3.OperationalError as e_local:
+            print(f"Erro ao recuperar usuario por login no espelho: {e_local}")
+            return None
 
 def listar_usuarios():
     """Retorna uma lista com todos os usuários do banco de dados (sem a senha)."""
@@ -297,9 +365,16 @@ def listar_modelos():
             cursor = conn.cursor()
             cursor.execute("SELECT id, nome_modelo FROM modelos ORDER BY nome_modelo")
             return [{"id": row[0], "nome": row[1]} for row in cursor.fetchall()]
-    except sqlite3.OperationalError as e:
-        print(f"Erro ao listar modelos: {e}")
-        return []
+    except (sqlite3.OperationalError, OSError) as e:
+        print(f"Erro ao listar modelos na rede, tentando espelho: {e}")
+        try:
+            with sqlite3.connect(DB_ESPELHO_PATH, timeout=5) as conn:
+                cursor = conn.cursor()
+                cursor.execute("SELECT id, nome_modelo FROM modelos ORDER BY nome_modelo")
+                return [{"id": row[0], "nome": row[1]} for row in cursor.fetchall()]
+        except sqlite3.OperationalError as e_local:
+            print(f"Erro ao listar modelos no espelho: {e_local}")
+            return []
 
 def adicionar_solucao_wiki(modelo_id, fase, sintoma, solucao, tecnico_id):
     """Adiciona uma nova solução à base de conhecimento."""
@@ -312,9 +387,22 @@ def adicionar_solucao_wiki(modelo_id, fase, sintoma, solucao, tecnico_id):
             """, (modelo_id, fase, sintoma, solucao, tecnico_id))
             conn.commit()
             return True
-    except sqlite3.OperationalError as e:
-        print(f"Erro ao adicionar solução: {e}")
-        return False
+    except (sqlite3.OperationalError, OSError) as e:
+        print(f"Erro ao adicionar solução na rede, salvando na fila offline: {e}")
+        try:
+            with sqlite3.connect(DB_LOCAL_PATH) as conn_local:
+                cursor_local = conn_local.cursor()
+                tipo_acao = 'NOVA_SOLUCAO'
+                payload_json = json.dumps({
+                    "modelo_id": modelo_id, "fase": fase, 
+                    "sintoma": sintoma, "solucao": solucao, "tecnico_id": tecnico_id
+                })
+                cursor_local.execute("INSERT INTO fila_sync (tipo_acao, payload_json) VALUES (?, ?)", (tipo_acao, payload_json))
+                conn_local.commit()
+            return "OFFLINE"
+        except Exception as ex_local:
+            print(f"Erro ao salvar solução na fila offline: {ex_local}")
+            return False
 
 def buscar_solucoes_wiki(modelo_id, fase=None, busca_texto=None):
     """Busca soluções na wiki com base nos filtros fornecidos."""
@@ -346,9 +434,38 @@ def buscar_solucoes_wiki(modelo_id, fase=None, busca_texto=None):
                 "sintoma": row[3], "solucao": row[4], 
                 "tecnico": row[5], "data": row[6]
             } for row in cursor.fetchall()]
-    except sqlite3.OperationalError as e:
-        print(f"Erro ao buscar soluções: {e}")
-        return []
+    except (sqlite3.OperationalError, OSError) as e:
+        print(f"Erro ao buscar soluções na rede, tentando espelho: {e}")
+        try:
+            with sqlite3.connect(DB_ESPELHO_PATH, timeout=5) as conn:
+                cursor = conn.cursor()
+                query = """
+                    SELECT w.id, m.nome_modelo, w.fase, w.sintoma, w.solucao, w.tecnico_id, w.data_registro
+                    FROM wiki_reparos w
+                    JOIN modelos m ON w.modelo_id = m.id
+                    WHERE 1=1
+                """
+                params = []
+                if modelo_id:
+                    query += " AND w.modelo_id = ?"
+                    params.append(modelo_id)
+                if fase and fase != 'Todos':
+                    query += " AND w.fase = ?"
+                    params.append(fase)
+                if busca_texto:
+                    query += " AND (w.sintoma LIKE ? OR w.solucao LIKE ?)"
+                    params.extend([f"%{busca_texto}%", f"%{busca_texto}%"])
+                    
+                query += " ORDER BY w.data_registro DESC"
+                cursor.execute(query, params)
+                return [{
+                    "id": row[0], "modelo": row[1], "fase": row[2], 
+                    "sintoma": row[3], "solucao": row[4], 
+                    "tecnico": row[5], "data": row[6]
+                } for row in cursor.fetchall()]
+        except sqlite3.OperationalError as e_local:
+            print(f"Erro ao buscar soluções no espelho: {e_local}")
+            return []
 
 def gerar_relatorio_excel(caminho_destino):
     """Gera um arquivo Excel contendo todos os dados de falhas."""
@@ -461,6 +578,19 @@ def sincronizar_fila_offline():
                         conn_local.commit()
                     else:
                         break # Interrompe se a rede cair ou ocorrer outro erro
+                elif tipo_acao == 'NOVA_SOLUCAO':
+                    dados = json.loads(payload_json)
+                    sucesso = adicionar_solucao_wiki(
+                        dados.get("modelo_id"), dados.get("fase"),
+                        dados.get("sintoma"), dados.get("solucao"),
+                        dados.get("tecnico_id")
+                    )
+                    
+                    if sucesso is True:
+                        cursor.execute("DELETE FROM fila_sync WHERE id = ?", (id_reg,))
+                        conn_local.commit()
+                    else:
+                        break # Interrompe fluxo de rede
     except Exception as e:
         print(f"Erro no sincronizador offline: {e}")
 
@@ -801,11 +931,12 @@ def parse_metadata_inteligente(caminho_completo, nome_arquivo, conteudo):
     # Retorno Fallback Padrão em caso de erro extremo na Factory
     return {"tipo": tipo, "data": "N/A", "serial": "N/A", "modelo": "N/A", "status": "UNKNOWN", "cor": "black"}
 
-# Chama a inicialização do DB quando o módulo é carregado para garantir que o DB e a tabela existam
-init_db()
-
-# --- Fila Offline ---
+# --- Fila Offline e Espelho Local ---
 DB_LOCAL_PATH = os.path.join(carregar_config().get("backup_local_dir", get_base_path()), "fila_offline.db").replace('\\', '/')
+DB_ESPELHO_PATH = os.path.join(carregar_config().get("backup_local_dir", get_base_path()), "espelho_local.db").replace('\\', '/')
+
+# Chama a inicialização do DB e do Espelho
+init_db()
 
 def init_db_local():
     """Inicializa localmente a fila de sincronizacao (Store-and-Forward)"""
