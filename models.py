@@ -2,6 +2,7 @@ import os
 import sys
 import json
 import sqlite3
+import socket
 import time
 import hashlib
 from datetime import datetime
@@ -38,23 +39,38 @@ try:
 except Exception:
     pass
 
+def servidor_online(caminho, timeout=1):
+    """Verifica rapidamente via socket se o IP está acessível para evitar travamentos do Windows."""
+    if not caminho.startswith("//") and not caminho.startswith("\\\\"):
+        return True # Caminho local
+    
+    partes = caminho.replace('\\\\', '/').split('/')
+    if len(partes) > 2:
+        ip_host = partes[2]
+        try:
+            with socket.create_connection((ip_host, 445), timeout=timeout):
+                return True
+        except OSError:
+            return False
+    return True
+
 def conectar_banco(timeout=20, bypass_check=False):
     """Wrapper corporativo para conexões SQLite com trava anti-criação na raiz/local."""
     caminho_db = carregar_config().get("caminho_banco_rede", "//147.1.0.95/teste_ict/banco_dados_falhas.db")
-    if not bypass_check and not os.path.isfile(caminho_db):
-        raise OSError("Banco de dados inacessível na rede devido a queda de conexão.")
+    if not bypass_check:
+        if not servidor_online(caminho_db) or not os.path.isfile(caminho_db):
+            raise OSError("Banco de dados inacessível na rede devido a queda de conexão.")
             
     # NUNCA usar caminhos relativos na string de conexão do SQLite em produção.
     return sqlite3.connect(caminho_db, timeout=timeout)
 
 def init_db():
     """Inicializa o banco de dados, cria a tabela 'falhas' e adiciona a coluna 'observacao' se não existir."""
+    caminho_db = carregar_config().get("caminho_banco_rede", DB_PATH)
+    if not servidor_online(caminho_db):
+        return
+
     pasta_db = os.path.dirname(DB_PATH)
-    if pasta_db:
-        try:
-            os.makedirs(pasta_db, exist_ok=True)
-        except OSError as e:
-            print(f"Erro ao criar diretório do banco de dados: {e}")
     try:
         with conectar_banco(timeout=20, bypass_check=True) as conn:
             cursor = conn.cursor()
@@ -252,7 +268,7 @@ def listar_usuarios():
             cursor = conn.cursor()
             cursor.execute("SELECT id, nome, login, is_admin FROM usuarios ORDER BY nome")
             return [{"id": row[0], "nome": row[1], "login": row[2], "is_admin": bool(row[3])} for row in cursor.fetchall()]
-    except sqlite3.OperationalError as e:
+    except (sqlite3.OperationalError, OSError) as e:
         print(f"Erro ao listar usuários do banco de dados: {e}")
         return []
 
@@ -366,14 +382,14 @@ def listar_modelos():
             cursor.execute("SELECT id, nome_modelo FROM modelos ORDER BY nome_modelo")
             return [{"id": row[0], "nome": row[1]} for row in cursor.fetchall()]
     except (sqlite3.OperationalError, OSError) as e:
-        print(f"Erro ao listar modelos na rede, tentando espelho: {e}")
+        print(f"Rede offline. Lendo modelos do espelho local: {e}")
         try:
             with sqlite3.connect(DB_ESPELHO_PATH, timeout=5) as conn:
                 cursor = conn.cursor()
                 cursor.execute("SELECT id, nome_modelo FROM modelos ORDER BY nome_modelo")
                 return [{"id": row[0], "nome": row[1]} for row in cursor.fetchall()]
-        except sqlite3.OperationalError as e_local:
-            print(f"Erro ao listar modelos no espelho: {e_local}")
+        except Exception as ex:
+            print(f"Erro ao ler modelos do espelho: {ex}")
             return []
 
 def adicionar_solucao_wiki(modelo_id, fase, sintoma, solucao, tecnico_id):
@@ -463,8 +479,8 @@ def buscar_solucoes_wiki(modelo_id, fase=None, busca_texto=None):
                     "sintoma": row[3], "solucao": row[4], 
                     "tecnico": row[5], "data": row[6]
                 } for row in cursor.fetchall()]
-        except sqlite3.OperationalError as e_local:
-            print(f"Erro ao buscar soluções no espelho: {e_local}")
+        except Exception as ex:
+            print(f"Erro ao buscar soluções no espelho: {ex}")
             return []
 
 def gerar_relatorio_excel(caminho_destino):
@@ -630,6 +646,9 @@ def buscar_historico_serial(serial):
 
 def verificar_conexao_db():
     """Verifica se o arquivo do banco de dados está acessível na rede estipulada."""
+    if not servidor_online(DB_PATH):
+        return False
+
     pasta_db = os.path.dirname(DB_PATH)
     
     # Requisito rigoroso: se a pasta de rede não existe, aborta. NUNCA crie db local de fallback.
@@ -720,7 +739,7 @@ def obter_ultimas_analises(limite=10):
             """
             cursor.execute(sql, (limite,))
             return cursor.fetchall()
-    except sqlite3.OperationalError as e:
+    except (sqlite3.OperationalError, OSError) as e:
         print(f"Erro ao obter últimas análises do DB: {e}")
         return []
 
@@ -955,5 +974,22 @@ def init_db_local():
             conn.commit()
     except (sqlite3.OperationalError, OSError) as e:
         print(f"Erro ao inicializar DB local offline: {e}")
+
+    try:
+        os.makedirs(os.path.dirname(DB_ESPELHO_PATH), exist_ok=True)
+        with sqlite3.connect(DB_ESPELHO_PATH) as conn_espelho:
+            c = conn_espelho.cursor()
+            c.execute("CREATE TABLE IF NOT EXISTS usuarios (id INTEGER PRIMARY KEY, nome TEXT, login TEXT UNIQUE, senha_hash TEXT, is_admin INTEGER)")
+            c.execute("CREATE TABLE IF NOT EXISTS modelos (id INTEGER PRIMARY KEY AUTOINCREMENT, nome_modelo TEXT UNIQUE NOT NULL)")
+            c.execute("CREATE TABLE IF NOT EXISTS wiki_reparos (id INTEGER PRIMARY KEY AUTOINCREMENT, modelo_id INTEGER, fase TEXT, sintoma TEXT, solucao TEXT, tecnico_id TEXT, data_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP)")
+
+            # Injeta o Admin de segurança caso o espelho local esteja vazio
+            c.execute("SELECT COUNT(*) FROM usuarios")
+            if c.fetchone()[0] == 0:
+                admin_hash = hashlib.sha256('admin123'.encode()).hexdigest()
+                c.execute("INSERT INTO usuarios (nome, login, senha_hash, is_admin) VALUES (?, ?, ?, ?)", ('Administrador Local', 'admin', admin_hash, 1))
+            conn_espelho.commit()
+    except Exception as e:
+        print(f"Erro ao inicializar espelho de segurança: {e}")
 
 init_db_local()

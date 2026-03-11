@@ -6,6 +6,5 @@
     "caminho_banco_rede": "//147.1.0.95/teste_ict/banco_dados_falhas.db",
     "auto_start_windows": false,
     "dias_retencao_cache": 30,
-    "lembrar_login": false,
-    "ultimo_login": ""
+    "keep_in_tray": false
 }
