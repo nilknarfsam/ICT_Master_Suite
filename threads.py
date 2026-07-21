@@ -8,7 +8,6 @@ from PyQt5.QtCore import QThread, pyqtSignal
 from models import (
     detectar_tipo_log,
     parse_metadata_inteligente,
-    obter_estatisticas_ict,
     salvar_falha_db,
     init_db
 )
