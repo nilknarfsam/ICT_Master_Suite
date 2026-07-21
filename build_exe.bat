@@ -1,17 +1,16 @@
 @echo off
-chcp 65001 >nul
-
 echo =========================================================
-echo Iniciando a compilação do ICT Master Suite (OneDir)...
+echo Compilando ICT Master Suite (OneFile - Sem Console)...
 echo =========================================================
 
 call .venv\Scripts\activate
 
-echo Limpando builds antigos e compilando...
-pyinstaller --clean --onedir --noconsole -n "ICT_Master_Suite" ui_main.py
+.venv\Scripts\pyinstaller.exe --clean --onefile --noconsole --icon=icon.ico --add-data "icon.ico;." --add-data "style.qss;." -n "ICT_Master_Suite" ui_main.py
+
+if exist dist\ICT_Master_Suite.exe (
+    copy /Y dist\ICT_Master_Suite.exe ICT_Master_Suite.exe
+)
 
 echo =========================================================
-echo Compilação concluída!
-echo A pasta do sistema estará dentro de "dist".
+echo Compilacao concluida!
 echo =========================================================
-pause

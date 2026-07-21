@@ -1,10 +1,10 @@
 {
-    "caminho_logs_tri": "//147.1.0.95/teste_ict/ict02",
+    "caminho_logs_tri": "//147.1.0.95/teste_ict/ict02/defeitos_tri",
     "caminho_logs_agilent": "//147.1.0.95/teste_ict/ict01/defeitos",
-    "backup_local_dir": "c:/finder_logs/backup_local",
-    "caminho_update_rede": "//147.1.0.95/teste_ict/app_updates",
+    "caminho_copia_origem": "//147.1.0.95/teste_ict/ict02",
+    "caminho_copia_destino": "//147.1.0.95/teste_ict/ict02/defeitos_tri",
     "caminho_banco_rede": "//147.1.0.95/teste_ict/banco_dados_falhas.db",
     "auto_start_windows": false,
-    "dias_retencao_cache": 30,
-    "keep_in_tray": false
+    "keep_in_tray": false,
+    "auto_copia_tri_defeitos": true
 }

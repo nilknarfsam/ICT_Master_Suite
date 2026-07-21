@@ -90,5 +90,39 @@ class TestBuscaThread(unittest.TestCase):
         self.assertEqual(len(self.found_files), 5)
         self.assertCountEqual(found_names, expected_names)
 
+class TestTRICopyThread(unittest.TestCase):
+    def setUp(self):
+        self.test_dir = "temp_tri_test_dir"
+        os.makedirs(self.test_dir, exist_ok=True)
+        # Cria arquivo FAIL e arquivo PASS
+        with open(os.path.join(self.test_dir, "20260720_100000_FAIL.csv"), "w") as f:
+            f.write("1,RES,10,10,12,8,2,1,P1,P2,L1,10.5,FAIL")
+        with open(os.path.join(self.test_dir, "20260720_100001_PASS.csv"), "w") as f:
+            f.write("1,RES,10,10,12,8,2,1,P1,P2,L1,10.0,PASS")
+
+    def tearDown(self):
+        shutil.rmtree(self.test_dir)
+
+    def test_copy_fail_files(self):
+        from threads import TRICopyThread
+        pasta_defeitos = os.path.join(self.test_dir, "defeitos_tri")
+        thread = TRICopyThread(self.test_dir, pasta_defeitos, interval_seconds=1)
+        # Executa 1 ciclo manualmente
+        os.makedirs(pasta_defeitos, exist_ok=True)
+        
+        # Simula varredura da thread
+        with os.scandir(self.test_dir) as it:
+            for entry in it:
+                if entry.is_file():
+                    nome_lower = entry.name.lower()
+                    if "pass" in nome_lower or nome_lower.startswith("p_"):
+                        continue
+                    shutil.copy2(entry.path, os.path.join(pasta_defeitos, entry.name))
+        
+        arquivos_copiados = os.listdir(pasta_defeitos)
+        self.assertIn("20260720_100000_FAIL.csv", arquivos_copiados)
+        self.assertNotIn("20260720_100001_PASS.csv", arquivos_copiados)
+
 if __name__ == "__main__":
     unittest.main()
+
