@@ -454,8 +454,10 @@ class MainApp(QWidget):
 
         self.list_logs.clear()
         self.text_raw.clear()
-        self.lbl_info.setText("Buscando...")
-        self.status_bar.setText("Aguarde...")
+        self.arquivos_mapa.clear()
+        self.todos_arquivos = []
+        self.lbl_info.setText("Buscando logs em tempo real...")
+        self.status_bar.setText("Varrendo rede...")
         
         dirs = [self.config.get("caminho_logs_tri", ""), self.config.get("caminho_logs_agilent", "")]
     
@@ -464,9 +466,18 @@ class MainApp(QWidget):
             self.thread_busca.wait(2000)
 
         self.thread_busca = BuscaThread(termo, dirs)
+        self.thread_busca.arquivo_encontrado.connect(self.adicionar_arquivo_streaming)
         self.thread_busca.lista_arquivos.connect(self.popular_lista)
         self.thread_busca.start()
-        
+
+    def adicionar_arquivo_streaming(self, nome, caminho):
+        """Adiciona o arquivo encontrado à lista em tempo real sem esperar a busca terminar."""
+        if nome not in self.arquivos_mapa:
+            self.arquivos_mapa[nome] = caminho
+            self.list_logs.addItem(nome)
+            self.lbl_info.setText("Arquivos sendo encontrados... Selecione um da lista.")
+            self.status_bar.setText(f"{self.list_logs.count()} arquivo(s) encontrado(s)...")
+
     def popular_lista(self, arquivos):
         self.todos_arquivos = arquivos or []
         self.log_console(f"Busca efetuada para serial '{self.input_serial.text().strip()}'. Encontrados: {len(self.todos_arquivos)} arquivo(s).", nivel="BUSCA")

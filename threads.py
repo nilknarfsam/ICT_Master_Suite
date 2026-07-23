@@ -35,8 +35,9 @@ def _safe_copy(src, dst):
         return False
 
 class BuscaThread(QThread):
-    """Thread para buscar arquivos otimizada para rede (scandir) com controle de profundidade."""
+    """Thread para buscar arquivos por serial com streaming em tempo real e ordenação por data."""
     lista_arquivos = pyqtSignal(list)
+    arquivo_encontrado = pyqtSignal(str, str) # Emite (nome, caminho) em tempo real!
     status_msg = pyqtSignal(str)
 
     def __init__(self, termo, diretorios):
@@ -58,8 +59,7 @@ class BuscaThread(QThread):
                     
                     try:
                         if entry.is_dir(follow_symlinks=False):
-                            # Otimização: Pula a pasta de defeitos TRI para evitar duplicidade de resultados
-                            if "defeitos_tri" in entry.name.lower():
+                            if "defeitos_tri" in entry.name.lower() and depth > 0:
                                 continue
                             resultados.extend(self._scandir_recursivo(entry.path, depth + 1))
                         
@@ -72,6 +72,8 @@ class BuscaThread(QThread):
                                 
                                 ts = entry.stat().st_mtime
                                 resultados.append((ts, entry.name, entry.path))
+                                # Streaming em tempo real para a UI exibir imediatamente sem esperar o fim da busca
+                                self.arquivo_encontrado.emit(entry.name, entry.path)
                                 
                     except (PermissionError, OSError):
                         continue
@@ -81,7 +83,7 @@ class BuscaThread(QThread):
         return resultados
 
     def run(self):
-        self.status_msg.emit("Iniciando varredura (Filtro: Apenas Falhas)...")
+        self.status_msg.emit("Iniciando varredura por serial (Streaming Ativo)...")
         encontrados = []
         
         for diretorio in self.diretorios:
@@ -121,11 +123,11 @@ class FileLoaderThread(QThread):
 
 
 class TRICopyThread(QThread):
-    """Thread em segundo plano que varre a pasta de origem e copia falhas para a pasta de destino."""
+    """Thread em segundo plano que varre a pasta de origem e copia falhas para a pasta de destino priorizando arquivos recentes."""
     log_msg = pyqtSignal(str)
     status_changed = pyqtSignal(str) # "EXECUTANDO", "PAUSADO", "PARADO"
 
-    def __init__(self, caminho_origem, caminho_destino, interval_seconds=30, parent=None):
+    def __init__(self, caminho_origem, caminho_destino, interval_seconds=15, parent=None):
         super().__init__(parent)
         self.caminho_origem = caminho_origem.replace('\\', '/') if caminho_origem else ""
         self.caminho_destino = caminho_destino.replace('\\', '/') if caminho_destino else ""
@@ -152,34 +154,45 @@ class TRICopyThread(QThread):
                     if self.caminho_origem and os.path.exists(self.caminho_origem):
                         os.makedirs(self.caminho_destino, exist_ok=True)
                         
+                        # Coleta os arquivos e ordena por data de modificação recente primeiro
+                        candidatos = []
                         with os.scandir(self.caminho_origem) as it:
                             for entry in it:
                                 if not self.rodando or self.pausado:
                                     break
                                 if entry.is_file(follow_symlinks=False):
-                                    # Pula arquivos se já estiverem dentro da pasta de destino para evitar loops
                                     if self.caminho_destino in entry.path.replace('\\', '/'):
                                         continue
-                                        
                                     nome_lower = entry.name.lower()
                                     if nome_lower.endswith((".csv", ".dcl", ".txt", ".log")):
                                         if "pass" in nome_lower or nome_lower.startswith("p_"):
                                             continue
-                                        
-                                        dst_file = os.path.join(self.caminho_destino, entry.name).replace('\\', '/')
-                                        
-                                        if os.path.exists(dst_file):
-                                            try:
-                                                if os.path.getsize(dst_file) == entry.stat().st_size:
-                                                    continue
-                                            except OSError:
-                                                pass
-                                                
-                                        if _wait_file_stable(entry.path):
-                                            if _safe_copy(entry.path, dst_file):
-                                                self.log_msg.emit(f"Copiado para defeitos_tri: {entry.name}")
-                                            else:
-                                                self.log_msg.emit(f"Falha de permissão ao copiar {entry.name} para defeitos_tri.")
+                                        try:
+                                            mtime = entry.stat().st_mtime
+                                            candidatos.append((mtime, entry))
+                                        except OSError:
+                                            pass
+
+                        # Prioriza os arquivos mais recentes primeiro
+                        candidatos.sort(key=lambda x: x[0], reverse=True)
+
+                        for _, entry in candidatos:
+                            if not self.rodando or self.pausado:
+                                break
+                            dst_file = os.path.join(self.caminho_destino, entry.name).replace('\\', '/')
+                            
+                            if os.path.exists(dst_file):
+                                try:
+                                    if os.path.getsize(dst_file) == entry.stat().st_size:
+                                        continue
+                                except OSError:
+                                    pass
+                                    
+                            if _wait_file_stable(entry.path):
+                                if _safe_copy(entry.path, dst_file):
+                                    self.log_msg.emit(f"Copiado para defeitos_tri: {entry.name}")
+                                else:
+                                    self.log_msg.emit(f"Falha de permissão ao copiar {entry.name} para defeitos_tri.")
                     elif self.caminho_origem and not os.path.exists(self.caminho_origem):
                         self.log_msg.emit(f"Diretório de origem TRI inacessível: {self.caminho_origem}")
                 except Exception as e:
@@ -209,7 +222,7 @@ class NetworkMonitorThread(QThread):
     def check_connection(self):
         try:
             sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            sock.settimeout(1.5) # Otimização: Timeout agressivo de 1.5s
+            sock.settimeout(1.5)
             res = sock.connect_ex((self.target_host, 445))
             sock.close()
             return res == 0
