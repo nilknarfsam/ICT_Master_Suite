@@ -258,6 +258,7 @@ def extrair_diagnostico_inteligente(meta, conteudo):
         "coordenadas": [],
         "curtos": [],
         "pinos_abertos": [],
+        "secoes": [],
         "total_erros": 0
     }
     
@@ -267,7 +268,7 @@ def extrair_diagnostico_inteligente(meta, conteudo):
     linhas = conteudo.splitlines()
     tipo = meta.get("tipo", "TRI")
 
-    for linha in linhas:
+    for i, linha in enumerate(linhas):
         linha_strip = linha.strip()
         if not linha_strip:
             continue
@@ -279,14 +280,19 @@ def extrair_diagnostico_inteligente(meta, conteudo):
                 diagnostico["total_erros"] += 1
                 partes_parts = re.findall(r'Parts:([A-Za-z0-9_\.]+)', linha_strip)
                 for comp in partes_parts:
-                    if comp not in diagnostico["componentes"]:
-                        diagnostico["componentes"].append(comp)
+                    comp_clean = comp.rstrip('/')
+                    if comp_clean and not comp_clean.isdigit() and comp_clean not in diagnostico["componentes"]:
+                        diagnostico["componentes"].append(comp_clean)
             elif "," in linha_strip:
                 partes = [p.strip() for p in linha_strip.split(",")]
+                # Pula a linha 1 de cabeçalho do CSV (não extrair o step count / modelo_id como componente)
+                if i == 0:
+                    continue
                 if len(partes) >= 11 and partes[0].isdigit():
-                    comp = partes[1]
+                    comp = partes[1].rstrip('/')
                     coord = partes[10]
-                    if comp and comp not in diagnostico["componentes"]:
+                    # Garante que não é apenas um número puro
+                    if comp and not comp.isdigit() and comp not in diagnostico["componentes"]:
                         diagnostico["componentes"].append(comp)
                         diagnostico["total_erros"] += 1
                     if coord and re.match(r'^[A-Z][0-9]+$', coord) and coord not in diagnostico["coordenadas"]:
@@ -294,17 +300,41 @@ def extrair_diagnostico_inteligente(meta, conteudo):
 
         # --- AGILENT TXT ---
         elif tipo == "AGILENT":
-            if "Short #" in linha_strip or "From:" in linha_strip or "To:" in linha_strip:
-                if "From:" in linha_strip:
-                    diagnostico["curtos"].append(linha_strip)
+            # Identificação de Seções (TestJet, Shorts, CHEK-POINT)
+            if "TestJet Report" in linha_strip:
+                if "TestJet" not in diagnostico["secoes"]: diagnostico["secoes"].append("TestJet")
+            elif "Shorts Report" in linha_strip:
+                if "Shorts" not in diagnostico["secoes"]: diagnostico["secoes"].append("Shorts")
+            elif "CHEK-POINT Report" in linha_strip:
+                if "CHEK-POINT/Pins" not in diagnostico["secoes"]: diagnostico["secoes"].append("CHEK-POINT/Pins")
+
+            # 1. TestJet Devices (ex: Open #1 Device jtp1)
+            dev_match = re.search(r'Device\s+([A-Za-z0-9_]+)', linha_strip, re.IGNORECASE)
+            if dev_match:
+                device_name = dev_match.group(1).upper()
+                if device_name not in diagnostico["componentes"]:
+                    diagnostico["componentes"].append(device_name)
                     diagnostico["total_erros"] += 1
-            elif "Failed Open #" in linha_strip:
+
+            # 2. Componentes com HAS FAILED (ex: pc1591 HAS FAILED)
+            failed_comp_match = re.search(r'^([A-Za-z0-9_]+)\s+HAS FAILED', linha_strip, re.IGNORECASE)
+            if failed_comp_match:
+                comp_name = failed_comp_match.group(1).upper()
+                if comp_name not in diagnostico["componentes"]:
+                    diagnostico["componentes"].append(comp_name)
+                    diagnostico["total_erros"] += 1
+
+            # 3. Curtos em Agilent
+            if "From:" in linha_strip or "To:" in linha_strip:
+                diagnostico["curtos"].append(linha_strip)
                 diagnostico["total_erros"] += 1
-            elif re.search(r'\b[a-z0-9_]+\.[0-9A-Z]+\b', linha_strip):
-                comps = re.findall(r'\b([a-zA-Z0-9_]+)\.[0-9A-Z]+\b', linha_strip)
-                for comp in comps:
+
+            # 4. Failed Open Pinos (ex: (202118) N77290809 cv3.2 qh2.G rt4.1)
+            if re.search(r'\b[a-zA-Z0-9_]+\.[0-9A-Z]+\b', linha_strip):
+                pin_comps = re.findall(r'\b([a-zA-Z0-9_]+)\.[0-9A-Z]+\b', linha_strip)
+                for comp in pin_comps:
                     comp_upper = comp.upper()
-                    if comp_upper not in diagnostico["componentes"] and len(comp_upper) >= 2:
+                    if comp_upper not in diagnostico["componentes"] and len(comp_upper) >= 2 and not comp_upper.isdigit():
                         diagnostico["componentes"].append(comp_upper)
 
     return diagnostico

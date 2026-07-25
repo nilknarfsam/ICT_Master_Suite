@@ -465,6 +465,7 @@ class MainApp(QWidget):
         comps_str = ", ".join(diag.get("componentes", [])) if diag.get("componentes") else "Nenhum componente específico"
         coords_str = ", ".join(diag.get("coordenadas", [])) if diag.get("coordenadas") else "N/A"
         curtos_str = "\n".join([f"  • {c}" for c in diag.get("curtos", [])]) if diag.get("curtos") else "Nenhum curto-circuito reportado"
+        secoes_str = ", ".join(diag.get("secoes", [])) if diag.get("secoes") else "N/A"
 
         texto_laudo = f"""=========================================================
 [DIAGNÓSTICO DE FALHA - ICT MASTER SUITE]
@@ -474,6 +475,7 @@ class MainApp(QWidget):
 • Modelo        : {meta.get('modelo', 'N/A')}
 • Data do Teste : {meta.get('data', 'N/A')}
 • Status Geral  : {meta.get('status', 'N/A')}
+• Seções Afetadas: {secoes_str}
 ---------------------------------------------------------
 • Componentes Afetados : {comps_str}
 • Setores / Coordenadas: {coords_str}
@@ -623,14 +625,15 @@ class MainApp(QWidget):
         if termo_serial and len(termo_serial) >= 3:
             escaped = re.sub(re.escape(termo_serial), r'<mark style="background-color: #fff3cd; color: #856404; font-weight: bold; padding: 1px 4px; border-radius: 3px;">\g<0></mark>', escaped, flags=re.IGNORECASE)
 
-        # Realce por categorias de componentes (Resistores, Capacitores, CIs, Transistores)
-        escaped = re.sub(r'\b(PU\w+|U\w+)\b', r'<b style="color: #d63384; font-weight: bold;">\1</b>', escaped) # CIs em Rosa/Magenta
-        escaped = re.sub(r'\b(CC\w+|PC\w+)\b', r'<b style="color: #0d6efd; font-weight: bold;">\1</b>', escaped) # Capacitores em Azul
-        escaped = re.sub(r'\b(PR\w+|RE\w+)\b', r'<b style="color: #fd7e14; font-weight: bold;">\1</b>', escaped) # Resistores em Laranja
-        escaped = re.sub(r'\b(PQ\w+|Q\w+)\b', r'<b style="color: #6f42c1; font-weight: bold;">\1</b>', escaped) # Transistores em Roxo
+        # Realce por categorias de componentes (Revisado para evitar destacar números soltos)
+        escaped = re.sub(r'\b(PU[A-Za-z0-9_]+|U[A-Za-z0-9_]+)\b', r'<b style="color: #d63384; font-weight: bold;">\1</b>', escaped) # CIs em Rosa/Magenta
+        escaped = re.sub(r'\b(CC[A-Za-z0-9_]+|PC[A-Za-z0-9_]+)\b', r'<b style="color: #0d6efd; font-weight: bold;">\1</b>', escaped) # Capacitores em Azul
+        escaped = re.sub(r'\b(PR[A-Za-z0-9_]+|RE[A-Za-z0-9_]+)\b', r'<b style="color: #fd7e14; font-weight: bold;">\1</b>', escaped) # Resistores em Laranja
+        escaped = re.sub(r'\b(PQ[A-Za-z0-9_]+|Q[A-Za-z0-9_]+)\b', r'<b style="color: #6f42c1; font-weight: bold;">\1</b>', escaped) # Transistores em Roxo
+        escaped = re.sub(r'\b(JTP[A-Za-z0-9_]+|J[A-Za-z0-9_]+)\b', r'<b style="color: #20c997; font-weight: bold;">\1</b>', escaped) # Conectores/Jumpers em Verde Água
 
         # Realce de termos de falha e aprovação
-        escaped = re.sub(r'\b(FAIL|FAILED|FAILURE)\b', r'<b style="color: #dc3545; background-color: #f8d7da; padding: 1px 4px; border-radius: 2px;">\1</b>', escaped, flags=re.IGNORECASE)
+        escaped = re.sub(r'\b(FAIL|FAILED|FAILURE|HAS FAILED)\b', r'<b style="color: #dc3545; background-color: #f8d7da; padding: 1px 4px; border-radius: 2px;">\1</b>', escaped, flags=re.IGNORECASE)
         escaped = re.sub(r'\b(PASS|PASSED)\b', r'<b style="color: #198754; background-color: #d1e7dd; padding: 1px 4px; border-radius: 2px;">\1</b>', escaped, flags=re.IGNORECASE)
         escaped = re.sub(r'\b(HIGH|LOW|SHORT|OPEN)\b', r'<b style="color: #dc3545; font-weight: bold;">\1</b>', escaped, flags=re.IGNORECASE)
         
@@ -638,15 +641,27 @@ class MainApp(QWidget):
         formatted_lines = []
         
         diag_comps = [c.lower() for c in (self.current_diagnostico.get("componentes", []) if self.current_diagnostico else [])]
+        tipo_log = self.current_meta.get("tipo", "TRI") if self.current_meta else "TRI"
+        status_log = self.current_meta.get("status", "").upper() if self.current_meta else ""
         
-        for line in lines:
+        for idx_line, line in enumerate(lines):
             line_lower = line.lower()
             
-            # Se o filtro "Mostrar Apenas Falhas" estiver ativado, oculta linhas irrelevantes
+            # Se o filtro "Mostrar Apenas Falhas" estiver ativado
             if self.only_failures_active:
-                eh_falha = ("fail" in line_lower or "short" in line_lower or "open" in line_lower or any(c in line_lower for c in diag_comps))
-                if not eh_falha:
-                    continue
+                if tipo_log == "TRI":
+                    if status_log in ["FAIL", "FAILED"]:
+                        if not line_lower.strip():
+                            continue
+                    else:
+                        eh_falha = ("fail" in line_lower or "short" in line_lower or "open" in line_lower or any(c in line_lower for c in diag_comps))
+                        if not eh_falha:
+                            continue
+                else: # AGILENT
+                    eh_cabecalho = ("report" in line_lower or "board version" in line_lower or "digiboard" in line_lower)
+                    eh_falha = ("fail" in line_lower or "short" in line_lower or "open #" in line_lower or "measured" in line_lower or "pin " in line_lower or "device" in line_lower or "from:" in line_lower or "to:" in line_lower or any(c in line_lower for c in diag_comps))
+                    if not (eh_cabecalho or eh_falha):
+                        continue
 
             if "fail" in line_lower or "short" in line_lower or "open" in line_lower:
                 formatted_lines.append(f"<div style='background-color: #fff5f5;'>{line}</div>")
@@ -675,9 +690,11 @@ class MainApp(QWidget):
         else:
             status_badge = f"<span style='background-color: #fff3cd; color: #856404; font-weight: bold; padding: 3px 8px; border-radius: 4px;'>🟡 {status}</span>"
 
+        secoes_html = f" &nbsp;|&nbsp; <b>Seção de Falha:</b> <b style='color: #d63384;'>{', '.join(diag['secoes'])}</b>" if diag.get("secoes") else ""
+
         # Construção do Card de Diagnóstico Rápido
         if diag.get("componentes") or diag.get("curtos"):
-            comps_txt = ", ".join(diag["componentes"][:10]) if diag["componentes"] else "Nenhum específico"
+            comps_txt = ", ".join(diag["componentes"][:12]) if diag["componentes"] else "Nenhum específico"
             coords_txt = ", ".join(diag["coordenadas"][:10]) if diag["coordenadas"] else "N/A"
             card_html = f"""
             <div style='background-color: #fff5f5; border-left: 4px solid #dc3545; padding: 8px 12px; margin-top: 8px; border-radius: 4px;'>
@@ -703,7 +720,7 @@ class MainApp(QWidget):
             <div style='color: #495057; margin-top: 6px; font-size: 13px;'>
                 <b>Data:</b> {meta['data']} &nbsp;|&nbsp; 
                 <b>Serial:</b> <b style='color: #0d6efd;'>{meta['serial']}</b> &nbsp;|&nbsp; 
-                <b>Modelo:</b> {meta['modelo']}
+                <b>Modelo:</b> {meta['modelo']}{secoes_html}
             </div>
             {card_html}
         </div>
