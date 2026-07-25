@@ -1,0 +1,21 @@
+----------------------------------------
+Shorts Report for "shorts".
+Sun Jul 24 15:49:31 2005
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35502_ult7
+----------------------------------------
+Open #1 Thresh 25, Delay 50us       Ohms
+From: NCTF_L5                209148 Open
+To:   NCTF_L7                209147
+Common Devices:
+                 ucpu1
+Message is:  None.
+----------------------------------------
+Open #2 Thresh 25, Delay 50us       Ohms
+From: NCTF_L5                209148 Open
+To:   VCCCPU_PCORE            21168
+Common Devices:
+                 ucpu1
+Message is:  None.
+------End, 2 Problems Reported----------
+Serial #: 6783001KA2

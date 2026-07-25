@@ -1,0 +1,25 @@
+----------------------------------------
+DIGIBOARD-E14 GEN8 IPH-ATESS-APR 2026-BRAZIL-ERS
+Board Version:  sb21w21218_u5
+Sat Jan 01 07:55:00 2005
+----------------------------------------
+pc5334 HAS FAILED
+
+Measured:   3.8602u
+Nominal:    3.2000u
+High Limit: 3.8400u
+Low Limit:  2.5600u
+Capacitance in FARADS
+----------------------------------------
+DEVICES IN PARALLEL
+   [pc5338] BOM Value : 1u
+----------------------------------------
+rc263 HAS FAILED
+
+Measured:   -15.610k
+Nominal:    100.00k
+High Limit: 115.00k
+Low Limit:  85.000k
+Resistance in OHMS
+----------------------------------------
+Serial #: 67830015CN

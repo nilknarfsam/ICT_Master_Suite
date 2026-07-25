@@ -1,0 +1,22 @@
+----------------------------------------
+DIGIBOARD-E14 GEN8 IPH-ATESS-APR 2026-BRAZIL-ERS
+Board Version:  sb21w21218_u5
+Sat Jan 01 08:31:03 2005
+----------------------------------------
+cr47 HAS FAILED
+
+Measured:   2.0489u
+Nominal:    5.3000u
+High Limit: 6.3600u
+Low Limit:  4.2400u
+Capacitance in FARADS
+----------------------------------------
+cc66 HAS FAILED
+
+Measured:   4.0072u
+Nominal:    3.0000u
+High Limit: 3.9000u
+Low Limit:  2.1000u
+Capacitance in FARADS
+----------------------------------------
+Serial #: 67830015CJ

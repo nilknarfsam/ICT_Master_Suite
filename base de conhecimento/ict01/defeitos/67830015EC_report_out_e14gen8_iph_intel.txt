@@ -1,0 +1,18 @@
+----------------------------------------
+DIGIBOARD-E14 GEN8 IPH-ATESS-APR 2026-BRAZIL-ERS
+Board Version:  sb21w21218_u5
+Sat Jan 01 02:27:00 2005
+----------------------------------------
+cr55 HAS FAILED
+
+Measured:   15.866u
+Nominal:    11.100u
+High Limit: 14.430u
+Low Limit:  7.7700u
+Capacitance in FARADS
+----------------------------------------
+DEVICES IN PARALLEL
+   [cr56] BOM Value : 1u
+   [cr42] BOM Value : 100n
+----------------------------------------
+Serial #: 67830015EC

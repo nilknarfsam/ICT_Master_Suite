@@ -12,9 +12,9 @@ from PyQt5.QtWidgets import (
     QSplitter, QSystemTrayIcon, QMenu, QAction, QCheckBox, QGridLayout, QComboBox
 )
 from PyQt5.QtCore import Qt
-from PyQt5.QtGui import QIcon
+from PyQt5.QtGui import QIcon, QSyntaxHighlighter, QTextCharFormat, QColor, QFont
 
-from models import carregar_config, salvar_config, extrair_diagnostico_inteligente
+from models import carregar_config, salvar_config, extrair_diagnostico_inteligente, agrupar_componentes_inteligente, APP_VERSION
 from threads import BuscaThread, FileLoaderThread, TRICopyThread, NetworkMonitorThread
 
 def get_resource_path(relative_path):
@@ -41,10 +41,74 @@ def set_windows_startup(enable):
         winreg.CloseKey(key)
     except OSError: pass
 
+class LogSyntaxHighlighter(QSyntaxHighlighter):
+    """Realce de sintaxe em tempo real via C++ nativo (0ms de overhead no render)."""
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        self.termo_serial = ""
+
+        # Formatos por categoria
+        self.fmt_ci = QTextCharFormat()
+        self.fmt_ci.setForeground(QColor("#d63384"))
+        self.fmt_ci.setFontWeight(QFont.Bold)
+
+        self.fmt_cap = QTextCharFormat()
+        self.fmt_cap.setForeground(QColor("#0d6efd"))
+        self.fmt_cap.setFontWeight(QFont.Bold)
+
+        self.fmt_res = QTextCharFormat()
+        self.fmt_res.setForeground(QColor("#fd7e14"))
+        self.fmt_res.setFontWeight(QFont.Bold)
+
+        self.fmt_trans = QTextCharFormat()
+        self.fmt_trans.setForeground(QColor("#6f42c1"))
+        self.fmt_trans.setFontWeight(QFont.Bold)
+
+        self.fmt_conn = QTextCharFormat()
+        self.fmt_conn.setForeground(QColor("#20c997"))
+        self.fmt_conn.setFontWeight(QFont.Bold)
+
+        self.fmt_fail = QTextCharFormat()
+        self.fmt_fail.setForeground(QColor("#dc3545"))
+        self.fmt_fail.setBackground(QColor("#f8d7da"))
+        self.fmt_fail.setFontWeight(QFont.Bold)
+
+        self.fmt_pass = QTextCharFormat()
+        self.fmt_pass.setForeground(QColor("#198754"))
+        self.fmt_pass.setBackground(QColor("#d1e7dd"))
+        self.fmt_pass.setFontWeight(QFont.Bold)
+
+        self.fmt_serial = QTextCharFormat()
+        self.fmt_serial.setForeground(QColor("#856404"))
+        self.fmt_serial.setBackground(QColor("#fff3cd"))
+        self.fmt_serial.setFontWeight(QFont.Bold)
+
+    def highlightBlock(self, text):
+        if not text:
+            return
+
+        regexes = [
+            (r'\b(PU[A-Za-z0-9_]+|U[A-Za-z0-9_]+)\b', self.fmt_ci),
+            (r'\b(CC[A-Za-z0-9_]+|PC[A-Za-z0-9_]+)\b', self.fmt_cap),
+            (r'\b(PR[A-Za-z0-9_]+|RE[A-Za-z0-9_]+)\b', self.fmt_res),
+            (r'\b(PQ[A-Za-z0-9_]+|Q[A-Za-z0-9_]+)\b', self.fmt_trans),
+            (r'\b(JTP[A-Za-z0-9_]+|J[A-Za-z0-9_]+)\b', self.fmt_conn),
+            (r'\b(FAIL|FAILED|FAILURE|HAS FAILED|SHORT|OPEN)\b', self.fmt_fail),
+            (r'\b(PASS|PASSED)\b', self.fmt_pass),
+        ]
+
+        for pattern, fmt in regexes:
+            for match in re.finditer(pattern, text, flags=re.IGNORECASE):
+                self.setFormat(match.start(), match.end() - match.start(), fmt)
+
+        if self.termo_serial and len(self.termo_serial) >= 3:
+            for match in re.finditer(re.escape(self.termo_serial), text, flags=re.IGNORECASE):
+                self.setFormat(match.start(), match.end() - match.start(), self.fmt_serial)
+
 class MainApp(QWidget):
     def __init__(self, start_minimized=False):
         super().__init__()
-        self.setWindowTitle("ICT Master Suite")
+        self.setWindowTitle(f"ICT Master Suite - v{APP_VERSION}")
         self.setWindowIcon(QIcon(get_resource_path('icon.ico')))
         self.setGeometry(100, 100, 1280, 800)
         self.config = carregar_config()
@@ -69,7 +133,7 @@ class MainApp(QWidget):
         self.init_network_monitor()
         self.load_stylesheet()
 
-        self.log_console("Sistema inicializado e pronto para operação.", nivel="INFO")
+        self.log_console(f"Sistema inicializado v{APP_VERSION} e pronto para operação.", nivel="INFO")
 
         if start_minimized:
             self.hide()
@@ -88,7 +152,7 @@ class MainApp(QWidget):
     def init_ui(self):
         main_layout = QVBoxLayout(self)
         h = QHBoxLayout()
-        lbl_header = QLabel("ICT Technical Suite")
+        lbl_header = QLabel(f"ICT Technical Suite v{APP_VERSION}")
         lbl_header.setObjectName("lbl_header")
         h.addWidget(lbl_header)
         h.addStretch()
@@ -409,7 +473,7 @@ class MainApp(QWidget):
         self.lbl_info.setWordWrap(True)
         self.l_right.addWidget(self.lbl_info)
 
-        # Barra de Ferramentas do Log (Filtro por Falha e Copiar Diagnóstico)
+        # Barra de Ferramentas do Log (Filtro por Falha e Copiar/Exportar Diagnóstico)
         bar_acoes = QHBoxLayout()
         lbl_log = QLabel("Log do Arquivo:")
         lbl_log.setObjectName("lbl_log")
@@ -428,11 +492,21 @@ class MainApp(QWidget):
         self.btn_copy_summary.clicked.connect(self.copiar_resumo_diagnostico)
         bar_acoes.addWidget(self.btn_copy_summary)
 
+        self.btn_export_laudo = QPushButton("📄 Salvar Laudo (.txt)")
+        self.btn_export_laudo.setToolTip("Salva o laudo completo de diagnóstico em um arquivo de texto para a qualidade.")
+        self.btn_export_laudo.clicked.connect(self.exportar_laudo_arquivo)
+        bar_acoes.addWidget(self.btn_export_laudo)
+
         self.l_right.addLayout(bar_acoes)
         
         self.text_raw = QTextEdit()
         self.text_raw.setReadOnly(True)
         self.text_raw.setObjectName("text_raw")
+        self.text_raw.setStyleSheet("font-family: Consolas, 'Courier New', monospace; font-size: 12px; line-height: 1.45;")
+        
+        # Conecta o Destacador Nativo QSyntaxHighlighter para performance máxima (0ms)
+        self.highlighter = LogSyntaxHighlighter(self.text_raw.document())
+
         self.l_right.addWidget(self.text_raw)
         
         splitter.addWidget(frame_right)
@@ -440,7 +514,7 @@ class MainApp(QWidget):
         layout.addWidget(splitter)
 
     def toggle_filtro_falhas(self):
-        """Alterna a exibição entre o log completo e o filtro focado em falhas."""
+        """Alterna a exibição entre o log completo na íntegra e o filtro focado em falhas."""
         self.only_failures_active = self.btn_toggle_failures.isChecked()
         if self.only_failures_active:
             self.btn_toggle_failures.setText("🔍 Mostrar Log Completo")
@@ -450,8 +524,7 @@ class MainApp(QWidget):
             self.btn_toggle_failures.setStyleSheet("")
             
         if self.current_content:
-            log_html = self.formatar_log_destaque(self.current_content)
-            self.text_raw.setHtml(log_html)
+            self.renderizar_conteudo_log()
 
     def copiar_resumo_diagnostico(self):
         """Gera e copia o laudo de diagnóstico formatado para a área de transferência do Windows."""
@@ -462,13 +535,14 @@ class MainApp(QWidget):
         diag = self.current_diagnostico or {}
         meta = self.current_meta
         
-        comps_str = ", ".join(diag.get("componentes", [])) if diag.get("componentes") else "Nenhum componente específico"
+        comps_agrupados = agrupar_componentes_inteligente(diag.get("componentes", []))
+        comps_str = ", ".join(comps_agrupados) if comps_agrupados else "Nenhum componente específico"
         coords_str = ", ".join(diag.get("coordenadas", [])) if diag.get("coordenadas") else "N/A"
         curtos_str = "\n".join([f"  • {c}" for c in diag.get("curtos", [])]) if diag.get("curtos") else "Nenhum curto-circuito reportado"
         secoes_str = ", ".join(diag.get("secoes", [])) if diag.get("secoes") else "N/A"
 
         texto_laudo = f"""=========================================================
-[DIAGNÓSTICO DE FALHA - ICT MASTER SUITE]
+[DIAGNÓSTICO DE FALHA - ICT MASTER SUITE v{APP_VERSION}]
 =========================================================
 • Tipo de Teste : {meta.get('tipo', 'N/A')}
 • Serial Placa  : {meta.get('serial', 'N/A')}
@@ -486,6 +560,49 @@ class MainApp(QWidget):
         QApplication.clipboard().setText(texto_laudo)
         self.status_bar.setText("📋 Resumo do diagnóstico copiado para a Área de Transferência!")
         self.log_console(f"Diagnóstico do serial '{meta.get('serial')}' copiado para a área de transferência.", nivel="INFO")
+
+    def exportar_laudo_arquivo(self):
+        """Exporta o laudo formal de reparo para um arquivo de texto (.txt)."""
+        if not self.current_meta:
+            QMessageBox.information(self, "Nenhum Log Selecionado", "Selecione um arquivo de log para exportar o laudo.")
+            return
+
+        meta = self.current_meta
+        nome_sugerido = f"laudo_ict_{meta.get('serial', 'serial')}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
+        path, _ = QFileDialog.getSaveFileName(self, "Salvar Laudo de Diagnóstico", nome_sugerido, "Arquivos de Texto (*.txt)")
+        if path:
+            try:
+                diag = self.current_diagnostico or {}
+                comps_agrupados = agrupar_componentes_inteligente(diag.get("componentes", []))
+                comps_str = ", ".join(comps_agrupados) if comps_agrupados else "Nenhum componente específico"
+                coords_str = ", ".join(diag.get("coordenadas", [])) if diag.get("coordenadas") else "N/A"
+                curtos_str = "\n".join([f"  • {c}" for c in diag.get("curtos", [])]) if diag.get("curtos") else "Nenhum curto-circuito reportado"
+
+                conteudo_laudo = f"""=========================================================
+RELATÓRIO FORMAL DE DIAGNÓSTICO ICT - MASTER SUITE v{APP_VERSION}
+=========================================================
+• Serial da Placa  : {meta.get('serial', 'N/A')}
+• Modelo do Produto: {meta.get('modelo', 'N/A')}
+• Equipamento Teste: {meta.get('tipo', 'N/A')}
+• Data do Registro : {meta.get('data', 'N/A')}
+• Status Final     : {meta.get('status', 'N/A')}
+---------------------------------------------------------
+DIAGNÓSTICO TÉCNICO:
+• Componentes Afetados: {comps_str}
+• Setores / Grid      : {coords_str}
+• Ocorrências de Curtos:
+{curtos_str}
+=========================================================
+CONTEÚDO BRUTO DO LOG:
+{self.current_content}
+========================================================="""
+                with open(path, 'w', encoding='utf-8') as f:
+                    f.write(conteudo_laudo)
+                self.status_bar.setText("📄 Laudo de diagnóstico exportado com sucesso!")
+                self.log_console(f"Laudo exportado para: {path}", nivel="INFO")
+                QMessageBox.information(self, "Sucesso", "Laudo formal exportado com sucesso!")
+            except Exception as e:
+                QMessageBox.critical(self, "Erro", f"Não foi possível salvar o arquivo: {e}")
 
     def keyPressEvent(self, event):
         """Intercepta teclas F5 e ESC para atalhos globais."""
@@ -616,64 +733,43 @@ class MainApp(QWidget):
         self.thread_loader.file_load_error.connect(self.on_file_load_error)
         self.thread_loader.start()
 
-    def formatar_log_destaque(self, content):
-        """Aplica realce de sintaxe em HTML simples para destacar falhas, aprovações, componentes e o serial pesquisado."""
-        escaped = html.escape(content)
-        
-        # Destacar o serial pesquisado em Amarelo Destaque
-        termo_serial = self.input_serial.text().strip()
-        if termo_serial and len(termo_serial) >= 3:
-            escaped = re.sub(re.escape(termo_serial), r'<mark style="background-color: #fff3cd; color: #856404; font-weight: bold; padding: 1px 4px; border-radius: 3px;">\g<0></mark>', escaped, flags=re.IGNORECASE)
+    def renderizar_conteudo_log(self):
+        """Renderiza o conteúdo do log na íntegra ou filtrado de forma ultra-rápida."""
+        if not self.current_content:
+            return
 
-        # Realce por categorias de componentes (Revisado para evitar destacar números soltos)
-        escaped = re.sub(r'\b(PU[A-Za-z0-9_]+|U[A-Za-z0-9_]+)\b', r'<b style="color: #d63384; font-weight: bold;">\1</b>', escaped) # CIs em Rosa/Magenta
-        escaped = re.sub(r'\b(CC[A-Za-z0-9_]+|PC[A-Za-z0-9_]+)\b', r'<b style="color: #0d6efd; font-weight: bold;">\1</b>', escaped) # Capacitores em Azul
-        escaped = re.sub(r'\b(PR[A-Za-z0-9_]+|RE[A-Za-z0-9_]+)\b', r'<b style="color: #fd7e14; font-weight: bold;">\1</b>', escaped) # Resistores em Laranja
-        escaped = re.sub(r'\b(PQ[A-Za-z0-9_]+|Q[A-Za-z0-9_]+)\b', r'<b style="color: #6f42c1; font-weight: bold;">\1</b>', escaped) # Transistores em Roxo
-        escaped = re.sub(r'\b(JTP[A-Za-z0-9_]+|J[A-Za-z0-9_]+)\b', r'<b style="color: #20c997; font-weight: bold;">\1</b>', escaped) # Conectores/Jumpers em Verde Água
+        self.highlighter.termo_serial = self.input_serial.text().strip()
 
-        # Realce de termos de falha e aprovação
-        escaped = re.sub(r'\b(FAIL|FAILED|FAILURE|HAS FAILED)\b', r'<b style="color: #dc3545; background-color: #f8d7da; padding: 1px 4px; border-radius: 2px;">\1</b>', escaped, flags=re.IGNORECASE)
-        escaped = re.sub(r'\b(PASS|PASSED)\b', r'<b style="color: #198754; background-color: #d1e7dd; padding: 1px 4px; border-radius: 2px;">\1</b>', escaped, flags=re.IGNORECASE)
-        escaped = re.sub(r'\b(HIGH|LOW|SHORT|OPEN)\b', r'<b style="color: #dc3545; font-weight: bold;">\1</b>', escaped, flags=re.IGNORECASE)
-        
-        lines = escaped.splitlines()
-        formatted_lines = []
-        
-        diag_comps = [c.lower() for c in (self.current_diagnostico.get("componentes", []) if self.current_diagnostico else [])]
-        tipo_log = self.current_meta.get("tipo", "TRI") if self.current_meta else "TRI"
-        status_log = self.current_meta.get("status", "").upper() if self.current_meta else ""
-        
-        for idx_line, line in enumerate(lines):
-            line_lower = line.lower()
-            
-            # Se o filtro "Mostrar Apenas Falhas" estiver ativado
-            if self.only_failures_active:
+        if not self.only_failures_active:
+            # Exibe o conteúdo do log 100% na íntegra exatamente como está no arquivo original
+            self.text_raw.setPlainText(self.current_content)
+        else:
+            # Exibe versão filtrada
+            lines = self.current_content.splitlines()
+            diag_comps = [c.lower() for c in (self.current_diagnostico.get("componentes", []) if self.current_diagnostico else [])]
+            tipo_log = self.current_meta.get("tipo", "TRI") if self.current_meta else "TRI"
+            status_log = self.current_meta.get("status", "").upper() if self.current_meta else ""
+
+            filtradas = []
+            for i, line in enumerate(lines):
+                line_lower = line.lower()
                 if tipo_log == "TRI":
                     if status_log in ["FAIL", "FAILED"]:
-                        if not line_lower.strip():
-                            continue
+                        if not line_lower.strip(): continue
                     else:
                         eh_falha = ("fail" in line_lower or "short" in line_lower or "open" in line_lower or any(c in line_lower for c in diag_comps))
-                        if not eh_falha:
-                            continue
+                        if not eh_falha: continue
                 else: # AGILENT
                     eh_cabecalho = ("report" in line_lower or "board version" in line_lower or "digiboard" in line_lower)
                     eh_falha = ("fail" in line_lower or "short" in line_lower or "open #" in line_lower or "measured" in line_lower or "pin " in line_lower or "device" in line_lower or "from:" in line_lower or "to:" in line_lower or any(c in line_lower for c in diag_comps))
-                    if not (eh_cabecalho or eh_falha):
-                        continue
+                    if not (eh_cabecalho or eh_falha): continue
 
-            if "fail" in line_lower or "short" in line_lower or "open" in line_lower:
-                formatted_lines.append(f"<div style='background-color: #fff5f5;'>{line}</div>")
-            elif "pass" in line_lower:
-                formatted_lines.append(f"<div style='background-color: #f6fff9;'>{line}</div>")
+                filtradas.append(line)
+
+            if filtradas:
+                self.text_raw.setPlainText("\n".join(filtradas))
             else:
-                formatted_lines.append(f"<div>{line}</div>")
-                
-        if not formatted_lines:
-            return "<div style='color: #6c757d; font-style: italic; padding: 10px;'>Nenhuma linha de falha direta encontrada para exibição filtrada neste log.</div>"
-
-        return f"<pre style='font-family: Consolas, \"Courier New\", monospace; font-size: 12px; line-height: 1.45; white-space: pre-wrap;'>{''.join(formatted_lines)}</pre>"
+                self.text_raw.setPlainText("Nenhuma linha de falha direta encontrada para exibição filtrada neste log.")
         
     def on_file_loaded(self, meta, content):
         self.current_meta = meta
@@ -692,9 +788,12 @@ class MainApp(QWidget):
 
         secoes_html = f" &nbsp;|&nbsp; <b>Seção de Falha:</b> <b style='color: #d63384;'>{', '.join(diag['secoes'])}</b>" if diag.get("secoes") else ""
 
+        # Aplica o agrupamento inteligente no Card de Diagnóstico Rápido
+        comps_agrupados = agrupar_componentes_inteligente(diag.get("componentes", []))
+
         # Construção do Card de Diagnóstico Rápido
-        if diag.get("componentes") or diag.get("curtos"):
-            comps_txt = ", ".join(diag["componentes"][:12]) if diag["componentes"] else "Nenhum específico"
+        if comps_agrupados or diag.get("curtos"):
+            comps_txt = ", ".join(comps_agrupados[:12]) if comps_agrupados else "Nenhum específico"
             coords_txt = ", ".join(diag["coordenadas"][:10]) if diag["coordenadas"] else "N/A"
             card_html = f"""
             <div style='background-color: #fff5f5; border-left: 4px solid #dc3545; padding: 8px 12px; margin-top: 8px; border-radius: 4px;'>
@@ -732,8 +831,7 @@ class MainApp(QWidget):
             self.text_raw.setPlaceholderText("Log muito grande para exibição direta (>1MB). Use um editor externo.")
         else:
             self.text_raw.setPlaceholderText("")
-            log_html = self.formatar_log_destaque(content)
-            self.text_raw.setHtml(log_html)
+            self.renderizar_conteudo_log()
             
         self.status_bar.setText("Arquivo carregado com sucesso.")
         self.log_console(f"Log aberto: '{self.current_file_name}' (Tipo: {meta['tipo']}, Status: {meta['status']}) - Caminho: {self.thread_loader.caminho}", nivel="ABERTURA")

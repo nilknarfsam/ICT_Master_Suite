@@ -1,0 +1,29 @@
+----------------------------------------
+DIGIBOARD-E14 GEN8 IPH-ATESS-APR 2026-BRAZIL-ERS
+Board Version:  sb21w21218_u5
+Sat Jan 01 08:36:48 2005
+----------------------------------------
+ci208 HAS FAILED
+
+Measured:   67.227u
+Nominal:    51.710u
+High Limit: 67.223u
+Low Limit:  36.197u
+Capacitance in FARADS
+----------------------------------------
+DEVICES IN PARALLEL
+   [ci214] BOM Value : 10u
+   [cu1004] BOM Value : 10u
+   [cu1015] BOM Value : 10u
+   [cv530] BOM Value : 10u
+   [cv176] BOM Value : 1u
+   [cs100] BOM Value : 100n
+   [cs104] BOM Value : 100n
+   [cs202] BOM Value : 100n
+   [cu1005] BOM Value : 100n
+   [cu1006] BOM Value : 100n
+   [cv514] BOM Value : 100n
+   [cv518] BOM Value : 100n
+   [cv524] BOM Value : 10n
+----------------------------------------
+Serial #: 67830015CM

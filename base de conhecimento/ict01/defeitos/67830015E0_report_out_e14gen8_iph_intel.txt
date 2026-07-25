@@ -1,0 +1,18 @@
+----------------------------------------
+DIGIBOARD-E14 GEN8 IPH-ATESS-APR 2026-BRAZIL-ERS
+Board Version:  sb21w21218_u5
+Sat Jan 01 01:59:17 2005
+----------------------------------------
+ru610 HAS FAILED
+
+Measured:   -95.125k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+rr12 HAS FAILED
+
+Measured:   -95.144k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+Serial #: 67830015E0

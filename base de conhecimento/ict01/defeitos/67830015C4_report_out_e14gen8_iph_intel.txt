@@ -1,0 +1,36 @@
+----------------------------------------
+DIGIBOARD-E14 GEN8 IPH-ATESS-APR 2026-BRAZIL-ERS
+Board Version:  sb21w21218_u5
+Sat Jan 01 00:39:44 2005
+----------------------------------------
+rc210 HAS FAILED
+
+Measured:   96.758M
+Nominal:    10.000k
+High Limit: 11.000k
+Low Limit:  9.0000k
+Resistance in OHMS
+----------------------------------------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Sat Jan 01 00:39:47 2005
+DIGIBOARD-E14 GEN8 IPH-ATESS-APR 2026-BRAZIL-ERS
+Board Version:  sb21w21218_u5
+----------------------------------------
+Failed Open #1
+(20275) SYS_RESET_CPU
+                rc210.2
+                uc1.D18
+------End, 1 Problem Reported-----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Sat Jan 01 00:39:52 2005
+DIGIBOARD-E14 GEN8 IPH-ATESS-APR 2026-BRAZIL-ERS
+Board Version:  sb21w21218_u5
+----------------------------------------
+Failed Open #1
+(20275) SYS_RESET_CPU
+                rc210.2
+                uc1.D18
+------End, 1 Problem Reported-----------
+Serial #: 67830015C4

@@ -1,0 +1,12 @@
+----------------------------------------
+DIGIBOARD-E14 GEN8 IPH-ATESS-APR 2026-BRAZIL-ERS
+Board Version:  sb21w21218_u5
+Sat Jan 01 01:07:33 2005
+----------------------------------------
+ri103 HAS FAILED
+
+Measured:   -31.731k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+Serial #: 67830015A1

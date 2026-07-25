@@ -1,0 +1,15 @@
+----------------------------------------
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35502_ult7
+Sun Jul 24 14:13:56 2005
+----------------------------------------
+d67003%ds1 HAS FAILED
+
+REPLACE DEVICE: d67003
+
+Measured:   989.09m
+High Limit: 1.8000
+Low Limit:  1.0000
+Forward VOLTAGE drop
+----------------------------------------
+Serial #: 6783001KHN

@@ -1,0 +1,20 @@
+----------------------------------------
+TestJet Report for "testjet".
+Sat Jan 01 00:43:41 2005
+DIGIBOARD-E14 GEN8 IPH-ATESS-APR 2026-BRAZIL-ERS
+Board Version:  sb21w21218_u5
+----------------------------------------
+Open #1  Device jts1
+  Pin 1  Node TOUCH_INT_N_TS_CPU
+  Measured 26.9             (BRC 210167)
+Open #2  Device jts1
+  Pin 3  Node RST_N_TS
+  Measured 15.8             (BRC 21055)
+Open #3  Device jts1
+  Pin 6  Node I2C_1_SDA_TS
+  Measured 21.7             (BRC 210156)
+Open #4  Device jts1
+  Pin 7  Node I2C_1_SCL_TS
+  Measured 27.0             (BRC 210151)
+----------------------------------------
+Serial #: 67830015BV

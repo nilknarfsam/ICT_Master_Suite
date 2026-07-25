@@ -1,0 +1,12 @@
+----------------------------------------
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35502_ult7
+Mon Jul 25 07:53:56 2005
+----------------------------------------
+pf0101 HAS FAILED
+
+Measured:   -47.694k
+Threshold: 16.000
+Fuse Resistance in OHMS
+----------------------------------------
+Serial #: 6783001KFV

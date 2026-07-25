@@ -1,0 +1,33 @@
+----------------------------------------
+TestJet Report for "testjet".
+Mon Jul 25 07:42:44 2005
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35502_ult7
+----------------------------------------
+Open #1  Device u7601
+  Pin 2  Node -LANWAKE_LAN
+  Measured 18.2             (BRC 215112)
+----------------------------------------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Mon Jul 25 07:42:45 2005
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35502_ult7
+----------------------------------------
+Failed Open #1
+(21562) EPD_ON_OUT
+                r19001.1
+               ucpu1.AB27
+------End, 1 Problem Reported-----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Mon Jul 25 07:42:51 2005
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35502_ult7
+----------------------------------------
+Failed Open #1
+(21562) EPD_ON_OUT
+                r19001.1
+               ucpu1.AB27
+------End, 1 Problem Reported-----------
+Serial #: 6783001KG0

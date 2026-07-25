@@ -8,6 +8,8 @@ import re
 import html
 from datetime import datetime
 
+APP_VERSION = "6.1.0"
+
 def get_base_path():
     if getattr(sys, 'frozen', False):
         return os.path.dirname(sys.executable)
@@ -250,6 +252,33 @@ def parse_metadata_inteligente(caminho_completo, nome_arquivo, conteudo):
         
     return {"tipo": tipo, "data": "N/A", "serial": "N/A", "modelo": "N/A", "status": "UNKNOWN", "cor": "black"}
 
+def agrupar_componentes_inteligente(componentes):
+    """Agrupa sub-pinos do mesmo componente no Card de Diagnóstico mantendo o log bruto intacto."""
+    if not componentes:
+        return []
+        
+    grupos = {}
+    ordem_original = []
+    
+    for comp in componentes:
+        m = re.match(r'^([A-Za-z]+[0-9]+)', comp)
+        base_name = m.group(1) if m else comp
+        
+        if base_name not in grupos:
+            grupos[base_name] = []
+            ordem_original.append(base_name)
+        grupos[base_name].append(comp)
+        
+    resultado = []
+    for base in ordem_original:
+        lista_sub = grupos[base]
+        if len(lista_sub) > 1:
+            resultado.append(f"{base} ({len(lista_sub)} blocos)")
+        else:
+            resultado.append(lista_sub[0])
+            
+    return resultado
+
 def extrair_diagnostico_inteligente(meta, conteudo):
     """Extrai informações diagnósticas detalhadas (componentes, curtos, pinos abertos e coordenadas)."""
     diagnostico = {
@@ -285,13 +314,11 @@ def extrair_diagnostico_inteligente(meta, conteudo):
                         diagnostico["componentes"].append(comp_clean)
             elif "," in linha_strip:
                 partes = [p.strip() for p in linha_strip.split(",")]
-                # Pula a linha 1 de cabeçalho do CSV (não extrair o step count / modelo_id como componente)
                 if i == 0:
                     continue
                 if len(partes) >= 11 and partes[0].isdigit():
                     comp = partes[1].rstrip('/')
                     coord = partes[10]
-                    # Garante que não é apenas um número puro
                     if comp and not comp.isdigit() and comp not in diagnostico["componentes"]:
                         diagnostico["componentes"].append(comp)
                         diagnostico["total_erros"] += 1
@@ -300,7 +327,6 @@ def extrair_diagnostico_inteligente(meta, conteudo):
 
         # --- AGILENT TXT ---
         elif tipo == "AGILENT":
-            # Identificação de Seções (TestJet, Shorts, CHEK-POINT)
             if "TestJet Report" in linha_strip:
                 if "TestJet" not in diagnostico["secoes"]: diagnostico["secoes"].append("TestJet")
             elif "Shorts Report" in linha_strip:
@@ -308,7 +334,6 @@ def extrair_diagnostico_inteligente(meta, conteudo):
             elif "CHEK-POINT Report" in linha_strip:
                 if "CHEK-POINT/Pins" not in diagnostico["secoes"]: diagnostico["secoes"].append("CHEK-POINT/Pins")
 
-            # 1. TestJet Devices (ex: Open #1 Device jtp1)
             dev_match = re.search(r'Device\s+([A-Za-z0-9_]+)', linha_strip, re.IGNORECASE)
             if dev_match:
                 device_name = dev_match.group(1).upper()
@@ -316,7 +341,6 @@ def extrair_diagnostico_inteligente(meta, conteudo):
                     diagnostico["componentes"].append(device_name)
                     diagnostico["total_erros"] += 1
 
-            # 2. Componentes com HAS FAILED (ex: pc1591 HAS FAILED)
             failed_comp_match = re.search(r'^([A-Za-z0-9_]+)\s+HAS FAILED', linha_strip, re.IGNORECASE)
             if failed_comp_match:
                 comp_name = failed_comp_match.group(1).upper()
@@ -324,12 +348,10 @@ def extrair_diagnostico_inteligente(meta, conteudo):
                     diagnostico["componentes"].append(comp_name)
                     diagnostico["total_erros"] += 1
 
-            # 3. Curtos em Agilent
             if "From:" in linha_strip or "To:" in linha_strip:
                 diagnostico["curtos"].append(linha_strip)
                 diagnostico["total_erros"] += 1
 
-            # 4. Failed Open Pinos (ex: (202118) N77290809 cv3.2 qh2.G rt4.1)
             if re.search(r'\b[a-zA-Z0-9_]+\.[0-9A-Z]+\b', linha_strip):
                 pin_comps = re.findall(r'\b([a-zA-Z0-9_]+)\.[0-9A-Z]+\b', linha_strip)
                 for comp in pin_comps:

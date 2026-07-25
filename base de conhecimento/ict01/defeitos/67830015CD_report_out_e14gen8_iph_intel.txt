@@ -1,0 +1,14 @@
+----------------------------------------
+Shorts Report for "shorts".
+Sat Jan 01 08:45:23 2005
+DIGIBOARD-E14 GEN8 IPH-ATESS-APR 2026-BRAZIL-ERS
+Board Version:  sb21w21218_u5
+----------------------------------------
+Short #1, Thresh 9, Delay 50us      Ohms
+From: CHG_ACIN_EC             21528    0
+To:   SMB_7_SDA_EXP          202122    1
+      SMB_7_SDA_EC_EXP       209107    1
+No common devices.
+Total of 3 nodes, Message is:  None.
+------End, 1 Problem Reported-----------
+Serial #: 67830015CD

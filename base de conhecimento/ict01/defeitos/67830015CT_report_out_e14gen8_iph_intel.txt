@@ -1,0 +1,14 @@
+----------------------------------------
+Shorts Report for "shorts".
+Sat Jan 01 08:34:38 2005
+DIGIBOARD-E14 GEN8 IPH-ATESS-APR 2026-BRAZIL-ERS
+Board Version:  sb21w21218_u5
+----------------------------------------
+Short #1, Thresh 9, Delay 50us      Ohms
+From: LANPHYPC_CPU            20214    2
+To:   LANPHYPC                21129    3
+Common Devices:
+                  qc33
+Total of 2 nodes, Message is:  None.
+------End, 1 Problem Reported-----------
+Serial #: 67830015CT

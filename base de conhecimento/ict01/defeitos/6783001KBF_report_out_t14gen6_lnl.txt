@@ -1,0 +1,39 @@
+----------------------------------------
+TestJet Report for "testjet".
+Sun Jul 24 15:46:28 2005
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35502_ult7
+----------------------------------------
+Open #1  Device jtp1
+  Pin 2  Node TP4DATA
+  Measured 58.8             (BRC 210141)
+Open #2  Device jtp1
+  Pin 4  Node -TP4MIDDLE
+  Measured 57.3             (BRC 21031)
+Open #3  Device jtp1
+  Pin 5  Node -TP4RIGHT
+  Measured 53.1             (BRC 210131)
+Open #4  Device jtp1
+  Pin 6  Node -TP4LEFT
+  Measured 60.7             (BRC 210133)
+Open #5  Device jtp1
+  Pin 8  Node TP4CLK
+  Measured 99.7             (BRC 21041)
+Open #6  Device jtp1
+  Pin 9  Node -TP4_ACT
+  Measured 93.1             (BRC 21424)
+Open #7  Device jtp1
+  Pin 10  Node -TP4_FW_WR_EN
+  Measured 79.8             (BRC 21544)
+Open #8  Device jtp1
+  Pin 12  Node KBD_BL_PWM
+  Measured 77.9             (BRC 21122)
+Open #9  Device jtp1
+  Pin 13  Node -KBD_BL_DTCT
+  Measured 84.3             (BRC 21543)
+----------------------------------------
+Open #1  Device pu1001
+  Pin H4  Node VCCL2_ON
+  Measured 9.9              (BRC 20273)
+----------------------------------------
+Serial #: 6783001KBF

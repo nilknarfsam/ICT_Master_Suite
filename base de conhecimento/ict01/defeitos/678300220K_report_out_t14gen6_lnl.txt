@@ -1,0 +1,32 @@
+----------------------------------------
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35502_ult7
+Sun Jul 24 15:43:18 2005
+----------------------------------------
+r46207 HAS FAILED
+
+Measured:   78.380M
+Nominal:    2.2000k
+High Limit: 2.4200k
+Low Limit:  1.9800k
+Resistance in OHMS
+----------------------------------------
+r46208 HAS FAILED
+
+Measured:   29.308M
+Nominal:    2.2000k
+High Limit: 2.4200k
+Low Limit:  1.9800k
+Resistance in OHMS
+----------------------------------------
+d50003 HAS FAILED
+
+Measured:   1.0401
+High Limit: 800.00m
+Low Limit:  400.00m
+Forward VOLTAGE drop
+Status:  cH
+Moa Voltage/Current Compliance
+Detector Over Range
+----------------------------------------
+Serial #: 678300220K

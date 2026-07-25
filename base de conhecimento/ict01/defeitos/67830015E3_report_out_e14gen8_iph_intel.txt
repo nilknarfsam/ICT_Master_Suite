@@ -1,0 +1,38 @@
+----------------------------------------
+TestJet Report for "testjet".
+Sat Jan 01 02:00:33 2005
+DIGIBOARD-E14 GEN8 IPH-ATESS-APR 2026-BRAZIL-ERS
+Board Version:  sb21w21218_u5
+----------------------------------------
+Open #1  Device jcp1
+  Pin 1  Node TP4_RIGHT
+  Measured 36.9             (BRC 220104)
+Open #2  Device jcp1
+  Pin 2  Node TP4_MIDDLE
+  Measured 24.2             (BRC 221128)
+Open #3  Device jcp1
+  Pin 3  Node TP4_LEFT
+  Measured 24.7             (BRC 22127)
+Open #4  Device jcp1
+  Pin 4  Node PAD_DISABLE_CP
+  Measured 28.6             (BRC 211133)
+Open #5  Device jcp1
+  Pin 6  Node I2C_0_INT_N_CP
+  Measured 30.7             (BRC 209126)
+Open #6  Device jcp1
+  Pin 7  Node PDEV_STP_N
+  Measured 23.4             (BRC 20923)
+Open #7  Device jcp1
+  Pin 9  Node I2C_0_SDA_CP
+  Measured 21.1             (BRC 215122)
+Open #8  Device jcp1
+  Pin 10  Node TP4_ACT_N
+  Measured 28.4             (BRC 209124)
+Open #9  Device jcp1
+  Pin 12  Node PAD_FW_RW_EN_N
+  Measured 28.8             (BRC 21125)
+Open #10  Device jcp1
+  Pin 13  Node I2C_0_SCL_CP
+  Measured 22.2             (BRC 21521)
+----------------------------------------
+Serial #: 67830015E3

@@ -1,0 +1,15 @@
+----------------------------------------
+DIGIBOARD-E14 GEN8 IPH-ATESS-APR 2026-BRAZIL-ERS
+Board Version:  sb21w21218_u5
+Sat Jan 01 02:09:02 2005
+----------------------------------------
+qc28%qf1 HAS FAILED
+
+REPLACE DEVICE: qc28
+
+Measured:   1.1657k
+High Limit: 200.00
+Low Limit:  20.000
+NFET Ron in OHMS
+----------------------------------------
+Serial #: 67830015B6

@@ -1,0 +1,11 @@
+----------------------------------------
+TestJet Report for "testjet".
+Sun Jul 24 15:52:06 2005
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35502_ult7
+----------------------------------------
+Open #1  Device u7601
+  Pin 42  Node PCIE4_P1_TXN_C
+  Measured 27.9             (BRC 21932)
+----------------------------------------
+Serial #: 6783001KAR

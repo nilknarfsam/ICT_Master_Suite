@@ -1,0 +1,12 @@
+----------------------------------------
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35502_ult7
+Mon Jul 25 12:07:31 2005
+----------------------------------------
+r44021 HAS FAILED
+
+Measured:   -47.694k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+Serial #: 678300227K

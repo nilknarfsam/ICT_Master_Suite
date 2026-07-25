@@ -2,14 +2,19 @@
 .venv/
 venv/
 env/
+
 # Arquivos compilados do Python
 __pycache__/
 *.pyc
-# Pastas de Build do PyInstaller
+
+# Pastas de Build e Releases do PyInstaller
 build/
 dist/
+releases/
 *.spec
+
 # Banco de Dados local e arquivos de SO
 *.db
 *.sqlite3
 .DS_Store
+crash_log.txt

@@ -1,0 +1,63 @@
+----------------------------------------
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35502_ult7
+Sun Jul 24 14:08:10 2005
+----------------------------------------
+d84001 HAS FAILED
+
+Measured:   5.6026
+High Limit: 800.00m
+Low Limit:  400.00m
+Forward VOLTAGE drop
+Status:  2cH
+Moa Voltage/Current Compliance
+Detector Over Range
+Integrator Over Voltage
+----------------------------------------
+DEVICES IN PARALLEL
+c83403 33.0p
+----------------------------------------
+d84002 HAS FAILED
+
+Measured:   5.6026
+High Limit: 800.00m
+Low Limit:  400.00m
+Forward VOLTAGE drop
+Status:  2cH
+Moa Voltage/Current Compliance
+Detector Over Range
+Integrator Over Voltage
+----------------------------------------
+DEVICES IN PARALLEL
+c84401 1.00n
+r84201 220
+----------------------------------------
+d84004 HAS FAILED
+
+Measured:   6.5211
+High Limit: 800.00m
+Low Limit:  400.00m
+Forward VOLTAGE drop
+Status:  cH
+Moa Voltage/Current Compliance
+Detector Over Range
+----------------------------------------
+DEVICES IN PARALLEL
+c84402 1.00n
+r84202 220
+----------------------------------------
+d84005 HAS FAILED
+
+Measured:   5.6026
+High Limit: 800.00m
+Low Limit:  400.00m
+Forward VOLTAGE drop
+Status:  2cH
+Moa Voltage/Current Compliance
+Detector Over Range
+Integrator Over Voltage
+----------------------------------------
+DEVICES IN PARALLEL
+c83404 33.0p
+----------------------------------------
+Serial #: 6783001KHH

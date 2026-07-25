@@ -1,0 +1,38 @@
+----------------------------------------
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35502_ult7
+Mon Jul 25 08:09:04 2005
+----------------------------------------
+r22201 HAS FAILED
+
+Measured:   25.241k
+Nominal:    2.4000k
+High Limit: 2.5440k
+Low Limit:  2.2560k
+Resistance in OHMS
+----------------------------------------
+r22202 HAS FAILED
+
+Measured:   25.364k
+Nominal:    2.4000k
+High Limit: 2.5440k
+Low Limit:  2.2560k
+Resistance in OHMS
+----------------------------------------
+r22203 HAS FAILED
+
+Measured:   25.228k
+Nominal:    2.4000k
+High Limit: 2.5440k
+Low Limit:  2.2560k
+Resistance in OHMS
+----------------------------------------
+r22204 HAS FAILED
+
+Measured:   25.337k
+Nominal:    2.4000k
+High Limit: 2.5440k
+Low Limit:  2.2560k
+Resistance in OHMS
+----------------------------------------
+Serial #: 67830022F1

@@ -1,0 +1,14 @@
+----------------------------------------
+Shorts Report for "shorts".
+Sat Jan 01 08:19:53 2005
+DIGIBOARD-E14 GEN8 IPH-ATESS-APR 2026-BRAZIL-ERS
+Board Version:  sb21w21218_u5
+----------------------------------------
+Open #1 Thresh 25, Delay 50us       Ohms
+From: SMB_2_DAT_EC_SENSOR     21536 Open
+To:   SMB_2_DAT_GSEN          21610
+Common Devices:
+                 rs104
+Message is:  None.
+------End, 1 Problem Reported-----------
+Serial #: 67830015DA

@@ -1,0 +1,14 @@
+----------------------------------------
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35502_ult7
+Mon Jul 25 09:19:51 2005
+----------------------------------------
+c59017 HAS FAILED
+
+Measured:   451.55p
+Nominal:    330.00p
+High Limit: 445.50p
+Low Limit:  214.50p
+Capacitance in FARADS
+----------------------------------------
+Serial #: 678300224F

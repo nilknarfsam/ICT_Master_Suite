@@ -1,0 +1,43 @@
+----------------------------------------
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35502_ult7
+Mon Jul 25 07:30:41 2005
+----------------------------------------
+r11004 HAS FAILED
+
+Measured:   126.92M
+Nominal:    200.00k
+High Limit: 222.00k
+Low Limit:  178.00k
+Resistance in OHMS
+----------------------------------------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Mon Jul 25 07:30:44 2005
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35502_ult7
+----------------------------------------
+Failed Open #1
+(21612) 38P4M_IN
+                c11003.1
+                r11004.2
+                ucpu1.M1
+                y11002.1
+----------------------------------------
+Failed Open #2
+(21562) EPD_ON_OUT
+                r19001.1
+               ucpu1.AB27
+------End, 2 Problems Reported----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Mon Jul 25 07:30:50 2005
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35502_ult7
+----------------------------------------
+Failed Open #1
+(21562) EPD_ON_OUT
+                r19001.1
+               ucpu1.AB27
+------End, 1 Problem Reported-----------
+Serial #: 6783001KCZ

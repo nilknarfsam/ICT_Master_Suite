@@ -1,0 +1,14 @@
+----------------------------------------
+Shorts Report for "shorts".
+Mon Jul 25 08:54:19 2005
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35502_ult7
+----------------------------------------
+Short #1, Thresh 9, Delay 50us      Ohms
+From: -USB2_TCSS_OC          203158    5
+To:   -PAD_INT               202116    6
+Common Devices:
+                 ucpu1
+Total of 2 nodes, Message is:  None.
+------End, 1 Problem Reported-----------
+Serial #: 678300222N

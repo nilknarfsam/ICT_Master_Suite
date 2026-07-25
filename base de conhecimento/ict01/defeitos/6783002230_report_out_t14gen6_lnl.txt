@@ -1,0 +1,48 @@
+----------------------------------------
+Shorts Report for "shorts".
+Mon Jul 25 09:12:20 2005
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35502_ult7
+----------------------------------------
+Short #1, Thresh 9, Delay 30ms      Ohms
+From: VCC3_TOUCHPANEL_R      210149    2
+  &   VCC3_TOUCHPANEL_F      202172
+  &   VCC3_TOUCHPANEL        210163
+To:   -MIC_HW_EN              21155    3
+      VCCGFXCORE              21167    5
+      -TAMPER_SW_DTCT        211162    5
+      -SVR_EN                 21015    3
+      N49442781              203155    3
+      UEC1_TRAL1              20327    3
+      PLANARID0              211157    3
+      PLANARID1               21157    4
+      PLANARID3               21156    3
+      -SKTOCC                 21116    3
+      VSSPRIM_AON_SENSE      210124    4
+      VSSPRIM_AONLV_SENSE     21024    4
+      VSSCPU_ECORE_SENSE     210125    4
+      VSSDDR2L_SENSE         210158    4
+      VSSGFX_SENSE            21058    4
+      VSSIO_PRIM_SENSE       211138    4
+      -INTRUDER               21045    4
+      NCTF_L1                 21710    3
+      NCTF_L2                219113    3
+      NCTF_L4                209142    4
+      NCTF_R1                209109    4
+      NCTF_R2                 21608    3
+      NCTF_R3                 21668    3
+      NCTF_R5                209146    4
+      NCTF_L6                 20948    3
+      CH_AGND                211124    4
+      AGND                   203124    3
+      GND                     21450    2
+Common Devices:
+                 c92012
+                 u92002
+                 jlcd1
+                 c94108
+                 c94305
+                 u9401
+Total of 31 nodes, Message is:  None.
+------End, 1 Problem Reported-----------
+Serial #: 6783002230

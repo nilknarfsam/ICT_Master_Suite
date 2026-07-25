@@ -1,0 +1,33 @@
+----------------------------------------
+TestJet Report for "testjet".
+Mon Jul 25 07:46:16 2005
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35502_ult7
+----------------------------------------
+Open #1  Device jiob1
+  Pin 41  Node USB3_P2_RXP
+  Measured -3.4             (BRC 21402)
+----------------------------------------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Mon Jul 25 07:46:18 2005
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35502_ult7
+----------------------------------------
+Failed Open #1
+(21402) USB3_P2_RXP
+                jiob1.41
+               ucpu1.AR7
+------End, 1 Problem Reported-----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Mon Jul 25 07:46:24 2005
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35502_ult7
+----------------------------------------
+Failed Open #1
+(21402) USB3_P2_RXP
+                jiob1.41
+               ucpu1.AR7
+------End, 1 Problem Reported-----------
+Serial #: 6783001KDN

@@ -1,0 +1,14 @@
+----------------------------------------
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35502_ult7
+Mon Jul 25 06:59:02 2005
+----------------------------------------
+l95001%jp2 HAS FAILED
+
+REPLACE DEVICE: l95001
+
+Measured:   29.308M
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+Serial #: 6783001KB9
