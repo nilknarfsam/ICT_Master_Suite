@@ -1,0 +1,15 @@
+----------------------------------------
+DIGIBOARD-TB14_TB16 GEN6-ATESS-JUL 2024-BRAZIL-ERS
+Board Version:  5b21d46744tb14i7
+Sat Jan 01 01:34:52 2005
+----------------------------------------
+led3 HAS FAILED
+
+Measured:   5.0830
+High Limit: 2.5000
+Low Limit:  1.5000
+Forward VOLTAGE drop
+Status:  4H
+Moa Voltage/Current Compliance
+----------------------------------------
+Serial #: 67830018AR

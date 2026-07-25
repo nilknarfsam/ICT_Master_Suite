@@ -1,0 +1,31 @@
+----------------------------------------
+DIGIBOARD-TB14_TB16 GEN6-ATESS-JUL 2024-BRAZIL-ERS
+Board Version:  5b21d46744tb14i7
+Sat Jan 01 01:35:37 2005
+----------------------------------------
+r7005 HAS FAILED
+
+Measured:   136.98
+Threshold: 150.00
+Jumper Resistance in OHMS
+Expecting an open ("op" flag used)
+----------------------------------------
+DEVICES IN PARALLEL
+   [c4018] BOM Value : 1u
+   [c5517] BOM Value : 100n
+   [c7312] BOM Value : 1u
+   [c6701] BOM Value : 100n
+   [ed6701]
+   [c7001] BOM Value : 10u
+   [c7002] BOM Value : 100n
+   [c7003] BOM Value : 100n
+   [pc5301] BOM Value : 22u
+   [pc4509] BOM Value : 22u
+   [pc4510] BOM Value : 22u
+   [pc4511] BOM Value : 22u
+   [pc4512] BOM Value : 22u
+   [pc4514] BOM Value : 100n
+   [pc4515] BOM Value : 100n
+   [pc5118] BOM Value : 22u
+----------------------------------------
+Serial #: 67830018PC

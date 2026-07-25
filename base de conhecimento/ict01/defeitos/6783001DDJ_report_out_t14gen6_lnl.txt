@@ -1,0 +1,18 @@
+----------------------------------------
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35591_ult5
+Sat Jul 23 10:42:00 2005
+----------------------------------------
+c63403 HAS FAILED
+
+Measured:   0.24074u
+Nominal:    0.20000u
+High Limit: 0.24000u
+Low Limit:  0.16000u
+Capacitance in FARADS
+----------------------------------------
+DEVICES IN PARALLEL
+   [c64403] BOM Value : 100n
+   [300,] BOM Value : 150
+----------------------------------------
+Serial #: 6783001DDJ

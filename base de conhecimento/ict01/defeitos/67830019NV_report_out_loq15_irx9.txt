@@ -1,0 +1,61 @@
+----------------------------------------
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+Tue Jan 04 10:01:46 2005
+----------------------------------------
+r5839 HAS FAILED
+
+Measured:   230.49M
+Nominal:    100.00k
+High Limit: 115.00k
+Low Limit:  85.000k
+Resistance in OHMS
+----------------------------------------
+pr509 HAS FAILED
+
+Measured:   -2910.8M
+Nominal:    2.2000k
+High Limit: 2.4200k
+Low Limit:  1.9800k
+Resistance in OHMS
+----------------------------------------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 10:01:51 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(21545) ec_on
+                pr509.1
+                r5839.2
+                 uec1.1
+----------------------------------------
+Failed Open #2
+(208169) pcie_ptx_drx_p8
+                cw5201.1
+                uh1.616
+----------------------------------------
+Failed Open #3
+(22055) usb20_p8
+               rbl6421.1
+                uh1.689
+------End, 3 Problems Reported----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 10:01:58 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(21545) ec_on
+                pr509.1
+                r5839.2
+                 uec1.1
+----------------------------------------
+Failed Open #2
+(22055) usb20_p8
+               rbl6421.1
+                uh1.689
+------End, 2 Problems Reported----------
+Serial #: 67830019NV

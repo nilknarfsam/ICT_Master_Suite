@@ -1,0 +1,30 @@
+----------------------------------------
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35591_ult5
+Thu Jul 21 09:01:18 2005
+----------------------------------------
+pr1315 HAS FAILED
+
+Measured:   930.32
+Nominal:    520.10
+High Limit: 650.12
+Low Limit:  364.07
+Resistance in OHMS
+----------------------------------------
+DEVICES IN PARALLEL
+   [r15008] BOM Value : 100k
+   [c15054] BOM Value : 2.2u
+   [c15055] BOM Value : 2.2u
+   [c15056] BOM Value : 2.2u
+   [c15057] BOM Value : 2.2u
+   [c15078] BOM Value : 10u
+   [c15079] BOM Value : 10u
+   [c15091] BOM Value : 10u
+   [c15092] BOM Value : 10u
+   [c15093] BOM Value : 10u
+   [c15094] BOM Value : 10u
+   [pc1584] BOM Value : 22u
+   [pc1585] BOM Value : 22u
+   [pc1587] BOM Value : 22u
+----------------------------------------
+Serial #: 6783001D74

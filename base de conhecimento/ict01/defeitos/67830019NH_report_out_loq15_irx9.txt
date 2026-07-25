@@ -1,0 +1,41 @@
+----------------------------------------
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+Tue Jan 04 09:27:08 2005
+----------------------------------------
+prz259 HAS FAILED
+
+Measured:   2.5389k
+Nominal:    4.3440k
+High Limit: 5.4300k
+Low Limit:  3.2580k
+Resistance in OHMS
+----------------------------------------
+DEVICES IN PARALLEL
+   [phz6] BOM Value : 10k
+----------------------------------------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 09:27:15 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(214166) +3v_spi
+                cc902.2
+                rc933.2
+                uc901.8
+------End, 1 Problem Reported-----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 09:27:22 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(214166) +3v_spi
+                cc902.2
+                rc933.2
+                uc901.8
+------End, 1 Problem Reported-----------
+Serial #: 67830019NH

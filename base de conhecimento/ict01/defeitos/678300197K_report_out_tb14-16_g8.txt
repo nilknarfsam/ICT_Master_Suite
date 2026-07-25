@@ -1,0 +1,12 @@
+----------------------------------------
+DIGIBOARD-TB14_TB16 GEN6-ATESS-JUL 2024-BRAZIL-ERS
+Board Version:  5b21d46744tb14i7
+Sat Jan 01 05:42:58 2005
+----------------------------------------
+pr4459 HAS FAILED
+
+Measured:   1.1756k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+Serial #: 678300197K

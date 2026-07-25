@@ -1,0 +1,38 @@
+----------------------------------------
+Shorts Report for "shorts".
+Thu Jul 21 12:21:44 2005
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35591_ult5
+----------------------------------------
+Open #1 Thresh 25, Delay 50us       Ohms
+From: SP_OUTL+               210126 Open
+To:   SP_OUTL+_L              20301
+Common Devices:
+                 l86003
+Message is:  None.
+------End, 1 Problem Reported-----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Thu Jul 21 12:21:46 2005
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35591_ult5
+----------------------------------------
+Failed Open #1
+(214143) -EXTPWR_R
+                d42001.A
+                r42007.2
+                uec1.A13
+------End, 1 Problem Reported-----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Thu Jul 21 12:21:51 2005
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35591_ult5
+----------------------------------------
+Failed Open #1
+(214143) -EXTPWR_R
+                d42001.A
+                r42007.2
+                uec1.A13
+------End, 1 Problem Reported-----------
+Serial #: 6783001CU0

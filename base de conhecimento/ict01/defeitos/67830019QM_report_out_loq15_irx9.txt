@@ -1,0 +1,45 @@
+----------------------------------------
+Shorts Report for "shorts".
+Tue Jan 04 10:08:42 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Open #1 Thresh 25, Delay 50us       Ohms
+From: +1.8VALW_PRIM_PCH      214165 Open
+To:   +vccpgppa_1p8          217161
+Common Devices:
+                 rh157
+Message is:  None.
+------End, 1 Problem Reported-----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 10:08:44 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(217161) +vccpgppa_1p8
+                 ch29.1
+                rh157.2
+                uh1.237
+----------------------------------------
+Failed Open #2
+(20808) xtalout
+                 cg69.2
+                 rg72.2
+                uv1.1022
+                 yg1.3
+------End, 2 Problems Reported----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 10:08:50 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(217161) +vccpgppa_1p8
+                 ch29.1
+                rh157.2
+                uh1.237
+------End, 1 Problem Reported-----------
+Serial #: 67830019QM

@@ -1,0 +1,12 @@
+----------------------------------------
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35591_ult5
+Sat Jul 23 09:59:54 2005
+----------------------------------------
+l49001 HAS FAILED
+
+Measured:   5.5900k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+Serial #: 6783001DFF

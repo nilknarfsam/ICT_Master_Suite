@@ -1,0 +1,26 @@
+----------------------------------------
+DIGIBOARD-TB14_TB16 GEN6-ATESS-JUL 2024-BRAZIL-ERS
+Board Version:  5b21d46744tb14i7
+Sat Jan 01 01:13:12 2005
+----------------------------------------
+rn4001%r1 HAS FAILED
+
+REPLACE DEVICE: rn4001
+
+Measured:   359.18M
+Nominal:    100.00k
+High Limit: 115.00k
+Low Limit:  85.000k
+Resistance in OHMS
+----------------------------------------
+rn4001%r2 HAS FAILED
+
+REPLACE DEVICE: rn4001
+
+Measured:   6.5547M
+Nominal:    100.00k
+High Limit: 115.00k
+Low Limit:  75.000k
+Resistance in OHMS
+----------------------------------------
+Serial #: 67830018HE

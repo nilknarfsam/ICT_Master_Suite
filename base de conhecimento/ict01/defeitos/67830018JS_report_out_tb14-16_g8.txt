@@ -1,0 +1,14 @@
+----------------------------------------
+Shorts Report for "shorts".
+Sat Jan 01 06:14:48 2005
+DIGIBOARD-TB14_TB16 GEN6-ATESS-JUL 2024-BRAZIL-ERS
+Board Version:  5b21d46744tb14i7
+----------------------------------------
+Short #1, Thresh 3, Delay 50us      Ohms
+From: vref_aud                20827    1
+To:   ldo1-cap_aud            20830    2
+Common Devices:
+                 u2701
+Total of 2 nodes, Message is:  None.
+------End, 1 Problem Reported-----------
+Serial #: 67830018JS

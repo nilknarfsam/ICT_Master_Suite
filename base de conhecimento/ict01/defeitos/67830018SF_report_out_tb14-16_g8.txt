@@ -1,0 +1,14 @@
+----------------------------------------
+DIGIBOARD-TB14_TB16 GEN6-ATESS-JUL 2024-BRAZIL-ERS
+Board Version:  5b21d46744tb14i7
+Sat Jan 01 06:29:38 2005
+----------------------------------------
+c7110 HAS FAILED
+
+Measured:   2.9694u
+Nominal:    2.2000u
+High Limit: 2.8600u
+Low Limit:  1.5400u
+Capacitance in FARADS
+----------------------------------------
+Serial #: 67830018SF

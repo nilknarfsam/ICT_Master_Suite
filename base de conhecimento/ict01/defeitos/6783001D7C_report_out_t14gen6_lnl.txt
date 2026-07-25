@@ -1,0 +1,11 @@
+----------------------------------------
+TestJet Report for "testjet".
+Sat Jul 23 11:01:45 2005
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35591_ult5
+----------------------------------------
+Open #1  Device pu1001
+  Pin H4  Node VCCL2_ON
+  Measured 10.3             (BRC 20273)
+----------------------------------------
+Serial #: 6783001D7C

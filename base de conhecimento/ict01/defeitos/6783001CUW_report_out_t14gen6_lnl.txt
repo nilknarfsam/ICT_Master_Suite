@@ -1,0 +1,21 @@
+----------------------------------------
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35591_ult5
+Sat Jul 23 13:58:30 2005
+----------------------------------------
+c76103 HAS FAILED
+
+Measured:   10.187u
+Nominal:    23.400u
+High Limit: 30.420u
+Low Limit:  16.377u
+Capacitance in FARADS
+----------------------------------------
+DEVICES IN PARALLEL
+   [c76105] BOM Value : 1u
+   [c76101] BOM Value : 100n
+   [c76102] BOM Value : 100n
+   [c76104] BOM Value : 100n
+   [c92015] BOM Value : 100n
+----------------------------------------
+Serial #: 6783001CUW

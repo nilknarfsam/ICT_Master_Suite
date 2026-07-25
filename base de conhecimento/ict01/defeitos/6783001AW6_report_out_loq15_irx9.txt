@@ -1,0 +1,32 @@
+----------------------------------------
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+Tue Jan 04 06:28:34 2005
+----------------------------------------
+pj503 HAS FAILED
+
+Measured:   31.815k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+pj1801 HAS FAILED
+
+Measured:   30.810
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+prv213%jp2_3 HAS FAILED
+
+REPLACE DEVICE: prv213
+
+Measured:   -23.320k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+r10243 HAS FAILED
+
+Measured:   30.096
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+Serial #: 6783001AW6

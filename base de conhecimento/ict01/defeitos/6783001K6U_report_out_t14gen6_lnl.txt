@@ -1,0 +1,33 @@
+----------------------------------------
+TestJet Report for "testjet".
+Sun Jul 24 08:06:11 2005
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35502_ult7
+----------------------------------------
+Open #1  Device u7601
+  Pin 2  Node -LANWAKE_LAN
+  Measured 17.5             (BRC 215112)
+----------------------------------------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Sun Jul 24 08:06:12 2005
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35502_ult7
+----------------------------------------
+Failed Open #1
+(214169) N59508219
+               prt0008.1
+               prt0012.2
+------End, 1 Problem Reported-----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Sun Jul 24 08:06:18 2005
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35502_ult7
+----------------------------------------
+Failed Open #1
+(214169) N59508219
+               prt0008.1
+               prt0012.2
+------End, 1 Problem Reported-----------
+Serial #: 6783001K6U

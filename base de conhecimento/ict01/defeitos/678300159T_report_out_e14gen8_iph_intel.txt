@@ -1,0 +1,14 @@
+----------------------------------------
+DIGIBOARD-E14 GEN8 IPH-ATESS-APR 2026-BRAZIL-ERS
+Board Version:  sb21w21218_u5
+Sat Jan 01 00:22:13 2005
+----------------------------------------
+pr1911 HAS FAILED
+
+Measured:   639.40k
+Nominal:    1.0000M
+High Limit: 1.3500M
+Low Limit:  650.00k
+Resistance in OHMS
+----------------------------------------
+Serial #: 678300159T

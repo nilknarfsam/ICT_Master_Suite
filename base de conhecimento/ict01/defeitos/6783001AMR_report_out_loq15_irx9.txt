@@ -1,0 +1,43 @@
+----------------------------------------
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+Tue Jan 04 06:30:30 2005
+----------------------------------------
+ca5606 HAS FAILED
+
+Measured:   3.7930u
+Nominal:    2.4000u
+High Limit: 3.1200u
+Low Limit:  1.6800u
+Capacitance in FARADS
+----------------------------------------
+DEVICES IN PARALLEL
+   [c7809] BOM Value : 100n
+   [ca5619] BOM Value : 100n
+   [ctp6306] BOM Value : 330p
+----------------------------------------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 06:30:32 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(214166) +3v_spi
+                cc902.2
+                rc933.2
+                uc901.8
+------End, 1 Problem Reported-----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 06:30:39 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(214166) +3v_spi
+                cc902.2
+                rc933.2
+                uc901.8
+------End, 1 Problem Reported-----------
+Serial #: 6783001AMR

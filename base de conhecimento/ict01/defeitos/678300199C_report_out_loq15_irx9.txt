@@ -1,0 +1,46 @@
+----------------------------------------
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+Tue Jan 04 15:51:03 2005
+----------------------------------------
+pr203 HAS FAILED
+
+Measured:   292.72M
+Nominal:    200.00k
+High Limit: 222.00k
+Low Limit:  178.00k
+Resistance in OHMS
+----------------------------------------
+pr204 HAS FAILED
+
+Measured:   20.443M
+Nominal:    10.000k
+High Limit: 11.000k
+Low Limit:  9.0000k
+Resistance in OHMS
+----------------------------------------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 15:51:08 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(20278) N66784507
+               jbat201.7
+                pr203.1
+                pr204.1
+------End, 1 Problem Reported-----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 15:51:14 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(20278) N66784507
+               jbat201.7
+                pr203.1
+                pr204.1
+------End, 1 Problem Reported-----------
+Serial #: 678300199C

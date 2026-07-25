@@ -1,0 +1,190 @@
+----------------------------------------
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+Tue Jan 04 09:03:25 2005
+----------------------------------------
+cv15 HAS FAILED
+
+Measured:   75.669p
+Nominal:    1.0000u
+High Limit: 1.3500u
+Low Limit:  0.65000u
+Capacitance in FARADS
+----------------------------------------
+DEVICES IN PARALLEL
+   [rv750] BOM Value : 100k
+----------------------------------------
+pr202 HAS FAILED
+
+Measured:   627.89k
+Nominal:    100.00
+High Limit: 111.00
+Low Limit:  94.000
+Resistance in OHMS
+----------------------------------------
+r5834 HAS FAILED
+
+Measured:   8.0233M
+Nominal:    1.0000k
+High Limit: 1.1000k
+Low Limit:  900.00
+Resistance in OHMS
+----------------------------------------
+rv750 HAS FAILED
+
+Measured:   -4387.6M
+Nominal:    100.00k
+High Limit: 115.00k
+Low Limit:  85.000k
+Resistance in OHMS
+----------------------------------------
+DEVICES IN PARALLEL
+   [cv15] BOM Value : 1u
+----------------------------------------
+rv751 HAS FAILED
+
+Measured:   271.28M
+Nominal:    100.00k
+High Limit: 115.00k
+Low Limit:  85.000k
+Resistance in OHMS
+----------------------------------------
+r5806 HAS FAILED
+
+Measured:   15.417M
+Nominal:    2.2000k
+High Limit: 2.4200k
+Low Limit:  1.9800k
+Resistance in OHMS
+----------------------------------------
+qg2%qf1 HAS FAILED
+
+REPLACE DEVICE: qg2
+
+Measured:   -12.751M
+High Limit: 200.00
+Low Limit:  20.000
+NFET Ron in OHMS
+----------------------------------------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 09:03:29 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(217155) ec_smb_ck1
+                 qg2.3
+               qg2%qf1.D
+                 qv42.3
+               qv42%qf2.D
+                r5834.2
+                uec1.16
+                uth1.10
+                 uth2.1
+----------------------------------------
+Failed Open #2
+(214166) +3v_spi
+                cc902.2
+                rc933.2
+                uc901.8
+----------------------------------------
+Failed Open #3
+(21157) ec_smb_ck0
+                c5803.1
+                jdbg1.9
+                pr202.2
+                prb14.1
+                r5806.2
+                uec1.10
+----------------------------------------
+Failed Open #4
+(214101) PWR_SRC_ON
+                 cv15.2
+                 qv46.3
+               qv46%qf.G
+                rv750.2
+                rv751.1
+----------------------------------------
+Failed Open #5
+(211166) +vcccnvi_ldo_0p4
+                 ch49.1
+                uh1.525
+                uh1.526
+                uh1.569
+                uh1.570
+                uh1.606
+                uh1.607
+                uh1.627
+----------------------------------------
+Failed Open #6
+(203126) kb_num_led_
+                qc1122.2
+              qc1122%qf2.G
+               rbl6434.1
+               rbl6437.1
+               ubl6401.45
+----------------------------------------
+Failed Open #7
+(20318) N22151821
+                rg151.1
+                uv14.90
+----------------------------------------
+Failed Open #8
+(21671) spi_0_cs_0
+                rc1939.2
+                uc901.1
+------End, 8 Problems Reported----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 09:03:35 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(217155) ec_smb_ck1
+                 qg2.3
+               qg2%qf1.D
+                 qv42.3
+               qv42%qf2.D
+                r5834.2
+                uec1.16
+                uth1.10
+                 uth2.1
+----------------------------------------
+Failed Open #2
+(214166) +3v_spi
+                cc902.2
+                rc933.2
+                uc901.8
+----------------------------------------
+Failed Open #3
+(21157) ec_smb_ck0
+                c5803.1
+                jdbg1.9
+                pr202.2
+                prb14.1
+                r5806.2
+                uec1.10
+----------------------------------------
+Failed Open #4
+(20808) xtalout
+                 cg69.2
+                 rg72.2
+                uv1.1022
+                 yg1.3
+----------------------------------------
+Failed Open #5
+(203126) kb_num_led_
+                qc1122.2
+              qc1122%qf2.G
+               rbl6434.1
+               rbl6437.1
+               ubl6401.45
+----------------------------------------
+Failed Open #6
+(21671) spi_0_cs_0
+                rc1939.2
+                uc901.1
+------End, 6 Problems Reported----------
+Serial #: 67830019KH

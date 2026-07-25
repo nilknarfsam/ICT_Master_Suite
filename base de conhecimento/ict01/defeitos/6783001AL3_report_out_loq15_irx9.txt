@@ -1,0 +1,140 @@
+----------------------------------------
+Shorts Report for "shorts".
+Tue Jan 04 16:28:04 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Open #1 Thresh 25, Delay 50us       Ohms
+From: +5VALW                 210142 Open
+To:   LED_G6                 214112
+Common Devices:
+                led6313
+             led6313%green
+                rtp6347
+Message is:  None.
+------End, 1 Problem Reported-----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 16:28:06 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(202118) N77290809
+                 cv3.2
+                 cv4.2
+                 qh2.G
+                 rt4.1
+----------------------------------------
+Failed Open #2
+(21570) +CHGRTC
+                pd201.2
+              pd201%cr2.A
+                pr208.1
+----------------------------------------
+Failed Open #3
+(211110) LED_W5
+                c8768.1
+               led6309.C
+               rtp6339.2
+----------------------------------------
+Failed Open #4
+(214112) LED_G6
+                c8777.1
+               led6313.2
+            led6313%green.C
+               rtp6347.2
+----------------------------------------
+Failed Open #5
+(20808) xtalout
+                 cg69.2
+                 rg72.2
+                uv1.1022
+                 yg1.3
+----------------------------------------
+Failed Open #6
+(211166) +vcccnvi_ldo_0p4
+                 ch49.1
+                uh1.525
+                uh1.526
+                uh1.569
+                uh1.570
+                uh1.606
+                uh1.607
+                uh1.627
+----------------------------------------
+Failed Open #7
+(203115) dgpu_edp_mux_cntl
+                 qg19.5
+               qg19%qf1.G
+                rg207.1
+                uv1.1219
+----------------------------------------
+Failed Open #8
+(209112) HDACPU_SCLK_R_R
+                r10247.1
+                uc1.1649
+------End, 8 Problems Reported----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 16:28:13 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(202118) N77290809
+                 cv3.2
+                 cv4.2
+                 qh2.G
+                 rt4.1
+----------------------------------------
+Failed Open #2
+(21570) +CHGRTC
+                pd201.2
+              pd201%cr2.A
+                pr208.1
+----------------------------------------
+Failed Open #3
+(211110) LED_W5
+                c8768.1
+               led6309.C
+               rtp6339.2
+----------------------------------------
+Failed Open #4
+(214112) LED_G6
+                c8777.1
+               led6313.2
+            led6313%green.C
+               rtp6347.2
+----------------------------------------
+Failed Open #5
+(20808) xtalout
+                 cg69.2
+                 rg72.2
+                uv1.1022
+                 yg1.3
+----------------------------------------
+Failed Open #6
+(211166) +vcccnvi_ldo_0p4
+                 ch49.1
+                uh1.525
+                uh1.526
+                uh1.569
+                uh1.570
+                uh1.606
+                uh1.607
+                uh1.627
+----------------------------------------
+Failed Open #7
+(203115) dgpu_edp_mux_cntl
+                 qg19.5
+               qg19%qf1.G
+                rg207.1
+                uv1.1219
+----------------------------------------
+Failed Open #8
+(209112) HDACPU_SCLK_R_R
+                r10247.1
+                uc1.1649
+------End, 8 Problems Reported----------
+Serial #: 6783001AL3

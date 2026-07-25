@@ -1,0 +1,11 @@
+----------------------------------------
+TestJet Report for "testjet".
+Sat Jul 23 12:56:51 2005
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35591_ult5
+----------------------------------------
+Open #1  Device u7601
+  Pin 2  Node -LANWAKE_LAN
+  Measured 18.3             (BRC 215112)
+----------------------------------------
+Serial #: 6783001D8B

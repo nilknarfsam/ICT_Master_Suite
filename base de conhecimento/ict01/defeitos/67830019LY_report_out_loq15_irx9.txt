@@ -1,0 +1,84 @@
+----------------------------------------
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+Tue Jan 04 10:42:30 2005
+----------------------------------------
+cth5 HAS FAILED
+
+Measured:   0.11995p
+Nominal:    2200.0p
+High Limit: 2640.0p
+Low Limit:  1760.0p
+Capacitance in FARADS
+----------------------------------------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 10:42:35 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(202118) N77290809
+                 cv3.2
+                 cv4.2
+                 qh2.G
+                 rt4.1
+----------------------------------------
+Failed Open #2
+(20808) xtalout
+                 cg69.2
+                 rg72.2
+                uv1.1022
+                 yg1.3
+----------------------------------------
+Failed Open #3
+(210107) CS_DSI_RT6543
+                 prg4.2
+                 pug1.1
+----------------------------------------
+Failed Open #4
+(20912) rom_wp__r
+                rg218.2
+                rg292.2
+                rg1759.1
+                 ug2.3
+----------------------------------------
+Failed Open #5
+(209112) HDACPU_SCLK_R_R
+                r10247.1
+                uc1.1649
+----------------------------------------
+Failed Open #6
+(21664) REMOTE2+
+                 cth4.1
+                 cth5.1
+                 qth2.B
+                 qth2.C
+                 uth1.4
+------End, 6 Problems Reported----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 10:42:42 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(202118) N77290809
+                 cv3.2
+                 cv4.2
+                 qh2.G
+                 rt4.1
+----------------------------------------
+Failed Open #2
+(20808) xtalout
+                 cg69.2
+                 rg72.2
+                uv1.1022
+                 yg1.3
+----------------------------------------
+Failed Open #3
+(209112) HDACPU_SCLK_R_R
+                r10247.1
+                uc1.1649
+------End, 3 Problems Reported----------
+Serial #: 67830019LY

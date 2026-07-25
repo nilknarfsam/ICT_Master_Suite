@@ -1,0 +1,14 @@
+----------------------------------------
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35591_ult5
+Thu Jul 21 13:46:20 2005
+----------------------------------------
+r11004 HAS FAILED
+
+Measured:   7.1969M
+Nominal:    200.00k
+High Limit: 222.00k
+Low Limit:  178.00k
+Resistance in OHMS
+----------------------------------------
+Serial #: 6783001D1X

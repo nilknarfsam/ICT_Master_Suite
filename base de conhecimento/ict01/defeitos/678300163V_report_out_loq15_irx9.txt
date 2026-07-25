@@ -1,0 +1,23 @@
+----------------------------------------
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+Tue Jan 04 13:32:42 2005
+----------------------------------------
+r5834 HAS FAILED
+
+Measured:   37.278M
+Nominal:    1.0000k
+High Limit: 1.1000k
+Low Limit:  900.00
+Resistance in OHMS
+----------------------------------------
+qg2%qf1 HAS FAILED
+
+REPLACE DEVICE: qg2
+
+Measured:   13.832M
+High Limit: 200.00
+Low Limit:  20.000
+NFET Ron in OHMS
+----------------------------------------
+Serial #: 678300163V

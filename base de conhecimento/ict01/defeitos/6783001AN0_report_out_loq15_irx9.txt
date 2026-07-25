@@ -1,0 +1,75 @@
+----------------------------------------
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+Tue Jan 04 05:25:41 2005
+----------------------------------------
+pcb30 HAS FAILED
+
+Measured:   0.12021u
+Nominal:    0.10000u
+High Limit: 0.12000u
+Low Limit:  0.080000u
+Capacitance in FARADS
+----------------------------------------
+DEVICES IN PARALLEL
+   [prb34] BOM Value : 75k
+----------------------------------------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 05:25:48 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(21018) rom_sclk
+                 cg51.1
+                 rg53.2
+                 rg54.2
+                 rg57.1
+                uv1.1330
+----------------------------------------
+Failed Open #2
+(20325) N33145013
+                 qg7.2
+                 qg7.3
+               qg7%qf1.D
+               qg7%qf2.G
+                 rg42.2
+----------------------------------------
+Failed Open #3
+(214166) +3v_spi
+                cc902.2
+                rc933.2
+                uc901.8
+----------------------------------------
+Failed Open #4
+(20816) n19085030
+                 t25.1
+                uv1.598
+------End, 4 Problems Reported----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 05:25:55 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(21018) rom_sclk
+                 cg51.1
+                 rg53.2
+                 rg54.2
+                 rg57.1
+                uv1.1330
+----------------------------------------
+Failed Open #2
+(214166) +3v_spi
+                cc902.2
+                rc933.2
+                uc901.8
+----------------------------------------
+Failed Open #3
+(20816) n19085030
+                 t25.1
+                uv1.598
+------End, 3 Problems Reported----------
+Serial #: 6783001AN0

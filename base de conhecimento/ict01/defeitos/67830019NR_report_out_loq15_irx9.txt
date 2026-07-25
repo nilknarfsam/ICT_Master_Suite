@@ -1,0 +1,177 @@
+----------------------------------------
+Shorts Report for "shorts".
+Tue Jan 04 08:59:29 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Open #1 Thresh 25, Delay 50us       Ohms
+From: +1V8_AON_DDS            20218 Open
+To:   N77181288              203113
+Common Devices:
+                  r11
+Message is:  None.
+------End, 1 Problem Reported-----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 08:59:31 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(202129) +vcc_kb_led
+                cbl25.1
+                cbl40.1
+                jkbl1.1
+                jkbl1.2
+                rbl83.2
+----------------------------------------
+Failed Open #2
+(203104) PCH_EDP_SW
+                qh4005.D
+                r10221.1
+                 rt2.1
+                 rt3.2
+----------------------------------------
+Failed Open #3
+(217155) ec_smb_ck1
+                 qg2.3
+               qg2%qf1.D
+                 qv42.3
+               qv42%qf2.D
+                r5834.2
+                uec1.16
+                uth1.10
+                 uth2.1
+----------------------------------------
+Failed Open #4
+(214166) +3v_spi
+                cc902.2
+                rc933.2
+                uc901.8
+----------------------------------------
+Failed Open #5
+(21976) spi_0_d3
+                rc1966.1
+                uc901.7
+----------------------------------------
+Failed Open #6
+(21570) +CHGRTC
+                pd201.2
+              pd201%cr2.A
+                pr208.1
+----------------------------------------
+Failed Open #7
+(211110) LED_W5
+                c8768.1
+               led6309.C
+               rtp6339.2
+----------------------------------------
+Failed Open #8
+(20374) PVCC_+1.35VS_VGAP
+                pcw18.1
+                prw13.1
+                puw1.18
+----------------------------------------
+Failed Open #9
+(211171) KB_NUM_LED__R
+               cbl6413.1
+                qc1122.6
+              qc1122%qf2.D
+               rbl6403.1
+               rbl6434.2
+----------------------------------------
+Failed Open #10
+(20808) xtalout
+                 cg69.2
+                 rg72.2
+                uv1.1022
+                 yg1.3
+----------------------------------------
+Failed Open #11
+(203126) kb_num_led_
+                qc1122.2
+              qc1122%qf2.G
+               rbl6434.1
+               rbl6437.1
+               ubl6401.45
+----------------------------------------
+Failed Open #12
+(20318) N22151821
+                rg151.1
+                uv14.90
+----------------------------------------
+Failed Open #13
+(209112) HDACPU_SCLK_R_R
+                r10247.1
+                uc1.1649
+----------------------------------------
+Failed Open #14
+(20816) n19085030
+                 t25.1
+                uv1.598
+------End, 14 Problems Reported---------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 08:59:37 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(202129) +vcc_kb_led
+                cbl25.1
+                cbl40.1
+                jkbl1.1
+                jkbl1.2
+                rbl83.2
+----------------------------------------
+Failed Open #2
+(203104) PCH_EDP_SW
+                qh4005.D
+                r10221.1
+                 rt2.1
+                 rt3.2
+----------------------------------------
+Failed Open #3
+(217155) ec_smb_ck1
+                 qg2.3
+               qg2%qf1.D
+                 qv42.3
+               qv42%qf2.D
+                r5834.2
+                uec1.16
+                uth1.10
+                 uth2.1
+----------------------------------------
+Failed Open #4
+(214166) +3v_spi
+                cc902.2
+                rc933.2
+                uc901.8
+----------------------------------------
+Failed Open #5
+(21976) spi_0_d3
+                rc1966.1
+                uc901.7
+----------------------------------------
+Failed Open #6
+(211171) KB_NUM_LED__R
+               cbl6413.1
+                qc1122.6
+              qc1122%qf2.D
+               rbl6403.1
+               rbl6434.2
+----------------------------------------
+Failed Open #7
+(203126) kb_num_led_
+                qc1122.2
+              qc1122%qf2.G
+               rbl6434.1
+               rbl6437.1
+               ubl6401.45
+----------------------------------------
+Failed Open #8
+(209112) HDACPU_SCLK_R_R
+                r10247.1
+                uc1.1649
+------End, 8 Problems Reported----------
+Serial #: 67830019NR

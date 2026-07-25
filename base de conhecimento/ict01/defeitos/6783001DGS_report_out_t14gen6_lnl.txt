@@ -1,0 +1,59 @@
+----------------------------------------
+TestJet Report for "testjet".
+Sat Jul 23 09:06:45 2005
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35591_ult5
+----------------------------------------
+Open #1  Device jtp1
+  Pin 2  Node TP4DATA
+  Measured 57.1             (BRC 210141)
+Open #2  Device jtp1
+  Pin 4  Node -TP4MIDDLE
+  Measured 55.3             (BRC 21031)
+Open #3  Device jtp1
+  Pin 5  Node -TP4RIGHT
+  Measured 53.8             (BRC 210131)
+Open #4  Device jtp1
+  Pin 6  Node -TP4LEFT
+  Measured 58.7             (BRC 210133)
+Open #5  Device jtp1
+  Pin 8  Node TP4CLK
+  Measured 100.5            (BRC 21041)
+Open #6  Device jtp1
+  Pin 9  Node -TP4_ACT
+  Measured 92.9             (BRC 21424)
+Open #7  Device jtp1
+  Pin 10  Node -TP4_FW_WR_EN
+  Measured 78.6             (BRC 21544)
+Open #8  Device jtp1
+  Pin 12  Node KBD_BL_PWM
+  Measured 77.2             (BRC 21122)
+Open #9  Device jtp1
+  Pin 13  Node -KBD_BL_DTCT
+  Measured 85.1             (BRC 21543)
+----------------------------------------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Sat Jul 23 09:06:46 2005
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35591_ult5
+----------------------------------------
+Failed Open #1
+(214143) -EXTPWR_R
+                d42001.A
+                r42007.2
+                uec1.A13
+------End, 1 Problem Reported-----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Sat Jul 23 09:06:52 2005
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35591_ult5
+----------------------------------------
+Failed Open #1
+(214143) -EXTPWR_R
+                d42001.A
+                r42007.2
+                uec1.A13
+------End, 1 Problem Reported-----------
+Serial #: 6783001DGS

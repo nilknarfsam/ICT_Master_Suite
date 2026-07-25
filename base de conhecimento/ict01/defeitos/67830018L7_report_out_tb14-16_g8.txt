@@ -1,0 +1,77 @@
+----------------------------------------
+DIGIBOARD-TB14_TB16 GEN6-ATESS-JUL 2024-BRAZIL-ERS
+Board Version:  5b21d46744tb14i7
+Sat Jan 01 04:01:46 2005
+----------------------------------------
+c2718 HAS FAILED
+
+Measured:   78.706p
+Nominal:    2.9000u
+High Limit: 4.9300u
+Low Limit:  0.87000u
+Capacitance in FARADS
+----------------------------------------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Sat Jan 01 04:01:51 2005
+DIGIBOARD-TB14_TB16 GEN6-ATESS-JUL 2024-BRAZIL-ERS
+Board Version:  5b21d46744tb14i7
+----------------------------------------
+Failed Open #1
+(20270) pwr_vcore_vdd33
+                pc4649.1
+                pr4657.2
+               pu4601.43
+----------------------------------------
+Failed Open #2
+(214131) cpvee_aud
+                c2718.1
+                u2701.25
+----------------------------------------
+Failed Open #3
+(210172) PWR_VCCAUX_PH
+                pc5012.2
+                pc5013.1
+                pl5001.1
+               pu5001.11
+               pu5001.12
+----------------------------------------
+Failed Open #4
+(215169) PWR_VCCAUX_BOOT_A
+                pc5012.1
+                pr5005.2
+----------------------------------------
+Failed Open #5
+(214105) PWR_VCCGT_BST1
+                pc4807.1
+               pu4801.21
+------End, 5 Problems Reported----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Sat Jan 01 04:01:57 2005
+DIGIBOARD-TB14_TB16 GEN6-ATESS-JUL 2024-BRAZIL-ERS
+Board Version:  5b21d46744tb14i7
+----------------------------------------
+Failed Open #1
+(20270) pwr_vcore_vdd33
+                pc4649.1
+                pr4657.2
+               pu4601.43
+----------------------------------------
+Failed Open #2
+(214131) cpvee_aud
+                c2718.1
+                u2701.25
+----------------------------------------
+Failed Open #3
+(214105) PWR_VCCGT_BST1
+                pc4807.1
+               pu4801.21
+----------------------------------------
+Failed Open #4
+(215164) espi_cpu_io1_r
+               cpu1.DT44
+                r1814.1
+               stcpu1b2.1
+------End, 4 Problems Reported----------
+Serial #: 67830018L7

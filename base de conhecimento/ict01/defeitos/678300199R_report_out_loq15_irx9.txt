@@ -1,0 +1,40 @@
+----------------------------------------
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+Tue Jan 04 16:42:06 2005
+----------------------------------------
+rh193 HAS FAILED
+
+Measured:   315.26M
+Nominal:    49.900k
+High Limit: 52.894k
+Low Limit:  46.906k
+Resistance in OHMS
+----------------------------------------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 16:42:09 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(21561) uart_0_crxd_dtxd
+                jdbg1.2
+                rh193.2
+                rw5205.2
+                uh1.130
+------End, 1 Problem Reported-----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 16:42:16 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(21561) uart_0_crxd_dtxd
+                jdbg1.2
+                rh193.2
+                rw5205.2
+                uh1.130
+------End, 1 Problem Reported-----------
+Serial #: 678300199R

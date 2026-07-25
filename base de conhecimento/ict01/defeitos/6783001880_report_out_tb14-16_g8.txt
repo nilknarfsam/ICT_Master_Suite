@@ -1,0 +1,38 @@
+----------------------------------------
+DIGIBOARD-TB14_TB16 GEN6-ATESS-JUL 2024-BRAZIL-ERS
+Board Version:  5b21d46744tb14i7
+Sat Jan 01 00:12:48 2005
+----------------------------------------
+r5611 HAS FAILED
+
+Measured:   -255.38k
+Nominal:    33.000
+High Limit: 44.550
+Low Limit:  21.450
+Resistance in OHMS
+----------------------------------------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Sat Jan 01 00:12:53 2005
+DIGIBOARD-TB14_TB16 GEN6-ATESS-JUL 2024-BRAZIL-ERS
+Board Version:  5b21d46744tb14i7
+----------------------------------------
+Failed Open #1
+(222112) cpu_i2c_scl_ts
+                r5611.1
+              sttouch1ac.1
+                touch1.3
+------End, 1 Problem Reported-----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Sat Jan 01 00:12:59 2005
+DIGIBOARD-TB14_TB16 GEN6-ATESS-JUL 2024-BRAZIL-ERS
+Board Version:  5b21d46744tb14i7
+----------------------------------------
+Failed Open #1
+(222112) cpu_i2c_scl_ts
+                r5611.1
+              sttouch1ac.1
+                touch1.3
+------End, 1 Problem Reported-----------
+Serial #: 6783001880

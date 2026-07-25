@@ -1,0 +1,29 @@
+----------------------------------------
+Shorts Report for "shorts".
+Sat Jan 01 03:12:21 2005
+DIGIBOARD-TB14_TB16 GEN6-ATESS-JUL 2024-BRAZIL-ERS
+Board Version:  5b21d46744tb14i7
+----------------------------------------
+Short #1, Thresh 9, Delay 50us      Ohms
+From: tp901                  222123    0
+  &   1d05v_s5_out           211132
+To:   pwr_vccgt_vosen         20972    7
+      1d8v_vccproc           202144    1
+      PWR_VCCAUX_MODE2        21069    1
+      pwr_vcore_addr         211176    1
+      pwr_vccgt_vortn        211168    2
+      vssgt_sense             20274    2
+      vssaux_sense            20943    2
+      PWR_VCCAUX_RGND         21072    3
+      agnd                   210125    1
+      ec_agnd                211156    0
+      PWR_VCCAUX_AGND         21164    1
+      PWR_CHG_AGND           210107    1
+      GND                     21430    0
+Common Devices:
+                  cpu1
+                 c4002
+                 u4001
+Total of 15 nodes, Message is:  None.
+------End, 1 Problem Reported-----------
+Serial #: 67830018PR

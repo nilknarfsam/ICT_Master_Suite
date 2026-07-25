@@ -1,0 +1,156 @@
+----------------------------------------
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+Tue Jan 04 20:15:57 2005
+----------------------------------------
+pf202 HAS FAILED
+
+Measured:   31.815k
+Threshold: 15.700
+Fuse Resistance in OHMS
+----------------------------------------
+pj1201 HAS FAILED
+
+Measured:   31.815k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+pj1853 HAS FAILED
+
+Measured:   31.815k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+pl204 HAS FAILED
+
+Measured:   31.815k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+DEVICES IN PARALLEL
+   [pl205]
+   [pl206]
+----------------------------------------
+lv10 HAS FAILED
+
+Measured:   81.367
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+lv11 HAS FAILED
+
+Measured:   -31.088k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+prz62 HAS FAILED
+
+Measured:   -23.320k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+plz2%jp2_3 HAS FAILED
+
+REPLACE DEVICE: plz2
+
+Measured:   47.722k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+prz119 HAS FAILED
+
+Measured:   31.815k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+r7809 HAS FAILED
+
+Measured:   -31.088k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+r10248 HAS FAILED
+
+Measured:   -31.088k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+ra5615 HAS FAILED
+
+Measured:   -23.320k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+rbl6401 HAS FAILED
+
+Measured:   -23.320k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+rc316 HAS FAILED
+
+Measured:   -23.320k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+rh150 HAS FAILED
+
+Measured:   -31.088k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+r10217 HAS FAILED
+
+Measured:   122.84
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+rbl6402 HAS FAILED
+
+Measured:   31.815k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+rh149 HAS FAILED
+
+Measured:   23.862k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+rh166 HAS FAILED
+
+Measured:   31.815k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+rth1 HAS FAILED
+
+Measured:   -31.088k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+rtp6302 HAS FAILED
+
+Measured:   -46.616k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+rv3100 HAS FAILED
+
+Measured:   -23.320k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+rv3690 HAS FAILED
+
+Measured:   -23.320k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+rw5218 HAS FAILED
+
+Measured:   -31.088k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+Serial #: 6783001AUE

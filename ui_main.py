@@ -14,7 +14,7 @@ from PyQt5.QtWidgets import (
 from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QIcon
 
-from models import carregar_config, salvar_config
+from models import carregar_config, salvar_config, extrair_diagnostico_inteligente
 from threads import BuscaThread, FileLoaderThread, TRICopyThread, NetworkMonitorThread
 
 def get_resource_path(relative_path):
@@ -56,6 +56,12 @@ class MainApp(QWidget):
         self.thread_copy_tri = None
         self.thread_net_monitor = None
         self.current_file_name = None
+        
+        # Variáveis de Estado do Visualizador Inteligente
+        self.current_meta = None
+        self.current_content = None
+        self.current_diagnostico = None
+        self.only_failures_active = False
         
         self.init_ui()
         self.init_tray()
@@ -162,7 +168,6 @@ class MainApp(QWidget):
     def setup_console_tab(self):
         layout = QVBoxLayout(self.tab_console)
         
-        # Cabeçalho do Console com Botões de Controle de Serviço
         header_box = QHBoxLayout()
         
         lbl_title = QLabel("🖥️ Console do Sistema (Eventos & Cópia TRI)")
@@ -176,7 +181,6 @@ class MainApp(QWidget):
         
         header_box.addStretch()
 
-        # Botões Pausar, Reiniciar, Exportar e Limpar
         self.btn_toggle_tri = QPushButton("⏸️ Pausar Cópia")
         self.btn_toggle_tri.clicked.connect(self.toggle_copia_tri)
         header_box.addWidget(self.btn_toggle_tri)
@@ -395,18 +399,36 @@ class MainApp(QWidget):
         l_left.addWidget(self.list_logs)
         splitter.addWidget(frame_left)
 
-        # Painel Direito: Exibição do Log selecionado
+        # Painel Direito: Exibição do Log selecionado e Card de Diagnóstico
         frame_right = QFrame()
         self.l_right = QVBoxLayout(frame_right)
         self.l_right.setContentsMargins(0,0,0,0)
+        
         self.lbl_info = QLabel("Selecione um arquivo.")
         self.lbl_info.setObjectName("lbl_info")
         self.lbl_info.setWordWrap(True)
         self.l_right.addWidget(self.lbl_info)
 
+        # Barra de Ferramentas do Log (Filtro por Falha e Copiar Diagnóstico)
+        bar_acoes = QHBoxLayout()
         lbl_log = QLabel("Log do Arquivo:")
         lbl_log.setObjectName("lbl_log")
-        self.l_right.addWidget(lbl_log)
+        lbl_log.setStyleSheet("font-weight: bold;")
+        bar_acoes.addWidget(lbl_log)
+        bar_acoes.addStretch()
+
+        self.btn_toggle_failures = QPushButton("👁️ Mostrar Apenas Falhas")
+        self.btn_toggle_failures.setCheckable(True)
+        self.btn_toggle_failures.setToolTip("Alterna a exibição para ocultar linhas de aprovação (PASS) e focar apenas nas falhas.")
+        self.btn_toggle_failures.clicked.connect(self.toggle_filtro_falhas)
+        bar_acoes.addWidget(self.btn_toggle_failures)
+
+        self.btn_copy_summary = QPushButton("📋 Copiar Diagnóstico")
+        self.btn_copy_summary.setToolTip("Copia o resumo formatado do laudo de reparo para a Área de Transferência.")
+        self.btn_copy_summary.clicked.connect(self.copiar_resumo_diagnostico)
+        bar_acoes.addWidget(self.btn_copy_summary)
+
+        self.l_right.addLayout(bar_acoes)
         
         self.text_raw = QTextEdit()
         self.text_raw.setReadOnly(True)
@@ -416,6 +438,52 @@ class MainApp(QWidget):
         splitter.addWidget(frame_right)
         splitter.setSizes([300, 800])
         layout.addWidget(splitter)
+
+    def toggle_filtro_falhas(self):
+        """Alterna a exibição entre o log completo e o filtro focado em falhas."""
+        self.only_failures_active = self.btn_toggle_failures.isChecked()
+        if self.only_failures_active:
+            self.btn_toggle_failures.setText("🔍 Mostrar Log Completo")
+            self.btn_toggle_failures.setStyleSheet("background-color: #dc3545; color: white; font-weight: bold;")
+        else:
+            self.btn_toggle_failures.setText("👁️ Mostrar Apenas Falhas")
+            self.btn_toggle_failures.setStyleSheet("")
+            
+        if self.current_content:
+            log_html = self.formatar_log_destaque(self.current_content)
+            self.text_raw.setHtml(log_html)
+
+    def copiar_resumo_diagnostico(self):
+        """Gera e copia o laudo de diagnóstico formatado para a área de transferência do Windows."""
+        if not self.current_meta:
+            QMessageBox.information(self, "Nenhum Log Selecionado", "Selecione um arquivo de log para copiar o diagnóstico.")
+            return
+
+        diag = self.current_diagnostico or {}
+        meta = self.current_meta
+        
+        comps_str = ", ".join(diag.get("componentes", [])) if diag.get("componentes") else "Nenhum componente específico"
+        coords_str = ", ".join(diag.get("coordenadas", [])) if diag.get("coordenadas") else "N/A"
+        curtos_str = "\n".join([f"  • {c}" for c in diag.get("curtos", [])]) if diag.get("curtos") else "Nenhum curto-circuito reportado"
+
+        texto_laudo = f"""=========================================================
+[DIAGNÓSTICO DE FALHA - ICT MASTER SUITE]
+=========================================================
+• Tipo de Teste : {meta.get('tipo', 'N/A')}
+• Serial Placa  : {meta.get('serial', 'N/A')}
+• Modelo        : {meta.get('modelo', 'N/A')}
+• Data do Teste : {meta.get('data', 'N/A')}
+• Status Geral  : {meta.get('status', 'N/A')}
+---------------------------------------------------------
+• Componentes Afetados : {comps_str}
+• Setores / Coordenadas: {coords_str}
+• Curtos / Ocorrências :
+{curtos_str}
+========================================================="""
+        
+        QApplication.clipboard().setText(texto_laudo)
+        self.status_bar.setText("📋 Resumo do diagnóstico copiado para a Área de Transferência!")
+        self.log_console(f"Diagnóstico do serial '{meta.get('serial')}' copiado para a área de transferência.", nivel="INFO")
 
     def keyPressEvent(self, event):
         """Intercepta teclas F5 e ESC para atalhos globais."""
@@ -428,6 +496,9 @@ class MainApp(QWidget):
             self.input_serial.clear()
             self.list_logs.clear()
             self.text_raw.clear()
+            self.current_content = None
+            self.current_meta = None
+            self.current_diagnostico = None
             self.lbl_info.setText("Selecione um arquivo.")
             self.status_bar.setText("Busca limpa.")
             self.log_console("Busca e tela de log limpas via tecla ESC.", nivel="INFO")
@@ -437,6 +508,9 @@ class MainApp(QWidget):
         
     def buscar(self):
         self.current_file_name = None
+        self.current_content = None
+        self.current_meta = None
+        self.current_diagnostico = None
         
         serial_limpo = self.input_serial.text().strip().upper()
         self.input_serial.setText(serial_limpo)
@@ -541,7 +615,7 @@ class MainApp(QWidget):
         self.thread_loader.start()
 
     def formatar_log_destaque(self, content):
-        """Aplica realce de sintaxe em HTML simples para destacar falhas, aprovações e o serial pesquisado."""
+        """Aplica realce de sintaxe em HTML simples para destacar falhas, aprovações, componentes e o serial pesquisado."""
         escaped = html.escape(content)
         
         # Destacar o serial pesquisado em Amarelo Destaque
@@ -549,28 +623,91 @@ class MainApp(QWidget):
         if termo_serial and len(termo_serial) >= 3:
             escaped = re.sub(re.escape(termo_serial), r'<mark style="background-color: #fff3cd; color: #856404; font-weight: bold; padding: 1px 4px; border-radius: 3px;">\g<0></mark>', escaped, flags=re.IGNORECASE)
 
+        # Realce por categorias de componentes (Resistores, Capacitores, CIs, Transistores)
+        escaped = re.sub(r'\b(PU\w+|U\w+)\b', r'<b style="color: #d63384; font-weight: bold;">\1</b>', escaped) # CIs em Rosa/Magenta
+        escaped = re.sub(r'\b(CC\w+|PC\w+)\b', r'<b style="color: #0d6efd; font-weight: bold;">\1</b>', escaped) # Capacitores em Azul
+        escaped = re.sub(r'\b(PR\w+|RE\w+)\b', r'<b style="color: #fd7e14; font-weight: bold;">\1</b>', escaped) # Resistores em Laranja
+        escaped = re.sub(r'\b(PQ\w+|Q\w+)\b', r'<b style="color: #6f42c1; font-weight: bold;">\1</b>', escaped) # Transistores em Roxo
+
         # Realce de termos de falha e aprovação
-        escaped = re.sub(r'\b(FAIL|FAILED|FAILURE)\b', r'<b style="color: #dc3545; background-color: #f8d7da; padding: 1px 3px; border-radius: 2px;">\1</b>', escaped, flags=re.IGNORECASE)
-        escaped = re.sub(r'\b(PASS|PASSED)\b', r'<b style="color: #198754; background-color: #d1e7dd; padding: 1px 3px; border-radius: 2px;">\1</b>', escaped, flags=re.IGNORECASE)
-        escaped = re.sub(r'\b(HIGH|LOW|SHORT|OPEN)\b', r'<b style="color: #fd7e14;">\1</b>', escaped, flags=re.IGNORECASE)
+        escaped = re.sub(r'\b(FAIL|FAILED|FAILURE)\b', r'<b style="color: #dc3545; background-color: #f8d7da; padding: 1px 4px; border-radius: 2px;">\1</b>', escaped, flags=re.IGNORECASE)
+        escaped = re.sub(r'\b(PASS|PASSED)\b', r'<b style="color: #198754; background-color: #d1e7dd; padding: 1px 4px; border-radius: 2px;">\1</b>', escaped, flags=re.IGNORECASE)
+        escaped = re.sub(r'\b(HIGH|LOW|SHORT|OPEN)\b', r'<b style="color: #dc3545; font-weight: bold;">\1</b>', escaped, flags=re.IGNORECASE)
         
         lines = escaped.splitlines()
         formatted_lines = []
+        
+        diag_comps = [c.lower() for c in (self.current_diagnostico.get("componentes", []) if self.current_diagnostico else [])]
+        
         for line in lines:
-            if "fail" in line.lower():
+            line_lower = line.lower()
+            
+            # Se o filtro "Mostrar Apenas Falhas" estiver ativado, oculta linhas irrelevantes
+            if self.only_failures_active:
+                eh_falha = ("fail" in line_lower or "short" in line_lower or "open" in line_lower or any(c in line_lower for c in diag_comps))
+                if not eh_falha:
+                    continue
+
+            if "fail" in line_lower or "short" in line_lower or "open" in line_lower:
                 formatted_lines.append(f"<div style='background-color: #fff5f5;'>{line}</div>")
-            elif "pass" in line.lower():
+            elif "pass" in line_lower:
                 formatted_lines.append(f"<div style='background-color: #f6fff9;'>{line}</div>")
             else:
                 formatted_lines.append(f"<div>{line}</div>")
                 
+        if not formatted_lines:
+            return "<div style='color: #6c757d; font-style: italic; padding: 10px;'>Nenhuma linha de falha direta encontrada para exibição filtrada neste log.</div>"
+
         return f"<pre style='font-family: Consolas, \"Courier New\", monospace; font-size: 12px; line-height: 1.45; white-space: pre-wrap;'>{''.join(formatted_lines)}</pre>"
         
     def on_file_loaded(self, meta, content):
-        html_info = f"""<h3 style='margin-bottom:2px'>ICT Log: {meta['tipo']}</h3>
-                       <b>Data:</b> {meta['data']} &nbsp;|&nbsp; 
-                       <b>Serial:</b> {meta['serial']} &nbsp;|&nbsp; 
-                       <b>Modelo:</b> {meta['modelo']}<br>"""
+        self.current_meta = meta
+        self.current_content = content
+        self.current_diagnostico = extrair_diagnostico_inteligente(meta, content)
+        
+        diag = self.current_diagnostico
+        status = meta.get("status", "N/A").upper()
+        
+        if status in ["FAIL", "FAILED"]:
+            status_badge = "<span style='background-color: #f8d7da; color: #dc3545; font-weight: bold; padding: 3px 8px; border-radius: 4px;'>🔴 REPROVADO (FAIL)</span>"
+        elif status in ["PASS", "PASSED"]:
+            status_badge = "<span style='background-color: #d1e7dd; color: #198754; font-weight: bold; padding: 3px 8px; border-radius: 4px;'>🟢 APROVADO (PASS)</span>"
+        else:
+            status_badge = f"<span style='background-color: #fff3cd; color: #856404; font-weight: bold; padding: 3px 8px; border-radius: 4px;'>🟡 {status}</span>"
+
+        # Construção do Card de Diagnóstico Rápido
+        if diag.get("componentes") or diag.get("curtos"):
+            comps_txt = ", ".join(diag["componentes"][:10]) if diag["componentes"] else "Nenhum específico"
+            coords_txt = ", ".join(diag["coordenadas"][:10]) if diag["coordenadas"] else "N/A"
+            card_html = f"""
+            <div style='background-color: #fff5f5; border-left: 4px solid #dc3545; padding: 8px 12px; margin-top: 8px; border-radius: 4px;'>
+                <b style='color: #dc3545; font-size: 13px;'>🔴 Card de Diagnóstico Rápido:</b><br>
+                <span style='color: #333;'><b>Componentes Afetados:</b> <b style='color: #dc3545;'>{comps_txt}</b></span><br>
+                <span style='color: #555;'><b>Setores / Coordenadas na Placa:</b> {coords_txt}</span>
+            </div>
+            """
+        elif status in ["PASS", "PASSED"]:
+            card_html = """
+            <div style='background-color: #f6fff9; border-left: 4px solid #198754; padding: 6px 12px; margin-top: 8px; border-radius: 4px;'>
+                <b style='color: #198754;'>🟢 Placa Aprovada:</b> Nenhum defeito elétrico ou componente falhado detectado neste teste.
+            </div>
+            """
+        else:
+            card_html = ""
+
+        html_info = f"""
+        <div style='background-color: #ffffff; border: 1px solid #dee2e6; border-radius: 6px; padding: 10px; margin-bottom: 5px;'>
+            <div style='display: flex; align-items: center;'>
+                <b style='font-size: 15px; color: #212529;'>ICT Log: {meta['tipo']}</b> &nbsp;&nbsp; {status_badge}
+            </div>
+            <div style='color: #495057; margin-top: 6px; font-size: 13px;'>
+                <b>Data:</b> {meta['data']} &nbsp;|&nbsp; 
+                <b>Serial:</b> <b style='color: #0d6efd;'>{meta['serial']}</b> &nbsp;|&nbsp; 
+                <b>Modelo:</b> {meta['modelo']}
+            </div>
+            {card_html}
+        </div>
+        """
         self.lbl_info.setText(html_info)
         
         if len(content.encode('utf-8', errors='ignore')) > 1_000_000:

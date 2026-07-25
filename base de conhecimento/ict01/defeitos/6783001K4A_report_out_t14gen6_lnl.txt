@@ -1,0 +1,65 @@
+----------------------------------------
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35502_ult7
+Sun Jul 24 07:34:25 2005
+----------------------------------------
+pc1591 HAS FAILED
+
+Measured:   108.44u
+Nominal:    80.800u
+High Limit: 105.04u
+Low Limit:  56.549u
+Capacitance in FARADS
+----------------------------------------
+DEVICES IN PARALLEL
+   [c16030] BOM Value : 10u
+   [c16032] BOM Value : 10u
+   [c16040] BOM Value : 10u
+   [c16041] BOM Value : 10u
+   [c16042] BOM Value : 10u
+   [c16009] BOM Value : 2.2u
+   [c16010] BOM Value : 2.2u
+   [c16011] BOM Value : 2.2u
+   [c16012] BOM Value : 2.2u
+----------------------------------------
+c48101 HAS FAILED
+
+Measured:   61.582u
+Nominal:    47.320u
+High Limit: 61.516u
+Low Limit:  33.124u
+Capacitance in FARADS
+----------------------------------------
+DEVICES IN PARALLEL
+   [c58001] BOM Value : 10u
+   [c58009] BOM Value : 10u
+   [c49301] BOM Value : 4.7u
+   [c49303] BOM Value : 4.7u
+   [c49304] BOM Value : 4.7u
+   [c46301] BOM Value : 1u
+   [c74101] BOM Value : 1u
+   [c48102] BOM Value : 100n
+   [c53113] BOM Value : 100n
+   [c53114] BOM Value : 100n
+   [c58002] BOM Value : 100n
+   [c58005] BOM Value : 100n
+   [c58006] BOM Value : 100n
+   [c58007] BOM Value : 100n
+   [c58008] BOM Value : 100n
+   [c74102] BOM Value : 100n
+   [c95101] BOM Value : 100n
+   [c95103] BOM Value : 100n
+   [pc2303] BOM Value : 100n
+   [c45104] BOM Value : 10n
+   [c53115] BOM Value : 10n
+   [c49302] BOM Value : 100p
+   [c49305] BOM Value : 100p
+   [c74301] BOM Value : 100p
+   [c74302] BOM Value : 47p
+   [c74303] BOM Value : 39p
+   [c74304] BOM Value : 33p
+   [c74305] BOM Value : 18p
+   [c74306] BOM Value : 8.2p
+   [c74307] BOM Value : 6.8p
+----------------------------------------
+Serial #: 6783001K4A

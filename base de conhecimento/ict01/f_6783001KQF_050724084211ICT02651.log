@@ -1,0 +1,8 @@
+{@BATCH|t14_gen6_intel||4086|1||btest|050724082343~16|ICT0265\engineer|ICT0265|C:/Agilent_ICT/boards/t14_gen6_lnl_intel|RevA|sb21v35502_ult7||sb21v35502_ult7
+{@BTEST|6783001KQF|04|050724084153|000018|0|all||n||050724084211||1
+{@TS|1|000|001|000|shorts
+{@TS-O|RT_LR_PWR_EN|N48204939|4095}
+}
+{@PF|pins|0|0
+}
+}}

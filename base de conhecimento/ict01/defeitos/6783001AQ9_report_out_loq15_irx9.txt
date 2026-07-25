@@ -1,0 +1,104 @@
+----------------------------------------
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+Tue Jan 04 18:52:54 2005
+----------------------------------------
+pr202 HAS FAILED
+
+Measured:   627.89k
+Nominal:    100.00
+High Limit: 111.00
+Low Limit:  94.000
+Resistance in OHMS
+----------------------------------------
+r5806 HAS FAILED
+
+Measured:   15.417M
+Nominal:    2.2000k
+High Limit: 2.4200k
+Low Limit:  1.9800k
+Resistance in OHMS
+----------------------------------------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 18:52:58 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(21157) ec_smb_ck0
+                c5803.1
+                jdbg1.9
+                pr202.2
+                prb14.1
+                r5806.2
+                uec1.10
+----------------------------------------
+Failed Open #2
+(210174) +19VB_1V
+                pc1004.1
+                pc1005.1
+                pc1006.1
+                pc1015.1
+                pj1001.2
+                pu1001.2
+                pu1001.3
+                pu1001.4
+----------------------------------------
+Failed Open #3
+(203115) dgpu_edp_mux_cntl
+                 qg19.5
+               qg19%qf1.G
+                rg207.1
+                uv1.1219
+------End, 3 Problems Reported----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 18:53:05 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(21157) ec_smb_ck0
+                c5803.1
+                jdbg1.9
+                pr202.2
+                prb14.1
+                r5806.2
+                uec1.10
+----------------------------------------
+Failed Open #2
+(210174) +19VB_1V
+                pc1004.1
+                pc1005.1
+                pc1006.1
+                pc1015.1
+                pj1001.2
+                pu1001.2
+                pu1001.3
+                pu1001.4
+----------------------------------------
+Failed Open #3
+(211166) +vcccnvi_ldo_0p4
+                 ch49.1
+                uh1.525
+                uh1.526
+                uh1.569
+                uh1.570
+                uh1.606
+                uh1.607
+                uh1.627
+----------------------------------------
+Failed Open #4
+(203115) dgpu_edp_mux_cntl
+                 qg19.5
+               qg19%qf1.G
+                rg207.1
+                uv1.1219
+----------------------------------------
+Failed Open #5
+(209112) HDACPU_SCLK_R_R
+                r10247.1
+                uc1.1649
+------End, 5 Problems Reported----------
+Serial #: 6783001AQ9

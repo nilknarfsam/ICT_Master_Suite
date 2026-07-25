@@ -1,0 +1,16 @@
+----------------------------------------
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+Tue Jan 04 07:38:08 2005
+----------------------------------------
+jbat201_sp HAS FAILED
+Measured:   941.52k
+Threshold: 492.00
+Jumper Resistance in OHMS
+----------------------------------------
+jhdmi1_sp HAS FAILED
+Measured:   627.89k
+Threshold: 492.00
+Jumper Resistance in OHMS
+----------------------------------------
+Serial #: 67830015QJ

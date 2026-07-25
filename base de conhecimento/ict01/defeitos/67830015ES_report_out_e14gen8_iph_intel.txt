@@ -1,0 +1,20 @@
+----------------------------------------
+DIGIBOARD-E14 GEN8 IPH-ATESS-APR 2026-BRAZIL-ERS
+Board Version:  **BASE**
+Sat Jan 01 00:16:29 2005
+----------------------------------------
+rv188 HAS FAILED
+
+Measured:   -142.29
+Threshold: 189.00
+Jumper Resistance in OHMS
+Expecting an open ("op" flag used)
+Status:  2cH
+Moa Voltage/Current Compliance
+Detector Over Range
+Integrator Over Voltage
+----------------------------------------
+DEVICES IN PARALLEL
+   [300,] BOM Value : 150
+----------------------------------------
+Serial #: 67830015ES

@@ -1,0 +1,71 @@
+----------------------------------------
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+Tue Jan 04 10:23:22 2005
+----------------------------------------
+r5834 HAS FAILED
+
+Measured:   -2903.9M
+Nominal:    1.0000k
+High Limit: 1.1000k
+Low Limit:  900.00
+Resistance in OHMS
+----------------------------------------
+qg2%qf1 HAS FAILED
+
+REPLACE DEVICE: qg2
+
+Measured:   -12.751M
+High Limit: 200.00
+Low Limit:  20.000
+NFET Ron in OHMS
+----------------------------------------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 10:23:27 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(20808) xtalout
+                 cg69.2
+                 rg72.2
+                uv1.1022
+                 yg1.3
+----------------------------------------
+Failed Open #2
+(20264) ddib_hpd
+                 rh8.1
+                uh1.613
+----------------------------------------
+Failed Open #3
+(209112) HDACPU_SCLK_R_R
+                r10247.1
+                uc1.1649
+------End, 3 Problems Reported----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 10:23:34 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(20808) xtalout
+                 cg69.2
+                 rg72.2
+                uv1.1022
+                 yg1.3
+----------------------------------------
+Failed Open #2
+(210107) CS_DSI_RT6543
+                 prg4.2
+                 pug1.1
+----------------------------------------
+Failed Open #3
+(203115) dgpu_edp_mux_cntl
+                 qg19.5
+               qg19%qf1.G
+                rg207.1
+                uv1.1219
+------End, 3 Problems Reported----------
+Serial #: 67830019R9

@@ -1,0 +1,62 @@
+----------------------------------------
+DIGIBOARD-E14 GEN8 IPH-ATESS-APR 2026-BRAZIL-ERS
+Board Version:  sb21w21218_u5
+Sat Jan 01 00:21:42 2005
+----------------------------------------
+ce20
+Compensation capacitance has not been
+learned
+----------------------------------------
+ca412
+Compensation capacitance has not been
+learned
+----------------------------------------
+ca417
+Compensation capacitance has not been
+learned
+----------------------------------------
+ca407
+Compensation capacitance has not been
+learned
+----------------------------------------
+ca408
+Compensation capacitance has not been
+learned
+----------------------------------------
+ca410
+Compensation capacitance has not been
+learned
+----------------------------------------
+ca409
+Compensation capacitance has not been
+learned
+----------------------------------------
+ce19
+Compensation capacitance has not been
+learned
+----------------------------------------
+cv165
+Compensation capacitance has not been
+learned
+----------------------------------------
+cr31
+Compensation capacitance has not been
+learned
+----------------------------------------
+cu2
+Compensation capacitance has not been
+learned
+----------------------------------------
+cu3
+Compensation capacitance has not been
+learned
+----------------------------------------
+cu18
+Compensation capacitance has not been
+learned
+----------------------------------------
+cu19
+Compensation capacitance has not been
+learned
+----------------------------------------
+Serial #: 678300159V

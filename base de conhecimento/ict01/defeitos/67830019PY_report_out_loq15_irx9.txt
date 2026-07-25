@@ -1,0 +1,65 @@
+----------------------------------------
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+Tue Jan 04 10:41:01 2005
+----------------------------------------
+r5834 HAS FAILED
+
+Measured:   6.3299k
+Nominal:    1.0000k
+High Limit: 1.1000k
+Low Limit:  900.00
+Resistance in OHMS
+----------------------------------------
+qg2%qf1 HAS FAILED
+
+REPLACE DEVICE: qg2
+
+Measured:   26.330k
+High Limit: 200.00
+Low Limit:  20.000
+NFET Ron in OHMS
+----------------------------------------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 10:41:06 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(20343) N83621394
+                 d68.3
+               d68%cr2.C
+                  q1.G
+                 rw1.2
+                 sw3.1
+                 sw3.2
+                sw3%jp.1
+----------------------------------------
+Failed Open #2
+(209112) HDACPU_SCLK_R_R
+                r10247.1
+                uc1.1649
+------End, 2 Problems Reported----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 10:41:12 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(21976) spi_0_d3
+                rc1966.1
+                uc901.7
+----------------------------------------
+Failed Open #2
+(20343) N83621394
+                 d68.3
+               d68%cr2.C
+                  q1.G
+                 rw1.2
+                 sw3.1
+                 sw3.2
+                sw3%jp.1
+------End, 2 Problems Reported----------
+Serial #: 67830019PY

@@ -1,0 +1,52 @@
+----------------------------------------
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+Tue Jan 04 20:16:31 2005
+----------------------------------------
+rg62 HAS FAILED
+
+Measured:   177.20M
+Nominal:    100.00k
+High Limit: 120.00k
+Low Limit:  80.000k
+Resistance in OHMS
+----------------------------------------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 20:16:38 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(20808) xtalout
+                 cg69.2
+                 rg72.2
+                uv1.1022
+                 yg1.3
+----------------------------------------
+Failed Open #2
+(202142) strap4
+                 rg49.2
+                 rg62.1
+                uv1.1221
+------End, 2 Problems Reported----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 20:16:45 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(20808) xtalout
+                 cg69.2
+                 rg72.2
+                uv1.1022
+                 yg1.3
+----------------------------------------
+Failed Open #2
+(202142) strap4
+                 rg49.2
+                 rg62.1
+                uv1.1221
+------End, 2 Problems Reported----------
+Serial #: 6783001APQ

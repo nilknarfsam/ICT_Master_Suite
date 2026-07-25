@@ -1,0 +1,12 @@
+----------------------------------------
+DIGIBOARD-TB14_TB16 GEN6-ATESS-JUL 2024-BRAZIL-ERS
+Board Version:  5b21d46744tb14i7
+Sat Jan 01 09:24:01 2005
+----------------------------------------
+pg4530 HAS FAILED
+
+Measured:   95.326k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+Serial #: 67830012U9

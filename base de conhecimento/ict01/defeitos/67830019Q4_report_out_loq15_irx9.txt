@@ -1,0 +1,82 @@
+----------------------------------------
+Shorts Report for "shorts".
+Tue Jan 04 10:03:19 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Open #1 Thresh 25, Delay 50us       Ohms
+From: usb20_n3               208126 Open
+To:   USB20_N3_R             209101
+Common Devices:
+                 lt7202
+               lt7202%jp1
+Message is:  None.
+------End, 1 Problem Reported-----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 10:03:21 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(203104) PCH_EDP_SW
+                qh4005.D
+                r10221.1
+                 rt2.1
+                 rt3.2
+----------------------------------------
+Failed Open #2
+(214105) BST_AUX_R
+                 pcg2.1
+                 prg1.1
+----------------------------------------
+Failed Open #3
+(217109) IMON_MAIN_R_1
+                 phz3.2
+                 prz6.1
+                 prz7.2
+----------------------------------------
+Failed Open #4
+(210107) CS_DSI_RT6543
+                 prg4.2
+                 pug1.1
+----------------------------------------
+Failed Open #5
+(20901) n44424983
+                rl5115.1
+               tl5101.15
+----------------------------------------
+Failed Open #6
+(208126) usb20_n3
+                lt7202.1
+              lt7202%jp1.1
+                uh1.736
+------End, 6 Problems Reported----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 10:03:29 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(210107) CS_DSI_RT6543
+                 prg4.2
+                 pug1.1
+----------------------------------------
+Failed Open #2
+(20901) n44424983
+                rl5115.1
+               tl5101.15
+----------------------------------------
+Failed Open #3
+(209112) HDACPU_SCLK_R_R
+                r10247.1
+                uc1.1649
+----------------------------------------
+Failed Open #4
+(208126) usb20_n3
+                lt7202.1
+              lt7202%jp1.1
+                uh1.736
+------End, 4 Problems Reported----------
+Serial #: 67830019Q4

@@ -1,0 +1,58 @@
+----------------------------------------
+DIGIBOARD-TB14_TB16 GEN6-ATESS-JUL 2024-BRAZIL-ERS
+Board Version:  5b21d46744tb14i7
+Sat Jan 01 03:59:12 2005
+----------------------------------------
+c2718 HAS FAILED
+
+Measured:   78.706p
+Nominal:    2.9000u
+High Limit: 4.9300u
+Low Limit:  0.87000u
+Capacitance in FARADS
+----------------------------------------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Sat Jan 01 03:59:17 2005
+DIGIBOARD-TB14_TB16 GEN6-ATESS-JUL 2024-BRAZIL-ERS
+Board Version:  5b21d46744tb14i7
+----------------------------------------
+Failed Open #1
+(214131) cpvee_aud
+                c2718.1
+                u2701.25
+----------------------------------------
+Failed Open #2
+(21465) PWR_5V_BOOT_A
+                pc4552.2
+                pr4551.2
+----------------------------------------
+Failed Open #3
+(215164) espi_cpu_io1_r
+               cpu1.DT44
+                r1814.1
+               stcpu1b2.1
+------End, 3 Problems Reported----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Sat Jan 01 03:59:23 2005
+DIGIBOARD-TB14_TB16 GEN6-ATESS-JUL 2024-BRAZIL-ERS
+Board Version:  5b21d46744tb14i7
+----------------------------------------
+Failed Open #1
+(214131) cpvee_aud
+                c2718.1
+                u2701.25
+----------------------------------------
+Failed Open #2
+(21465) PWR_5V_BOOT_A
+                pc4552.2
+                pr4551.2
+----------------------------------------
+Failed Open #3
+(215164) espi_cpu_io1_r
+               cpu1.DT44
+                r1814.1
+               stcpu1b2.1
+------End, 3 Problems Reported----------
+Serial #: 678300197F

@@ -1,0 +1,54 @@
+----------------------------------------
+DIGIBOARD-TB14_TB16 GEN6-ATESS-JUL 2024-BRAZIL-ERS
+Board Version:  5b21d46744tb14i7
+Sat Jan 01 04:04:49 2005
+----------------------------------------
+c2718 HAS FAILED
+
+Measured:   75.679p
+Nominal:    2.9000u
+High Limit: 4.9300u
+Low Limit:  0.87000u
+Capacitance in FARADS
+----------------------------------------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Sat Jan 01 04:04:52 2005
+DIGIBOARD-TB14_TB16 GEN6-ATESS-JUL 2024-BRAZIL-ERS
+Board Version:  5b21d46744tb14i7
+----------------------------------------
+Failed Open #1
+(20270) pwr_vcore_vdd33
+                pc4649.1
+                pr4657.2
+               pu4601.43
+----------------------------------------
+Failed Open #2
+(214131) cpvee_aud
+                c2718.1
+                u2701.25
+----------------------------------------
+Failed Open #3
+(215164) espi_cpu_io1_r
+               cpu1.DT44
+                r1814.1
+               stcpu1b2.1
+------End, 3 Problems Reported----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Sat Jan 01 04:04:59 2005
+DIGIBOARD-TB14_TB16 GEN6-ATESS-JUL 2024-BRAZIL-ERS
+Board Version:  5b21d46744tb14i7
+----------------------------------------
+Failed Open #1
+(214131) cpvee_aud
+                c2718.1
+                u2701.25
+----------------------------------------
+Failed Open #2
+(215164) espi_cpu_io1_r
+               cpu1.DT44
+                r1814.1
+               stcpu1b2.1
+------End, 2 Problems Reported----------
+Serial #: 67830018N7

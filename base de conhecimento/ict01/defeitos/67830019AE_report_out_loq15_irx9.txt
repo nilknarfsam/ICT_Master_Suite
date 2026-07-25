@@ -1,0 +1,109 @@
+----------------------------------------
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+Tue Jan 04 14:05:34 2005
+----------------------------------------
+pcb30 HAS FAILED
+
+Measured:   0.12017u
+Nominal:    0.10000u
+High Limit: 0.12000u
+Low Limit:  0.080000u
+Capacitance in FARADS
+----------------------------------------
+DEVICES IN PARALLEL
+   [prb34] BOM Value : 75k
+----------------------------------------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 14:05:40 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(202118) N77290809
+                 cv3.2
+                 cv4.2
+                 qh2.G
+                 rt4.1
+----------------------------------------
+Failed Open #2
+(214105) BST_AUX_R
+                 pcg2.1
+                 prg1.1
+----------------------------------------
+Failed Open #3
+(210174) +19VB_1V
+                pc1004.1
+                pc1005.1
+                pc1006.1
+                pc1015.1
+                pj1001.2
+                pu1001.2
+                pu1001.3
+                pu1001.4
+----------------------------------------
+Failed Open #4
+(20808) xtalout
+                 cg69.2
+                 rg72.2
+                uv1.1022
+                 yg1.3
+----------------------------------------
+Failed Open #5
+(210107) CS_DSI_RT6543
+                 prg4.2
+                 pug1.1
+----------------------------------------
+Failed Open #6
+(21027) hda_sdout_r
+                ca5623.1
+                rc1005.2
+                 ua1.17
+----------------------------------------
+Failed Open #7
+(209112) HDACPU_SCLK_R_R
+                r10247.1
+                uc1.1649
+------End, 7 Problems Reported----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 14:05:47 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(202118) N77290809
+                 cv3.2
+                 cv4.2
+                 qh2.G
+                 rt4.1
+----------------------------------------
+Failed Open #2
+(210174) +19VB_1V
+                pc1004.1
+                pc1005.1
+                pc1006.1
+                pc1015.1
+                pj1001.2
+                pu1001.2
+                pu1001.3
+                pu1001.4
+----------------------------------------
+Failed Open #3
+(210107) CS_DSI_RT6543
+                 prg4.2
+                 pug1.1
+----------------------------------------
+Failed Open #4
+(21027) hda_sdout_r
+                ca5623.1
+                rc1005.2
+                 ua1.17
+----------------------------------------
+Failed Open #5
+(209112) HDACPU_SCLK_R_R
+                r10247.1
+                uc1.1649
+------End, 5 Problems Reported----------
+Serial #: 67830019AE

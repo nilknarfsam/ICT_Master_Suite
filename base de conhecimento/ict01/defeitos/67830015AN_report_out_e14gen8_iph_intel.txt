@@ -1,0 +1,12 @@
+----------------------------------------
+DIGIBOARD-E14 GEN8 IPH-ATESS-APR 2026-BRAZIL-ERS
+Board Version:  sb21w21218_u5
+Sat Jan 01 00:15:45 2005
+----------------------------------------
+fv500 HAS FAILED
+
+Measured:   440.74
+Threshold: 15.900
+Fuse Resistance in OHMS
+----------------------------------------
+Serial #: 67830015AN

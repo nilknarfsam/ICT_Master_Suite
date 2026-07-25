@@ -1,0 +1,1423 @@
+----------------------------------------
+Shorts Report for "shorts".
+Tue Jan 04 08:54:18 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Short #1, Thresh 9, Delay 50us      Ohms
+From: +1.8VS_J4               20276    1
+  &   +1.8vs_tp              214154
+  &   +1.8VS                  21055
+To:   SS_+12VSP               21043    2
+No common devices.
+Total of 4 nodes, Message is:  None.
+----------------------------------------
+Short #2, Thresh 9, Delay 50us      Ohms
+From: +3VALW_3VS             202147    1
+  &   +3vs_ssd2              203157
+  &   +3vs_ssd1              210147
+  &   +3v_dds                215125
+  &   +vdd33_a                21915
+  &   UV108_EN                21406
+  &   +3vs_tp                 21466
+  &   +3VS_THM                21547
+  &   +3vs_kb                215154
+  &   +iovdd_codec           214137
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 14 nodes, Message is:  None.
+----------------------------------------
+Short #3, Thresh 9, Delay 50us      Ohms
+From: +FBB_VREFC              20237    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #4, Thresh 9, Delay 50us      Ohms
+From: 610_nc1                215141    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #5, Thresh 9, Delay 50us      Ohms
+From: 610_nc2                 21538    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #6, Thresh 9, Delay 50us      Ohms
+From: 610_nc4                215138    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #7, Thresh 9, Delay 50us      Ohms
+From: 610_pwm4               203146    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #8, Thresh 9, Delay 50us      Ohms
+From: adc_in_n                21435    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #9, Thresh 9, Delay 50us      Ohms
+From: adc_in_p               214167    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #10, Thresh 9, Delay 50us     Ohms
+From: aux_cfg                 21927    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #11, Thresh 9, Delay 50us     Ohms
+From: board_id               219142    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #12, Thresh 9, Delay 50us     Ohms
+From: BST1_GT_R              217112    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #13, Thresh 9, Delay 50us     Ohms
+From: N82369834              219163    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #14, Thresh 9, Delay 50us     Ohms
+From: N82372490               21963    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #15, Thresh 9, Delay 50us     Ohms
+From: BST3_CPU_R             217111    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #16, Thresh 9, Delay 50us     Ohms
+From: N82374317              219164    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #17, Thresh 9, Delay 50us     Ohms
+From: N82377183              207121    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #18, Thresh 9, Delay 50us     Ohms
+From: CE_DP_R                 20553    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #19, Thresh 9, Delay 50us     Ohms
+From: clk_cnv_prx_dtx_n      207167    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #20, Thresh 9, Delay 50us     Ohms
+From: clk_pcie_n9             20744    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #21, Thresh 9, Delay 50us     Ohms
+From: clk_pcie_p9            217113    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #22, Thresh 9, Delay 50us     Ohms
+From: clk_pcie_n10            21712    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #23, Thresh 9, Delay 50us     Ohms
+From: clk_pcie_n11            20767    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #24, Thresh 9, Delay 50us     Ohms
+From: clk_pcie_n12            20743    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #25, Thresh 9, Delay 50us     Ohms
+From: clk_pcie_n13           207144    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #26, Thresh 9, Delay 50us     Ohms
+From: clk_pcie_p10           207145    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #27, Thresh 9, Delay 50us     Ohms
+From: clk_pcie_p11            20745    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #28, Thresh 9, Delay 50us     Ohms
+From: clk_pcie_p12           205151    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #29, Thresh 9, Delay 50us     Ohms
+From: N106053683             207148    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #30, Thresh 9, Delay 50us     Ohms
+From: PCH_CPU_BCLK_R_DN       21964    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #31, Thresh 9, Delay 50us     Ohms
+From: PCH_CPU_BCLK_R_DP      208131    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #32, Thresh 9, Delay 50us     Ohms
+From: CPU_24MHZ_R_DN          20830    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #33, Thresh 9, Delay 50us     Ohms
+From: CPU_24MHZ_R_DP         219136    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #34, Thresh 9, Delay 50us     Ohms
+From: PCH_CPU_PCIBCLK_R_DN   219165    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #35, Thresh 9, Delay 50us     Ohms
+From: PCH_CPU_PCIBCLK_R_DP    20831    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #36, Thresh 9, Delay 50us     Ohms
+From: cnv_prx_dtx_n0         207146    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #37, Thresh 9, Delay 50us     Ohms
+From: cnv_prx_dtx_n1         207166    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #38, Thresh 9, Delay 50us     Ohms
+From: cnv_prx_dtx_p0         207165    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #39, Thresh 9, Delay 50us     Ohms
+From: cnv_ptx_drx_n0          20875    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #40, Thresh 9, Delay 50us     Ohms
+From: cnv_ptx_drx_p0          20765    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #41, Thresh 9, Delay 50us     Ohms
+From: cnv_ptx_drx_p1         207164    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #42, Thresh 9, Delay 50us     Ohms
+From: cpu_2_pch_trigger       21648    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #43, Thresh 9, Delay 50us     Ohms
+From: EDP_AUXN                21729    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #44, Thresh 9, Delay 50us     Ohms
+From: EDP_AUXP                21735    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #45, Thresh 9, Delay 50us     Ohms
+From: CPU_PM_SYNC             21756    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #46, Thresh 9, Delay 50us     Ohms
+From: dbg_pmode               20265    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #47, Thresh 9, Delay 50us     Ohms
+From: DDR_VTT_CTRL            21612    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #48, Thresh 9, Delay 50us     Ohms
+From: debug_ksi6             219143    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #49, Thresh 9, Delay 50us     Ohms
+From: debug_ksi7              21943    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #50, Thresh 9, Delay 50us     Ohms
+From: DH_CHG                  21728    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #51, Thresh 9, Delay 50us     Ohms
+From: dmic_det               208128    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #52, Thresh 9, Delay 50us     Ohms
+From: DRV_+12VSP             208146    2
+To:   SS_+12VSP               21043    3
+Common Devices:
+                 pu1201
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #53, Thresh 9, Delay 50us     Ohms
+From: ec_edp_pwm             203177    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #54, Thresh 9, Delay 50us     Ohms
+From: ec_fan_pwm1            219144    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #55, Thresh 9, Delay 50us     Ohms
+From: ec_fan_pwm2             20544    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #56, Thresh 9, Delay 50us     Ohms
+From: ec_mute_               214171    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #57, Thresh 9, Delay 50us     Ohms
+From: ec_rx                   20764    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #58, Thresh 9, Delay 50us     Ohms
+From: edp_dds_hpd_r          211128    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #59, Thresh 9, Delay 50us     Ohms
+From: EN_+12VSP              210143    2
+To:   SS_+12VSP               21043    3
+Common Devices:
+                 pu1201
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #60, Thresh 9, Delay 50us     Ohms
+From: en_invpwr              216114    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #61, Thresh 9, Delay 50us     Ohms
+From: ESPI_CLK_R              20236    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #62, Thresh 9, Delay 50us     Ohms
+From: espi_io0                21944    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #63, Thresh 9, Delay 50us     Ohms
+From: espi_io1                20746    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #64, Thresh 9, Delay 50us     Ohms
+From: FAULT_+12VSP            20352    1
+To:   SS_+12VSP               21043    3
+Common Devices:
+                 pu1201
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #65, Thresh 9, Delay 50us     Ohms
+From: FSW_+12VSP             211176    2
+To:   SS_+12VSP               21043    3
+Common Devices:
+                 pu1201
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #66, Thresh 9, Delay 50us     Ohms
+From: gpp_b11                219145    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #67, Thresh 9, Delay 50us     Ohms
+From: gpp_c11                 21945    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #68, Thresh 9, Delay 50us     Ohms
+From: gpp_f_14               219147    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #69, Thresh 9, Delay 50us     Ohms
+From: gpp_f_22               207147    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #70, Thresh 9, Delay 50us     Ohms
+From: gpp_i18                202165    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #71, Thresh 9, Delay 50us     Ohms
+From: GPU_GC6_FB_EN_H         21947    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #72, Thresh 9, Delay 50us     Ohms
+From: gspi1_mosi             202168    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #73, Thresh 9, Delay 50us     Ohms
+From: hda_bit_clk_r           20338    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #74, Thresh 9, Delay 50us     Ohms
+From: hda_sdin0_r             20729    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #75, Thresh 9, Delay 50us     Ohms
+From: hda_sync_r              21029    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #76, Thresh 9, Delay 50us     Ohms
+From: HDACPU_SDI              21634    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #77, Thresh 9, Delay 50us     Ohms
+From: HDMI_HPD_CONN          211111    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #78, Thresh 9, Delay 50us     Ohms
+From: i2c_addr_sw1            21914    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #79, Thresh 9, Delay 50us     Ohms
+From: ILMT_0.82V              21076    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #80, Thresh 9, Delay 50us     Ohms
+From: IST_TP_0               216131    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #81, Thresh 9, Delay 50us     Ohms
+From: IST_TP_1                21631    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #82, Thresh 9, Delay 50us     Ohms
+From: ISW_+12VSP              21042    1
+To:   SS_+12VSP               21043    3
+Common Devices:
+                 pu1201
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #83, Thresh 9, Delay 50us     Ohms
+From: ISW_R_+12VSP            20350    1
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #84, Thresh 9, Delay 50us     Ohms
+From: jtag_tclk              208127    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #85, Thresh 9, Delay 50us     Ohms
+From: jtag_tdi               208116    1
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #86, Thresh 9, Delay 50us     Ohms
+From: jtag_tdo               208117    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #87, Thresh 9, Delay 50us     Ohms
+From: jtag_tms                20817    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #88, Thresh 9, Delay 50us     Ohms
+From: ksi0                   220151    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #89, Thresh 9, Delay 50us     Ohms
+From: ksi1                   221155    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #90, Thresh 9, Delay 50us     Ohms
+From: ksi2                   220165    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #91, Thresh 9, Delay 50us     Ohms
+From: ksi3                    22155    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #92, Thresh 9, Delay 50us     Ohms
+From: ksi4                    22065    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #93, Thresh 9, Delay 50us     Ohms
+From: ksi5                    22157    1
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #94, Thresh 9, Delay 50us     Ohms
+From: ksi6                   220164    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #95, Thresh 9, Delay 50us     Ohms
+From: ksi7                    22064    1
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #96, Thresh 9, Delay 50us     Ohms
+From: kso0                   220163    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #97, Thresh 9, Delay 50us     Ohms
+From: kso1                    22051    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #98, Thresh 9, Delay 50us     Ohms
+From: kso2                    22053    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #99, Thresh 9, Delay 50us     Ohms
+From: kso3                    22061    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #100, Thresh 9, Delay 50us    Ohms
+From: kso4                    22058    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #101, Thresh 9, Delay 50us    Ohms
+From: kso5                    22054    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #102, Thresh 9, Delay 50us    Ohms
+From: kso6                   219162    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #103, Thresh 9, Delay 50us    Ohms
+From: kso7                   220157    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #104, Thresh 9, Delay 50us    Ohms
+From: kso8                   220155    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #105, Thresh 9, Delay 50us    Ohms
+From: kso9                    22056    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #106, Thresh 9, Delay 50us    Ohms
+From: kso10                  219148    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #107, Thresh 9, Delay 50us    Ohms
+From: kso11                  220152    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #108, Thresh 9, Delay 50us    Ohms
+From: kso12                   22063    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #109, Thresh 9, Delay 50us    Ohms
+From: kso13                  220162    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #110, Thresh 9, Delay 50us    Ohms
+From: kso14                   22062    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #111, Thresh 9, Delay 50us    Ohms
+From: kso15                  220161    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #112, Thresh 9, Delay 50us    Ohms
+From: kso16                   22052    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #113, Thresh 9, Delay 50us    Ohms
+From: kso17                  220153    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #114, Thresh 9, Delay 50us    Ohms
+From: lan_mdin0               21114    2
+  &   lan_mdin1              210127
+  &   lan_mdin2              210129
+  &   lan_mdin3              210128
+  &   lan_mdip0              210126
+  &   lan_mdip1              211113
+  &   lan_mdip2              211114
+  &   lan_mdip3              211108
+  &   +v_dac                  21025
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 10 nodes, Message is:  None.
+----------------------------------------
+Short #115, Thresh 9, Delay 50us    Ohms
+From: lanphypc               208174    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #116, Thresh 9, Delay 50us    Ohms
+From: LCD_ENVDD               21925    1
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #117, Thresh 9, Delay 50us    Ohms
+From: LDO_3V_1.2VS            21115    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #118, Thresh 9, Delay 50us    Ohms
+From: LED0                    21713    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #119, Thresh 9, Delay 50us    Ohms
+From: LED2                   217114    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #120, Thresh 9, Delay 50us    Ohms
+From: LG1_+1.35VS_VGAP        20845    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #121, Thresh 9, Delay 50us    Ohms
+From: LG_AUX                 216113    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #122, Thresh 9, Delay 50us    Ohms
+From: MIPI60_CFG0_            21625    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #123, Thresh 9, Delay 50us    Ohms
+From: MIPI60_CFG1_            21635    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #124, Thresh 9, Delay 50us    Ohms
+From: MIPI60_CFG3_            21641    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #125, Thresh 9, Delay 50us    Ohms
+From: MIPI60_CFG4_            21609    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #126, Thresh 9, Delay 50us    Ohms
+From: MIPI60_CFG7_           216125    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #127, Thresh 9, Delay 50us    Ohms
+From: MIPI60_CFG8_           216134    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #128, Thresh 9, Delay 50us    Ohms
+From: MIPI60_CFG11_          216135    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #129, Thresh 9, Delay 50us    Ohms
+From: MIPI60_CFG12_           21633    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #130, Thresh 9, Delay 50us    Ohms
+From: MIPI60_CFG13_           21632    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #131, Thresh 9, Delay 50us    Ohms
+From: MIPI60_CFG15_          216133    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #132, Thresh 9, Delay 50us    Ohms
+From: MIPI60_CFG16_          216141    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #133, Thresh 9, Delay 50us    Ohms
+From: MIPI60_CFG17_           20909    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #134, Thresh 9, Delay 50us    Ohms
+From: mipi60_cpu_jtag_tclk    20252    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #135, Thresh 9, Delay 50us    Ohms
+From: mipi60_cpu_jtag_tdi    217168    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #136, Thresh 9, Delay 50us    Ohms
+From: mipi60_cpu_jtag_tms     21662    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #137, Thresh 9, Delay 50us    Ohms
+From: mipi60_cpu_jtag_trst_  216161    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #138, Thresh 9, Delay 50us    Ohms
+From: mipi60_prdy_           217133    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #139, Thresh 9, Delay 50us    Ohms
+From: mipi60_preq_           216172    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #140, Thresh 9, Delay 50us    Ohms
+From: mux_edp_enbkl           21654    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #141, Thresh 9, Delay 50us    Ohms
+From: N18394429              216137    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #142, Thresh 9, Delay 50us    Ohms
+From: n25313006              219149    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #143, Thresh 9, Delay 50us    Ohms
+From: n25313016               21749    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #144, Thresh 9, Delay 50us    Ohms
+From: n25313026              217150    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #145, Thresh 9, Delay 50us    Ohms
+From: n25313049               21750    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #146, Thresh 9, Delay 50us    Ohms
+From: n25313082               21647    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #147, Thresh 9, Delay 50us    Ohms
+From: n25313092              217152    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #148, Thresh 9, Delay 50us    Ohms
+From: n25313102               21752    1
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #149, Thresh 9, Delay 50us    Ohms
+From: n25313125              216156    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #150, Thresh 9, Delay 50us    Ohms
+From: N25790388               21410    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #151, Thresh 9, Delay 50us    Ohms
+From: n25858350               21649    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #152, Thresh 9, Delay 50us    Ohms
+From: n25858353              217149    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #153, Thresh 9, Delay 50us    Ohms
+From: n25858356              217151    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #154, Thresh 9, Delay 50us    Ohms
+From: n25858359               21751    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #155, Thresh 9, Delay 50us    Ohms
+From: n25858414              216151    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #156, Thresh 9, Delay 50us    Ohms
+From: n25858417              216152    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #157, Thresh 9, Delay 50us    Ohms
+From: n25858420              216155    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #158, Thresh 9, Delay 50us    Ohms
+From: n25858423               21655    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #159, Thresh 9, Delay 50us    Ohms
+From: N32461816               20814    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #160, Thresh 9, Delay 50us    Ohms
+From: N32707305               21049    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #161, Thresh 9, Delay 50us    Ohms
+From: N32707363              210149    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #162, Thresh 9, Delay 50us    Ohms
+From: n32933102               21714    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #163, Thresh 9, Delay 50us    Ohms
+From: N34850741               21071    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #164, Thresh 9, Delay 50us    Ohms
+From: N58191200               21023    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #165, Thresh 9, Delay 50us    Ohms
+From: N67338223               21158    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #166, Thresh 9, Delay 50us    Ohms
+From: N72054365               21412    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #167, Thresh 9, Delay 50us    Ohms
+From: N72281956               21421    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #168, Thresh 9, Delay 50us    Ohms
+From: N72287170               20370    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #169, Thresh 9, Delay 50us    Ohms
+From: N73176989               21775    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #170, Thresh 9, Delay 50us    Ohms
+From: N73176992              217176    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #171, Thresh 9, Delay 50us    Ohms
+From: N73176995              217177    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #172, Thresh 9, Delay 50us    Ohms
+From: N73176998              217178    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #173, Thresh 9, Delay 50us    Ohms
+From: N73177001               21776    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #174, Thresh 9, Delay 50us    Ohms
+From: N73177004               21777    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #175, Thresh 9, Delay 50us    Ohms
+From: N73177007               21778    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #176, Thresh 9, Delay 50us    Ohms
+From: N73177010               21956    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #177, Thresh 9, Delay 50us    Ohms
+From: n73228309              211104    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #178, Thresh 9, Delay 50us    Ohms
+From: n73228361               21103    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #179, Thresh 9, Delay 50us    Ohms
+From: N77516032              202125    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #180, Thresh 9, Delay 50us    Ohms
+From: n78393478              219153    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #181, Thresh 9, Delay 50us    Ohms
+From: n78393496              219155    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #182, Thresh 9, Delay 50us    Ohms
+From: n78393514               21962    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #183, Thresh 9, Delay 50us    Ohms
+From: n78393532               21955    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #184, Thresh 9, Delay 50us    Ohms
+From: n78393550              219161    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #185, Thresh 9, Delay 50us    Ohms
+From: n78393568               21961    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #186, Thresh 9, Delay 50us    Ohms
+From: n78393586              219156    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #187, Thresh 9, Delay 50us    Ohms
+From: n78393604              219158    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #188, Thresh 9, Delay 50us    Ohms
+From: n78393640               21958    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #189, Thresh 9, Delay 50us    Ohms
+From: N80980251               20827    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #190, Thresh 9, Delay 50us    Ohms
+From: N83287706              219154    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #191, Thresh 9, Delay 50us    Ohms
+From: n83880687               21651    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #192, Thresh 9, Delay 50us    Ohms
+From: n83880710               21650    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #193, Thresh 9, Delay 50us    Ohms
+From: n83880734              216150    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #194, Thresh 9, Delay 50us    Ohms
+From: n83880780              216149    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #195, Thresh 9, Delay 50us    Ohms
+From: n83880921               21652    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #196, Thresh 9, Delay 50us    Ohms
+From: n83880932              216154    1
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #197, Thresh 9, Delay 50us    Ohms
+From: n83880943              216153    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #198, Thresh 9, Delay 50us    Ohms
+From: n83880969               21653    1
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #199, Thresh 9, Delay 50us    Ohms
+From: N87098514              214118    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #200, Thresh 9, Delay 50us    Ohms
+From: N95620387               21637    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #201, Thresh 9, Delay 50us    Ohms
+From: nvvdd_vid              208172    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #202, Thresh 9, Delay 50us    Ohms
+From: OVP_+12VSP             210176    2
+To:   SS_+12VSP               21043    3
+Common Devices:
+                 pu1201
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #203, Thresh 9, Delay 50us    Ohms
+From: pcie_prx_dtx_n7        217115    1
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #204, Thresh 9, Delay 50us    Ohms
+From: pcie_prx_dtx_n8         20872    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #205, Thresh 9, Delay 50us    Ohms
+From: pcie_prx_dtx_p8        207163    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #206, Thresh 9, Delay 50us    Ohms
+From: pcie_ptx_drx_n7        208110    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #207, Thresh 9, Delay 50us    Ohms
+From: pcie_ptx_drx_p7         21715    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #208, Thresh 9, Delay 50us    Ohms
+From: pcie_ptx_drx_p8        208169    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #209, Thresh 9, Delay 50us    Ohms
+From: PD_SNB                  21036    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #210, Thresh 9, Delay 50us    Ohms
+From: pltrst_cpu_n            20973    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #211, Thresh 9, Delay 50us    Ohms
+From: privacy_sel             21965    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #212, Thresh 9, Delay 50us    Ohms
+From: ps8812_ce_dp           207161    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #213, Thresh 9, Delay 50us    Ohms
+From: ps8812_ce_usb           20761    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #214, Thresh 9, Delay 50us    Ohms
+From: PS8812_CEQ             202149    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #215, Thresh 9, Delay 50us    Ohms
+From: PS8812_DPEQ            202174    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #216, Thresh 9, Delay 50us    Ohms
+From: ps8812_flip             20763    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #217, Thresh 9, Delay 50us    Ohms
+From: pwm1_gt                 21937    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #218, Thresh 9, Delay 50us    Ohms
+From: refclk_cnv_r           207162    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #219, Thresh 9, Delay 50us    Ohms
+From: secure_bio             219178    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #220, Thresh 9, Delay 50us    Ohms
+From: SH_O1                  210157    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #221, Thresh 9, Delay 50us    Ohms
+From: sml0_alert_             20253    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+----------------------------------------
+Short #222, Thresh 9, Delay 50us    Ohms
+From: SNUB_0.82V              21165    2
+To:   SS_+12VSP               21043    3
+No common devices.
+Total of 2 nodes, Message is:  None.
+------End, 222 Problems Reported--------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 08:54:32 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(20712) vccin_aux_core_vid0
+                 rh72.2
+                uh1.382
+----------------------------------------
+Failed Open #2
+(20267) ADRS0
+                rg249.1
+                rg250.1
+                ug19.21
+----------------------------------------
+Failed Open #3
+(202129) +vcc_kb_led
+                cbl25.1
+                cbl40.1
+                jkbl1.1
+                jkbl1.2
+                rbl83.2
+----------------------------------------
+Failed Open #4
+(214166) +3v_spi
+                cc902.2
+                rc933.2
+                uc901.8
+----------------------------------------
+Failed Open #5
+(203126) kb_num_led_
+                qc1122.2
+              qc1122%qf2.G
+               rbl6434.1
+               rbl6437.1
+               ubl6401.45
+------End, 5 Problems Reported----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 08:54:39 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(214166) +3v_spi
+                cc902.2
+                rc933.2
+                uc901.8
+----------------------------------------
+Failed Open #2
+(203126) kb_num_led_
+                qc1122.2
+              qc1122%qf2.G
+               rbl6434.1
+               rbl6437.1
+               ubl6401.45
+------End, 2 Problems Reported----------
+Serial #: 67830019PK

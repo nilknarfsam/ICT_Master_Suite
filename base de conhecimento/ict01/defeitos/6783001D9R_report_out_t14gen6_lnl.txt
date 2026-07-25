@@ -1,0 +1,35 @@
+----------------------------------------
+TestJet Report for "testjet".
+Sat Jul 23 08:35:46 2005
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35591_ult5
+----------------------------------------
+Open #1  Device jnfc1
+  Pin 12  Node VCC5B_NFC
+  Measured -3.6             (BRC 214126)
+----------------------------------------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Sat Jul 23 08:35:47 2005
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35591_ult5
+----------------------------------------
+Failed Open #1
+(214143) -EXTPWR_R
+                d42001.A
+                r42007.2
+                uec1.A13
+------End, 1 Problem Reported-----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Sat Jul 23 08:35:53 2005
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35591_ult5
+----------------------------------------
+Failed Open #1
+(214143) -EXTPWR_R
+                d42001.A
+                r42007.2
+                uec1.A13
+------End, 1 Problem Reported-----------
+Serial #: 6783001D9R

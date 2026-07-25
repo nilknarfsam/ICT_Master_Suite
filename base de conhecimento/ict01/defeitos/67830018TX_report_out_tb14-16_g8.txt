@@ -1,0 +1,12 @@
+----------------------------------------
+DIGIBOARD-TB14_TB16 GEN6-ATESS-JUL 2024-BRAZIL-ERS
+Board Version:  5b21d46744tb14i7
+Sat Jan 01 05:53:43 2005
+----------------------------------------
+f5501 HAS FAILED
+
+Measured:   -47.588k
+Threshold: 15.800
+Fuse Resistance in OHMS
+----------------------------------------
+Serial #: 67830018TX

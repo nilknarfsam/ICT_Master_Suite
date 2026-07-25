@@ -1,0 +1,14 @@
+----------------------------------------
+Shorts Report for "shorts".
+Wed Jul 20 16:22:23 2005
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35591_ult5
+----------------------------------------
+Open #1 Thresh 25, Delay 50us       Ohms
+From: SP_OUTL+               210126 Open
+To:   SP_OUTL+_L              20301
+Common Devices:
+                 l86003
+Message is:  None.
+------End, 1 Problem Reported-----------
+Serial #: 6783001D62

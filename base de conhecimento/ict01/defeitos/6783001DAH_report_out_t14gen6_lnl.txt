@@ -1,0 +1,25 @@
+----------------------------------------
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35591_ult5
+Sat Jul 23 08:40:14 2005
+----------------------------------------
+pc0802 HAS FAILED
+
+Measured:   96.460u
+Nominal:    66.202u
+High Limit: 86.063u
+Low Limit:  46.332u
+Capacitance in FARADS
+----------------------------------------
+DEVICES IN PARALLEL
+   [pc0805] BOM Value : 22u
+   [pc0814] BOM Value : 22u
+   [c17028] BOM Value : 100n
+   [pc0804] BOM Value : 100n
+   [pc0803] BOM Value : 2.2n
+   [c17027] BOM Value : 100p
+   [pc0806] BOM Value : 100p
+   [pc0807] BOM Value : 47p
+   [c17026] BOM Value : 8.2p
+----------------------------------------
+Serial #: 6783001DAH

@@ -1,0 +1,12 @@
+----------------------------------------
+DIGIBOARD-TB14_TB16 GEN6-ATESS-JUL 2024-BRAZIL-ERS
+Board Version:  5b21d46744tb14i7
+Sat Jan 01 02:33:45 2005
+----------------------------------------
+r7110 HAS FAILED
+
+Measured:   -47.588k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+Serial #: 67830018K5

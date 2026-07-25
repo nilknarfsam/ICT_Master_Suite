@@ -1,0 +1,72 @@
+----------------------------------------
+DIGIBOARD-TB14_TB16 GEN6-ATESS-JUL 2024-BRAZIL-ERS
+Board Version:  5b21d46744tb14i7
+Sat Jan 01 09:05:40 2005
+----------------------------------------
+r1708 HAS FAILED
+
+Measured:   13.320k
+Nominal:    10.000k
+High Limit: 11.000k
+Low Limit:  9.0000k
+Resistance in OHMS
+----------------------------------------
+q1701%qf1 HAS FAILED
+
+REPLACE DEVICE: q1701
+
+Measured:   398.12
+High Limit: 200.00
+Low Limit:  20.000
+NFET Ron in OHMS
+----------------------------------------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Sat Jan 01 09:05:44 2005
+DIGIBOARD-TB14_TB16 GEN6-ATESS-JUL 2024-BRAZIL-ERS
+Board Version:  5b21d46744tb14i7
+----------------------------------------
+Failed Open #1
+(21513) 20V_VINT_IN_A
+                pc4428.1
+                pc4438.1
+                pg4403.1
+                pr4419.2
+                pu4403.2
+                pu4403.3
+                pu4403.4
+               pu4403.10
+              pu4403%qfa.D
+----------------------------------------
+Failed Open #2
+(20270) pwr_vcore_vdd33
+                pc4649.1
+                pr4657.2
+               pu4601.43
+----------------------------------------
+Failed Open #3
+(202122) 3d3v_s5_kb
+                c6504.1
+                 kb1.1
+                 kb1.30
+                 kb1.31
+                r6529.1
+----------------------------------------
+Failed Open #4
+(214105) PWR_VCCGT_BST1
+                pc4807.1
+               pu4801.21
+------End, 4 Problems Reported----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Sat Jan 01 09:05:50 2005
+DIGIBOARD-TB14_TB16 GEN6-ATESS-JUL 2024-BRAZIL-ERS
+Board Version:  5b21d46744tb14i7
+----------------------------------------
+Failed Open #1
+(20270) pwr_vcore_vdd33
+                pc4649.1
+                pr4657.2
+               pu4601.43
+------End, 1 Problem Reported-----------
+Serial #: 67830018FD

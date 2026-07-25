@@ -1,0 +1,88 @@
+----------------------------------------
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+Wed Jan 05 07:00:49 2005
+----------------------------------------
+lv10 HAS FAILED
+
+Measured:   -93.136k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+plg1%jp1_4 HAS FAILED
+
+REPLACE DEVICE: plg1
+
+Measured:   -31.088k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+plz1%jp1_4 HAS FAILED
+
+REPLACE DEVICE: plz1
+
+Measured:   -46.616k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+prb5 HAS FAILED
+
+Measured:   -46.616k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+prz28 HAS FAILED
+
+Measured:   -23.320k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+prz58 HAS FAILED
+
+Measured:   -31.088k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+prz3 HAS FAILED
+
+Measured:   168.64
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+prz64 HAS FAILED
+
+Measured:   95.439k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+prz109 HAS FAILED
+
+Measured:   95.439k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+r10217 HAS FAILED
+
+Measured:   95.439k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+rv3712 HAS FAILED
+
+Measured:   19.326
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+prz105 HAS FAILED
+
+Measured:   -31.088k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+rc238 HAS FAILED
+
+Measured:   478.61
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+Serial #: 6783001AW3

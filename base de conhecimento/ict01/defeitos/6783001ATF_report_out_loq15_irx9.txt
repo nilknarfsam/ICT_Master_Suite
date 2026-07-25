@@ -1,0 +1,12 @@
+----------------------------------------
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+Tue Jan 04 02:35:18 2005
+----------------------------------------
+rw5214 HAS FAILED
+
+Measured:   31.815k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+Serial #: 6783001ATF

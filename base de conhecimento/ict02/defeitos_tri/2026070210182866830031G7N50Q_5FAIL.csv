@@ -1,0 +1,10 @@
+// Header_Data
+// PASS/FAIL, ICT_ID, SeriesNo, BoardName, BarCode, Date, Time, Result, Retest,WorkSchedule,OperID, DetailResult, MulBrdNum, MulBrdResult,RetryCnt,BeginDate,BeginTime,Version,BoardVersion,FixtureBarcode,PinOffset,LeftRight
+FAIL,1,192,N50Q_5,66830031G7,20260702,101828,F,0,1,,FPPFPPPPPPNN,1,F,2,20260702,101818,0,,,0,0,10.46 sec
+
+// Component_Data
+// StepNum, PartName, Act_V, Std_V, HLim, LLim, Mode, Type, HPin, LPin, Loc, Msr_V, Result
+ 1788, QLED3/1_6,    0.773V ,    0.773V ,  20.0,  20.0, 1, Q, 1, 1137, G1, 2.1157476V , 1
+ 1789, QLED3/ON,     3.00  ,    40.00  ,  20.0,  -1.0, 31, QF, 1137, 1, G1, 80448.9485888  , 1
+ 1791, QLED3/4_3,    0.775V ,    0.775V ,  20.0,  20.0, 1, Q, 1, 1139, G1, 2.1202112V , 1
+ 1792, QLED3/ON,     3.00  ,    40.00  ,  20.0,  -1.0, 31, QF, 1139, 1, G1, 76484.3809379  , 1

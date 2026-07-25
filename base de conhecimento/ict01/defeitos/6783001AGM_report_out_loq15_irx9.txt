@@ -1,0 +1,12 @@
+----------------------------------------
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+Tue Jan 04 03:31:45 2005
+----------------------------------------
+rh120 HAS FAILED
+
+Measured:   21.322
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+Serial #: 6783001AGM

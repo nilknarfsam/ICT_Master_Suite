@@ -1,0 +1,41 @@
+----------------------------------------
+Shorts Report for "shorts".
+Sat Jan 01 00:55:16 2005
+DIGIBOARD-TB14_TB16 GEN6-ATESS-JUL 2024-BRAZIL-ERS
+Board Version:  5b21d46744tb14i7
+----------------------------------------
+Short #1, Thresh 3, Delay 50us      Ohms
+From: vref_aud                20827    1
+To:   ldo1-cap_aud            20830    2
+Common Devices:
+                 u2701
+Total of 2 nodes, Message is:  None.
+------End, 1 Problem Reported-----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Sat Jan 01 00:55:18 2005
+DIGIBOARD-TB14_TB16 GEN6-ATESS-JUL 2024-BRAZIL-ERS
+Board Version:  5b21d46744tb14i7
+----------------------------------------
+Failed Open #1
+(20247) 5V_S5_USB3
+               aftp3501.1
+                c3501.1
+                c3502.1
+                tc3501.1
+                u3601.12
+                 usb3.1
+------End, 1 Problem Reported-----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Sat Jan 01 00:55:25 2005
+DIGIBOARD-TB14_TB16 GEN6-ATESS-JUL 2024-BRAZIL-ERS
+Board Version:  5b21d46744tb14i7
+----------------------------------------
+Failed Open #1
+(222149) TBT_GATE_VSYS_C2
+                r4202.1
+                u4201.C2
+              u4201%qf2.G
+------End, 1 Problem Reported-----------
+Serial #: 67830018SL

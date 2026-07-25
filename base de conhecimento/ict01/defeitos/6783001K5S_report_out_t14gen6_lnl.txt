@@ -1,0 +1,28 @@
+----------------------------------------
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35502_ult7
+Sun Jul 24 07:14:06 2005
+----------------------------------------
+pc1206 HAS FAILED
+
+Measured:   26.660u
+Nominal:    19.500u
+High Limit: 26.325u
+Low Limit:  12.675u
+Capacitance in FARADS
+----------------------------------------
+DEVICES IN PARALLEL
+   [c16001] BOM Value : 2.2u
+   [c16002] BOM Value : 2.2u
+   [c16003] BOM Value : 2.2u
+   [c16004] BOM Value : 2.2u
+----------------------------------------
+r43031 HAS FAILED
+
+Measured:   89.950
+Nominal:    75.000
+High Limit: 87.500
+Low Limit:  67.500
+Resistance in OHMS
+----------------------------------------
+Serial #: 6783001K5S

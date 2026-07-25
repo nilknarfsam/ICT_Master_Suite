@@ -1,0 +1,162 @@
+----------------------------------------
+Shorts Report for "shorts".
+Tue Jan 04 12:14:36 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Open #1 Thresh 25, Delay 50us       Ohms
+From: +5VALW                 210142 Open
+To:   LED_G6                 214112
+Common Devices:
+                led6313
+             led6313%green
+                rtp6347
+Message is:  None.
+------End, 1 Problem Reported-----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 12:14:38 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(20712) vccin_aux_core_vid0
+                 rh72.2
+                uh1.382
+----------------------------------------
+Failed Open #2
+(202118) N77290809
+                 cv3.2
+                 cv4.2
+                 qh2.G
+                 rt4.1
+----------------------------------------
+Failed Open #3
+(202130) +5vs_rgb
+                jrgb1.17
+                jrgb1.18
+                jrgb1.19
+                jrgb1.20
+               rbl6428.2
+               rbl6429.2
+----------------------------------------
+Failed Open #4
+(21976) spi_0_d3
+                rc1966.1
+                uc901.7
+----------------------------------------
+Failed Open #5
+(211110) LED_W5
+                c8768.1
+               led6309.C
+               rtp6339.2
+----------------------------------------
+Failed Open #6
+(211171) KB_NUM_LED__R
+               cbl6413.1
+                qc1122.6
+              qc1122%qf2.D
+               rbl6403.1
+               rbl6434.2
+----------------------------------------
+Failed Open #7
+(20808) xtalout
+                 cg69.2
+                 rg72.2
+                uv1.1022
+                 yg1.3
+----------------------------------------
+Failed Open #8
+(211166) +vcccnvi_ldo_0p4
+                 ch49.1
+                uh1.525
+                uh1.526
+                uh1.569
+                uh1.570
+                uh1.606
+                uh1.607
+                uh1.627
+----------------------------------------
+Failed Open #9
+(20318) N22151821
+                rg151.1
+                uv14.90
+----------------------------------------
+Failed Open #10
+(20912) rom_wp__r
+                rg218.2
+                rg292.2
+                rg1759.1
+                 ug2.3
+----------------------------------------
+Failed Open #11
+(20264) ddib_hpd
+                 rh8.1
+                uh1.613
+----------------------------------------
+Failed Open #12
+(21966) espi_io2
+                 rh70.2
+                uh1.265
+------End, 12 Problems Reported---------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 12:14:45 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(202118) N77290809
+                 cv3.2
+                 cv4.2
+                 qh2.G
+                 rt4.1
+----------------------------------------
+Failed Open #2
+(202130) +5vs_rgb
+                jrgb1.17
+                jrgb1.18
+                jrgb1.19
+                jrgb1.20
+               rbl6428.2
+               rbl6429.2
+----------------------------------------
+Failed Open #3
+(21976) spi_0_d3
+                rc1966.1
+                uc901.7
+----------------------------------------
+Failed Open #4
+(211166) +vcccnvi_ldo_0p4
+                 ch49.1
+                uh1.525
+                uh1.526
+                uh1.569
+                uh1.570
+                uh1.606
+                uh1.607
+                uh1.627
+----------------------------------------
+Failed Open #5
+(20318) N22151821
+                rg151.1
+                uv14.90
+----------------------------------------
+Failed Open #6
+(20912) rom_wp__r
+                rg218.2
+                rg292.2
+                rg1759.1
+                 ug2.3
+----------------------------------------
+Failed Open #7
+(20264) ddib_hpd
+                 rh8.1
+                uh1.613
+----------------------------------------
+Failed Open #8
+(209112) HDACPU_SCLK_R_R
+                r10247.1
+                uc1.1649
+------End, 8 Problems Reported----------
+Serial #: 678300197T

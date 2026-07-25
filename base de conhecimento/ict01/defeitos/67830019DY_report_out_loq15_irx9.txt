@@ -1,0 +1,14 @@
+----------------------------------------
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+Tue Jan 04 19:26:52 2005
+----------------------------------------
+rc307 HAS FAILED
+
+Measured:   120.94k
+Nominal:    100.00k
+High Limit: 115.00k
+Low Limit:  75.000k
+Resistance in OHMS
+----------------------------------------
+Serial #: 67830019DY

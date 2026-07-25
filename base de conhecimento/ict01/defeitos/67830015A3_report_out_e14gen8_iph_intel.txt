@@ -1,0 +1,47 @@
+----------------------------------------
+Shorts Report for "shorts".
+Sat Jan 01 09:07:45 2005
+DIGIBOARD-E14 GEN8 IPH-ATESS-APR 2026-BRAZIL-ERS
+Board Version:  sb21w21218_u5
+----------------------------------------
+Short #1, Thresh 9, Delay 30ms      Ohms
+From: HDA_SDO_CODEC           21436    0
+  &   HDA_SDO_STRAP           21143
+To:   EPRIVACY_EDP_PANEL      21048    1
+      N134150368             211126    1
+      1P8VALW_ILMT           214105    0
+      VDD2_TEST              214174    0
+      VDD2_ILMT               21474    0
+      GND_CHG                215110    0
+      VCCGT_ISEN_B1N         211174    4
+      +VCCGT                 215165    3
+      VCCGT_ISEN1_P_DRMOS     20245    4
+      VCCGT_LX1               21576    4
+      VCCGT_ISEN1_N_DRMOS    215164    3
+      VCCIO_VSS_SENSE_CPU     20272    1
+      VCCIO_VSS_SENSE_CPU_R  215174    1
+      EC_AGND                 21031    1
+      VCCSA_VSS_SENSE_CPU     21136    2
+        v                    211152    2 
+VCC_LPECORE_VSS_SENSE_CPU               
+      VCCGT_VCC_SENSE_CPU     21175    5
+      RT3645GE_RGND_B         20252    2
+      VCCGT_VSS_SENSE_CPU     21153    2
+      RT3645GE_RGND_A        202154    2
+      VCORE_VSS_SENSE_CPU     21152    2
+      NCTF_R1                220178    1
+      NCTF_R2                209164    1
+      NCTF_R3                 22001    0
+      NCTF_R4                220102    1
+      NCTF_R5                 22002    1
+      NCTF_R8                209176    1
+      GNDA                   210133    1
+      VDD18_GND_CODEC         21032    1
+      GND                     21542    0
+Common Devices:
+                  ca17
+                  ua1
+                  uc1
+Total of 32 nodes, Message is:  None.
+------End, 1 Problem Reported-----------
+Serial #: 67830015A3

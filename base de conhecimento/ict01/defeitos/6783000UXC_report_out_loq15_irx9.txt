@@ -1,0 +1,17 @@
+----------------------------------------
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+Tue Jan 04 18:13:37 2005
+----------------------------------------
+pl302%jp1_4 HAS FAILED
+
+REPLACE DEVICE: pl302
+
+Measured:   31.815k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+DEVICES IN PARALLEL
+   [pl302%jp2_3]
+----------------------------------------
+Serial #: 6783000UXC

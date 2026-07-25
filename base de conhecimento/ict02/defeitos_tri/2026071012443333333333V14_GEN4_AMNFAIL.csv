@@ -1,0 +1,15 @@
+1,9,V14_GEN4_AMN,3333333333,20260710,124452,F,0,1,,PFFPPPPPPPNN,1,F,3,20260710,124433,0,,,0,0
+
+
+Open < 460> <   1  460 > -> <460>-CODEC_DMIC_CLK Parts:UD1.61; <1>-HPOUT_R Parts:UA1.26
+Open <  76> <   2   76  127 > -> <76>-EC_SMB_CK2 Parts:UE1.14; <2>-RING2_CONN Parts:UA1.30
+Open < 127> <   2   76  127 > -> <127>-CHG_HG Parts:PU5301.26; <2>-RING2_CONN Parts:UA1.30
+Open <   7> <   3    7  128 > -> <7>-HPOUT_R_R Parts:DA3; <3>-RING3_CONN Parts:UA1.31
+Open < 342> <   4  342 > -> <342>-SPK_R-_CONN Parts:CA101; <4>-LINE2-R Parts:UA1.35
+Open < 461> <   5  461 > -> <461>-SPKR_MUTE_N Parts:UA1.2; <5>-PLUG_IN Parts:RA116
+Open < 126> <   6  126  344 > -> <126>-+ADIN_1 Parts:PC212; <6>-+5VA Parts:UA1.40
+Open < 344> <   6  126  344 > -> <344>-SPK_R+_CONN Parts:CA102; <6>-+5VA Parts:UA1.40
+Open <  14> <  14  476  675 > -> <14>-USBC0_RX1_N Parts:UC1.532; <476>-PD_RST_N_R Parts:UU1.35
+Open < 471> <  19  471 > -> <471>-PD_HPD Parts:UU1.2; <19>-USBC0_TX2_N Parts:UC1.13
+Open < 478> <  22  478 > -> <478>-SRC_EN Parts:UU1.22; <22>-DP2_AUXN Parts:UC1.576
+Open < 523> <  26  523 > -> <523>-CPU_HDA_SDIN0_R Parts:UC1.616; <26>-CPU_HDMI_TX1_P Parts:UC1.423

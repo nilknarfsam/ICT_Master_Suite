@@ -1,0 +1,43 @@
+----------------------------------------
+DIGIBOARD-TB14_TB16 GEN6-ATESS-JUL 2024-BRAZIL-ERS
+Board Version:  5b21d46744tb14i7
+Sat Jan 01 06:13:44 2005
+----------------------------------------
+c7110 HAS FAILED
+
+Measured:   2.9174u
+Nominal:    2.2000u
+High Limit: 2.8600u
+Low Limit:  1.5400u
+Capacitance in FARADS
+----------------------------------------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Sat Jan 01 06:13:48 2005
+DIGIBOARD-TB14_TB16 GEN6-ATESS-JUL 2024-BRAZIL-ERS
+Board Version:  5b21d46744tb14i7
+----------------------------------------
+Failed Open #1
+(202122) 3d3v_s5_kb
+                c6504.1
+                 kb1.1
+                 kb1.30
+                 kb1.31
+                r6529.1
+------End, 1 Problem Reported-----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Sat Jan 01 06:13:54 2005
+DIGIBOARD-TB14_TB16 GEN6-ATESS-JUL 2024-BRAZIL-ERS
+Board Version:  5b21d46744tb14i7
+----------------------------------------
+Failed Open #1
+(20247) 5V_S5_USB3
+               aftp3501.1
+                c3501.1
+                c3502.1
+                tc3501.1
+                u3601.12
+                 usb3.1
+------End, 1 Problem Reported-----------
+Serial #: 678300195K

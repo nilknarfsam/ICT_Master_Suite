@@ -1,0 +1,36 @@
+----------------------------------------
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35502_ult7
+Sun Jul 24 08:19:47 2005
+----------------------------------------
+r72004 HAS FAILED
+
+Measured:   -944.93k
+Nominal:    43.000
+High Limit: 52.300
+Low Limit:  38.700
+Resistance in OHMS
+----------------------------------------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Sun Jul 24 08:19:50 2005
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35502_ult7
+----------------------------------------
+Failed Open #1
+(21557) CNV_BRI_RSP
+                r72004.1
+               ucpu1.P43
+------End, 1 Problem Reported-----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Sun Jul 24 08:19:55 2005
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35502_ult7
+----------------------------------------
+Failed Open #1
+(21557) CNV_BRI_RSP
+                r72004.1
+               ucpu1.P43
+------End, 1 Problem Reported-----------
+Serial #: 6783001K7X

@@ -1,0 +1,119 @@
+----------------------------------------
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+Tue Jan 04 09:32:18 2005
+----------------------------------------
+pc506 HAS FAILED
+
+Measured:   340.44p
+Nominal:    4.7000u
+High Limit: 6.1100u
+Low Limit:  3.2900u
+Capacitance in FARADS
+----------------------------------------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 09:32:21 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(214166) +3v_spi
+                cc902.2
+                rc933.2
+                uc901.8
+----------------------------------------
+Failed Open #2
+(21110) LED_B3
+                c8764.1
+               led6305.3
+             led6305%blue.C
+               rtp6325.2
+----------------------------------------
+Failed Open #3
+(21109) LED_W3
+                c8756.1
+               led6306.C
+               rtp6319.2
+------End, 3 Problems Reported----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 09:32:27 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(20267) ADRS0
+                rg249.1
+                rg250.1
+                ug19.21
+----------------------------------------
+Failed Open #2
+(202129) +vcc_kb_led
+                cbl25.1
+                cbl40.1
+                jkbl1.1
+                jkbl1.2
+                rbl83.2
+----------------------------------------
+Failed Open #3
+(203104) PCH_EDP_SW
+                qh4005.D
+                r10221.1
+                 rt2.1
+                 rt3.2
+----------------------------------------
+Failed Open #4
+(21018) rom_sclk
+                 cg51.1
+                 rg53.2
+                 rg54.2
+                 rg57.1
+                uv1.1330
+----------------------------------------
+Failed Open #5
+(20325) N33145013
+                 qg7.2
+                 qg7.3
+               qg7%qf1.D
+               qg7%qf2.G
+                 rg42.2
+----------------------------------------
+Failed Open #6
+(214166) +3v_spi
+                cc902.2
+                rc933.2
+                uc901.8
+----------------------------------------
+Failed Open #7
+(21110) LED_B3
+                c8764.1
+               led6305.3
+             led6305%blue.C
+               rtp6325.2
+----------------------------------------
+Failed Open #8
+(21109) LED_W3
+                c8756.1
+               led6306.C
+               rtp6319.2
+----------------------------------------
+Failed Open #9
+(211110) LED_W5
+                c8768.1
+               led6309.C
+               rtp6339.2
+----------------------------------------
+Failed Open #10
+(20318) N22151821
+                rg151.1
+                uv14.90
+----------------------------------------
+Failed Open #11
+(20912) rom_wp__r
+                rg218.2
+                rg292.2
+                rg1759.1
+                 ug2.3
+------End, 11 Problems Reported---------
+Serial #: 67830019N5

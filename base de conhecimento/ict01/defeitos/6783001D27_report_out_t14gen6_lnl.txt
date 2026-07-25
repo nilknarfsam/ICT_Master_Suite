@@ -1,0 +1,49 @@
+----------------------------------------
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35591_ult5
+Thu Jul 21 10:27:43 2005
+----------------------------------------
+pc0802 HAS FAILED
+
+Measured:   86.841u
+Nominal:    66.202u
+High Limit: 86.063u
+Low Limit:  46.332u
+Capacitance in FARADS
+----------------------------------------
+DEVICES IN PARALLEL
+   [pc0805] BOM Value : 22u
+   [pc0814] BOM Value : 22u
+   [c17028] BOM Value : 100n
+   [pc0804] BOM Value : 100n
+   [pc0803] BOM Value : 2.2n
+   [c17027] BOM Value : 100p
+   [pc0806] BOM Value : 100p
+   [pc0807] BOM Value : 47p
+   [c17026] BOM Value : 8.2p
+----------------------------------------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Thu Jul 21 10:27:47 2005
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35591_ult5
+----------------------------------------
+Failed Open #1
+(214143) -EXTPWR_R
+                d42001.A
+                r42007.2
+                uec1.A13
+------End, 1 Problem Reported-----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Thu Jul 21 10:27:52 2005
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35591_ult5
+----------------------------------------
+Failed Open #1
+(214143) -EXTPWR_R
+                d42001.A
+                r42007.2
+                uec1.A13
+------End, 1 Problem Reported-----------
+Serial #: 6783001D27

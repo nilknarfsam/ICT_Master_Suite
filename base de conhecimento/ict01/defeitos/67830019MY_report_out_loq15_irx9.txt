@@ -1,0 +1,12 @@
+----------------------------------------
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+Tue Jan 04 08:39:22 2005
+----------------------------------------
+rbl6404 HAS FAILED
+
+Measured:   43.905
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+Serial #: 67830019MY

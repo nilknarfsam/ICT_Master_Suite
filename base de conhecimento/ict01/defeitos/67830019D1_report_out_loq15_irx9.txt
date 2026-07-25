@@ -1,0 +1,131 @@
+----------------------------------------
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+Tue Jan 04 13:25:07 2005
+----------------------------------------
+r5834 HAS FAILED
+
+Measured:   18.143k
+Nominal:    1.0000k
+High Limit: 1.1000k
+Low Limit:  900.00
+Resistance in OHMS
+----------------------------------------
+qg2%qf1 HAS FAILED
+
+REPLACE DEVICE: qg2
+
+Measured:   1.7316k
+High Limit: 200.00
+Low Limit:  20.000
+NFET Ron in OHMS
+----------------------------------------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 13:25:11 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(202118) N77290809
+                 cv3.2
+                 cv4.2
+                 qh2.G
+                 rt4.1
+----------------------------------------
+Failed Open #2
+(202130) +5vs_rgb
+                jrgb1.17
+                jrgb1.18
+                jrgb1.19
+                jrgb1.20
+               rbl6428.2
+               rbl6429.2
+----------------------------------------
+Failed Open #3
+(211110) LED_W5
+                c8768.1
+               led6309.C
+               rtp6339.2
+----------------------------------------
+Failed Open #4
+(20808) xtalout
+                 cg69.2
+                 rg72.2
+                uv1.1022
+                 yg1.3
+----------------------------------------
+Failed Open #5
+(20912) rom_wp__r
+                rg218.2
+                rg292.2
+                rg1759.1
+                 ug2.3
+----------------------------------------
+Failed Open #6
+(21966) espi_io2
+                 rh70.2
+                uh1.265
+----------------------------------------
+Failed Open #7
+(209112) HDACPU_SCLK_R_R
+                r10247.1
+                uc1.1649
+----------------------------------------
+Failed Open #8
+(22055) usb20_p8
+               rbl6421.1
+                uh1.689
+------End, 8 Problems Reported----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 13:25:17 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(202130) +5vs_rgb
+                jrgb1.17
+                jrgb1.18
+                jrgb1.19
+                jrgb1.20
+               rbl6428.2
+               rbl6429.2
+----------------------------------------
+Failed Open #2
+(211110) LED_W5
+                c8768.1
+               led6309.C
+               rtp6339.2
+----------------------------------------
+Failed Open #3
+(20808) xtalout
+                 cg69.2
+                 rg72.2
+                uv1.1022
+                 yg1.3
+----------------------------------------
+Failed Open #4
+(217109) IMON_MAIN_R_1
+                 phz3.2
+                 prz6.1
+                 prz7.2
+----------------------------------------
+Failed Open #5
+(20912) rom_wp__r
+                rg218.2
+                rg292.2
+                rg1759.1
+                 ug2.3
+----------------------------------------
+Failed Open #6
+(21966) espi_io2
+                 rh70.2
+                uh1.265
+----------------------------------------
+Failed Open #7
+(209112) HDACPU_SCLK_R_R
+                r10247.1
+                uc1.1649
+------End, 7 Problems Reported----------
+Serial #: 67830019D1

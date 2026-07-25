@@ -1,0 +1,36 @@
+----------------------------------------
+DIGIBOARD-TB14_TB16 GEN6-ATESS-JUL 2024-BRAZIL-ERS
+Board Version:  5b21d46744tb14i7
+Sat Jan 01 03:59:45 2005
+----------------------------------------
+c2718 HAS FAILED
+
+Measured:   108.11p
+Nominal:    2.9000u
+High Limit: 4.9300u
+Low Limit:  0.87000u
+Capacitance in FARADS
+----------------------------------------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Sat Jan 01 03:59:51 2005
+DIGIBOARD-TB14_TB16 GEN6-ATESS-JUL 2024-BRAZIL-ERS
+Board Version:  5b21d46744tb14i7
+----------------------------------------
+Failed Open #1
+(214131) cpvee_aud
+                c2718.1
+                u2701.25
+------End, 1 Problem Reported-----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Sat Jan 01 03:59:57 2005
+DIGIBOARD-TB14_TB16 GEN6-ATESS-JUL 2024-BRAZIL-ERS
+Board Version:  5b21d46744tb14i7
+----------------------------------------
+Failed Open #1
+(214131) cpvee_aud
+                c2718.1
+                u2701.25
+------End, 1 Problem Reported-----------
+Serial #: 678300197J

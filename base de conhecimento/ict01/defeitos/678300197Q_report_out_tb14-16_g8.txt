@@ -1,0 +1,14 @@
+----------------------------------------
+TestJet Report for "testjet".
+Sat Jan 01 03:49:22 2005
+DIGIBOARD-TB14_TB16 GEN6-ATESS-JUL 2024-BRAZIL-ERS
+Board Version:  5b21d46744tb14i7
+----------------------------------------
+Open #1  Device kb1
+  Pin 29  Node num_led_kb
+  Measured 15.5             (BRC 222102)
+Open #2  Device kb1
+  Pin 28  Node kcol17
+  Measured 13.5             (BRC 216109)
+----------------------------------------
+Serial #: 678300197Q

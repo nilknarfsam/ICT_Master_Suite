@@ -1,0 +1,43 @@
+----------------------------------------
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+Tue Jan 04 14:37:02 2005
+----------------------------------------
+pcb30 HAS FAILED
+
+Measured:   0.12053u
+Nominal:    0.10000u
+High Limit: 0.12000u
+Low Limit:  0.080000u
+Capacitance in FARADS
+----------------------------------------
+DEVICES IN PARALLEL
+   [prb34] BOM Value : 75k
+----------------------------------------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 14:37:06 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(20808) xtalout
+                 cg69.2
+                 rg72.2
+                uv1.1022
+                 yg1.3
+------End, 1 Problem Reported-----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 14:37:13 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(20808) xtalout
+                 cg69.2
+                 rg72.2
+                uv1.1022
+                 yg1.3
+------End, 1 Problem Reported-----------
+Serial #: 67830019Q5

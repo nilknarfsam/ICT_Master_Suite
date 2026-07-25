@@ -1,0 +1,19 @@
+----------------------------------------
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+Tue Jan 04 16:56:19 2005
+----------------------------------------
+ca5606 HAS FAILED
+
+Measured:   3.6522u
+Nominal:    2.4000u
+High Limit: 3.1200u
+Low Limit:  1.6800u
+Capacitance in FARADS
+----------------------------------------
+DEVICES IN PARALLEL
+   [c7809] BOM Value : 100n
+   [ca5619] BOM Value : 100n
+   [ctp6306] BOM Value : 330p
+----------------------------------------
+Serial #: 67830019PD

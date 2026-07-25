@@ -1,0 +1,58 @@
+----------------------------------------
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+Tue Jan 04 14:57:59 2005
+----------------------------------------
+rh126 HAS FAILED
+
+Measured:   223.42
+Nominal:    200.00
+High Limit: 217.00
+Low Limit:  188.00
+Resistance in OHMS
+----------------------------------------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 14:58:02 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(210174) +19VB_1V
+                pc1004.1
+                pc1005.1
+                pc1006.1
+                pc1015.1
+                pj1001.2
+                pu1001.2
+                pu1001.3
+                pu1001.4
+----------------------------------------
+Failed Open #2
+(203115) dgpu_edp_mux_cntl
+                 qg19.5
+               qg19%qf1.G
+                rg207.1
+                uv1.1219
+------End, 2 Problems Reported----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 14:58:09 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(20808) xtalout
+                 cg69.2
+                 rg72.2
+                uv1.1022
+                 yg1.3
+----------------------------------------
+Failed Open #2
+(203115) dgpu_edp_mux_cntl
+                 qg19.5
+               qg19%qf1.G
+                rg207.1
+                uv1.1219
+------End, 2 Problems Reported----------
+Serial #: 67830019C4

@@ -4,6 +4,8 @@ import json
 import sqlite3
 import socket
 import time
+import re
+import html
 from datetime import datetime
 
 def get_base_path():
@@ -83,7 +85,6 @@ def init_db():
                 )
             """)
             
-            # Garante a existência das colunas opcionais legadas
             cursor.execute("PRAGMA table_info(falhas)")
             columns = [info[1] for info in cursor.fetchall()]
             if 'observacao' not in columns:
@@ -91,7 +92,6 @@ def init_db():
             if 'tecnico' not in columns:
                 cursor.execute("ALTER TABLE falhas ADD COLUMN tecnico TEXT")
 
-            # Índices para otimizar as consultas mais comuns
             cursor.execute("CREATE INDEX IF NOT EXISTS idx_data_registro ON falhas (data_registro);")
             cursor.execute("CREATE INDEX IF NOT EXISTS idx_componente ON falhas (componente);")
             cursor.execute("CREATE INDEX IF NOT EXISTS idx_arquivo ON falhas (arquivo);")
@@ -249,6 +249,65 @@ def parse_metadata_inteligente(caminho_completo, nome_arquivo, conteudo):
         print(f"Erro no Factory do Parser: {e}")
         
     return {"tipo": tipo, "data": "N/A", "serial": "N/A", "modelo": "N/A", "status": "UNKNOWN", "cor": "black"}
+
+def extrair_diagnostico_inteligente(meta, conteudo):
+    """Extrai informações diagnósticas detalhadas (componentes, curtos, pinos abertos e coordenadas)."""
+    diagnostico = {
+        "status": meta.get("status", "N/A"),
+        "componentes": [],
+        "coordenadas": [],
+        "curtos": [],
+        "pinos_abertos": [],
+        "total_erros": 0
+    }
+    
+    if not conteudo or not conteudo.strip():
+        return diagnostico
+
+    linhas = conteudo.splitlines()
+    tipo = meta.get("tipo", "TRI")
+
+    for linha in linhas:
+        linha_strip = linha.strip()
+        if not linha_strip:
+            continue
+
+        # --- TRI CSV ---
+        if tipo == "TRI":
+            if linha_strip.startswith("Short"):
+                diagnostico["curtos"].append(linha_strip)
+                diagnostico["total_erros"] += 1
+                partes_parts = re.findall(r'Parts:([A-Za-z0-9_\.]+)', linha_strip)
+                for comp in partes_parts:
+                    if comp not in diagnostico["componentes"]:
+                        diagnostico["componentes"].append(comp)
+            elif "," in linha_strip:
+                partes = [p.strip() for p in linha_strip.split(",")]
+                if len(partes) >= 11 and partes[0].isdigit():
+                    comp = partes[1]
+                    coord = partes[10]
+                    if comp and comp not in diagnostico["componentes"]:
+                        diagnostico["componentes"].append(comp)
+                        diagnostico["total_erros"] += 1
+                    if coord and re.match(r'^[A-Z][0-9]+$', coord) and coord not in diagnostico["coordenadas"]:
+                        diagnostico["coordenadas"].append(coord)
+
+        # --- AGILENT TXT ---
+        elif tipo == "AGILENT":
+            if "Short #" in linha_strip or "From:" in linha_strip or "To:" in linha_strip:
+                if "From:" in linha_strip:
+                    diagnostico["curtos"].append(linha_strip)
+                    diagnostico["total_erros"] += 1
+            elif "Failed Open #" in linha_strip:
+                diagnostico["total_erros"] += 1
+            elif re.search(r'\b[a-z0-9_]+\.[0-9A-Z]+\b', linha_strip):
+                comps = re.findall(r'\b([a-zA-Z0-9_]+)\.[0-9A-Z]+\b', linha_strip)
+                for comp in comps:
+                    comp_upper = comp.upper()
+                    if comp_upper not in diagnostico["componentes"] and len(comp_upper) >= 2:
+                        diagnostico["componentes"].append(comp_upper)
+
+    return diagnostico
 
 # Inicializa o banco de dados na importação do módulo
 init_db()

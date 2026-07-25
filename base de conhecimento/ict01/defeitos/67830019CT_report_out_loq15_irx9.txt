@@ -1,0 +1,114 @@
+----------------------------------------
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+Tue Jan 04 12:57:04 2005
+----------------------------------------
+prz9 HAS FAILED
+
+Measured:   248.90M
+Nominal:    19.100k
+High Limit: 20.246k
+Low Limit:  17.954k
+Resistance in OHMS
+----------------------------------------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 12:57:07 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(202118) N77290809
+                 cv3.2
+                 cv4.2
+                 qh2.G
+                 rt4.1
+----------------------------------------
+Failed Open #2
+(202130) +5vs_rgb
+                jrgb1.17
+                jrgb1.18
+                jrgb1.19
+                jrgb1.20
+               rbl6428.2
+               rbl6429.2
+----------------------------------------
+Failed Open #3
+(211110) LED_W5
+                c8768.1
+               led6309.C
+               rtp6339.2
+----------------------------------------
+Failed Open #4
+(20808) xtalout
+                 cg69.2
+                 rg72.2
+                uv1.1022
+                 yg1.3
+----------------------------------------
+Failed Open #5
+(216111) imon_auxi
+                 prz9.2
+                puz01.29
+----------------------------------------
+Failed Open #6
+(210107) CS_DSI_RT6543
+                 prg4.2
+                 pug1.1
+----------------------------------------
+Failed Open #7
+(20318) N22151821
+                rg151.1
+                uv14.90
+------End, 7 Problems Reported----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 12:57:14 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(202118) N77290809
+                 cv3.2
+                 cv4.2
+                 qh2.G
+                 rt4.1
+----------------------------------------
+Failed Open #2
+(202130) +5vs_rgb
+                jrgb1.17
+                jrgb1.18
+                jrgb1.19
+                jrgb1.20
+               rbl6428.2
+               rbl6429.2
+----------------------------------------
+Failed Open #3
+(21976) spi_0_d3
+                rc1966.1
+                uc901.7
+----------------------------------------
+Failed Open #4
+(211110) LED_W5
+                c8768.1
+               led6309.C
+               rtp6339.2
+----------------------------------------
+Failed Open #5
+(20808) xtalout
+                 cg69.2
+                 rg72.2
+                uv1.1022
+                 yg1.3
+----------------------------------------
+Failed Open #6
+(210107) CS_DSI_RT6543
+                 prg4.2
+                 pug1.1
+----------------------------------------
+Failed Open #7
+(20318) N22151821
+                rg151.1
+                uv14.90
+------End, 7 Problems Reported----------
+Serial #: 67830019CT

@@ -1,0 +1,35 @@
+----------------------------------------
+TestJet Report for "testjet".
+Sun Jul 24 07:54:36 2005
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35502_ult7
+----------------------------------------
+Open #1  Device jkbl1
+  Pin 7  Node DRV0
+  Measured -1.6             (BRC 214148)
+----------------------------------------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Sun Jul 24 07:54:38 2005
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35502_ult7
+----------------------------------------
+Failed Open #1
+(214148) DRV0
+                jkbl1.7
+                r45210.2
+                uec1.M9
+------End, 1 Problem Reported-----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Sun Jul 24 07:54:43 2005
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35502_ult7
+----------------------------------------
+Failed Open #1
+(214148) DRV0
+                jkbl1.7
+                r45210.2
+                uec1.M9
+------End, 1 Problem Reported-----------
+Serial #: 6783001K6S

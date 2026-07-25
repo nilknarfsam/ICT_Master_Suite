@@ -1,0 +1,32 @@
+----------------------------------------
+Shorts Report for "shorts".
+Sat Jan 01 00:40:27 2005
+DIGIBOARD-E14 GEN8 IPH-ATESS-APR 2026-BRAZIL-ERS
+Board Version:  sb21w21218_u5
+----------------------------------------
+Short #1, Thresh 9, Delay 30ms      Ohms
+From: +3P3VS_SSD2             21418    0
+  &   +3P3VS_SSD1             21447
+  &   +3P3VS_P                21445
+  &   +3P3VS_CP_VDDIO         20933
+  &   +3P3VS                 210128
+  &   +3P3VS_HDMI_RET_IN      21063
+  &   +3P3VS_USBA1_RED       210135
+  &   +3P3VS_THM1             20268
+  &   +3P3VS_GS              215132
+  &   +3P3VS_TP               20217
+To:   CHG_EC_DAT0            209127    2
+      RT3645GE_SM_SDA         20261    0
+      SMB_0_DAT_BAT          209128    1
+      SMB_0_DAT_EC           210103    2
+      RT3645GE_SM_SCL        202158    0
+      SMB_0_CLK_BAT           20926    1
+      SMB_0_CLK_EC            21002    2
+Common Devices:
+                 pq1001
+                 pq1002
+                 pr1047
+                 pr1048
+Total of 19 nodes, Message is:  None.
+------End, 1 Problem Reported-----------
+Serial #: 67830015DT

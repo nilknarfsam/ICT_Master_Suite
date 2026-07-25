@@ -1,0 +1,38 @@
+----------------------------------------
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35591_ult5
+Sat Jul 23 09:14:50 2005
+----------------------------------------
+c50401 HAS FAILED
+
+Measured:   0.12011u
+Nominal:    0.10000u
+High Limit: 0.12000u
+Low Limit:  0.080000u
+Capacitance in FARADS
+----------------------------------------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Sat Jul 23 09:14:55 2005
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35591_ult5
+----------------------------------------
+Failed Open #1
+(214143) -EXTPWR_R
+                d42001.A
+                r42007.2
+                uec1.A13
+------End, 1 Problem Reported-----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Sat Jul 23 09:15:00 2005
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35591_ult5
+----------------------------------------
+Failed Open #1
+(214143) -EXTPWR_R
+                d42001.A
+                r42007.2
+                uec1.A13
+------End, 1 Problem Reported-----------
+Serial #: 6783001DBJ

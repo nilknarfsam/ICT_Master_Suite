@@ -1,0 +1,12 @@
+----------------------------------------
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+Tue Jan 04 07:45:47 2005
+----------------------------------------
+rtp6302 HAS FAILED
+
+Measured:   -23.320k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+Serial #: 67830010EJ

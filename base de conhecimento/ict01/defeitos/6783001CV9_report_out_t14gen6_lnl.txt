@@ -1,0 +1,11 @@
+----------------------------------------
+TestJet Report for "testjet".
+Sat Jul 23 14:42:02 2005
+DIGIBOARD-T14 GEN6 LNL-ATESS-JAN 2026-BRAZIL-ERS
+Board Version:  sb21v35591_ult5
+----------------------------------------
+Open #1  Device upd1
+  Pin 19  Node I2C_CLK_PD
+  Measured 9.4              (BRC 214144)
+----------------------------------------
+Serial #: 6783001CV9

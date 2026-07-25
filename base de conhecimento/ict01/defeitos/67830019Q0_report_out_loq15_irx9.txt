@@ -1,0 +1,74 @@
+----------------------------------------
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+Tue Jan 04 09:40:49 2005
+----------------------------------------
+r5834 HAS FAILED
+
+Measured:   196.48M
+Nominal:    1.0000k
+High Limit: 1.1000k
+Low Limit:  900.00
+Resistance in OHMS
+----------------------------------------
+qg2%qf1 HAS FAILED
+
+REPLACE DEVICE: qg2
+
+Measured:   -326.08M
+High Limit: 200.00
+Low Limit:  20.000
+NFET Ron in OHMS
+----------------------------------------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 09:40:54 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(217155) ec_smb_ck1
+                 qg2.3
+               qg2%qf1.D
+                 qv42.3
+               qv42%qf2.D
+                r5834.2
+                uec1.16
+                uth1.10
+                 uth2.1
+----------------------------------------
+Failed Open #2
+(210174) +19VB_1V
+                pc1004.1
+                pc1005.1
+                pc1006.1
+                pc1015.1
+                pj1001.2
+                pu1001.2
+                pu1001.3
+                pu1001.4
+------End, 2 Problems Reported----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 09:41:01 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(20808) xtalout
+                 cg69.2
+                 rg72.2
+                uv1.1022
+                 yg1.3
+----------------------------------------
+Failed Open #2
+(20318) N22151821
+                rg151.1
+                uv14.90
+----------------------------------------
+Failed Open #3
+(209112) HDACPU_SCLK_R_R
+                r10247.1
+                uc1.1649
+------End, 3 Problems Reported----------
+Serial #: 67830019Q0

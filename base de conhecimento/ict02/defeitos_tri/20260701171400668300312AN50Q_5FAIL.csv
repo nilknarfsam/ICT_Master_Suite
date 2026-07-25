@@ -1,0 +1,7 @@
+// Header_Data
+// PASS/FAIL, ICT_ID, SeriesNo, BoardName, BarCode, Date, Time, Result, Retest,WorkSchedule,OperID, DetailResult, MulBrdNum, MulBrdResult,RetryCnt,BeginDate,BeginTime,Version,BoardVersion,FixtureBarcode,PinOffset,LeftRight
+FAIL,1,314,N50Q_5,668300312A,20260701,171400,F,0,0,,FPPFPPPPPPNN,1,F,2,20260701,171349,0,,,0,0,12.06 sec
+
+// Component_Data
+// StepNum, PartName, Act_V, Std_V, HLim, LLim, Mode, Type, HPin, LPin, Loc, Msr_V, Result
+ 836, RL14,   100.00K ,   100.00K ,  20.0,  20.0, 2, R, 1, 927, A2, 74.1532285K , 1

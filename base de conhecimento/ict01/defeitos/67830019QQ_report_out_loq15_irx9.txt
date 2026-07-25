@@ -1,0 +1,108 @@
+----------------------------------------
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+Tue Jan 04 10:04:59 2005
+----------------------------------------
+r5839 HAS FAILED
+
+Measured:   230.49M
+Nominal:    100.00k
+High Limit: 115.00k
+Low Limit:  85.000k
+Resistance in OHMS
+----------------------------------------
+pr509 HAS FAILED
+
+Measured:   46.744M
+Nominal:    2.2000k
+High Limit: 2.4200k
+Low Limit:  1.9800k
+Resistance in OHMS
+----------------------------------------
+qg2%qf1 HAS FAILED
+
+REPLACE DEVICE: qg2
+
+Measured:   210.68
+High Limit: 200.00
+Low Limit:  20.000
+NFET Ron in OHMS
+----------------------------------------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 10:05:02 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(20712) vccin_aux_core_vid0
+                 rh72.2
+                uh1.382
+----------------------------------------
+Failed Open #2
+(21545) ec_on
+                pr509.1
+                r5839.2
+                 uec1.1
+----------------------------------------
+Failed Open #3
+(210107) CS_DSI_RT6543
+                 prg4.2
+                 pug1.1
+----------------------------------------
+Failed Open #4
+(209112) HDACPU_SCLK_R_R
+                r10247.1
+                uc1.1649
+----------------------------------------
+Failed Open #5
+(22055) usb20_p8
+               rbl6421.1
+                uh1.689
+------End, 5 Problems Reported----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Tue Jan 04 10:05:08 2005
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+----------------------------------------
+Failed Open #1
+(217155) ec_smb_ck1
+                 qg2.3
+               qg2%qf1.D
+                 qv42.3
+               qv42%qf2.D
+                r5834.2
+                uec1.16
+                uth1.10
+                 uth2.1
+----------------------------------------
+Failed Open #2
+(21545) ec_on
+                pr509.1
+                r5839.2
+                 uec1.1
+----------------------------------------
+Failed Open #3
+(20808) xtalout
+                 cg69.2
+                 rg72.2
+                uv1.1022
+                 yg1.3
+----------------------------------------
+Failed Open #4
+(210107) CS_DSI_RT6543
+                 prg4.2
+                 pug1.1
+----------------------------------------
+Failed Open #5
+(209112) HDACPU_SCLK_R_R
+                r10247.1
+                uc1.1649
+----------------------------------------
+Failed Open #6
+(22055) usb20_p8
+               rbl6421.1
+                uh1.689
+------End, 6 Problems Reported----------
+Serial #: 67830019QQ

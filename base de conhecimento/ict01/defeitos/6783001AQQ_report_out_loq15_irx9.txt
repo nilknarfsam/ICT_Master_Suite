@@ -1,0 +1,18 @@
+----------------------------------------
+DIGIBOARD-LOQ 15 IRX9-ATESS-JUL 2024-BRAZIL-JCS
+Board Version:  5b21d46524
+Tue Jan 04 03:04:12 2005
+----------------------------------------
+rd249 HAS FAILED
+
+Measured:   -46.616k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+rh153 HAS FAILED
+
+Measured:   -31.088k
+Threshold: 15.000
+Jumper Resistance in OHMS
+----------------------------------------
+Serial #: 6783001AQQ

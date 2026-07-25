@@ -1,0 +1,115 @@
+----------------------------------------
+DIGIBOARD-E14 GEN8 IPH-ATESS-APR 2026-BRAZIL-ERS
+Board Version:  sb21w21218_u5
+Sat Jan 01 09:15:01 2005
+----------------------------------------
+pc1465 HAS FAILED
+
+Measured:   1451.2u
+Nominal:    902.10u
+High Limit: 1262.9u
+Low Limit:  539.39u
+Capacitance in FARADS
+----------------------------------------
+DEVICES IN PARALLEL
+   [pc1401] BOM Value : 10u
+   [pc1402] BOM Value : 10u
+   [pc1403] BOM Value : 10u
+   [pc1404] BOM Value : 10u
+   [pc1405] BOM Value : 10u
+   [pc1406] BOM Value : 10u
+   [pc1476] BOM Value : 10u
+   [pc6528] BOM Value : 10u
+   [pc6529] BOM Value : 10u
+   [pc6530] BOM Value : 10u
+   [pc6531] BOM Value : 10u
+   [pc6532] BOM Value : 10u
+   [pc6533] BOM Value : 10u
+   [pc6534] BOM Value : 10u
+   [pc6535] BOM Value : 10u
+   [pc6536] BOM Value : 10u
+   [pc6537] BOM Value : 10u
+   [pc6538] BOM Value : 10u
+   [pc6539] BOM Value : 10u
+   [pc6540] BOM Value : 10u
+   [pc6541] BOM Value : 10u
+   [pc6542] BOM Value : 10u
+   [pc6543] BOM Value : 10u
+   [pc6547] BOM Value : 10u
+   [pc6549] BOM Value : 10u
+   [pc6550] BOM Value : 10u
+   [pc6551] BOM Value : 10u
+   [pc6552] BOM Value : 10u
+   [pc6553] BOM Value : 10u
+   [pc6554] BOM Value : 10u
+   [pc6555] BOM Value : 10u
+   [pc6556] BOM Value : 10u
+   [pc6557] BOM Value : 10u
+   [pc6558] BOM Value : 10u
+   [pc6559] BOM Value : 10u
+   [pc6560] BOM Value : 10u
+   [pc6561] BOM Value : 10u
+   [pc6562] BOM Value : 10u
+   [pc6563] BOM Value : 10u
+   [pc6564] BOM Value : 10u
+   [pc6565] BOM Value : 10u
+   [pc6566] BOM Value : 10u
+   [pc6568] BOM Value : 10u
+   [pc6569] BOM Value : 10u
+   [pc6570] BOM Value : 10u
+   [pc6572] BOM Value : 10u
+   [pc6573] BOM Value : 10u
+   [pc6574] BOM Value : 10u
+   [pc6575] BOM Value : 10u
+   [pc6576] BOM Value : 10u
+   [pc6577] BOM Value : 10u
+   [pc6578] BOM Value : 10u
+   [pc6579] BOM Value : 10u
+   [pc6580] BOM Value : 10u
+   [pc6581] BOM Value : 10u
+   [pc6582] BOM Value : 10u
+   [pc1469] BOM Value : 1u
+   [pc1470] BOM Value : 1u
+   [pc1471] BOM Value : 1u
+   [pc1472] BOM Value : 1u
+   [pc1473] BOM Value : 1u
+   [pc1474] BOM Value : 1u
+   [pc1475] BOM Value : 1u
+   [pc1477] BOM Value : 1u
+   [pc1478] BOM Value : 1u
+   [pc6525] BOM Value : 1u
+   [pc6526] BOM Value : 1u
+   [pc6527] BOM Value : 1u
+   [pc1005] BOM Value : 100n
+----------------------------------------
+pr6512 HAS FAILED
+
+Measured:   634.21k
+Nominal:    1.0000M
+High Limit: 1.3500M
+Low Limit:  650.00k
+Resistance in OHMS
+----------------------------------------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Sat Jan 01 09:15:08 2005
+DIGIBOARD-E14 GEN8 IPH-ATESS-APR 2026-BRAZIL-ERS
+Board Version:  sb21w21218_u5
+----------------------------------------
+Failed Open #1
+(21510) EXP_RST_N_EC
+                 re55.2
+                 ue1.E2
+------End, 1 Problem Reported-----------
+----------------------------------------
+CHEK-POINT Report for "pins".
+Sat Jan 01 09:15:13 2005
+DIGIBOARD-E14 GEN8 IPH-ATESS-APR 2026-BRAZIL-ERS
+Board Version:  sb21w21218_u5
+----------------------------------------
+Failed Open #1
+(21510) EXP_RST_N_EC
+                 re55.2
+                 ue1.E2
+------End, 1 Problem Reported-----------
+Serial #: 67830015A6
