@@ -54,6 +54,10 @@ O aplicativo conecta-se à rede da fábrica no IP do servidor de teste **`147.1.
   * **Agrupamento Inteligente de CIs:** Agrupa sub-blocos do mesmo CI no Card (`U109 (3 blocos)`) sem alterar o log bruto.
   * **Exportação de Laudo Formal:** Botão `📄 Salvar Laudo (.txt)` para exportação formal.
   * **Sistema de Builds em `releases/`:** Script `build_release.py` compila e salva executáveis versionados em `releases/` (ignorado no Git pelo `.gitignore`).
+* **v6.2.0 (Estabilização Pré-Migração & Fase 0):**
+  * **Correção de Persistência (`CONFIG_FILE`):** Uso de `get_base_path()` para garantir persistência do `ict_config.json` em executáveis PyInstaller freeze (`--onefile`).
+  * **Cache de Configuração em Memória:** `carregar_config()` com cache de módulo `_config_cache`, eliminando I/O de disco redundante.
+  * **Inicialização Preguiçosa do Banco SQLite:** Remoção de `init_db()` na importação; inicialização lazy sob demanda para eliminar latência no startup.
 
 ---
 
@@ -76,3 +80,6 @@ O aplicativo conecta-se à rede da fábrica no IP do servidor de teste **`147.1.
 * `build_exe.bat` -> Script em lote do Windows que invoca `build_release.py`.
 * `style.qss` -> Design system e estilização CSS moderna da UI.
 * `memoria_projeto/` -> **Base de Memória e Regras do Projeto (Contexto Permanente para IAs e Desenvolvedores).**
+  * `000_CONTEXTO_GLOBAL_E_HISTORICO.md` -> Este documento (histórico, rede, regras de ouro).
+  * `001_REGRAS_DE_DESENVOLVIMENTO_AI.md` -> Protocolo de código, testes e versionamento.
+  * `002_PLANO_MIGRACAO_CSHARP.md` -> **Plano de execução da migração para C#/.NET 8 (v7.0.0) + auditoria de bugs da v6.1.0.**

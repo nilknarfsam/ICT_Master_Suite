@@ -8,15 +8,15 @@ import re
 import html
 from datetime import datetime
 
-APP_VERSION = "6.1.0"
+APP_VERSION = "6.2.0"
 
 def get_base_path():
     if getattr(sys, 'frozen', False):
         return os.path.dirname(sys.executable)
     return os.path.dirname(os.path.abspath(__file__))
 
-# --- Constantes ---
-CONFIG_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'ict_config.json')
+# --- Constantes e Cache de Módulo ---
+CONFIG_FILE = os.path.join(get_base_path(), 'ict_config.json')
 DEFAULT_CONFIG = {
     "caminho_logs_tri": "//147.1.0.95/teste_ict/ict02/defeitos_tri",
     "caminho_logs_agilent": "//147.1.0.95/teste_ict/ict01/defeitos",
@@ -27,6 +27,9 @@ DEFAULT_CONFIG = {
     "keep_in_tray": False,
     "auto_copia_tri_defeitos": True
 }
+
+_config_cache = None
+_db_initialized = False
 
 # Inicializa o caminho do banco lendo do config.json se existir.
 DB_PATH = "//147.1.0.95/teste_ict/banco_dados_falhas.db"
@@ -64,7 +67,11 @@ def conectar_banco(timeout=20, bypass_check=False):
     return sqlite3.connect(caminho_db, timeout=timeout)
 
 def init_db():
-    """Inicializa o banco de dados e cria a tabela 'falhas' se não existir."""
+    """Inicializa o banco de dados e cria a tabela 'falhas' se não existir (inicialização preguiçosa)."""
+    global _db_initialized
+    if _db_initialized:
+        return
+
     caminho_db = carregar_config().get("caminho_banco_rede", DB_PATH)
     if not servidor_online(caminho_db):
         return
@@ -98,12 +105,14 @@ def init_db():
             cursor.execute("CREATE INDEX IF NOT EXISTS idx_componente ON falhas (componente);")
             cursor.execute("CREATE INDEX IF NOT EXISTS idx_arquivo ON falhas (arquivo);")
             conn.commit()
+            _db_initialized = True
             
     except (sqlite3.OperationalError, OSError) as e:
         print(f"Erro ao inicializar o banco de dados: {e}")
 
 def salvar_falha_db(falha_dict):
     """Salva um dicionário de falha no banco de dados SQLite com retentativa."""
+    init_db()
     max_retries = 3
     retry_delay = 1
     for attempt in range(max_retries):
@@ -127,23 +136,32 @@ def salvar_falha_db(falha_dict):
 
 # --- Funções de Configuração (JSON) ---
 def carregar_config():
-    """Carrega a configuração do arquivo JSON, usando valores padrão para chaves ausentes."""
+    """Carrega a configuração do arquivo JSON com cache de módulo, usando valores padrão para chaves ausentes."""
+    global _config_cache
+    if _config_cache is not None:
+        return _config_cache
+
     if os.path.exists(CONFIG_FILE):
         try:
             with open(CONFIG_FILE, 'r') as f:
                 dados = json.load(f)
                 for k, v in DEFAULT_CONFIG.items():
                     dados.setdefault(k, v)
-                return dados
+                _config_cache = dados
+                return _config_cache
         except (json.JSONDecodeError, IOError):
-            return DEFAULT_CONFIG.copy()
+            _config_cache = DEFAULT_CONFIG.copy()
+            return _config_cache
     
     config_padrao = DEFAULT_CONFIG.copy()
     salvar_config(config_padrao)
-    return config_padrao
+    _config_cache = config_padrao
+    return _config_cache
 
 def salvar_config(dados):
-    """Salva a configuração em um arquivo JSON."""
+    """Salva a configuração em um arquivo JSON e atualiza o cache de módulo."""
+    global _config_cache
+    _config_cache = dados
     try:
         with open(CONFIG_FILE, 'w') as f:
             json.dump(dados, f, indent=4)
@@ -360,6 +378,3 @@ def extrair_diagnostico_inteligente(meta, conteudo):
                         diagnostico["componentes"].append(comp_upper)
 
     return diagnostico
-
-# Inicializa o banco de dados na importação do módulo
-init_db()
