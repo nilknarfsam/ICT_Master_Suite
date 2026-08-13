@@ -1,0 +1,31 @@
+{
+  "componentes_agrupados": [
+    "RC293",
+    "U1 (3 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RC293",
+      "U1_1383_1",
+      "U1_1409_1",
+      "U1_1410_1"
+    ],
+    "coordenadas": [
+      "C4",
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 4
+  },
+  "meta": {
+    "cor": "red",
+    "data": "20/07/2026 10:00:26",
+    "modelo": "N50Q_5",
+    "serial": "6783000YMW",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

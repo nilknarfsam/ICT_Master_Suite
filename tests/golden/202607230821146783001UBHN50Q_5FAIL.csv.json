@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "RSI23"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RSI23"
+    ],
+    "coordenadas": [
+      "C6"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "23/07/2026 08:21:14",
+    "modelo": "N50Q_5",
+    "serial": "6783001UBH",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "PU1601_22_53"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PU1601_22_53"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 16:20:47",
+    "modelo": "IPS5_RYZEN5",
+    "serial": "67830023X4",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

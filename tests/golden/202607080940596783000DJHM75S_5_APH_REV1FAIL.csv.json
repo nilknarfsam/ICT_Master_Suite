@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "CL200"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "CL200"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "08/07/2026 09:40:59",
+    "modelo": "M75S_5_APH_REV1",
+    "serial": "6783000DJH",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

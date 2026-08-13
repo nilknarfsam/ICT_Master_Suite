@@ -1,0 +1,33 @@
+{
+  "componentes_agrupados": [
+    "R568",
+    "C519",
+    "D1_2_3",
+    "U52_8_6"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "R568",
+      "C519",
+      "D1_2_3",
+      "U52_8_6"
+    ],
+    "coordenadas": [
+      "A1",
+      "B2"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 4
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 12:03:57",
+    "modelo": "m75q2_cez_rev1_3",
+    "serial": "67830023AG",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

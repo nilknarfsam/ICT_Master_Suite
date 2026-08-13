@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "PU301.9",
+    "U1.EU4"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PU301.9",
+      "U1.EU4"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short < 762>-VR_PROCHOT# -> Parts:PU301.9 < 776 1130 1167 >-+VCC1P05_PROC -> Parts:U1.EU4"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "23/07/2026 16:33:22",
+    "modelo": "N50Q_5",
+    "serial": "6783001Z40",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

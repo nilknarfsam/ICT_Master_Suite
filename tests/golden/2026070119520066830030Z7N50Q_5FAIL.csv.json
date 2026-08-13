@@ -1,0 +1,29 @@
+{
+  "componentes_agrupados": [
+    "CUS27/CUS24",
+    "QSQ11/6_1_2/OFF"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "CUS27/CUS24",
+      "QSQ11/6_1_2/OFF"
+    ],
+    "coordenadas": [
+      "B7",
+      "A5"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "01/07/2026 19:52:00",
+    "modelo": "N50Q_5",
+    "serial": "66830030Z7",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

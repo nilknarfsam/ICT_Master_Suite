@@ -1,0 +1,31 @@
+{
+  "componentes_agrupados": [
+    "RPC7_1_4",
+    "JDDR1 (2 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RPC7_1_4",
+      "JDDR1.2",
+      "JDDR1.4"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [
+      "Short < 278>-DIMM_HSA -> Parts:JDDR1.2 < 332 >-SMB_CLK_CPU_DIMM -> Parts:JDDR1.4"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "07/07/2026 10:04:20",
+    "modelo": "IPS3_15IRH_I513420",
+    "serial": "6783000E7H",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

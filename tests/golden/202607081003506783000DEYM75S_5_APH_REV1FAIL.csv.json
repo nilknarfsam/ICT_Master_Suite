@@ -1,0 +1,54 @@
+{
+  "componentes_agrupados": [
+    "USI1.84",
+    "FCH.115",
+    "UUS11 (2 blocos)",
+    "FCH.3",
+    "LPT.21",
+    "LPT.19",
+    "RCOM2",
+    "PCIE16X.160",
+    "CCOM5",
+    "UUS13 (3 blocos)",
+    "UUS22.7",
+    "UUS19.1"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "USI1.84",
+      "FCH.115",
+      "UUS11.6",
+      "FCH.3",
+      "UUS11.5",
+      "LPT.21",
+      "LPT.19",
+      "RCOM2",
+      "PCIE16X.160",
+      "CCOM5",
+      "UUS13.5",
+      "UUS13.6",
+      "UUS13.4",
+      "UUS22.7",
+      "UUS19.1"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short <  16  234  236  404  405  439  576  653  723  753 1021 1097 1416 1418 1419 1459 1463 1471 >-TSD- -> Parts:USI1.84 < 450 >-LPT_DET# -> Parts:FCH.115 < 459  692 >-H1P0_HSDN -> Parts:UUS11.6 < 462 >-PT21_USBH1_DET -> Parts:FCH.3 < 465 >-VBUS_FUSBH1 -> Parts:UUS11.5 < 483 >-PRBUSY -> Parts:LPT.21 < 488 >-PRACK# -> Parts:LPT.19 < 543 >-EXT1_RI -> Parts:RCOM2-NC < 843 >-PCIE_CPU_GFX_TX15P_C -> Parts:PCIE16X.160",
+      "Short <  18>-+5V_COM2 -> Parts:CCOM5-NP < 909 >-EXT2_RI",
+      "Short < 441>-VBUS_FUSBH2 -> Parts:UUS13.5 < 444  585  613 >-H2P0_HSDN -> Parts:UUS13.6 < 445 >-H2P1_HSDN -> Parts:UUS13.4",
+      "Short <1035>-FUSBCONN1_DOWN_TXP -> Parts:UUS22.7 <1041 >-VBUS_FUSBCONN1 -> Parts:UUS19.1"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 4
+  },
+  "meta": {
+    "cor": "red",
+    "data": "08/07/2026 10:03:50",
+    "modelo": "M75S_5_APH_REV1",
+    "serial": "6783000DEY",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

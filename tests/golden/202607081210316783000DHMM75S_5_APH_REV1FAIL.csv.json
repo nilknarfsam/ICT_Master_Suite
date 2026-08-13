@@ -1,0 +1,42 @@
+{
+  "componentes_agrupados": [
+    "RPE9",
+    "RH54",
+    "RH98",
+    "RPE42",
+    "RPE8",
+    "RL83",
+    "CUS18/CUS20/CUS24/CUS83",
+    "PQ49-DSG",
+    "UUS9:2-5"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RPE9",
+      "RH54",
+      "RH98",
+      "RPE42",
+      "RPE8",
+      "RL83",
+      "CUS18/CUS20/CUS24/CUS83",
+      "PQ49-DSG",
+      "UUS9:2-5"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 9
+  },
+  "meta": {
+    "cor": "red",
+    "data": "08/07/2026 12:10:31",
+    "modelo": "M75S_5_APH_REV1",
+    "serial": "6783000DHM",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

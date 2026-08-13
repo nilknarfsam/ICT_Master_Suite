@@ -1,0 +1,20 @@
+{
+  "componentes_agrupados": [],
+  "diagnostico": {
+    "componentes": [],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 0
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "02256783000JBJm75q2_cez_rev1_3FAIL",
+    "serial": "2026070814",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

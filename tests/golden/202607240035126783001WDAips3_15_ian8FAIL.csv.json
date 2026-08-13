@@ -1,0 +1,40 @@
+{
+  "componentes_agrupados": [
+    "RU5",
+    "RU40",
+    "PR1029",
+    "CU8",
+    "PL103",
+    "PL104",
+    "PQ100_1_5",
+    "PQ5400_1_5"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RU5",
+      "RU40",
+      "PR1029",
+      "CU8",
+      "PL103",
+      "PL104",
+      "PQ100_1_5",
+      "PQ5400_1_5"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 8
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 00:35:12",
+    "modelo": "ips3_15_ian8",
+    "serial": "6783001WDA",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

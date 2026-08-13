@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "RC208"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RC208"
+    ],
+    "coordenadas": [
+      "F3"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "23/07/2026 13:28:02",
+    "modelo": "N50Q_5",
+    "serial": "6783001XUZ",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

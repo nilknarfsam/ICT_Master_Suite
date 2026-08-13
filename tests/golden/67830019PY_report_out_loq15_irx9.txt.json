@@ -1,0 +1,46 @@
+{
+  "componentes_agrupados": [
+    "R5834",
+    "D68",
+    "CR2",
+    "Q1",
+    "RW1",
+    "SW3",
+    "JP",
+    "R10247",
+    "UC1",
+    "RC1966",
+    "UC901"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "R5834",
+      "D68",
+      "CR2",
+      "Q1",
+      "RW1",
+      "SW3",
+      "JP",
+      "R10247",
+      "UC1",
+      "RC1966",
+      "UC901"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [
+      "CHEK-POINT/Pins"
+    ],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "loq15_irx9",
+    "serial": "67830019PY",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

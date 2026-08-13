@@ -1,0 +1,29 @@
+{
+  "componentes_agrupados": [
+    "RTC173",
+    "CMS3"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RTC173",
+      "CMS3"
+    ],
+    "coordenadas": [
+      "E7",
+      "B1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "23/07/2026 10:37:40",
+    "modelo": "N50Q_5",
+    "serial": "6783000ZV8",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

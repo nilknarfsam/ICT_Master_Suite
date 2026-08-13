@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "HR303"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "HR303"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "10/07/2026 08:43:42",
+    "modelo": "N30S5",
+    "serial": "6783000QBE",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

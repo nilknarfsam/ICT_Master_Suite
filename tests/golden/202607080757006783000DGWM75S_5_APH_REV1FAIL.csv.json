@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "USI1_118_6"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "USI1_118_6"
+    ],
+    "coordenadas": [
+      "B2"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "08/07/2026 07:57:00",
+    "modelo": "M75S_5_APH_REV1",
+    "serial": "6783000DGW",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

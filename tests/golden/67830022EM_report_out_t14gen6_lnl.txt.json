@@ -1,0 +1,30 @@
+{
+  "componentes_agrupados": [
+    "R22201",
+    "R22202",
+    "R22203",
+    "R22204"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "R22201",
+      "R22202",
+      "R22203",
+      "R22204"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 4
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "t14gen6_lnl",
+    "serial": "67830022EM",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

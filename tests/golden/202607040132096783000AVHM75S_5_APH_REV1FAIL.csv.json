@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "UPC2.63",
+    "UDP1.5"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "UPC2.63",
+      "UDP1.5"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short < 539>-IT8893_INTB_L -> Parts:UPC2.63 <1431 >-DP0_PWR_VIN -> Parts:UDP1.5"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "04/07/2026 01:32:09",
+    "modelo": "M75S_5_APH_REV1",
+    "serial": "6783000AVH",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

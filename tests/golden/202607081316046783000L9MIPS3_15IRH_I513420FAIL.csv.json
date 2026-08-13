@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "PR5315"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PR5315"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "08/07/2026 13:16:04",
+    "modelo": "IPS3_15IRH_I513420",
+    "serial": "6783000L9M",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "componentes_agrupados": [],
+  "diagnostico": {
+    "componentes": [],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 0
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "0066830030TXTB14_5B21D47473_R7FAIL",
+    "serial": "2026070611",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

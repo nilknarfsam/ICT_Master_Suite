@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "RSI52",
+    "USI1.123"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RSI52",
+      "USI1.123"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short <  37>-SIO_SOUT1 -> Parts:RSI52/NC < 113 >-PIN123_STRAP -> Parts:USI1.123"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "14/07/2026 16:16:29",
+    "modelo": "N50Q_5",
+    "serial": "6783000X41",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

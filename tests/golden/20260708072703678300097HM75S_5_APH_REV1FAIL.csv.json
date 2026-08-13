@@ -1,0 +1,55 @@
+{
+  "componentes_agrupados": [
+    "RSD20",
+    "RSI43",
+    "PR232",
+    "RPS6",
+    "RHD15",
+    "RHD16",
+    "RHD17",
+    "R27",
+    "RSI35",
+    "CUS18/CUS20/CUS24/CUS83",
+    "CCOM2",
+    "CPE36",
+    "UUS9:2-5",
+    "PU24_1_4",
+    "USI1_78_6"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RSD20",
+      "RSI43",
+      "PR232",
+      "RPS6",
+      "RHD15",
+      "RHD16",
+      "RHD17",
+      "R27",
+      "RSI35",
+      "CUS18/CUS20/CUS24/CUS83",
+      "CCOM2",
+      "CPE36",
+      "UUS9:2-5",
+      "PU24_1_4",
+      "USI1_78_6"
+    ],
+    "coordenadas": [
+      "A1",
+      "B2"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 15
+  },
+  "meta": {
+    "cor": "red",
+    "data": "08/07/2026 07:27:03",
+    "modelo": "M75S_5_APH_REV1",
+    "serial": "678300097H",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

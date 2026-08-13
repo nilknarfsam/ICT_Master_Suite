@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "PC1005/PC1006"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PC1005/PC1006"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "14/07/2026 07:37:00",
+    "modelo": "ips5_14_agp11_AMD",
+    "serial": "678300050Y",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "componentes_agrupados": [
+    "UUS4 (2 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "UUS4.1",
+      "UUS4.2"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short <3279>-HUB_SPI_CS# -> Parts:UUS4.1 <3280 >-HUB_SPI_DI -> Parts:UUS4.2"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "UNKNOWN",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "black",
+    "data": "N/A",
+    "modelo": "N/A",
+    "serial": "N/A",
+    "status": "UNKNOWN",
+    "tipo": "TRI"
+  }
+}

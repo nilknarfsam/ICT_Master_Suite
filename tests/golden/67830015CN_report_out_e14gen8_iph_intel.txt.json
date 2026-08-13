@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "PC5334",
+    "RC263"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PC5334",
+      "RC263"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "e14gen8_iph_intel",
+    "serial": "67830015CN",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

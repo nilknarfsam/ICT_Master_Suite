@@ -1,0 +1,51 @@
+{
+  "componentes_agrupados": [
+    "RV526",
+    "RPV501_1_4",
+    "UC1 (7 blocos)",
+    "RU8",
+    "PJ5607",
+    "PR5446",
+    "RE128",
+    "RE116",
+    "PR5440",
+    "PR5441"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RV526",
+      "RPV501_1_4",
+      "UC1.471",
+      "RU8",
+      "UC1.320",
+      "UC1.330",
+      "PJ5607",
+      "PR5446",
+      "RE128",
+      "RE116",
+      "PR5440",
+      "PR5441",
+      "UC1.783",
+      "UC1.760",
+      "UC1.683",
+      "UC1.685"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short <  59   63  804 >-+5VS_HDMI -> Parts:RV526-NP <  60 >-DDPB_DATA_U -> Parts:RPV501_1_4 < 171  730  731 >-CPU_PD_I2C_INT_N -> Parts:UC1.471 < 732 >-VBUS_DSCHG -> Parts:RU8-NP-NC < 175  183  184  193  194  262  311  318  319  332  333  339  591  595  650  653  654  657  670  720  809  865 >-RSVD_TP24 -> Parts:UC1.320 < 877 >-CFG1 -> Parts:UC1.330 < 201  205  335  340  352  353  354  408  424  436  439  447 >-P_+3VALW_VIN -> Parts:PJ5607-NP < 261  466  620  829 >-VR_HOT_N -> Parts:PR5446-NP < 204  630 >-EC_USM -> Parts:RE128-NP < 627  658 >-EC_SMB_CK0_R -> Parts:RE116-NP < 255  619 >-EC_SMB_DA1 -> Parts:PR5440-NP < 348 >-EC_SMB_CK1 -> Parts:PR5441-NP-NC < 409  856 >-USB20_6_N -> Parts:UC1.783 < 850  854 >-USB20_6_P -> Parts:UC1.760",
+      "Short < 646>-ID3 -> Parts:UC1.683 < 649 >-ID4 -> Parts:UC1.685"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 10:02:05",
+    "modelo": "ips3_15_ian8",
+    "serial": "6783001TPA",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

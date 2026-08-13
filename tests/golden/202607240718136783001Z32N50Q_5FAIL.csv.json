@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "U1.EY19",
+    "DUS12.6"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "U1.EY19",
+      "DUS12.6"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short < 285>-USB32_RX_1_N -> Parts:U1.EY19 < 288 >-USB32_RX_P1_C_N -> Parts:DUS12.6"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 07:18:13",
+    "modelo": "N50Q_5",
+    "serial": "6783001Z32",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

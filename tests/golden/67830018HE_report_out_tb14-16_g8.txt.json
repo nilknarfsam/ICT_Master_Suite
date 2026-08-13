@@ -1,0 +1,20 @@
+{
+  "componentes_agrupados": [],
+  "diagnostico": {
+    "componentes": [],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 0
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "tb14-16_g8",
+    "serial": "67830018HE",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

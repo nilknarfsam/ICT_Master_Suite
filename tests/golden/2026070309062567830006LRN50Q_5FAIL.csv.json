@@ -1,0 +1,33 @@
+{
+  "componentes_agrupados": [
+    "FBA9",
+    "CA49",
+    "DA7",
+    "DA11"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "FBA9",
+      "CA49",
+      "DA7",
+      "DA11"
+    ],
+    "coordenadas": [
+      "D1",
+      "E1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 4
+  },
+  "meta": {
+    "cor": "red",
+    "data": "03/07/2026 09:06:25",
+    "modelo": "N50Q_5",
+    "serial": "67830006LR",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

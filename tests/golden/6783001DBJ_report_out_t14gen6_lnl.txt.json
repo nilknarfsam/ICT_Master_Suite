@@ -1,0 +1,32 @@
+{
+  "componentes_agrupados": [
+    "C50401",
+    "D42001",
+    "R42007",
+    "UEC1"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "C50401",
+      "D42001",
+      "R42007",
+      "UEC1"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [
+      "CHEK-POINT/Pins"
+    ],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "t14gen6_lnl",
+    "serial": "6783001DBJ",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

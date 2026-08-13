@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "LL1_1_2"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "LL1_1_2"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "13/07/2026 09:20:46",
+    "modelo": "N30S5_i3",
+    "serial": "6783000RPQ",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

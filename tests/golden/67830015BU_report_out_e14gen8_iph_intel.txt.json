@@ -1,0 +1,38 @@
+{
+  "componentes_agrupados": [
+    "RS212",
+    "US200",
+    "RU610",
+    "UU601"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RS212",
+      "US200",
+      "RU610",
+      "UU601"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "From: TBT1_SPI_CLK            20771 Open",
+      "To:   TBT_SPI_CLK             20937",
+      "From: +3P3VS                 210128 Open",
+      "To:   +3P3VS_THM1             20268"
+    ],
+    "pinos_abertos": [],
+    "secoes": [
+      "Shorts",
+      "CHEK-POINT/Pins"
+    ],
+    "status": "FAIL",
+    "total_erros": 4
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "e14gen8_iph_intel",
+    "serial": "67830015BU",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

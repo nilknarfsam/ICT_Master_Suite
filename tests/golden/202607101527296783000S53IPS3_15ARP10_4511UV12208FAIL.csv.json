@@ -1,0 +1,33 @@
+{
+  "componentes_agrupados": [
+    "QC1",
+    "UU1.37",
+    "RV521",
+    "RV520"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "QC1",
+      "UU1.37",
+      "RV521",
+      "RV520"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short < 230  233 >-PD_I2C_INT_N -> Parts:QC1/2_3 < 232 >-USBC_I2C_CPU_SDA -> Parts:UU1.37",
+      "Short < 314>-HDMI_1_MNT_TX2_N -> Parts:RV521/NP < 315 >-HDMI_1_MNT_TX2_P -> Parts:RV520/NP"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "10/07/2026 15:27:29",
+    "modelo": "IPS3_15ARP10_4511UV12208",
+    "serial": "6783000S53",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

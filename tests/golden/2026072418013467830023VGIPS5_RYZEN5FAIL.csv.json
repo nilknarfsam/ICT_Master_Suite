@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "R2302",
+    "J2301.108"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "R2302",
+      "J2301.108"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short <  13>-M_B_1_ALERT_N -> Parts:R2302-NP <  14   15 >-M_B_ALERT_N -> Parts:J2301.108"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 18:01:34",
+    "modelo": "IPS5_RYZEN5",
+    "serial": "67830023VG",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

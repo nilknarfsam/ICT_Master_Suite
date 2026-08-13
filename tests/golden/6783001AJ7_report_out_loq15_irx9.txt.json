@@ -1,0 +1,32 @@
+{
+  "componentes_agrupados": [
+    "R11",
+    "JBAT201_SP",
+    "JHDMI1_SP",
+    "JLAN1_SP",
+    "JUSB1_SP"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "R11",
+      "JBAT201_SP",
+      "JHDMI1_SP",
+      "JLAN1_SP",
+      "JUSB1_SP"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 5
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "loq15_irx9",
+    "serial": "6783001AJ7",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "componentes_agrupados": [
+    "R968",
+    "R151",
+    "TS15"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "R968",
+      "R151",
+      "TS15"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 3
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 13:51:19",
+    "modelo": "m75q2_cez_rev1_3",
+    "serial": "67830023BX",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

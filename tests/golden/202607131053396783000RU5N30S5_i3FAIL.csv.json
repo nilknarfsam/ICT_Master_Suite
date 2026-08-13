@@ -1,0 +1,29 @@
+{
+  "componentes_agrupados": [
+    "AC18",
+    "AU1_36_49"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "AC18",
+      "AU1_36_49"
+    ],
+    "coordenadas": [
+      "A1",
+      "B2"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "13/07/2026 10:53:39",
+    "modelo": "N30S5_i3",
+    "serial": "6783000RU5",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

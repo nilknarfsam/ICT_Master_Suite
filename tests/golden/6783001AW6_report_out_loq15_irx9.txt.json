@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "PJ503",
+    "PJ1801",
+    "R10243"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PJ503",
+      "PJ1801",
+      "R10243"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 3
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "loq15_irx9",
+    "serial": "6783001AW6",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

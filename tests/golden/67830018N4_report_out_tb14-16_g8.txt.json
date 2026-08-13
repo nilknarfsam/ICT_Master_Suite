@@ -1,0 +1,44 @@
+{
+  "componentes_agrupados": [
+    "C1212",
+    "DIM1",
+    "R1206",
+    "C2718",
+    "U2701",
+    "CPU1",
+    "R1814",
+    "STCPU1B2"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "C1212",
+      "DIM1",
+      "R1206",
+      "C2718",
+      "U2701",
+      "CPU1",
+      "R1814",
+      "STCPU1B2"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "From: DRAM_PWRGD              20231 Open",
+      "To:   dram1_pwrgd             21029"
+    ],
+    "pinos_abertos": [],
+    "secoes": [
+      "Shorts",
+      "CHEK-POINT/Pins"
+    ],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "tb14-16_g8",
+    "serial": "67830018N4",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

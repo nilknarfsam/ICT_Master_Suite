@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "LU601/4_1",
+    "DU603/3_2"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "LU601/4_1",
+      "DU603/3_2"
+    ],
+    "coordenadas": [
+      "H2"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "22/07/2026 14:34:30",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783001JAC",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

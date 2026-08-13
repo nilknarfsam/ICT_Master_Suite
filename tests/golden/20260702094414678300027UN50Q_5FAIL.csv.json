@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "RTC9"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RTC9"
+    ],
+    "coordenadas": [
+      "F6"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "02/07/2026 09:44:14",
+    "modelo": "N50Q_5",
+    "serial": "678300027U",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

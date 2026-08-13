@@ -1,0 +1,29 @@
+{
+  "componentes_agrupados": [
+    "RC205",
+    "U1_1385_1"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RC205",
+      "U1_1385_1"
+    ],
+    "coordenadas": [
+      "D4",
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "22/07/2026 16:00:49",
+    "modelo": "N50Q_5",
+    "serial": "6783001SZJ",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

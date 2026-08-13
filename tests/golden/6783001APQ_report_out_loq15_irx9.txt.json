@@ -1,0 +1,36 @@
+{
+  "componentes_agrupados": [
+    "RG62",
+    "CG69",
+    "RG72",
+    "UV1",
+    "YG1",
+    "RG49"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RG62",
+      "CG69",
+      "RG72",
+      "UV1",
+      "YG1",
+      "RG49"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [
+      "CHEK-POINT/Pins"
+    ],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "loq15_irx9",
+    "serial": "6783001APQ",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

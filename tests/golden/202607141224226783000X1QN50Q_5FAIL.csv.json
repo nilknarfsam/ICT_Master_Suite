@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "RC1367"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RC1367"
+    ],
+    "coordenadas": [
+      "D4"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "14/07/2026 12:24:22",
+    "modelo": "N50Q_5",
+    "serial": "6783000X1Q",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

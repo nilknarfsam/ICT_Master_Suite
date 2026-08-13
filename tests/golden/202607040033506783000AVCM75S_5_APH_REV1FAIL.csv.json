@@ -1,0 +1,29 @@
+{
+  "componentes_agrupados": [
+    "RLP26",
+    "LPT_19_10"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RLP26",
+      "LPT_19_10"
+    ],
+    "coordenadas": [
+      "A1",
+      "B2"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "04/07/2026 00:33:50",
+    "modelo": "M75S_5_APH_REV1",
+    "serial": "6783000AVC",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

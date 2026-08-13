@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "RSI53"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RSI53"
+    ],
+    "coordenadas": [
+      "A3"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "01/07/2026 01:31:46",
+    "modelo": "N50Q_5",
+    "serial": "66830030XG",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

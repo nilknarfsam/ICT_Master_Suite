@@ -1,0 +1,41 @@
+{
+  "componentes_agrupados": [
+    "PC1607",
+    "PR1630",
+    "D4905",
+    "Q8001 (2 blocos)",
+    "Q8006 (2 blocos)",
+    "Q8008 (2 blocos)",
+    "PU1601_46_53"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PC1607",
+      "PR1630",
+      "D4905",
+      "Q8001_1_6",
+      "Q8001_4_3",
+      "Q8006_1_6",
+      "Q8006_4_3",
+      "Q8008_1_6",
+      "Q8008_4_3",
+      "PU1601_46_53"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 10
+  },
+  "meta": {
+    "cor": "red",
+    "data": "25/07/2026 09:02:28",
+    "modelo": "IPS5_RYZEN5",
+    "serial": "6783002620",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

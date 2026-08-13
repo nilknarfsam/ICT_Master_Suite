@@ -1,0 +1,32 @@
+{
+  "componentes_agrupados": [
+    "CA5606",
+    "CC902",
+    "RC933",
+    "UC901"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "CA5606",
+      "CC902",
+      "RC933",
+      "UC901"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [
+      "CHEK-POINT/Pins"
+    ],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "loq15_irx9",
+    "serial": "6783001AMR",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

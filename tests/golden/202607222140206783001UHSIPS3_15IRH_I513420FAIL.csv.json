@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "RI111"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RI111"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "22/07/2026 21:40:20",
+    "modelo": "IPS3_15IRH_I513420",
+    "serial": "6783001UHS",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

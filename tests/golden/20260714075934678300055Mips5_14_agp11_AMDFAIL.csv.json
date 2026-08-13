@@ -1,0 +1,37 @@
+{
+  "componentes_agrupados": [
+    "PR1221",
+    "PR1226",
+    "PR1225",
+    "R1012-NP",
+    "J8402_4_5",
+    "UU1 (2 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PR1221",
+      "PR1226",
+      "PR1225",
+      "R1012-NP",
+      "J8402_4_5",
+      "UU1_807_1",
+      "UU1_807_40"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 7
+  },
+  "meta": {
+    "cor": "red",
+    "data": "14/07/2026 07:59:34",
+    "modelo": "ips5_14_agp11_AMD",
+    "serial": "678300055M",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

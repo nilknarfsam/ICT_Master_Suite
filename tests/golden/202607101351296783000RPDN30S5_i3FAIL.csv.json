@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "XJ1_45_3"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "XJ1_45_3"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "10/07/2026 13:51:29",
+    "modelo": "N30S5_i3",
+    "serial": "6783000RPD",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "componentes_agrupados": [
+    "RC307",
+    "PC1004",
+    "PC1005",
+    "PC1006",
+    "PC1015",
+    "PJ1001",
+    "PU1001",
+    "CG69",
+    "RG72",
+    "UV1",
+    "YG1",
+    "QG19",
+    "QF1",
+    "RG207"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RC307",
+      "PC1004",
+      "PC1005",
+      "PC1006",
+      "PC1015",
+      "PJ1001",
+      "PU1001",
+      "CG69",
+      "RG72",
+      "UV1",
+      "YG1",
+      "QG19",
+      "QF1",
+      "RG207"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [
+      "CHEK-POINT/Pins"
+    ],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "loq15_irx9",
+    "serial": "67830019GU",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

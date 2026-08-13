@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "JWLAN1.77",
+    "UL1.17"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "JWLAN1.77",
+      "UL1.17"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short <   1  151  214  276  307  314  377  393  434  443  599  614  736  766  787  917 1014 1168 1169 >-GND -> Parts:JWLAN1.77 <  30   31   32   34   35   36   42   44  287 >-LAN1_MDI1_P -> Parts:UL1.17"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "22/07/2026 09:42:27",
+    "modelo": "N50Q_5",
+    "serial": "6783001L07",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

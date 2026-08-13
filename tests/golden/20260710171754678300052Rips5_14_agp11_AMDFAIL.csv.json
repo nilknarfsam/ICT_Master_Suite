@@ -1,0 +1,30 @@
+{
+  "componentes_agrupados": [
+    "PG1001-NP/PR1001/J",
+    "PG1002-NP/PR1001/J",
+    "C8005"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PG1001-NP/PR1001/J",
+      "PG1002-NP/PR1001/J",
+      "C8005"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 3
+  },
+  "meta": {
+    "cor": "red",
+    "data": "10/07/2026 17:17:54",
+    "modelo": "ips5_14_agp11_AMD",
+    "serial": "678300052R",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

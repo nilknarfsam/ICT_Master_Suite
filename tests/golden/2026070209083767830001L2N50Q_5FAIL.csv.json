@@ -1,0 +1,20 @@
+{
+  "componentes_agrupados": [],
+  "diagnostico": {
+    "componentes": [],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 0
+  },
+  "meta": {
+    "cor": "red",
+    "data": "02/07/2026 09:08:37",
+    "modelo": "N50Q_5",
+    "serial": "67830001L2",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

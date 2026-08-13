@@ -1,0 +1,38 @@
+{
+  "componentes_agrupados": [
+    "RC125",
+    "RC184",
+    "RC187",
+    "RC226",
+    "RC242",
+    "RC9",
+    "RC6"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RC125",
+      "RC184",
+      "RC187",
+      "RC226",
+      "RC242",
+      "RC9",
+      "RC6"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 7
+  },
+  "meta": {
+    "cor": "red",
+    "data": "07/07/2026 13:46:09",
+    "modelo": "M75S_5_APH_REV1",
+    "serial": "6783000D2P",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

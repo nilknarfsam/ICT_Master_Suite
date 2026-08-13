@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "RE69",
+    "RC209"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RE69",
+      "RC209"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short < 270>-PM_SLP_SUS_N_CPU -> Parts:RE69-NC < 271 >-SPIVCCIOSEL -> Parts:RC209-NP"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "21/07/2026 13:40:17",
+    "modelo": "IPS3_15IRH_I513420",
+    "serial": "6783001GW5",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

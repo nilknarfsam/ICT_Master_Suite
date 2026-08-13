@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "LUS3/2_1"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "LUS3/2_1"
+    ],
+    "coordenadas": [
+      "E1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "01/07/2026 19:51:30",
+    "modelo": "N50Q_5",
+    "serial": "66830031WQ",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

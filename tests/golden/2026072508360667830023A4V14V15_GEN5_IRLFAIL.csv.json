@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "RB25"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RB25"
+    ],
+    "coordenadas": [
+      "B2"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "25/07/2026 08:36:06",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "67830023A4",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

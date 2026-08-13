@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "RC1",
+    "QC37/1_6"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RC1",
+      "QC37/1_6"
+    ],
+    "coordenadas": [
+      "C4"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "UNKNOWN",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "black",
+    "data": "N/A",
+    "modelo": "N/A",
+    "serial": "N/A",
+    "status": "UNKNOWN",
+    "tipo": "TRI"
+  }
+}

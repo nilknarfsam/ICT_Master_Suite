@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "U6601_37_13"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "U6601_37_13"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "14/07/2026 07:17:45",
+    "modelo": "ips5_14_agp11_AMD",
+    "serial": "678300051V",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

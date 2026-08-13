@@ -1,0 +1,27 @@
+{
+  "componentes_agrupados": [
+    "PQ1201 (2 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PQ1201/4_3",
+      "PQ1201/ON"
+    ],
+    "coordenadas": [
+      "G2"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "22/07/2026 08:31:36",
+    "modelo": "N50Q_5",
+    "serial": "6783001L3Y",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

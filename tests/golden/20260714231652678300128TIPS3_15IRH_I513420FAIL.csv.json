@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "CR22"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "CR22"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "14/07/2026 23:16:52",
+    "modelo": "IPS3_15IRH_I513420",
+    "serial": "678300128T",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

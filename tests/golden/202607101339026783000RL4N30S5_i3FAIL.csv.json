@@ -1,0 +1,27 @@
+{
+  "componentes_agrupados": [
+    "XJ1 (2 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "XJ1_19_3",
+      "XJ1_19_4"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "10/07/2026 13:39:02",
+    "modelo": "N30S5_i3",
+    "serial": "6783000RL4",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

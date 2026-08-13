@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "CC1549/CC1548"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "CC1549/CC1548"
+    ],
+    "coordenadas": [
+      "D3"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "03/07/2026 08:03:06",
+    "modelo": "N50Q_5",
+    "serial": "67830006KZ",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

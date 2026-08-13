@@ -1,0 +1,35 @@
+{
+  "componentes_agrupados": [
+    "C892",
+    "C35/C704",
+    "C692",
+    "U109 (3 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "C892",
+      "C35/C704",
+      "C692",
+      "U109_1_4",
+      "U109_3_4",
+      "U109_7_4"
+    ],
+    "coordenadas": [
+      "A1",
+      "B2"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 6
+  },
+  "meta": {
+    "cor": "red",
+    "data": "25/07/2026 10:35:18",
+    "modelo": "m75q2_cez_rev1_3",
+    "serial": "67830026EF",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "componentes_agrupados": [
+    "AR8",
+    "AR10",
+    "AU1 (4 blocos)",
+    "XJ1_46_3"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "AR8",
+      "AR10",
+      "AU1_17_49",
+      "AU1_18_49",
+      "AU1_13_1",
+      "AU1_18_1",
+      "XJ1_46_3"
+    ],
+    "coordenadas": [
+      "A1",
+      "B2"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 7
+  },
+  "meta": {
+    "cor": "red",
+    "data": "13/07/2026 11:03:48",
+    "modelo": "N30S5_i3",
+    "serial": "6783000RSB",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

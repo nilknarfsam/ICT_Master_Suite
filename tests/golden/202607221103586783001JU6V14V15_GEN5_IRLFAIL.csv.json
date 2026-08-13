@@ -1,0 +1,42 @@
+{
+  "componentes_agrupados": [
+    "RC7",
+    "RC64",
+    "RC65",
+    "RC222",
+    "RN2",
+    "RPC225/1_4",
+    "PQ6206/6_1_2/ON"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RC7",
+      "RC64",
+      "RC65",
+      "RC222",
+      "RN2",
+      "RPC225/1_4",
+      "PQ6206/6_1_2/ON"
+    ],
+    "coordenadas": [
+      "D4",
+      "C4",
+      "D2",
+      "B5",
+      "F2"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 7
+  },
+  "meta": {
+    "cor": "red",
+    "data": "22/07/2026 11:03:58",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783001JU6",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

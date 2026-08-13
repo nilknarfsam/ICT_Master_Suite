@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "RE13"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RE13"
+    ],
+    "coordenadas": [
+      "B1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "22/07/2026 01:29:01",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783001JCL",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

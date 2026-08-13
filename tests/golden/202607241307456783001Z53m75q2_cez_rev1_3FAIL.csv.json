@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "C550",
+    "U52.62"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "C550",
+      "U52.62"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short < 341>-SIO_XOUT_R -> Parts:C550 < 345 >-SIO_CLK32KE -> Parts:U52.62"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 13:07:45",
+    "modelo": "m75q2_cez_rev1_3",
+    "serial": "6783001Z53",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

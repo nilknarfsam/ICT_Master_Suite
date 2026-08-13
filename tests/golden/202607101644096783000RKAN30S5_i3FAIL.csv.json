@@ -1,0 +1,27 @@
+{
+  "componentes_agrupados": [
+    "SU1 (2 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "SU1_10_6",
+      "SU1_10_3"
+    ],
+    "coordenadas": [
+      "B2"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "10/07/2026 16:44:09",
+    "modelo": "N30S5_i3",
+    "serial": "6783000RKA",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

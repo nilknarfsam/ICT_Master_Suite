@@ -1,0 +1,24 @@
+{
+  "componentes_agrupados": [
+    "PC0926"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PC0926"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "t14gen6_lnl",
+    "serial": "6783001KD8",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

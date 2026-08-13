@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "PR1067"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PR1067"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "25/07/2026 07:25:29",
+    "modelo": "IPS3_15IRH_I513420",
+    "serial": "67830024CW",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

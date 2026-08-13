@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "PU1001.15",
+    "U4302.111"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PU1001.15",
+      "U4302.111"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short <  12   18   19  104  171  172  380  435  467  478  488  503  504  536  537  542  589  615  652  673  674  678  679  698 >-AGND_CHG -> Parts:PU1001.15 < 124 >-LED_CHG_N_EC -> Parts:U4302.111"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "10/07/2026 18:18:56",
+    "modelo": "ips5_14_agp11_AMD",
+    "serial": "678300053Z",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

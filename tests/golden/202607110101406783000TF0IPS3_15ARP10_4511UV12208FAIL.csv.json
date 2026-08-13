@@ -1,0 +1,27 @@
+{
+  "componentes_agrupados": [
+    "UA1 (2 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "UA1.33",
+      "UA1.34"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short < 303>-VDD_STB -> Parts:UA1.33 < 666 >-PC_BEEP -> Parts:UA1.34"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "11/07/2026 01:01:40",
+    "modelo": "IPS3_15ARP10_4511UV12208",
+    "serial": "6783000TF0",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

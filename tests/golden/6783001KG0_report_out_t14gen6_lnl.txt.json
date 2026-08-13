@@ -1,0 +1,31 @@
+{
+  "componentes_agrupados": [
+    "U7601",
+    "R19001",
+    "UCPU1"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "U7601",
+      "R19001",
+      "UCPU1"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [
+      "TestJet",
+      "CHEK-POINT/Pins"
+    ],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "t14gen6_lnl",
+    "serial": "6783001KG0",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

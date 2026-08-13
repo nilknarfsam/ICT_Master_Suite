@@ -1,0 +1,27 @@
+{
+  "componentes_agrupados": [
+    "JWLAN1 (2 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "JWLAN1_47_1",
+      "JWLAN1_47_2"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "07/07/2026 08:00:53",
+    "modelo": "IPS3_15IRH_I513420",
+    "serial": "6783000DWE",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

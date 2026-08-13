@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "XJ100.25"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "XJ100.25"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short <  59>-SMDAT_PCIEX1 -> Parts:XJ100.25 < 117  124  163  165  167  170  173  321  324  429  450  573  723  731  770  774  776  777  786  787  789  791  795  829  830  831  832 1000 1025 1116 1117 >-+VCCGT"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "13/07/2026 12:41:53",
+    "modelo": "N30S5_i3",
+    "serial": "6783000S0F",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

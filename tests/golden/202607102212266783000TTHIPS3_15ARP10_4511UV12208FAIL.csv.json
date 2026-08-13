@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "DI202"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "DI202"
+    ],
+    "coordenadas": [
+      "C1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "10/07/2026 22:12:26",
+    "modelo": "IPS3_15ARP10_4511UV12208",
+    "serial": "6783000TTH",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "R151"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "R151"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 12:55:14",
+    "modelo": "m75q2_cez_rev1_3",
+    "serial": "6783001Z5G",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

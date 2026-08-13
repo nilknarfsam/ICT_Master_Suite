@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "PR669",
+    "PR1109"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PR669",
+      "PR1109"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "10/07/2026 15:10:17",
+    "modelo": "N30S5_i3",
+    "serial": "6783000RHB",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

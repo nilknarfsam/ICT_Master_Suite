@@ -1,0 +1,32 @@
+{
+  "componentes_agrupados": [
+    "RC7",
+    "RC64",
+    "RN2"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RC7",
+      "RC64",
+      "RN2"
+    ],
+    "coordenadas": [
+      "D4",
+      "C4",
+      "B5"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 3
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 12:45:10",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "67830022J0",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

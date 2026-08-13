@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "R8506"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "R8506"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "10/07/2026 17:49:14",
+    "modelo": "ips5_14_agp11_AMD",
+    "serial": "6783000534",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

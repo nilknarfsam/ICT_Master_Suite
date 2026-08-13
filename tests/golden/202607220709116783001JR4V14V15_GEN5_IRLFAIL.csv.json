@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "JDIMM2_SWP"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "JDIMM2_SWP"
+    ],
+    "coordenadas": [
+      "E4"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "22/07/2026 07:09:11",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783001JR4",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

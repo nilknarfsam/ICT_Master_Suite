@@ -1,0 +1,31 @@
+{
+  "componentes_agrupados": [
+    "R42",
+    "Q11B-SD",
+    "UUS11 (2 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "R42",
+      "Q11B-SD",
+      "UUS11:2-5",
+      "UUS11:S-6"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 4
+  },
+  "meta": {
+    "cor": "red",
+    "data": "04/07/2026 00:48:43",
+    "modelo": "M75S_5_APH_REV1",
+    "serial": "6783000AUF",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

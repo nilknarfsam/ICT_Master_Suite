@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "PQ6206/6_1_2/ON"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PQ6206/6_1_2/ON"
+    ],
+    "coordenadas": [
+      "F2"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "22/07/2026 01:02:31",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783001PHY",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

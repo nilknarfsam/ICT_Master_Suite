@@ -1,0 +1,29 @@
+{
+  "componentes_agrupados": [
+    "JIOB1",
+    "UCPU1"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "JIOB1",
+      "UCPU1"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [
+      "TestJet",
+      "CHEK-POINT/Pins"
+    ],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "t14gen6_lnl",
+    "serial": "6783001KDN",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "componentes_agrupados": [
+    "PR5118",
+    "RC64",
+    "RC212",
+    "RN2"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PR5118",
+      "RC64",
+      "RC212",
+      "RN2"
+    ],
+    "coordenadas": [
+      "A2",
+      "C4",
+      "D2",
+      "B5"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 4
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 12:46:57",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783001XHX",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

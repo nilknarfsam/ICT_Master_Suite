@@ -1,0 +1,20 @@
+{
+  "componentes_agrupados": [],
+  "diagnostico": {
+    "componentes": [],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 0
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 10:48:49",
+    "modelo": "ips3_15_ian8",
+    "serial": "6783001WS5",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

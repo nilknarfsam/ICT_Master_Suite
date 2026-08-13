@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "UE1_75_35"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "UE1_75_35"
+    ],
+    "coordenadas": [
+      "B2"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 09:03:42",
+    "modelo": "IPS3_15IRH_I513420",
+    "serial": "67830021DW",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

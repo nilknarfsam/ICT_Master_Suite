@@ -1,0 +1,24 @@
+{
+  "componentes_agrupados": [
+    "FV500"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "FV500"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "e14gen8_iph_intel",
+    "serial": "67830015AN",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

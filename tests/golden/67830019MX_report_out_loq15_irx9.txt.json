@@ -1,0 +1,48 @@
+{
+  "componentes_agrupados": [
+    "R5834",
+    "QG2",
+    "QF1",
+    "QV42",
+    "QF2",
+    "UEC1",
+    "UTH1",
+    "UTH2",
+    "R10247",
+    "UC1",
+    "RBL6421",
+    "UH1"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "R5834",
+      "QG2",
+      "QF1",
+      "QV42",
+      "QF2",
+      "UEC1",
+      "UTH1",
+      "UTH2",
+      "R10247",
+      "UC1",
+      "RBL6421",
+      "UH1"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [
+      "CHEK-POINT/Pins"
+    ],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "loq15_irx9",
+    "serial": "67830019MX",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

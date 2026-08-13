@@ -1,0 +1,20 @@
+{
+  "componentes_agrupados": [],
+  "diagnostico": {
+    "componentes": [],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "INFO/ABORT",
+    "total_erros": 0
+  },
+  "meta": {
+    "cor": "orange",
+    "data": "<MTIME>",
+    "modelo": "N/A",
+    "serial": "p",
+    "status": "INFO/ABORT",
+    "tipo": "AGILENT"
+  }
+}

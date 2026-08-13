@@ -1,0 +1,68 @@
+{
+  "componentes_agrupados": [
+    "PRZ9",
+    "CV3",
+    "CV4",
+    "QH2",
+    "RT4",
+    "RC1966",
+    "UC901",
+    "C8768",
+    "LED6309",
+    "RTP6339",
+    "PUZ01",
+    "QG19",
+    "QF1",
+    "RG207",
+    "UV1",
+    "RG218",
+    "RG292",
+    "RG1759",
+    "UG2",
+    "R10247",
+    "UC1",
+    "T25"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PRZ9",
+      "CV3",
+      "CV4",
+      "QH2",
+      "RT4",
+      "RC1966",
+      "UC901",
+      "C8768",
+      "LED6309",
+      "RTP6339",
+      "PUZ01",
+      "QG19",
+      "QF1",
+      "RG207",
+      "UV1",
+      "RG218",
+      "RG292",
+      "RG1759",
+      "UG2",
+      "R10247",
+      "UC1",
+      "T25"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [
+      "CHEK-POINT/Pins"
+    ],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "loq15_irx9",
+    "serial": "67830019C8",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

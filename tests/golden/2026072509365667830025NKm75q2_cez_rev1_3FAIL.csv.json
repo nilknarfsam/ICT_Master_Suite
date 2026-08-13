@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "C35/C704",
+    "R765"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "C35/C704",
+      "R765"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "25/07/2026 09:36:56",
+    "modelo": "m75q2_cez_rev1_3",
+    "serial": "67830025NK",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "CUS56/CUS57"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "CUS56/CUS57"
+    ],
+    "coordenadas": [
+      "D7"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "15/07/2026 16:30:42",
+    "modelo": "N50Q_5",
+    "serial": "6783000YBM",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

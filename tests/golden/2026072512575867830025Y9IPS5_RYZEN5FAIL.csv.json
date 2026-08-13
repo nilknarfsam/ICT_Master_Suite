@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "C12100",
+    "C12101"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "C12100",
+      "C12101"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "25/07/2026 12:57:58",
+    "modelo": "IPS5_RYZEN5",
+    "serial": "67830025Y9",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

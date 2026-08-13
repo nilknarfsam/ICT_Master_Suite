@@ -1,0 +1,20 @@
+{
+  "componentes_agrupados": [],
+  "diagnostico": {
+    "componentes": [],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 0
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "0030U406113038TB16_5B21D4786_R7_250UFAIL",
+    "serial": "2026076683",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

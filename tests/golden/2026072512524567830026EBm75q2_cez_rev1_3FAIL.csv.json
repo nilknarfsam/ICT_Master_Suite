@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "C792"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "C792"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "25/07/2026 12:52:45",
+    "modelo": "m75q2_cez_rev1_3",
+    "serial": "67830026EB",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

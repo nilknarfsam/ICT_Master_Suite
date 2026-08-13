@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "PC804"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PC804"
+    ],
+    "coordenadas": [
+      "B1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "03/07/2026 07:50:11",
+    "modelo": "N50Q_5",
+    "serial": "678300021Y",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "RSI76"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RSI76"
+    ],
+    "coordenadas": [
+      "A4"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "02/07/2026 23:22:45",
+    "modelo": "N50Q_5",
+    "serial": "678300023B",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

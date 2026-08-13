@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "RU900",
+    "RU909"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RU900",
+      "RU909"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short < 323>-USBC_0_USBC_RX1_N -> Parts:RU900/NP < 324 >-USBC_0_USBC_RX1_P -> Parts:RU909/NP"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "10/07/2026 22:34:20",
+    "modelo": "IPS3_15ARP10_4511UV12208",
+    "serial": "6783000T74",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

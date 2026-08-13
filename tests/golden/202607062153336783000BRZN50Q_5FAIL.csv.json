@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "RL14"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RL14"
+    ],
+    "coordenadas": [
+      "A2"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "06/07/2026 21:53:33",
+    "modelo": "N50Q_5",
+    "serial": "6783000BRZ",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

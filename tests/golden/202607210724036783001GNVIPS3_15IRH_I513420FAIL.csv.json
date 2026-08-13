@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "PC5912/PC5913"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PC5912/PC5913"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "21/07/2026 07:24:03",
+    "modelo": "IPS3_15IRH_I513420",
+    "serial": "6783001GNV",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

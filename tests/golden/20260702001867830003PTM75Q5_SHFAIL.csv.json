@@ -1,0 +1,27 @@
+{
+  "componentes_agrupados": [
+    "JUSBR3 (2 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "JUSBR3.2",
+      "JUSBR3.3"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short < 257>-USB20_0_N -> Parts:JUSBR3.2 < 258 >-USB20_0_P -> Parts:JUSBR3.3"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "UNKNOWN",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "black",
+    "data": "N/A",
+    "modelo": "N/A",
+    "serial": "N/A",
+    "status": "UNKNOWN",
+    "tipo": "TRI"
+  }
+}

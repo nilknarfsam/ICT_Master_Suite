@@ -1,0 +1,34 @@
+{
+  "componentes_agrupados": [
+    "R11004",
+    "C11003",
+    "UCPU1",
+    "Y11002",
+    "R19001"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "R11004",
+      "C11003",
+      "UCPU1",
+      "Y11002",
+      "R19001"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [
+      "CHEK-POINT/Pins"
+    ],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "t14gen6_lnl",
+    "serial": "6783001KCZ",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

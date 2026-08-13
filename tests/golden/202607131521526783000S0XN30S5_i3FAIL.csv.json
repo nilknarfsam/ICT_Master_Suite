@@ -1,0 +1,31 @@
+{
+  "componentes_agrupados": [
+    "SR33",
+    "SR32",
+    "SU1_75_6"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "SR33",
+      "SR32",
+      "SU1_75_6"
+    ],
+    "coordenadas": [
+      "A1",
+      "B2"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 3
+  },
+  "meta": {
+    "cor": "red",
+    "data": "13/07/2026 15:21:52",
+    "modelo": "N30S5_i3",
+    "serial": "6783000S0X",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

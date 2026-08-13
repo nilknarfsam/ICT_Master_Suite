@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "RC77"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RC77"
+    ],
+    "coordenadas": [
+      "C4"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 12:57:07",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "67830022J4",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "componentes_agrupados": [
+    "C2718",
+    "U2701",
+    "PC4552",
+    "PR4551",
+    "CPU1",
+    "R1814",
+    "STCPU1B2"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "C2718",
+      "U2701",
+      "PC4552",
+      "PR4551",
+      "CPU1",
+      "R1814",
+      "STCPU1B2"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [
+      "CHEK-POINT/Pins"
+    ],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "tb14-16_g8",
+    "serial": "678300197F",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

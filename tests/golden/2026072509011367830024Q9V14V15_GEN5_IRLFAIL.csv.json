@@ -1,0 +1,29 @@
+{
+  "componentes_agrupados": [
+    "RC71",
+    "RPC226/2_3"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RC71",
+      "RPC226/2_3"
+    ],
+    "coordenadas": [
+      "D5",
+      "D1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "25/07/2026 09:01:13",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "67830024Q9",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

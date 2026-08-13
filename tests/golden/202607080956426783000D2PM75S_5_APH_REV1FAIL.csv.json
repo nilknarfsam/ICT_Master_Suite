@@ -1,0 +1,34 @@
+{
+  "componentes_agrupados": [
+    "RPE9",
+    "RPE42",
+    "RPE8",
+    "RSI35",
+    "PQ11"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RPE9",
+      "RPE42",
+      "RPE8",
+      "RSI35",
+      "PQ11"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 5
+  },
+  "meta": {
+    "cor": "red",
+    "data": "08/07/2026 09:56:42",
+    "modelo": "M75S_5_APH_REV1",
+    "serial": "6783000D2P",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

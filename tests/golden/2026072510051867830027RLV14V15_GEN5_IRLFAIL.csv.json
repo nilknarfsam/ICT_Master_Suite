@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "FV1",
+    "PR106"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "FV1",
+      "PR106"
+    ],
+    "coordenadas": [
+      "F1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "25/07/2026 10:05:18",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "67830027RL",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

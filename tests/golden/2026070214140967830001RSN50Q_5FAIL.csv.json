@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "RSI120"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RSI120"
+    ],
+    "coordenadas": [
+      "B4"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "02/07/2026 14:14:09",
+    "modelo": "N50Q_5",
+    "serial": "67830001RS",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "componentes_agrupados": [
+    "C2718",
+    "PC4649",
+    "PR4657",
+    "PU4601",
+    "U2701",
+    "PC5012",
+    "PC5013",
+    "PL5001",
+    "PU5001",
+    "PR5005",
+    "PC4807",
+    "PU4801",
+    "CPU1",
+    "R1814",
+    "STCPU1B2"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "C2718",
+      "PC4649",
+      "PR4657",
+      "PU4601",
+      "U2701",
+      "PC5012",
+      "PC5013",
+      "PL5001",
+      "PU5001",
+      "PR5005",
+      "PC4807",
+      "PU4801",
+      "CPU1",
+      "R1814",
+      "STCPU1B2"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [
+      "CHEK-POINT/Pins"
+    ],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "tb14-16_g8",
+    "serial": "67830018L7",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

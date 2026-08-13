@@ -1,0 +1,20 @@
+{
+  "componentes_agrupados": [],
+  "diagnostico": {
+    "componentes": [],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 0
+  },
+  "meta": {
+    "cor": "red",
+    "data": "14/07/2026 08:01:07",
+    "modelo": "ips5_14_agp11_AMD",
+    "serial": "678300055R",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

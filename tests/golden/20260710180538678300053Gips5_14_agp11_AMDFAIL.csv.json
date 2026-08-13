@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "C12107",
+    "U8502.4"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "C12107",
+      "U8502.4"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short < 184  236  239  312  377  409  416  422  430  460  499  505  584  613  653  693 >-+V3P3A_APU -> Parts:C12107 < 646 >-TM2_T_CRIT_ -> Parts:U8502.4"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "10/07/2026 18:05:38",
+    "modelo": "ips5_14_agp11_AMD",
+    "serial": "678300053G",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

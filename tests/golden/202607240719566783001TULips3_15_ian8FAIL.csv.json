@@ -1,0 +1,51 @@
+{
+  "componentes_agrupados": [
+    "RU27",
+    "PC7910",
+    "PC1100",
+    "PR1101",
+    "RK525",
+    "RK516",
+    "RE149",
+    "RE40",
+    "RK515",
+    "UC1 (8 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RU27",
+      "PC7910",
+      "PC1100",
+      "PR1101",
+      "RK525",
+      "RK516",
+      "RE149",
+      "RE40",
+      "RK515",
+      "UC1_478_38",
+      "UC1_495_38",
+      "UC1_613_38",
+      "UC1_655_38",
+      "UC1_478_40",
+      "UC1_495_40",
+      "UC1_613_40",
+      "UC1_655_40"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 17
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 07:19:56",
+    "modelo": "ips3_15_ian8",
+    "serial": "6783001TUL",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

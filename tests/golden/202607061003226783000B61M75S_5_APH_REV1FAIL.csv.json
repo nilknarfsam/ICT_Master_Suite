@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "CHD8"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "CHD8"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "06/07/2026 10:03:22",
+    "modelo": "M75S_5_APH_REV1",
+    "serial": "6783000B61",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

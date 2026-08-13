@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "JWLAN1.77",
+    "UTM1.10"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "JWLAN1.77",
+      "UTM1.10"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short <   1  151  214  276  307  314  377  393  434  443  599  614  736  766  787  917 1014 1168 1169 >-GND -> Parts:JWLAN1.77 < 362 >-TPM_P10_CONFIG -> Parts:UTM1.10"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "14/07/2026 16:44:42",
+    "modelo": "N50Q_5",
+    "serial": "6783000WXF",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "componentes_agrupados": [
+    "RPC225/1_4",
+    "RPC226/2_3"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RPC225/1_4",
+      "RPC226/2_3"
+    ],
+    "coordenadas": [
+      "C4",
+      "D1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "21/07/2026 22:20:12",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783001JJL",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

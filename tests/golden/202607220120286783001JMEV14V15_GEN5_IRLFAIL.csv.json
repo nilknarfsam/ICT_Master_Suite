@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "RPC44/2_3"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RPC44/2_3"
+    ],
+    "coordenadas": [
+      "C4"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "22/07/2026 01:20:28",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783001JME",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

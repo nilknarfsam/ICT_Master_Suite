@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "UB2_1_4"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "UB2_1_4"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "23/07/2026 16:44:36",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783001X4B",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

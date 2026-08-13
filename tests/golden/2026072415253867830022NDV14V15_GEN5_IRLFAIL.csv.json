@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "RC71"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RC71"
+    ],
+    "coordenadas": [
+      "D5"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 15:25:38",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "67830022ND",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

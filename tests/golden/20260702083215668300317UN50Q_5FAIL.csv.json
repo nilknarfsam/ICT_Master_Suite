@@ -1,0 +1,29 @@
+{
+  "componentes_agrupados": [
+    "CL30/CL137",
+    "CSQ13"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "CL30/CL137",
+      "CSQ13"
+    ],
+    "coordenadas": [
+      "A2",
+      "D7"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "02/07/2026 08:32:15",
+    "modelo": "N50Q_5",
+    "serial": "668300317U",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

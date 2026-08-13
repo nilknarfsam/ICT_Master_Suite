@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "RTC62"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RTC62"
+    ],
+    "coordenadas": [
+      "E6"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "01/07/2026 17:04:53",
+    "modelo": "N50Q_5",
+    "serial": "66830030V1",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

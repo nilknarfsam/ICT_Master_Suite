@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "Q1004"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "Q1004"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "25/07/2026 09:15:59",
+    "modelo": "IPS5_RYZEN5",
+    "serial": "678300261Q",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

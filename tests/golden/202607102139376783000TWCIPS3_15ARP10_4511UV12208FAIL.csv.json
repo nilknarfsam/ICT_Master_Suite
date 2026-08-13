@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "RI813"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RI813"
+    ],
+    "coordenadas": [
+      "A4"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "10/07/2026 21:39:37",
+    "modelo": "IPS3_15ARP10_4511UV12208",
+    "serial": "6783000TWC",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

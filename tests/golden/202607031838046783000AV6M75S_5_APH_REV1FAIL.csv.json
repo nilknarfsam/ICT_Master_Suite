@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "UUS16.9",
+    "UUS15.1"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "UUS16.9",
+      "UUS15.1"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short < 925>-FUSBCONN0_UP_TXP -> Parts:UUS16.9 < 929 >-VBUS_FUSBCONN0 -> Parts:UUS15.1"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "03/07/2026 18:38:04",
+    "modelo": "M75S_5_APH_REV1",
+    "serial": "6783000AV6",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "HR232",
+    "HC313"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "HR232",
+      "HC313"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "13/07/2026 10:08:23",
+    "modelo": "N30S5_i3",
+    "serial": "6783000RPF",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

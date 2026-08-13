@@ -1,0 +1,29 @@
+{
+  "componentes_agrupados": [
+    "R0803",
+    "UU1 (2 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "R0803",
+      "UU1_687_1",
+      "UU1_687_40"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 3
+  },
+  "meta": {
+    "cor": "red",
+    "data": "10/07/2026 17:25:15",
+    "modelo": "ips5_14_agp11_AMD",
+    "serial": "678300055U",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "RSI50",
+    "CSI25"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RSI50",
+      "CSI25"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "03/07/2026 17:51:25",
+    "modelo": "M75S_5_APH_REV1",
+    "serial": "6783000B52",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

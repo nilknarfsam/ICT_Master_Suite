@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "RCH19"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RCH19"
+    ],
+    "coordenadas": [
+      "G5"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "22/07/2026 08:30:54",
+    "modelo": "N50Q_5",
+    "serial": "6783001K33",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

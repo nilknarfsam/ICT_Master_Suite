@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "RC64"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RC64"
+    ],
+    "coordenadas": [
+      "C4"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "22/07/2026 14:11:09",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783001JZ5",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

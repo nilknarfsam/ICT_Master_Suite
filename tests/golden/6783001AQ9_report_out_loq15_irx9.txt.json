@@ -1,0 +1,64 @@
+{
+  "componentes_agrupados": [
+    "PR202",
+    "R5806",
+    "C5803",
+    "JDBG1",
+    "PRB14",
+    "UEC1",
+    "PC1004",
+    "PC1005",
+    "PC1006",
+    "PC1015",
+    "PJ1001",
+    "PU1001",
+    "QG19",
+    "QF1",
+    "RG207",
+    "UV1",
+    "CH49",
+    "UH1",
+    "R10247",
+    "UC1"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PR202",
+      "R5806",
+      "C5803",
+      "JDBG1",
+      "PRB14",
+      "UEC1",
+      "PC1004",
+      "PC1005",
+      "PC1006",
+      "PC1015",
+      "PJ1001",
+      "PU1001",
+      "QG19",
+      "QF1",
+      "RG207",
+      "UV1",
+      "CH49",
+      "UH1",
+      "R10247",
+      "UC1"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [
+      "CHEK-POINT/Pins"
+    ],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "loq15_irx9",
+    "serial": "6783001AQ9",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

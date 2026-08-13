@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "R42",
+    "Q11B-SD"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "R42",
+      "Q11B-SD"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "04/07/2026 01:06:59",
+    "modelo": "M75S_5_APH_REV1",
+    "serial": "6783000AT2",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

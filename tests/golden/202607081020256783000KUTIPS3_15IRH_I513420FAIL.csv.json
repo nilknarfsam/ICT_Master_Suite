@@ -1,0 +1,41 @@
+{
+  "componentes_agrupados": [
+    "PR1093",
+    "PR1094",
+    "PR1095",
+    "PH1004",
+    "RPE5_2_3",
+    "PU1000 (3 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PR1093",
+      "PR1094",
+      "PR1095",
+      "PH1004",
+      "RPE5_2_3",
+      "PU1000_38_53",
+      "PU1000.38",
+      "PU1000.39"
+    ],
+    "coordenadas": [
+      "A1",
+      "B2"
+    ],
+    "curtos": [
+      "Short < 172>-VCCIN_AUX_ISEP -> Parts:PU1000.38 < 664  669  728  744 >-VCCIN_AUX_ISEN_N -> Parts:PU1000.39"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 7
+  },
+  "meta": {
+    "cor": "red",
+    "data": "08/07/2026 10:20:25",
+    "modelo": "IPS3_15IRH_I513420",
+    "serial": "6783000KUT",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "componentes_agrupados": [
+    "RC14",
+    "QLED3 (3 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RC14",
+      "QLED3/1_6",
+      "QLED3/ON",
+      "QLED3/4_3"
+    ],
+    "coordenadas": [
+      "D5",
+      "G1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 4
+  },
+  "meta": {
+    "cor": "red",
+    "data": "02/07/2026 08:34:36",
+    "modelo": "N50Q_5",
+    "serial": "67830002A9",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

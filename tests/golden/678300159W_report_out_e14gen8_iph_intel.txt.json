@@ -1,0 +1,25 @@
+{
+  "componentes_agrupados": [],
+  "diagnostico": {
+    "componentes": [],
+    "coordenadas": [],
+    "curtos": [
+      "From: +5VS_MNT               214167   47",
+      "To:   +5VS_MNT_P              21469   47"
+    ],
+    "pinos_abertos": [],
+    "secoes": [
+      "Shorts"
+    ],
+    "status": "INFO/ABORT",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "orange",
+    "data": "<MTIME>",
+    "modelo": "e14gen8_iph_intel",
+    "serial": "678300159W",
+    "status": "INFO/ABORT",
+    "tipo": "AGILENT"
+  }
+}

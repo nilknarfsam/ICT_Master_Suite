@@ -1,0 +1,33 @@
+{
+  "componentes_agrupados": [
+    "PR232",
+    "CUS18/CUS20/CUS24/CUS83",
+    "UUS9:2-5",
+    "DFAN8 (2 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PR232",
+      "CUS18/CUS20/CUS24/CUS83",
+      "UUS9:2-5",
+      "DFAN8:2-1",
+      "DFAN8:3-1"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 5
+  },
+  "meta": {
+    "cor": "red",
+    "data": "03/07/2026 16:31:14",
+    "modelo": "M75S_5_APH_REV1",
+    "serial": "6783000B5A",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "componentes_agrupados": [
+    "UC1 (5 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "UC1.539",
+      "UC1.320",
+      "UC1.330",
+      "UC1.783",
+      "UC1.760"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short < 174  313  596  610  652  811  812  817 >-VCCIN_AUX -> Parts:UC1.539 < 334 >-VCCIN_AUX_UG_30 < 175  183  184  193  194  262  311  318  319  332  333  339  591  595  650  653  654  657  670  720  809  865 >-RSVD_TP24 -> Parts:UC1.320 < 877 >-CFG1 -> Parts:UC1.330 < 409  856 >-USB20_6_N -> Parts:UC1.783 < 850  854 >-USB20_6_P -> Parts:UC1.760"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 09:26:59",
+    "modelo": "ips3_15_ian8",
+    "serial": "6783001TPA",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

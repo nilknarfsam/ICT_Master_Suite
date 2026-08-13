@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "CSQ13"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "CSQ13"
+    ],
+    "coordenadas": [
+      "D7"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "02/07/2026 08:02:39",
+    "modelo": "N50Q_5",
+    "serial": "668300317U",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

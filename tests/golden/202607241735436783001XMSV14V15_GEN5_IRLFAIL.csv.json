@@ -1,0 +1,29 @@
+{
+  "componentes_agrupados": [
+    "PC106",
+    "PQ105 (2 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PC106",
+      "PQ105/5_1",
+      "PQ105/5_1_4/OFF"
+    ],
+    "coordenadas": [
+      "G1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 3
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 17:35:43",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783001XMS",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

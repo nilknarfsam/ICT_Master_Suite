@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "PR814"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PR814"
+    ],
+    "coordenadas": [
+      "C1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "03/07/2026 14:27:14",
+    "modelo": "N50Q_5",
+    "serial": "678300071R",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

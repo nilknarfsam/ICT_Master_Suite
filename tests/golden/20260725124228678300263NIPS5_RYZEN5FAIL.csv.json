@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "R0808"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "R0808"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "25/07/2026 12:42:28",
+    "modelo": "IPS5_RYZEN5",
+    "serial": "678300263N",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "componentes_agrupados": [
+    "PCS1610",
+    "PCS1616",
+    "C2109",
+    "C5110",
+    "R5116",
+    "R1211",
+    "U4901 (4 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PCS1610",
+      "PCS1616",
+      "C2109",
+      "C5110",
+      "R5116",
+      "R1211",
+      "U4901-3",
+      "U4901-39",
+      "U4901-41",
+      "U4901-46"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 10
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 16:04:15",
+    "modelo": "IPS5_RYZEN5",
+    "serial": "67830023UT",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

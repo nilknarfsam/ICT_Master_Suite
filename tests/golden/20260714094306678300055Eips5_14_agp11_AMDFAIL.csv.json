@@ -1,0 +1,31 @@
+{
+  "componentes_agrupados": [
+    "Q8006_1_SG/R8027",
+    "J8001 (4 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "Q8006_1_SG/R8027",
+      "J8001_2_1",
+      "J8001_3_1",
+      "J8001_4_1",
+      "J8001_5_1"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 5
+  },
+  "meta": {
+    "cor": "red",
+    "data": "14/07/2026 09:43:06",
+    "modelo": "ips5_14_agp11_AMD",
+    "serial": "678300055E",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

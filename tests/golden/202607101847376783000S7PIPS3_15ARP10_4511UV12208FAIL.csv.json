@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "DI202",
+    "QI204/2_3"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "DI202",
+      "QI204/2_3"
+    ],
+    "coordenadas": [
+      "C1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "10/07/2026 18:47:37",
+    "modelo": "IPS3_15ARP10_4511UV12208",
+    "serial": "6783000S7P",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

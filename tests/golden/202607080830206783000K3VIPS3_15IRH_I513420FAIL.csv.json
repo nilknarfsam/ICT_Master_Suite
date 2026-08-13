@@ -1,0 +1,36 @@
+{
+  "componentes_agrupados": [
+    "PC1202/PC1212-NP",
+    "PC5601/PC5613-NP",
+    "PC1647/PC1648",
+    "PU1600.6",
+    "RSHORT47"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PC1202/PC1212-NP",
+      "PC5601/PC5613-NP",
+      "PC1647/PC1648",
+      "PU1600.6",
+      "RSHORT47"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [
+      "Short <  40   51   52   53   56   62  577  717 >-LV5116B_VSYS -> Parts:PU1600.6 < 119  321  605  623  658  727  729  743 >-VCCIN_AUX_VSSSENSE_CPU -> Parts:RSHORT47"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 4
+  },
+  "meta": {
+    "cor": "red",
+    "data": "08/07/2026 08:30:20",
+    "modelo": "IPS3_15IRH_I513420",
+    "serial": "6783000K3V",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

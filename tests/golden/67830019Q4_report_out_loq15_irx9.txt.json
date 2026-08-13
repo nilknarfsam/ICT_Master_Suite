@@ -1,0 +1,64 @@
+{
+  "componentes_agrupados": [
+    "QH4005",
+    "R10221",
+    "RT2",
+    "RT3",
+    "PCG2",
+    "PRG1",
+    "PHZ3",
+    "PRZ6",
+    "PRZ7",
+    "PRG4",
+    "PUG1",
+    "RL5115",
+    "TL5101",
+    "LT7202",
+    "JP1",
+    "UH1",
+    "R10247",
+    "UC1"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "QH4005",
+      "R10221",
+      "RT2",
+      "RT3",
+      "PCG2",
+      "PRG1",
+      "PHZ3",
+      "PRZ6",
+      "PRZ7",
+      "PRG4",
+      "PUG1",
+      "RL5115",
+      "TL5101",
+      "LT7202",
+      "JP1",
+      "UH1",
+      "R10247",
+      "UC1"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "From: usb20_n3               208126 Open",
+      "To:   USB20_N3_R             209101"
+    ],
+    "pinos_abertos": [],
+    "secoes": [
+      "Shorts",
+      "CHEK-POINT/Pins"
+    ],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "loq15_irx9",
+    "serial": "67830019Q4",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

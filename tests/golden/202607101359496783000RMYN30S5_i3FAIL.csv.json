@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "SU1.84"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "SU1.84"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short < 972>-SIO_TSD- -> Parts:SU1.84 <1098 >-SYS_THERMALP"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "10/07/2026 13:59:49",
+    "modelo": "N30S5_i3",
+    "serial": "6783000RMY",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

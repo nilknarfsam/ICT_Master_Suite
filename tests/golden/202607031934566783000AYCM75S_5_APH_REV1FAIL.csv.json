@@ -1,0 +1,30 @@
+{
+  "componentes_agrupados": [
+    "CA31",
+    "CA32",
+    "DFAN7:2-1"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "CA31",
+      "CA32",
+      "DFAN7:2-1"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 3
+  },
+  "meta": {
+    "cor": "red",
+    "data": "03/07/2026 19:34:56",
+    "modelo": "M75S_5_APH_REV1",
+    "serial": "6783000AYC",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

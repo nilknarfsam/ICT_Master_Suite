@@ -1,0 +1,25 @@
+{
+  "componentes_agrupados": [],
+  "diagnostico": {
+    "componentes": [],
+    "coordenadas": [],
+    "curtos": [
+      "From: vref_aud                20827    1",
+      "To:   ldo1-cap_aud            20830    2"
+    ],
+    "pinos_abertos": [],
+    "secoes": [
+      "Shorts"
+    ],
+    "status": "INFO/ABORT",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "orange",
+    "data": "<MTIME>",
+    "modelo": "tb14-16_g8",
+    "serial": "67830018JS",
+    "status": "INFO/ABORT",
+    "tipo": "AGILENT"
+  }
+}

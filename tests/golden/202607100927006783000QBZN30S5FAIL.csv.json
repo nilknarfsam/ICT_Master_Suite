@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "C4",
+    "C3"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "C4",
+      "C3"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short < 473>-SATA_RXP0_C -> Parts:C4 < 474 >-SATA_RXN0_C -> Parts:C3-NC"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "10/07/2026 09:27:00",
+    "modelo": "N30S5",
+    "serial": "6783000QBZ",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

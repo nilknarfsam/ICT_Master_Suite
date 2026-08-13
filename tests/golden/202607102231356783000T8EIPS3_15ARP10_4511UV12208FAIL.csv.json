@@ -1,0 +1,31 @@
+{
+  "componentes_agrupados": [
+    "RI813",
+    "DI202",
+    "QI204/2_3"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RI813",
+      "DI202",
+      "QI204/2_3"
+    ],
+    "coordenadas": [
+      "A4",
+      "C1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 3
+  },
+  "meta": {
+    "cor": "red",
+    "data": "10/07/2026 22:31:35",
+    "modelo": "IPS3_15ARP10_4511UV12208",
+    "serial": "6783000T8E",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

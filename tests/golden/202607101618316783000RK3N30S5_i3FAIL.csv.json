@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "XJ100.15"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "XJ100.15"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short < 117  124  163  165  167  170  173  321  324  429  450  573  723  731  770  774  776  777  786  787  789  791  795  829  830  831  832 1000 1025 1116 1117 >-+VCCGT < 537 >-CLK_X1_100M_N2 -> Parts:XJ100.15"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "10/07/2026 16:18:31",
+    "modelo": "N30S5_i3",
+    "serial": "6783000RK3",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

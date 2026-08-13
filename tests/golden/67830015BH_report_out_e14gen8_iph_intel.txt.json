@@ -1,0 +1,32 @@
+{
+  "componentes_agrupados": [
+    "RS212",
+    "US200"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RS212",
+      "US200"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "From: +3P3VS                 210128 Open",
+      "To:   +3P3VS_THM1             20268"
+    ],
+    "pinos_abertos": [],
+    "secoes": [
+      "Shorts",
+      "CHEK-POINT/Pins"
+    ],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "e14gen8_iph_intel",
+    "serial": "67830015BH",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "PR1209",
+    "PR1206"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PR1209",
+      "PR1206"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short < 455>-P_+V5P0A_EN -> Parts:PR1209 < 647 >-P_+V5P0A_EN2 -> Parts:PR1206"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 18:43:34",
+    "modelo": "IPS5_RYZEN5",
+    "serial": "67830023XD",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

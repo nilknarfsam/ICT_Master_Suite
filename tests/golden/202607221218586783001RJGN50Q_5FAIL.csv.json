@@ -1,0 +1,27 @@
+{
+  "componentes_agrupados": [
+    "U1 (2 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "U1_715_1",
+      "U1_715_148"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "22/07/2026 12:18:58",
+    "modelo": "N50Q_5",
+    "serial": "6783001RJG",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

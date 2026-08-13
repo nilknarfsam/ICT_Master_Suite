@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "U1_1459_148"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "U1_1459_148"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "14/07/2026 14:27:59",
+    "modelo": "N50Q_5",
+    "serial": "6783000Y93",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

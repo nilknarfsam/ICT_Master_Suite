@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "PQ111/3_2_1/ON"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PQ111/3_2_1/ON"
+    ],
+    "coordenadas": [
+      "G1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "21/07/2026 18:28:46",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783001J84",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

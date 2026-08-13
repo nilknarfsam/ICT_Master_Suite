@@ -1,0 +1,29 @@
+{
+  "componentes_agrupados": [
+    "CC1454/CC1455",
+    "CC1487/CC1488"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "CC1454/CC1455",
+      "CC1487/CC1488"
+    ],
+    "coordenadas": [
+      "E3",
+      "D5"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "01/07/2026 17:57:57",
+    "modelo": "N50Q_5",
+    "serial": "66830031K6",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

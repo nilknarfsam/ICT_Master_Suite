@@ -1,0 +1,24 @@
+{
+  "componentes_agrupados": [
+    "C7109"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "C7109"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "tb14-16_g8",
+    "serial": "67830018QQ",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

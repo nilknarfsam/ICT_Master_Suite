@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "C8438",
+    "C8439"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "C8438",
+      "C8439"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "14/07/2026 08:12:34",
+    "modelo": "ips5_14_agp11_AMD",
+    "serial": "678300054F",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

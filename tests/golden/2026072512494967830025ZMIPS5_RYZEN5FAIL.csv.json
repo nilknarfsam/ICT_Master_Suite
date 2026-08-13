@@ -1,0 +1,44 @@
+{
+  "componentes_agrupados": [
+    "R1408",
+    "C4918",
+    "C4925",
+    "C4931",
+    "C4312",
+    "C4422",
+    "R0808",
+    "R0816",
+    "R6635",
+    "R6636"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "R1408",
+      "C4918",
+      "C4925",
+      "C4931",
+      "C4312",
+      "C4422",
+      "R0808",
+      "R0816",
+      "R6635",
+      "R6636"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 10
+  },
+  "meta": {
+    "cor": "red",
+    "data": "25/07/2026 12:49:49",
+    "modelo": "IPS5_RYZEN5",
+    "serial": "67830025ZM",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

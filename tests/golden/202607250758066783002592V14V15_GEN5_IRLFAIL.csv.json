@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "JEDP1_SWP"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "JEDP1_SWP"
+    ],
+    "coordenadas": [
+      "G4"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "25/07/2026 07:58:06",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783002592",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

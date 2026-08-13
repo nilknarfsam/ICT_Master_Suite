@@ -1,0 +1,24 @@
+{
+  "componentes_agrupados": [
+    "PR1315"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PR1315"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "t14gen6_lnl",
+    "serial": "6783001D77",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

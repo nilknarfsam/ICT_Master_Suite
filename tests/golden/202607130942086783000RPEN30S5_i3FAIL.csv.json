@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "SL401",
+    "SU1.77"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "SL401",
+      "SU1.77"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short <  67  191 >-KB_D_R -> Parts:SL401 < 401 >-KBDDATA -> Parts:SU1.77"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "13/07/2026 09:42:08",
+    "modelo": "N30S5_i3",
+    "serial": "6783000RPE",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

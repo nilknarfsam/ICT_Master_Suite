@@ -1,0 +1,36 @@
+{
+  "componentes_agrupados": [
+    "R5839",
+    "PR509",
+    "UEC1",
+    "CW5201",
+    "UH1",
+    "RBL6421"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "R5839",
+      "PR509",
+      "UEC1",
+      "CW5201",
+      "UH1",
+      "RBL6421"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [
+      "CHEK-POINT/Pins"
+    ],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "loq15_irx9",
+    "serial": "67830019NV",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

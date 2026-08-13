@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "CL36"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "CL36"
+    ],
+    "coordenadas": [
+      "B1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "22/07/2026 16:18:28",
+    "modelo": "N50Q_5",
+    "serial": "6783001RJP",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

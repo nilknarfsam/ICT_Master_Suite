@@ -1,0 +1,27 @@
+{
+  "componentes_agrupados": [
+    "QC1 (2 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "QC1/2_3",
+      "QC1/3_2_1/ON"
+    ],
+    "coordenadas": [
+      "F4"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 19:21:39",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "678300238F",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

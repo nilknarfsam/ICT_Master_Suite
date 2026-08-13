@@ -1,0 +1,29 @@
+{
+  "componentes_agrupados": [
+    "RC338",
+    "UC1_1496_10"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RC338",
+      "UC1_1496_10"
+    ],
+    "coordenadas": [
+      "C4",
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "25/07/2026 13:02:23",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "67830027GJ",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

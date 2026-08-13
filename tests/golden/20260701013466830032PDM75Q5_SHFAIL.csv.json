@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "SW3.4",
+    "JAPU1.AT20"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "SW3.4",
+      "JAPU1.AT20"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short <   1  107  337  604  664  735  737  738  739  744 >-GND -> Parts:SW3.4 <  20  116  184  308  310  516  750 >-+1V8_AM5_ALW -> Parts:JAPU1.AT20"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "UNKNOWN",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "black",
+    "data": "N/A",
+    "modelo": "N/A",
+    "serial": "N/A",
+    "status": "UNKNOWN",
+    "tipo": "TRI"
+  }
+}

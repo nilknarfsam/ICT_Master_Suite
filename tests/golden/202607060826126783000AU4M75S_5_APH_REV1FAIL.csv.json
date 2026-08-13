@@ -1,0 +1,37 @@
+{
+  "componentes_agrupados": [
+    "CA31",
+    "CA32",
+    "CFAN1",
+    "DFAN1 (2 blocos)",
+    "DFAN7:2-1",
+    "DFAN8:3-1"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "CA31",
+      "CA32",
+      "CFAN1",
+      "DFAN1:2-1",
+      "DFAN1:3-1",
+      "DFAN7:2-1",
+      "DFAN8:3-1"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 7
+  },
+  "meta": {
+    "cor": "red",
+    "data": "06/07/2026 08:26:12",
+    "modelo": "M75S_5_APH_REV1",
+    "serial": "6783000AU4",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

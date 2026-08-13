@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "C692"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "C692"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "25/07/2026 08:45:23",
+    "modelo": "m75q2_cez_rev1_3",
+    "serial": "67830026CP",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

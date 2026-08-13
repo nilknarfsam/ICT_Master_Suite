@@ -1,0 +1,35 @@
+{
+  "componentes_agrupados": [
+    "RC190",
+    "RC205",
+    "RC271",
+    "RC272"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RC190",
+      "RC205",
+      "RC271",
+      "RC272"
+    ],
+    "coordenadas": [
+      "D5",
+      "D4",
+      "D3",
+      "E3"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 4
+  },
+  "meta": {
+    "cor": "red",
+    "data": "01/07/2026 00:29:43",
+    "modelo": "N50Q_5",
+    "serial": "66830030XC",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

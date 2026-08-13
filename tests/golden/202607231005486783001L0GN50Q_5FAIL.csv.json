@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "CUS18/CUS23"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "CUS18/CUS23"
+    ],
+    "coordenadas": [
+      "D7"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "23/07/2026 10:05:48",
+    "modelo": "N50Q_5",
+    "serial": "6783001L0G",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

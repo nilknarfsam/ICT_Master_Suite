@@ -1,0 +1,34 @@
+{
+  "componentes_agrupados": [
+    "RC71",
+    "RC344",
+    "RPC225/1_4",
+    "RPC226/2_3"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RC71",
+      "RC344",
+      "RPC225/1_4",
+      "RPC226/2_3"
+    ],
+    "coordenadas": [
+      "D5",
+      "C4",
+      "D1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 4
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 13:06:47",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783001XKF",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

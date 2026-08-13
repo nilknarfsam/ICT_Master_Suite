@@ -1,0 +1,30 @@
+{
+  "componentes_agrupados": [
+    "U7601",
+    "UHBR1",
+    "UPD1"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "U7601",
+      "UHBR1",
+      "UPD1"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [
+      "TestJet"
+    ],
+    "status": "INFO/ABORT",
+    "total_erros": 3
+  },
+  "meta": {
+    "cor": "orange",
+    "data": "<MTIME>",
+    "modelo": "t14gen6_lnl",
+    "serial": "6783001DK7",
+    "status": "INFO/ABORT",
+    "tipo": "AGILENT"
+  }
+}

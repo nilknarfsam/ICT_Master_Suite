@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "SU1.126"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "SU1.126"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short < 133>-DSR1_ < 423 >-DCD1_ -> Parts:SU1.126"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "13/07/2026 11:36:32",
+    "modelo": "N30S5_i3",
+    "serial": "6783000RP8",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "Q8008_1_6"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "Q8008_1_6"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "25/07/2026 09:07:35",
+    "modelo": "IPS5_RYZEN5",
+    "serial": "6783002620",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

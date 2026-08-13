@@ -1,0 +1,29 @@
+{
+  "componentes_agrupados": [
+    "PR1626",
+    "PU1600_5_41"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PR1626",
+      "PU1600_5_41"
+    ],
+    "coordenadas": [
+      "A1",
+      "B2"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "14/07/2026 17:25:36",
+    "modelo": "IPS3_15IRH_I513420",
+    "serial": "678300135J",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

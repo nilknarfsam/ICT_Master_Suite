@@ -1,0 +1,32 @@
+{
+  "componentes_agrupados": [
+    "PR226",
+    "RC288",
+    "UE1.13"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PR226",
+      "RC288",
+      "UE1.13"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [
+      "Short < 509>-CPU_TP_INT_R_N -> Parts:RC288-NC < 808 >-ADP_CTRL_EC -> Parts:UE1.13"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "20/07/2026 10:49:59",
+    "modelo": "IPS3_15IRH_I513420",
+    "serial": "6783001BQ3",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

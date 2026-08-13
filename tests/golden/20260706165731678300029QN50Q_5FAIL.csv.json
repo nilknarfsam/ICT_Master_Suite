@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "CDP103/CDP100"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "CDP103/CDP100"
+    ],
+    "coordenadas": [
+      "F1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "06/07/2026 16:57:31",
+    "modelo": "N50Q_5",
+    "serial": "678300029Q",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

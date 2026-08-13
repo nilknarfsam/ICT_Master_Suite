@@ -1,0 +1,20 @@
+{
+  "componentes_agrupados": [],
+  "diagnostico": {
+    "componentes": [],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 0
+  },
+  "meta": {
+    "cor": "red",
+    "data": "10/07/2026 12:12:35",
+    "modelo": "IPS3_15ARP10_4511UV1220D",
+    "serial": "6783000S84",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

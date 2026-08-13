@@ -1,0 +1,64 @@
+{
+  "componentes_agrupados": [
+    "CTH5",
+    "CV3",
+    "CV4",
+    "QH2",
+    "RT4",
+    "CG69",
+    "RG72",
+    "UV1",
+    "YG1",
+    "PRG4",
+    "PUG1",
+    "RG218",
+    "RG292",
+    "RG1759",
+    "UG2",
+    "R10247",
+    "UC1",
+    "CTH4",
+    "QTH2",
+    "UTH1"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "CTH5",
+      "CV3",
+      "CV4",
+      "QH2",
+      "RT4",
+      "CG69",
+      "RG72",
+      "UV1",
+      "YG1",
+      "PRG4",
+      "PUG1",
+      "RG218",
+      "RG292",
+      "RG1759",
+      "UG2",
+      "R10247",
+      "UC1",
+      "CTH4",
+      "QTH2",
+      "UTH1"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [
+      "CHEK-POINT/Pins"
+    ],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "loq15_irx9",
+    "serial": "67830019LY",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

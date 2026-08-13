@@ -1,0 +1,33 @@
+{
+  "componentes_agrupados": [
+    "RDP239",
+    "RL14",
+    "U1 (2 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RDP239",
+      "RL14",
+      "U1_1315_1",
+      "U1_1315_148"
+    ],
+    "coordenadas": [
+      "F1",
+      "A2",
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 4
+  },
+  "meta": {
+    "cor": "red",
+    "data": "01/07/2026 18:38:54",
+    "modelo": "N50Q_5",
+    "serial": "668300312A",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

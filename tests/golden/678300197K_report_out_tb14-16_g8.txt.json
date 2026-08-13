@@ -1,0 +1,24 @@
+{
+  "componentes_agrupados": [
+    "PR4459"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PR4459"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "tb14-16_g8",
+    "serial": "678300197K",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

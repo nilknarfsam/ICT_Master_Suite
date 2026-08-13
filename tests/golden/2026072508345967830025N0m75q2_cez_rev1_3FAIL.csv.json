@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "R141"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "R141"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "25/07/2026 08:34:59",
+    "modelo": "m75q2_cez_rev1_3",
+    "serial": "67830025N0",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

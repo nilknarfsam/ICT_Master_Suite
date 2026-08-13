@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "RC68"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RC68"
+    ],
+    "coordenadas": [
+      "B4"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "03/07/2026 13:46:33",
+    "modelo": "N50Q_5",
+    "serial": "67830006NN",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "CUS35/CUS33"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "CUS35/CUS33"
+    ],
+    "coordenadas": [
+      "F1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "03/07/2026 22:20:54",
+    "modelo": "N50Q_5",
+    "serial": "67830001MV",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

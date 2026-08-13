@@ -1,0 +1,42 @@
+{
+  "componentes_agrupados": [
+    "PJ1805",
+    "R10217",
+    "RW5214",
+    "H20_SP",
+    "JBAT201_SP",
+    "JHDMI1_SP",
+    "JLAN1_SP",
+    "JUSB1_SP",
+    "RZ6",
+    "RZ8"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PJ1805",
+      "R10217",
+      "RW5214",
+      "H20_SP",
+      "JBAT201_SP",
+      "JHDMI1_SP",
+      "JLAN1_SP",
+      "JUSB1_SP",
+      "RZ6",
+      "RZ8"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 10
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "loq15_irx9",
+    "serial": "6783001AGA",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

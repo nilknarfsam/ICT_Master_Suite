@@ -1,0 +1,35 @@
+{
+  "componentes_agrupados": [
+    "CC1454/CC1455",
+    "CC1487/CC1488",
+    "CUS27/CUS24",
+    "QSQ11/6_1_2/OFF"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "CC1454/CC1455",
+      "CC1487/CC1488",
+      "CUS27/CUS24",
+      "QSQ11/6_1_2/OFF"
+    ],
+    "coordenadas": [
+      "E3",
+      "D5",
+      "B7",
+      "A5"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 4
+  },
+  "meta": {
+    "cor": "red",
+    "data": "01/07/2026 17:33:32",
+    "modelo": "N50Q_5",
+    "serial": "66830030Z7",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

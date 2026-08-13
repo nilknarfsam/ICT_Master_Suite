@@ -1,0 +1,30 @@
+{
+  "componentes_agrupados": [
+    "PC1202/PC1212-NP",
+    "PC5601/PC5613-NP",
+    "PC1647/PC1648"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PC1202/PC1212-NP",
+      "PC5601/PC5613-NP",
+      "PC1647/PC1648"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 3
+  },
+  "meta": {
+    "cor": "red",
+    "data": "21/07/2026 19:33:45",
+    "modelo": "IPS3_15IRH_I513420",
+    "serial": "6783001N7B",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

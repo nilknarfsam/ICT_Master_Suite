@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "PC5601/PC5613-NP"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PC5601/PC5613-NP"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "20/07/2026 10:14:05",
+    "modelo": "IPS3_15IRH_I513420",
+    "serial": "6783001BKN",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

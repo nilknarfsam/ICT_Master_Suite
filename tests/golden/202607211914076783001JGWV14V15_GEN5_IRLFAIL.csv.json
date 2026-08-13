@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "RU604",
+    "DU601/3_1"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RU604",
+      "DU601/3_1"
+    ],
+    "coordenadas": [
+      "H4"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "21/07/2026 19:14:07",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783001JGW",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

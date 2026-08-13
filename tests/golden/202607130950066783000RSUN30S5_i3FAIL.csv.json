@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "XJ1.92",
+    "XJ100.28"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "XJ1.92",
+      "XJ100.28"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short <  34   52  266  274  384  778  942  943 1132 >-+3V3_PCIEX16 -> Parts:XJ1.92 <  56 >-TRST__PCIEX1 -> Parts:XJ100.28 < 117  124  163  165  167  170  173  321  324  429  450  573  723  731  770  774  776  777  786  787  789  791  795  829  830  831  832 1000 1025 1116 1117 >-+VCCGT"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "13/07/2026 09:50:06",
+    "modelo": "N30S5_i3",
+    "serial": "6783000RSU",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

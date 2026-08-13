@@ -1,0 +1,33 @@
+{
+  "componentes_agrupados": [
+    "JNFC1",
+    "D42001",
+    "R42007",
+    "UEC1"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "JNFC1",
+      "D42001",
+      "R42007",
+      "UEC1"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [
+      "TestJet",
+      "CHEK-POINT/Pins"
+    ],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "t14gen6_lnl",
+    "serial": "6783001D9R",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

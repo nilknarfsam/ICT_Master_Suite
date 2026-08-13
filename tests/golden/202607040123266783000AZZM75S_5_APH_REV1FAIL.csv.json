@@ -1,0 +1,30 @@
+{
+  "componentes_agrupados": [
+    "CUS18/CUS20/CUS24/CUS83",
+    "PQ49-DSG",
+    "UUS9:2-5"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "CUS18/CUS20/CUS24/CUS83",
+      "PQ49-DSG",
+      "UUS9:2-5"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 3
+  },
+  "meta": {
+    "cor": "red",
+    "data": "04/07/2026 01:23:26",
+    "modelo": "M75S_5_APH_REV1",
+    "serial": "6783000AZZ",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

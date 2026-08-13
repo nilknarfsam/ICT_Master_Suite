@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "PC1591",
+    "C48101"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PC1591",
+      "C48101"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "t14gen6_lnl",
+    "serial": "6783001K4A",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

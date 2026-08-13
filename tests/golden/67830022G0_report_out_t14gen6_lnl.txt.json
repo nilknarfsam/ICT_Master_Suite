@@ -1,0 +1,24 @@
+{
+  "componentes_agrupados": [
+    "R45232"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "R45232"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "t14gen6_lnl",
+    "serial": "67830022G0",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

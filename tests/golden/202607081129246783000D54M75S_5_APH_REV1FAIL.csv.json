@@ -1,0 +1,30 @@
+{
+  "componentes_agrupados": [
+    "RC85",
+    "RFAN5",
+    "CUS135"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RC85",
+      "RFAN5",
+      "CUS135"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 3
+  },
+  "meta": {
+    "cor": "red",
+    "data": "08/07/2026 11:29:24",
+    "modelo": "M75S_5_APH_REV1",
+    "serial": "6783000D54",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

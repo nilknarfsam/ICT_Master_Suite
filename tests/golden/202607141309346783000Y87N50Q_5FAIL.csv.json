@@ -1,0 +1,32 @@
+{
+  "componentes_agrupados": [
+    "PR701",
+    "U1 (2 blocos)",
+    "PU701_4_11"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PR701",
+      "U1_1217_1",
+      "U1_1217_148",
+      "PU701_4_11"
+    ],
+    "coordenadas": [
+      "G5",
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 4
+  },
+  "meta": {
+    "cor": "red",
+    "data": "14/07/2026 13:09:34",
+    "modelo": "N50Q_5",
+    "serial": "6783000Y87",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

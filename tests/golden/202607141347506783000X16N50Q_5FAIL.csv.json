@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "PU701.2",
+    "U1.EA60"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PU701.2",
+      "U1.EA60"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short <3246>-VCCIN_AUX_CPU_VID0_R -> Parts:PU701.2 <3270 >-VCCIN_AUX_CPU_VID0 -> Parts:U1.EA60"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "14/07/2026 13:47:50",
+    "modelo": "N50Q_5",
+    "serial": "6783000X16",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

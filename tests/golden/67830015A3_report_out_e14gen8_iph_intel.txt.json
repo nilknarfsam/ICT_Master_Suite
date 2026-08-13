@@ -1,0 +1,25 @@
+{
+  "componentes_agrupados": [],
+  "diagnostico": {
+    "componentes": [],
+    "coordenadas": [],
+    "curtos": [
+      "From: HDA_SDO_CODEC           21436    0",
+      "To:   EPRIVACY_EDP_PANEL      21048    1"
+    ],
+    "pinos_abertos": [],
+    "secoes": [
+      "Shorts"
+    ],
+    "status": "INFO/ABORT",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "orange",
+    "data": "<MTIME>",
+    "modelo": "e14gen8_iph_intel",
+    "serial": "67830015A3",
+    "status": "INFO/ABORT",
+    "tipo": "AGILENT"
+  }
+}

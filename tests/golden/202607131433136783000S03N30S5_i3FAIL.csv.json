@@ -1,0 +1,30 @@
+{
+  "componentes_agrupados": [
+    "AC9",
+    "AU1 (2 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "AC9",
+      "AU1_13_49",
+      "AU1_16_49"
+    ],
+    "coordenadas": [
+      "A1",
+      "B2"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 3
+  },
+  "meta": {
+    "cor": "red",
+    "data": "13/07/2026 14:33:13",
+    "modelo": "N30S5_i3",
+    "serial": "6783000S03",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

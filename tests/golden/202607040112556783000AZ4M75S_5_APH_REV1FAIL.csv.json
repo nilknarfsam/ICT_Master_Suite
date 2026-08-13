@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "C20",
+    "R30"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "C20",
+      "R30"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short <1336>-HDDLEDN -> Parts:C20 <1350 >-HDDLEDP -> Parts:R30"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "04/07/2026 01:12:55",
+    "modelo": "M75S_5_APH_REV1",
+    "serial": "6783000AZ4",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

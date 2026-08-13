@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "JEDP1.10",
+    "RV502"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "JEDP1.10",
+      "RV502"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short <  57  232 >-+1P8VS_MIC -> Parts:JEDP1.10 <  86 >-CPU_HDMI_HPD -> Parts:RV502-NC"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "17/07/2026 08:12:33",
+    "modelo": "IPS3_15IRH_I513420",
+    "serial": "6783001BZL",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

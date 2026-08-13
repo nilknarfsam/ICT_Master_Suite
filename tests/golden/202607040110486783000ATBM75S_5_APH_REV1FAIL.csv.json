@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "UUS22.9",
+    "UUS19.1"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "UUS22.9",
+      "UUS19.1"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short <1039>-FUSBCONN1_UP_TXP -> Parts:UUS22.9 <1041 >-VBUS_FUSBCONN1 -> Parts:UUS19.1"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "04/07/2026 01:10:48",
+    "modelo": "M75S_5_APH_REV1",
+    "serial": "6783000ATB",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "RSHORT66",
+    "PU1107.7"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RSHORT66",
+      "PU1107.7"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short < 152  233  324  712  777 >-+5VS_FAN1 -> Parts:RSHORT66 < 195 >-VCCCORE_LG1 -> Parts:PU1107.7"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "08/07/2026 22:15:52",
+    "modelo": "IPS3_15IRH_I513420",
+    "serial": "6783000N60",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

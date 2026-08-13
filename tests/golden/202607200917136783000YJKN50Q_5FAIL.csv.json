@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "JWLAN1.77",
+    "PJ1003"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "JWLAN1.77",
+      "PJ1003"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short <   1  151  214  276  307  314  377  393  434  443  599  614  736  766  787  917 1014 1168 1169 >-GND -> Parts:JWLAN1.77 < 786 >-VCC1P8_CPU_P -> Parts:PJ1003/NC"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "20/07/2026 09:17:13",
+    "modelo": "N50Q_5",
+    "serial": "6783000YJK",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

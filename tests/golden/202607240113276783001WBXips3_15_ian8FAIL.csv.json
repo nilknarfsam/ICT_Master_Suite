@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "UC1_763_40"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "UC1_763_40"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 01:13:27",
+    "modelo": "ips3_15_ian8",
+    "serial": "6783001WBX",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

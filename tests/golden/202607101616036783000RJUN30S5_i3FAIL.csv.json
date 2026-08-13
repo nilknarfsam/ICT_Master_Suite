@@ -1,0 +1,27 @@
+{
+  "componentes_agrupados": [
+    "XJ500 (2 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "XJ500_29_1",
+      "XJ500_29_2"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "10/07/2026 16:16:03",
+    "modelo": "N30S5_i3",
+    "serial": "6783000RJU",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

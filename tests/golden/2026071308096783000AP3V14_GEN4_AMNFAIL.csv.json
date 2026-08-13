@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "UA1.37",
+    "PU1002.3"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "UA1.37",
+      "PU1002.3"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short <  54  144  145  162  163  164  165  166  167  169  170  178  192  221  222  228  250  256  257  496  584  586 >-GNDA -> Parts:UA1.37 < 224 >-P_VDDCR_UGATE1 -> Parts:PU1002.3"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "UNKNOWN",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "black",
+    "data": "N/A",
+    "modelo": "N/A",
+    "serial": "N/A",
+    "status": "UNKNOWN",
+    "tipo": "TRI"
+  }
+}

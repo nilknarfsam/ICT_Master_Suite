@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "PR6"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PR6"
+    ],
+    "coordenadas": [
+      "G7"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "UNKNOWN",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "black",
+    "data": "N/A",
+    "modelo": "N/A",
+    "serial": "N/A",
+    "status": "UNKNOWN",
+    "tipo": "TRI"
+  }
+}

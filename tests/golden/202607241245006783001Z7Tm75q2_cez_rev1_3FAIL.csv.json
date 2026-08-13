@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "D1_2_3"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "D1_2_3"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 12:45:00",
+    "modelo": "m75q2_cez_rev1_3",
+    "serial": "6783001Z7T",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

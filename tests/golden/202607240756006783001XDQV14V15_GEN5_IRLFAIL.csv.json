@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "UC1_1327_26"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "UC1_1327_26"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 07:56:00",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783001XDQ",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

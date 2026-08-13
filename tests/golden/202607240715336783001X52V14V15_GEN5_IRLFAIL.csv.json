@@ -1,0 +1,29 @@
+{
+  "componentes_agrupados": [
+    "PR5118",
+    "RC64"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PR5118",
+      "RC64"
+    ],
+    "coordenadas": [
+      "A2",
+      "C4"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 07:15:33",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783001X52",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

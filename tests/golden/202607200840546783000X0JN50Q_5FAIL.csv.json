@@ -1,0 +1,31 @@
+{
+  "componentes_agrupados": [
+    "JDDR2.259",
+    "JDDR1 (3 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "JDDR2.259",
+      "JDDR1.236",
+      "JDDR1.260",
+      "JDDR1.222"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short < 405>-DDR5_CA_0_DQ2_0 -> Parts:JDDR2.259 < 413 >-DDR5_CB_0_DQ3_0 -> Parts:JDDR1.236",
+      "Short < 414>-DDR5_CB_0_DQ2_2 -> Parts:JDDR1.260 < 415 >-DDR5_CB_0_DQ3_5 -> Parts:JDDR1.222"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "20/07/2026 08:40:54",
+    "modelo": "N50Q_5",
+    "serial": "6783000X0J",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

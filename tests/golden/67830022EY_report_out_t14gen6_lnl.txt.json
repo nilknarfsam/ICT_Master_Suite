@@ -1,0 +1,34 @@
+{
+  "componentes_agrupados": [
+    "D42001",
+    "R42007",
+    "UEC1"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "D42001",
+      "R42007",
+      "UEC1"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "From: SP_OUTL+               210126 Open",
+      "To:   SP_OUTL+_L              20301"
+    ],
+    "pinos_abertos": [],
+    "secoes": [
+      "Shorts",
+      "CHEK-POINT/Pins"
+    ],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "t14gen6_lnl",
+    "serial": "67830022EY",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

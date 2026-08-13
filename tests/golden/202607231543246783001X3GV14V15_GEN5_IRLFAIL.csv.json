@@ -1,0 +1,30 @@
+{
+  "componentes_agrupados": [
+    "RC293",
+    "UC1 (2 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RC293",
+      "UC1_1461_10",
+      "UC1_1461_26"
+    ],
+    "coordenadas": [
+      "C2",
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 3
+  },
+  "meta": {
+    "cor": "red",
+    "data": "23/07/2026 15:43:24",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783001X3G",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

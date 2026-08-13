@@ -1,0 +1,24 @@
+{
+  "componentes_agrupados": [
+    "CA5606"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "CA5606"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "loq15_irx9",
+    "serial": "67830019PD",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

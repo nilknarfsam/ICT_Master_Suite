@@ -1,0 +1,31 @@
+{
+  "componentes_agrupados": [
+    "RSQ51",
+    "RTC62",
+    "QSQ12/2_3"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RSQ51",
+      "RTC62",
+      "QSQ12/2_3"
+    ],
+    "coordenadas": [
+      "C6",
+      "E6"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 3
+  },
+  "meta": {
+    "cor": "red",
+    "data": "01/07/2026 19:42:34",
+    "modelo": "N50Q_5",
+    "serial": "66830031TR",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

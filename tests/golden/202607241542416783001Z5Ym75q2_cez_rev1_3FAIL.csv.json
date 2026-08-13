@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "C12/C474"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "C12/C474"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 15:42:41",
+    "modelo": "m75q2_cez_rev1_3",
+    "serial": "6783001Z5Y",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "RFAN5",
+    "DFAN1:3-1"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RFAN5",
+      "DFAN1:3-1"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "08/07/2026 10:14:01",
+    "modelo": "M75S_5_APH_REV1",
+    "serial": "6783000D54",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

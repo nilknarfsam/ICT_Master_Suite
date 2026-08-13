@@ -1,0 +1,31 @@
+{
+  "componentes_agrupados": [
+    "PU1600 (2 blocos)",
+    "PU1000.39",
+    "PU1601.3"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PU1600.1",
+      "PU1600.12",
+      "PU1000.39",
+      "PU1601.3"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short <  37>-1P1V_VDD_UG -> Parts:PU1600.1 < 116  803 >-1P1V_VDD_SENS -> Parts:PU1600.12 < 664  669  728  744 >-VCCIN_AUX_ISEN_N -> Parts:PU1000.39 < 715 >-VCCIN_AUX_UG -> Parts:PU1601.3"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "23/07/2026 19:00:36",
+    "modelo": "IPS3_15IRH_I513420",
+    "serial": "6783001Y01",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

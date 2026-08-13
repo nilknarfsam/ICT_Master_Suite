@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "UPD1"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "UPD1"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [
+      "TestJet"
+    ],
+    "status": "INFO/ABORT",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "orange",
+    "data": "<MTIME>",
+    "modelo": "t14gen6_lnl",
+    "serial": "6783001KHW",
+    "status": "INFO/ABORT",
+    "tipo": "AGILENT"
+  }
+}

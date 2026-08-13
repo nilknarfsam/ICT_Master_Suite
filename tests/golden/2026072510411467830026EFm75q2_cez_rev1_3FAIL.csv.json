@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "U109 (3 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "U109_1_4",
+      "U109_3_4",
+      "U109_7_4"
+    ],
+    "coordenadas": [
+      "B2"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 3
+  },
+  "meta": {
+    "cor": "red",
+    "data": "25/07/2026 10:41:14",
+    "modelo": "m75q2_cez_rev1_3",
+    "serial": "67830026EF",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

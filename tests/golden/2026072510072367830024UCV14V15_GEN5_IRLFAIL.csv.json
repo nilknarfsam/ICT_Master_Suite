@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "RC156"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RC156"
+    ],
+    "coordenadas": [
+      "C1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "25/07/2026 10:07:23",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "67830024UC",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

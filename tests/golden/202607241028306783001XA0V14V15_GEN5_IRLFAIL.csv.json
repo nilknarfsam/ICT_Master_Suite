@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "RC65"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RC65"
+    ],
+    "coordenadas": [
+      "D2"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 10:28:30",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783001XA0",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

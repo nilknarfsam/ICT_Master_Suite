@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "RA415"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RA415"
+    ],
+    "coordenadas": [
+      "G2"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "10/07/2026 23:11:19",
+    "modelo": "IPS3_15ARP10_4511UV12208",
+    "serial": "6783000TMW",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

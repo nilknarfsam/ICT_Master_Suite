@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "C5913/C5905",
+    "U6601_37_13"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "C5913/C5905",
+      "U6601_37_13"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "14/07/2026 07:18:52",
+    "modelo": "ips5_14_agp11_AMD",
+    "serial": "678300051V",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

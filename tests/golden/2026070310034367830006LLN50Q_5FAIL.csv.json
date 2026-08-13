@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "RC339"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RC339"
+    ],
+    "coordenadas": [
+      "C4"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "03/07/2026 10:03:43",
+    "modelo": "N50Q_5",
+    "serial": "67830006LL",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

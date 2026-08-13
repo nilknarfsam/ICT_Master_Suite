@@ -1,0 +1,24 @@
+{
+  "componentes_agrupados": [
+    "RC307"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RC307"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "loq15_irx9",
+    "serial": "67830019DY",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

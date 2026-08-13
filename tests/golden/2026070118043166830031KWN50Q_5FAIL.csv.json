@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "RHM11"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RHM11"
+    ],
+    "coordenadas": [
+      "D6"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "01/07/2026 18:04:31",
+    "modelo": "N50Q_5",
+    "serial": "66830031KW",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

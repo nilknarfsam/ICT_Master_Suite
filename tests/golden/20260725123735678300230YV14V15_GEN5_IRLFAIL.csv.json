@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "JBATT1_SWP"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "JBATT1_SWP"
+    ],
+    "coordenadas": [
+      "F1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "25/07/2026 12:37:35",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "678300230Y",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

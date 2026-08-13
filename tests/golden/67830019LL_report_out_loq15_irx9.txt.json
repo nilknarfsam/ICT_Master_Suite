@@ -1,0 +1,34 @@
+{
+  "componentes_agrupados": [
+    "R5834",
+    "JDBG1",
+    "UEC1",
+    "RBL6421",
+    "UH1"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "R5834",
+      "JDBG1",
+      "UEC1",
+      "RBL6421",
+      "UH1"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [
+      "CHEK-POINT/Pins"
+    ],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "loq15_irx9",
+    "serial": "67830019LL",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

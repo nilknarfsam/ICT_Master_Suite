@@ -1,0 +1,24 @@
+{
+  "componentes_agrupados": [
+    "PC1517"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PC1517"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "e14gen8_iph_intel",
+    "serial": "67830015EJ",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

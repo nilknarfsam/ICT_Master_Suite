@@ -1,0 +1,24 @@
+{
+  "componentes_agrupados": [
+    "RH120"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RH120"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "loq15_irx9",
+    "serial": "6783001AGM",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

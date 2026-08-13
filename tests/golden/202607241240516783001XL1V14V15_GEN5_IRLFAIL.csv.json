@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "UV1.2",
+    "UC1.919"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "UV1.2",
+      "UC1.919"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short <   1   33   36   44  167  179  180  249  413  524  558  571  594  595  610  611 >-GND -> Parts:UV1.2 <  27   37 >-+1P5V_VCCGT -> Parts:UC1.919"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 12:40:51",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783001XL1",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "JTP1",
+    "PU1001"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "JTP1",
+      "PU1001"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [
+      "TestJet"
+    ],
+    "status": "INFO/ABORT",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "orange",
+    "data": "<MTIME>",
+    "modelo": "t14gen6_lnl",
+    "serial": "6783001KK4",
+    "status": "INFO/ABORT",
+    "tipo": "AGILENT"
+  }
+}

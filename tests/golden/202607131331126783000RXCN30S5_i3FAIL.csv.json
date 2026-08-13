@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "PR132"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PR132"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "13/07/2026 13:31:12",
+    "modelo": "N30S5_i3",
+    "serial": "6783000RXC",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "componentes_agrupados": [
+    "UU207 (2 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "UU207.6",
+      "UU207.5"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short < 424>-TBTA_CC1_CON -> Parts:UU207.6 < 428 >-TBTA_SBU1_CON -> Parts:UU207.5"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "25/07/2026 10:40:09",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "67830024YB",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

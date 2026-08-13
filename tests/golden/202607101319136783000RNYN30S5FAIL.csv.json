@@ -1,0 +1,31 @@
+{
+  "componentes_agrupados": [
+    "HR193",
+    "HR261",
+    "R516"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "HR193",
+      "HR261",
+      "R516"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short < 585>-m0256 -> Parts:HR193-NP < 628 >-SBU2 -> Parts:HR261",
+      "Short < 628>-SBU2 -> Parts:HR261 < 802 >-USBC_P1_C_RXN -> Parts:R516"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "10/07/2026 13:19:13",
+    "modelo": "N30S5",
+    "serial": "6783000RNY",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

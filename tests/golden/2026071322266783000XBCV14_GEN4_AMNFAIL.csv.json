@@ -1,0 +1,30 @@
+{
+  "componentes_agrupados": [
+    "UD1.213",
+    "RV502",
+    "UE1.50"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "UD1.213",
+      "RV502",
+      "UE1.50"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short <  31>-DDRA_B_CA5 -> Parts:UD1.213 <  32 >-HDMI_DET -> Parts:RV502 < 144  145  162  163  167  178  192  221  222  228  250  256  257  496  584  586 >-EC_AGND -> Parts:UE1.50"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "UNKNOWN",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "black",
+    "data": "N/A",
+    "modelo": "N/A",
+    "serial": "N/A",
+    "status": "UNKNOWN",
+    "tipo": "TRI"
+  }
+}

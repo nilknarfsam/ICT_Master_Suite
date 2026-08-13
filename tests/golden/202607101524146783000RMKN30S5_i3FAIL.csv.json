@@ -1,0 +1,31 @@
+{
+  "componentes_agrupados": [
+    "XJ1.92",
+    "XJ100.9",
+    "SU1.84"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "XJ1.92",
+      "XJ100.9",
+      "SU1.84"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short <  34   52  266  274  384  778  942  943 1132 >-+3V3_PCIEX16 -> Parts:XJ1.92 <  50 >-TMS_PCIEX1 -> Parts:XJ100.9",
+      "Short < 972>-SIO_TSD- -> Parts:SU1.84 <1098 >-SYS_THERMALP"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "10/07/2026 15:24:14",
+    "modelo": "N30S5_i3",
+    "serial": "6783000RMK",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

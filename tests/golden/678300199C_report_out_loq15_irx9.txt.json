@@ -1,0 +1,30 @@
+{
+  "componentes_agrupados": [
+    "PR203",
+    "PR204",
+    "JBAT201"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PR203",
+      "PR204",
+      "JBAT201"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [
+      "CHEK-POINT/Pins"
+    ],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "loq15_irx9",
+    "serial": "678300199C",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

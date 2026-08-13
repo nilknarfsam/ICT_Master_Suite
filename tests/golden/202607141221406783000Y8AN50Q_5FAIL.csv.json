@@ -1,0 +1,29 @@
+{
+  "componentes_agrupados": [
+    "CUS10/CUS1",
+    "U1_931_148"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "CUS10/CUS1",
+      "U1_931_148"
+    ],
+    "coordenadas": [
+      "B7",
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "14/07/2026 12:21:40",
+    "modelo": "N50Q_5",
+    "serial": "6783000Y8A",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

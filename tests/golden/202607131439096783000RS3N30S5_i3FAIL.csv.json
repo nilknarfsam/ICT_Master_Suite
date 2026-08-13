@@ -1,0 +1,32 @@
+{
+  "componentes_agrupados": [
+    "SC29",
+    "SU1 (4 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "SC29",
+      "SU1_87_6",
+      "SU1_121_6",
+      "SU1_124_6",
+      "SU1_87_3"
+    ],
+    "coordenadas": [
+      "A1",
+      "B2"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 5
+  },
+  "meta": {
+    "cor": "red",
+    "data": "13/07/2026 14:39:09",
+    "modelo": "N30S5_i3",
+    "serial": "6783000RS3",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

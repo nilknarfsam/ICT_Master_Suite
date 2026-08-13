@@ -1,0 +1,24 @@
+{
+  "componentes_agrupados": [
+    "L86001"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "L86001"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "t14gen6_lnl",
+    "serial": "6783001CUG",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

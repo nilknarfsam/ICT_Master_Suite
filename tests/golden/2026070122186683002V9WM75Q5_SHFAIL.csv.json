@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "JSSD1.46"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "JSSD1.46"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short <  71>-M2_EXP_DET#_S < 598 >-M2_SLP_S5# -> Parts:JSSD1.46"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "UNKNOWN",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "black",
+    "data": "N/A",
+    "modelo": "N/A",
+    "serial": "N/A",
+    "status": "UNKNOWN",
+    "tipo": "TRI"
+  }
+}

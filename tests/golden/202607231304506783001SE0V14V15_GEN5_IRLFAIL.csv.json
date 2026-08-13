@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "PC6223/CU121"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PC6223/CU121"
+    ],
+    "coordenadas": [
+      "G3"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "23/07/2026 13:04:50",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783001SE0",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

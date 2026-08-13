@@ -1,0 +1,31 @@
+{
+  "componentes_agrupados": [
+    "RC71",
+    "RC72",
+    "QV502/3_2_1/ON"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RC71",
+      "RC72",
+      "QV502/3_2_1/ON"
+    ],
+    "coordenadas": [
+      "D5",
+      "H2"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 3
+  },
+  "meta": {
+    "cor": "red",
+    "data": "21/07/2026 22:38:13",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783001JJZ",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "componentes_agrupados": [
+    "RD249"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RD249"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "loq15_irx9",
+    "serial": "67830019L6",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

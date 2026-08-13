@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "JUC1_SWP"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "JUC1_SWP"
+    ],
+    "coordenadas": [
+      "H2"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "21/07/2026 23:41:50",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783001JWX",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

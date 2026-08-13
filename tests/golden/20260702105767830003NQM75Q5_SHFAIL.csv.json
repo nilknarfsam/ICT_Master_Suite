@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "PR1186"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PR1186"
+    ],
+    "coordenadas": [
+      "A6"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "UNKNOWN",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "black",
+    "data": "N/A",
+    "modelo": "N/A",
+    "serial": "N/A",
+    "status": "UNKNOWN",
+    "tipo": "TRI"
+  }
+}

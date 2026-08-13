@@ -1,0 +1,20 @@
+{
+  "componentes_agrupados": [],
+  "diagnostico": {
+    "componentes": [],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 0
+  },
+  "meta": {
+    "cor": "red",
+    "data": "08/07/2026 08:00:21",
+    "modelo": "M75S_5_APH_REV1",
+    "serial": "6783000DAB",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

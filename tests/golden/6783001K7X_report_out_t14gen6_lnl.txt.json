@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "R72004",
+    "UCPU1"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "R72004",
+      "UCPU1"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [
+      "CHEK-POINT/Pins"
+    ],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "t14gen6_lnl",
+    "serial": "6783001K7X",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

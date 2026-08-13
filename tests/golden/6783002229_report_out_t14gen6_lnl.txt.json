@@ -1,0 +1,24 @@
+{
+  "componentes_agrupados": [
+    "C92007"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "C92007"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "t14gen6_lnl",
+    "serial": "6783002229",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

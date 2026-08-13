@@ -1,0 +1,31 @@
+{
+  "componentes_agrupados": [
+    "LUS5 (2 blocos)",
+    "UUS9 (2 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "LUS5/3_4",
+      "LUS5/2_1",
+      "UUS9_3_2",
+      "UUS9_4_2"
+    ],
+    "coordenadas": [
+      "C1",
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 4
+  },
+  "meta": {
+    "cor": "red",
+    "data": "06/07/2026 23:42:05",
+    "modelo": "N50Q_5",
+    "serial": "6783000BXE",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "QV503/3_4_5/ON"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "QV503/3_4_5/ON"
+    ],
+    "coordenadas": [
+      "H2"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "25/07/2026 10:24:07",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "67830024QU",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

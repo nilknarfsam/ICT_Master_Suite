@@ -1,0 +1,35 @@
+{
+  "componentes_agrupados": [
+    "RC208",
+    "CU459",
+    "DUS4 (4 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RC208",
+      "CU459",
+      "DUS4_2_3",
+      "DUS4_10_3",
+      "DUS4_2_1",
+      "DUS4_10_1"
+    ],
+    "coordenadas": [
+      "F3",
+      "E1",
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 6
+  },
+  "meta": {
+    "cor": "red",
+    "data": "23/07/2026 13:19:26",
+    "modelo": "N50Q_5",
+    "serial": "6783001XUZ",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "PC1202"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PC1202"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "13/07/2026 14:41:34",
+    "modelo": "N30S5_i3",
+    "serial": "6783000RY5",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

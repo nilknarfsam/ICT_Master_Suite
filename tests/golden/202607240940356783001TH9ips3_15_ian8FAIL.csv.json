@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "RU40",
+    "CA8"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RU40",
+      "CA8"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 09:40:35",
+    "modelo": "ips3_15_ian8",
+    "serial": "6783001TH9",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

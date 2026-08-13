@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "RUS24",
+    "CUS29"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RUS24",
+      "CUS29"
+    ],
+    "coordenadas": [
+      "D1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "22/07/2026 13:42:52",
+    "modelo": "N50Q_5",
+    "serial": "6783001RL1",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

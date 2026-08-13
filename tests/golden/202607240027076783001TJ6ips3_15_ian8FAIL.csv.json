@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "PC1100",
+    "PR1101"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PC1100",
+      "PR1101"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 00:27:07",
+    "modelo": "ips3_15_ian8",
+    "serial": "6783001TJ6",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "componentes_agrupados": [
+    "RPE3",
+    "RC26",
+    "RC65",
+    "RHD14",
+    "CPE73"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RPE3",
+      "RC26",
+      "RC65",
+      "RHD14",
+      "CPE73"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 5
+  },
+  "meta": {
+    "cor": "red",
+    "data": "08/07/2026 09:16:17",
+    "modelo": "M75S_5_APH_REV1",
+    "serial": "6783000D74",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

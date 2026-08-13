@@ -1,0 +1,24 @@
+{
+  "componentes_agrupados": [
+    "R7005"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "R7005"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "tb14-16_g8",
+    "serial": "67830018RQ",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

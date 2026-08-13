@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "PR1451-NP/PCS1602/J",
+    "R0830-NP/PCS1602/J"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PR1451-NP/PCS1602/J",
+      "R0830-NP/PCS1602/J"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "10/07/2026 17:26:31",
+    "modelo": "ips5_14_agp11_AMD",
+    "serial": "678300052X",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

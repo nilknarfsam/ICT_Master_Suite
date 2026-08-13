@@ -1,0 +1,29 @@
+{
+  "componentes_agrupados": [
+    "RSI58",
+    "RSI98"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RSI58",
+      "RSI98"
+    ],
+    "coordenadas": [
+      "A4",
+      "A3"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "01/07/2026 00:17:29",
+    "modelo": "N50Q_5",
+    "serial": "66830031UE",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "J8402_4_5"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "J8402_4_5"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "14/07/2026 08:24:01",
+    "modelo": "ips5_14_agp11_AMD",
+    "serial": "678300050Z",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

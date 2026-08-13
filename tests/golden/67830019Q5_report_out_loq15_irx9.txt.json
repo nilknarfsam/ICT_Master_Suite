@@ -1,0 +1,34 @@
+{
+  "componentes_agrupados": [
+    "PCB30",
+    "CG69",
+    "RG72",
+    "UV1",
+    "YG1"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PCB30",
+      "CG69",
+      "RG72",
+      "UV1",
+      "YG1"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [
+      "CHEK-POINT/Pins"
+    ],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "loq15_irx9",
+    "serial": "67830019Q5",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

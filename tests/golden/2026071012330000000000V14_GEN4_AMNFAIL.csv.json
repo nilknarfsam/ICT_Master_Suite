@@ -1,0 +1,20 @@
+{
+  "componentes_agrupados": [],
+  "diagnostico": {
+    "componentes": [],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 0
+  },
+  "meta": {
+    "cor": "red",
+    "data": "10/07/2026 12:33:00",
+    "modelo": "4_GEN4_AMN",
+    "serial": "00000000V1",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

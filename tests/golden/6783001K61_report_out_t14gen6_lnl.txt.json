@@ -1,0 +1,33 @@
+{
+  "componentes_agrupados": [
+    "JKBL1",
+    "U7601",
+    "R45210",
+    "UEC1"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "JKBL1",
+      "U7601",
+      "R45210",
+      "UEC1"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [
+      "TestJet",
+      "CHEK-POINT/Pins"
+    ],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "t14gen6_lnl",
+    "serial": "6783001K61",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

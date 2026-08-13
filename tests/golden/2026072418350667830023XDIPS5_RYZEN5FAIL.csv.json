@@ -1,0 +1,33 @@
+{
+  "componentes_agrupados": [
+    "PC1611",
+    "PR1640",
+    "PR1209",
+    "PR1206"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PC1611",
+      "PR1640",
+      "PR1209",
+      "PR1206"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short <   6    7   51  168  169  171  374  463  473  482  497  498  526  533  534  538  587  592  615  657  676  682  683  711  713 >-VDDCR_CPU_SW2 -> Parts:PC1611-NC < 705 >-VDDCR_SOC_SENSE_L -> Parts:PR1640-NP-NC",
+      "Short < 455>-P_+V5P0A_EN -> Parts:PR1209 < 647 >-P_+V5P0A_EN2 -> Parts:PR1206"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 18:35:06",
+    "modelo": "IPS5_RYZEN5",
+    "serial": "67830023XD",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

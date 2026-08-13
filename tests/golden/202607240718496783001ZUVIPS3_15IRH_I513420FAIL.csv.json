@@ -1,0 +1,32 @@
+{
+  "componentes_agrupados": [
+    "PC5912/PC5913",
+    "JIO1.7",
+    "PU7901.2"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PC5912/PC5913",
+      "JIO1.7",
+      "PU7901.2"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [
+      "Short < 106  108  148  718  737 >-+3P3VALW -> Parts:JIO1.7 < 245  474  714 >-+2P5V_VCC_VIN -> Parts:PU7901.2"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 07:18:49",
+    "modelo": "IPS3_15IRH_I513420",
+    "serial": "6783001ZUV",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "componentes_agrupados": [
+    "CDP103/CDP100",
+    "PC804"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "CDP103/CDP100",
+      "PC804"
+    ],
+    "coordenadas": [
+      "F1",
+      "B1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "03/07/2026 10:43:07",
+    "modelo": "N50Q_5",
+    "serial": "678300021Y",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

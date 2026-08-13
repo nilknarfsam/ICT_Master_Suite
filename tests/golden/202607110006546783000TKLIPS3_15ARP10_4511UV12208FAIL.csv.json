@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "DU1100/3_2"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "DU1100/3_2"
+    ],
+    "coordenadas": [
+      "G2"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "11/07/2026 00:06:54",
+    "modelo": "IPS3_15ARP10_4511UV12208",
+    "serial": "6783000TKL",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

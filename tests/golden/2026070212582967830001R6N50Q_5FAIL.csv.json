@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "RC12"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RC12"
+    ],
+    "coordenadas": [
+      "D4"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "02/07/2026 12:58:29",
+    "modelo": "N50Q_5",
+    "serial": "67830001R6",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

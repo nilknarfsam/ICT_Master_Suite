@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "UC1_765_1"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "UC1_765_1"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "10/07/2026 17:24:28",
+    "modelo": "IPS3_15ARP10_4511UV12208",
+    "serial": "6783000S9Z",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

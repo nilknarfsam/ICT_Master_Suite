@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "R1012-NP",
+    "UU1_807_1"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "R1012-NP",
+      "UU1_807_1"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "10/07/2026 18:31:29",
+    "modelo": "ips5_14_agp11_AMD",
+    "serial": "6783000528",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "PR375"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PR375"
+    ],
+    "coordenadas": [
+      "G2"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "01/07/2026 19:34:58",
+    "modelo": "N50Q_5",
+    "serial": "6683003155",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

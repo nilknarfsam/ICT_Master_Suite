@@ -1,0 +1,27 @@
+{
+  "componentes_agrupados": [],
+  "diagnostico": {
+    "componentes": [],
+    "coordenadas": [],
+    "curtos": [
+      "From: NCTF_L5                209148 Open",
+      "To:   NCTF_L7                209147",
+      "From: NCTF_L5                209148 Open",
+      "To:   VCCCPU_PCORE            21168"
+    ],
+    "pinos_abertos": [],
+    "secoes": [
+      "Shorts"
+    ],
+    "status": "INFO/ABORT",
+    "total_erros": 4
+  },
+  "meta": {
+    "cor": "orange",
+    "data": "<MTIME>",
+    "modelo": "t14gen6_lnl",
+    "serial": "6783001KA2",
+    "status": "INFO/ABORT",
+    "tipo": "AGILENT"
+  }
+}

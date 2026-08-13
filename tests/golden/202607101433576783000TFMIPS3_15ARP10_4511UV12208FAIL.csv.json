@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "PU1001_25_61"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PU1001_25_61"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "10/07/2026 14:33:57",
+    "modelo": "IPS3_15ARP10_4511UV12208",
+    "serial": "6783000TFM",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

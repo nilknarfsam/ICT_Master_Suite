@@ -1,0 +1,29 @@
+{
+  "componentes_agrupados": [],
+  "diagnostico": {
+    "componentes": [],
+    "coordenadas": [],
+    "curtos": [
+      "From: VCC_LPECORE_TSEN_D      21574    0",
+      "To:   VCCSA_TSEN_C            21573    0",
+      "From: RT3645GE_SCLK          209154    1",
+      "To:   VR_READY_VR_EC          21554    1",
+      "From: +3P3VS_SSD2             21418    0",
+      "To:   RT3645GE_SM_SCL        202158    0"
+    ],
+    "pinos_abertos": [],
+    "secoes": [
+      "Shorts"
+    ],
+    "status": "INFO/ABORT",
+    "total_erros": 6
+  },
+  "meta": {
+    "cor": "orange",
+    "data": "<MTIME>",
+    "modelo": "e14gen8_iph_intel",
+    "serial": "67830015EV",
+    "status": "INFO/ABORT",
+    "tipo": "AGILENT"
+  }
+}

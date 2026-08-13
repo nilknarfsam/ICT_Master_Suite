@@ -1,0 +1,29 @@
+{
+  "componentes_agrupados": [
+    "PC1115/CV155",
+    "PQ1201/3_5"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PC1115/CV155",
+      "PQ1201/3_5"
+    ],
+    "coordenadas": [
+      "B2",
+      "C4"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "10/07/2026 23:20:40",
+    "modelo": "IPS3_15ARP10_4511UV12208",
+    "serial": "6783000TVF",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

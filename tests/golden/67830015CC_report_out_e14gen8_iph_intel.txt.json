@@ -1,0 +1,24 @@
+{
+  "componentes_agrupados": [
+    "RR12"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RR12"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "e14gen8_iph_intel",
+    "serial": "67830015CC",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

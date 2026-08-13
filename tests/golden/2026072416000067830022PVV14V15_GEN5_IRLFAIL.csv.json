@@ -1,0 +1,30 @@
+{
+  "componentes_agrupados": [
+    "UB2_2_4",
+    "UB3_2_4",
+    "UE1_6_72"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "UB2_2_4",
+      "UB3_2_4",
+      "UE1_6_72"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 3
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 16:00:00",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "67830022PV",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

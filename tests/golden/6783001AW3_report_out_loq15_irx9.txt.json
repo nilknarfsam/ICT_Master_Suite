@@ -1,0 +1,44 @@
+{
+  "componentes_agrupados": [
+    "LV10",
+    "PRB5",
+    "PRZ28",
+    "PRZ58",
+    "PRZ3",
+    "PRZ64",
+    "PRZ109",
+    "R10217",
+    "RV3712",
+    "PRZ105",
+    "RC238"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "LV10",
+      "PRB5",
+      "PRZ28",
+      "PRZ58",
+      "PRZ3",
+      "PRZ64",
+      "PRZ109",
+      "R10217",
+      "RV3712",
+      "PRZ105",
+      "RC238"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 11
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "loq15_irx9",
+    "serial": "6783001AW3",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "CPU_FAN_SP"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "CPU_FAN_SP"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "06/07/2026 09:30:44",
+    "modelo": "M75S_5_APH_REV1",
+    "serial": "6783000ATQ",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

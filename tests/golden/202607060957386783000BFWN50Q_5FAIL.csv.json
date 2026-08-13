@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "LUS3/3_4"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "LUS3/3_4"
+    ],
+    "coordenadas": [
+      "E1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "06/07/2026 09:57:38",
+    "modelo": "N50Q_5",
+    "serial": "6783000BFW",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

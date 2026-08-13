@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "USI1.84",
+    "PCIE16X.124"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "USI1.84",
+      "PCIE16X.124"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short <  16  234  236  404  405  439  576  653  723  753 1021 1097 1416 1418 1419 1459 1463 1471 >-TSD- -> Parts:USI1.84 < 878 >-PCIE_CPU_GFX_TX6N_C -> Parts:PCIE16X.124"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "08/07/2026 09:58:44",
+    "modelo": "M75S_5_APH_REV1",
+    "serial": "6783000DFY",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

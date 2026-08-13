@@ -1,0 +1,40 @@
+{
+  "componentes_agrupados": [
+    "CL199",
+    "CL200",
+    "CFAN1",
+    "DFAN1 (2 blocos)",
+    "DFAN2:3-1",
+    "DFAN7:2-1",
+    "DFAN8 (2 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "CL199",
+      "CL200",
+      "CFAN1",
+      "DFAN1:2-1",
+      "DFAN1:3-1",
+      "DFAN2:3-1",
+      "DFAN7:2-1",
+      "DFAN8:2-1",
+      "DFAN8:3-1"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 9
+  },
+  "meta": {
+    "cor": "red",
+    "data": "08/07/2026 11:12:53",
+    "modelo": "M75S_5_APH_REV1",
+    "serial": "6783000DJV",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

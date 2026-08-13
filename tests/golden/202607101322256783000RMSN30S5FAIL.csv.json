@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "PR1212",
+    "PR1211"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PR1212",
+      "PR1211"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "10/07/2026 13:22:25",
+    "modelo": "N30S5",
+    "serial": "6783000RMS",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

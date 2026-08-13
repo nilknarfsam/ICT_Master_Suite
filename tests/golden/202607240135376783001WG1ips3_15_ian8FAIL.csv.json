@@ -1,0 +1,32 @@
+{
+  "componentes_agrupados": [
+    "RU5",
+    "PC1100",
+    "CU8",
+    "PR1101"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RU5",
+      "PC1100",
+      "CU8",
+      "PR1101"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 4
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 01:35:37",
+    "modelo": "ips3_15_ian8",
+    "serial": "6783001WG1",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

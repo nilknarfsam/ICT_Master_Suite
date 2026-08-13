@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "RU5",
+    "CU8"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RU5",
+      "CU8"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 07:52:53",
+    "modelo": "ips3_15_ian8",
+    "serial": "6783001WVR",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

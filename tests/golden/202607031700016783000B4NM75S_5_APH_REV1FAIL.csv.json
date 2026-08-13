@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "CH73/PC115/PC116/CH74/CH75/CH7"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "CH73/PC115/PC116/CH74/CH75/CH7"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "03/07/2026 17:00:01",
+    "modelo": "M75S_5_APH_REV1",
+    "serial": "6783000B4N",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

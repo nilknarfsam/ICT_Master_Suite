@@ -1,0 +1,24 @@
+{
+  "componentes_agrupados": [
+    "C76103"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "C76103"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "t14gen6_lnl",
+    "serial": "6783001CUW",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

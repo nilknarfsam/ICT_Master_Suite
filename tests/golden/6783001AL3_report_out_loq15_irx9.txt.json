@@ -1,0 +1,78 @@
+{
+  "componentes_agrupados": [
+    "CV3",
+    "CV4",
+    "QH2",
+    "RT4",
+    "PD201",
+    "CR2",
+    "PR208",
+    "C8768",
+    "LED6309",
+    "RTP6339",
+    "C8777",
+    "LED6313",
+    "GREEN",
+    "RTP6347",
+    "CG69",
+    "RG72",
+    "UV1",
+    "YG1",
+    "CH49",
+    "UH1",
+    "QG19",
+    "QF1",
+    "RG207",
+    "R10247",
+    "UC1"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "CV3",
+      "CV4",
+      "QH2",
+      "RT4",
+      "PD201",
+      "CR2",
+      "PR208",
+      "C8768",
+      "LED6309",
+      "RTP6339",
+      "C8777",
+      "LED6313",
+      "GREEN",
+      "RTP6347",
+      "CG69",
+      "RG72",
+      "UV1",
+      "YG1",
+      "CH49",
+      "UH1",
+      "QG19",
+      "QF1",
+      "RG207",
+      "R10247",
+      "UC1"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "From: +5VALW                 210142 Open",
+      "To:   LED_G6                 214112"
+    ],
+    "pinos_abertos": [],
+    "secoes": [
+      "Shorts",
+      "CHEK-POINT/Pins"
+    ],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "loq15_irx9",
+    "serial": "6783001AL3",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

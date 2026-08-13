@@ -1,0 +1,30 @@
+{
+  "componentes_agrupados": [
+    "PR1202",
+    "PR669",
+    "PR135"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PR1202",
+      "PR669",
+      "PR135"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 3
+  },
+  "meta": {
+    "cor": "red",
+    "data": "13/07/2026 07:05:26",
+    "modelo": "N30S5_i3",
+    "serial": "6783000RM1",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

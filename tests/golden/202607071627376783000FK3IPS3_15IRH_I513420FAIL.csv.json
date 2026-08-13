@@ -1,0 +1,32 @@
+{
+  "componentes_agrupados": [
+    "PC217/CU273-NP",
+    "RSHORT47",
+    "UU1.50"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PC217/CU273-NP",
+      "RSHORT47",
+      "UU1.50"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [
+      "Short < 119  321  605  623  658  727  729  743 >-VCCIN_AUX_VSSSENSE_CPU -> Parts:RSHORT47 < 638 >-+VBUS_TBTA -> Parts:UU1.50"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "07/07/2026 16:27:37",
+    "modelo": "IPS3_15IRH_I513420",
+    "serial": "6783000FK3",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

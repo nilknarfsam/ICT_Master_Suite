@@ -1,0 +1,30 @@
+{
+  "componentes_agrupados": [
+    "RSHORT34",
+    "R221",
+    "U99.4"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RSHORT34",
+      "R221",
+      "U99.4"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short < 106  127  161  190  291  325  374  596  599  623  715  727  732  823  826  836  837  843  844  845  847  849  880  881  888  890  894  908 >-SLEEVE_R -> Parts:RSHORT34 < 119  203  232  296  318  529  734 >-M_B_VDDSPD -> Parts:R221 < 234  243 >-WLAN_RST_N -> Parts:U99.4"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 16:18:33",
+    "modelo": "m75q2_cez_rev1_3",
+    "serial": "67830023DN",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "componentes_agrupados": [
+    "CK18",
+    "CK17",
+    "PU1000.39"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "CK18",
+      "CK17",
+      "PU1000.39"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short < 122>-PCIEA_3_CPU_TX_P -> Parts:CK18-NC < 751 >-PCIEA_3_CPU_TX_N -> Parts:CK17-NC < 664  669  728  744 >-VCCIN_AUX_ISEN_N -> Parts:PU1000.39 < 751 >-PCIEA_3_CPU_TX_N -> Parts:CK17-NC"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 12:46:47",
+    "modelo": "IPS3_15IRH_I513420",
+    "serial": "6783001ZDF",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

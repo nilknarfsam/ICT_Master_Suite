@@ -1,0 +1,37 @@
+{
+  "componentes_agrupados": [
+    "R4335-NP",
+    "R43105",
+    "Q8006_1_SG/R8027",
+    "U4302_94_1",
+    "J8001 (4 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "R4335-NP",
+      "R43105",
+      "Q8006_1_SG/R8027",
+      "U4302_94_1",
+      "J8001_2_1",
+      "J8001_3_1",
+      "J8001_4_1",
+      "J8001_5_1"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 8
+  },
+  "meta": {
+    "cor": "red",
+    "data": "14/07/2026 09:44:20",
+    "modelo": "ips5_14_agp11_AMD",
+    "serial": "678300055P",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

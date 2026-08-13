@@ -1,0 +1,30 @@
+{
+  "componentes_agrupados": [
+    "D84001",
+    "D84002",
+    "D84004",
+    "D84005"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "D84001",
+      "D84002",
+      "D84004",
+      "D84005"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 4
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "t14gen6_lnl",
+    "serial": "6783001KHE",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

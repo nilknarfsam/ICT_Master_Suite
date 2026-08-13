@@ -1,0 +1,32 @@
+{
+  "componentes_agrupados": [
+    "RPI302 (2 blocos)",
+    "PU1600 (2 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RPI302_1_4",
+      "RPI302_2_3",
+      "PU1600.1",
+      "PU1600.12"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [
+      "Short <  37>-1P1V_VDD_UG -> Parts:PU1600.1 < 116  803 >-1P1V_VDD_SENS -> Parts:PU1600.12"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 3
+  },
+  "meta": {
+    "cor": "red",
+    "data": "23/07/2026 18:24:20",
+    "modelo": "IPS3_15IRH_I513420",
+    "serial": "6783001Y02",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "componentes_agrupados": [
+    "R42",
+    "Q11B-SD",
+    "DFAN1:2-1",
+    "DFAN2:3-1",
+    "DFAN7:2-1"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "R42",
+      "Q11B-SD",
+      "DFAN1:2-1",
+      "DFAN2:3-1",
+      "DFAN7:2-1"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 5
+  },
+  "meta": {
+    "cor": "red",
+    "data": "03/07/2026 18:40:54",
+    "modelo": "M75S_5_APH_REV1",
+    "serial": "6783000AUP",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

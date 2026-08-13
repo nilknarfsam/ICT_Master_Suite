@@ -1,0 +1,46 @@
+{
+  "componentes_agrupados": [
+    "AFTP3501",
+    "C3501",
+    "C3502",
+    "TC3501",
+    "U3601",
+    "USB3",
+    "R4202",
+    "U4201",
+    "QF2"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "AFTP3501",
+      "C3501",
+      "C3502",
+      "TC3501",
+      "U3601",
+      "USB3",
+      "R4202",
+      "U4201",
+      "QF2"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "From: vref_aud                20827    1",
+      "To:   ldo1-cap_aud            20830    2"
+    ],
+    "pinos_abertos": [],
+    "secoes": [
+      "Shorts",
+      "CHEK-POINT/Pins"
+    ],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "tb14-16_g8",
+    "serial": "67830018SL",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

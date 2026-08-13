@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "RC11"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RC11"
+    ],
+    "coordenadas": [
+      "C4"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "03/07/2026 09:24:00",
+    "modelo": "N50Q_5",
+    "serial": "67830006L8",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

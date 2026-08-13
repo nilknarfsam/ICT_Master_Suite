@@ -1,0 +1,24 @@
+{
+  "componentes_agrupados": [
+    "F5501"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "F5501"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "tb14-16_g8",
+    "serial": "67830018TX",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "CHD11"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "CHD11"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "08/07/2026 10:04:55",
+    "modelo": "M75S_5_APH_REV1",
+    "serial": "6783000DF1",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

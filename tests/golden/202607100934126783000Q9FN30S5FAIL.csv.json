@@ -1,0 +1,30 @@
+{
+  "componentes_agrupados": [
+    "XR306",
+    "HR217",
+    "HR113"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "XR306",
+      "HR217",
+      "HR113"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 3
+  },
+  "meta": {
+    "cor": "red",
+    "data": "10/07/2026 09:34:12",
+    "modelo": "N30S5",
+    "serial": "6783000Q9F",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "componentes_agrupados": [
+    "CTC15/CTC16",
+    "U1 (2 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "CTC15/CTC16",
+      "U1_1217_1",
+      "U1_1217_148"
+    ],
+    "coordenadas": [
+      "F7",
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 3
+  },
+  "meta": {
+    "cor": "red",
+    "data": "14/07/2026 13:07:33",
+    "modelo": "N50Q_5",
+    "serial": "6783000Y8R",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

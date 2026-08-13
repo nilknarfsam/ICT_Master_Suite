@@ -1,0 +1,35 @@
+{
+  "componentes_agrupados": [
+    "RC959",
+    "RI813",
+    "PU1001_25_61",
+    "UC1 (2 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RC959",
+      "RI813",
+      "PU1001_25_61",
+      "UC1_742_1",
+      "UC1_742_952"
+    ],
+    "coordenadas": [
+      "D2",
+      "A4",
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 5
+  },
+  "meta": {
+    "cor": "red",
+    "data": "10/07/2026 13:16:55",
+    "modelo": "IPS3_15ARP10_4511UV12208",
+    "serial": "6783000S6P",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

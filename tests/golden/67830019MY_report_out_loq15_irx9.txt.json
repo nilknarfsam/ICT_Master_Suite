@@ -1,0 +1,24 @@
+{
+  "componentes_agrupados": [
+    "RBL6404"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RBL6404"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "loq15_irx9",
+    "serial": "67830019MY",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

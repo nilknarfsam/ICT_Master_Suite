@@ -1,0 +1,20 @@
+{
+  "componentes_agrupados": [],
+  "diagnostico": {
+    "componentes": [],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "PASS",
+    "total_erros": 0
+  },
+  "meta": {
+    "cor": "green",
+    "data": "22/07/2026 16:13:32",
+    "modelo": "N50Q_5",
+    "serial": "6783001RJZ",
+    "status": "PASS",
+    "tipo": "TRI"
+  }
+}

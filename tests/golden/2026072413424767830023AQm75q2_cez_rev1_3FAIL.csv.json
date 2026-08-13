@@ -1,0 +1,30 @@
+{
+  "componentes_agrupados": [
+    "RSHORT283",
+    "RSHORT290",
+    "R168"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RSHORT283",
+      "RSHORT290",
+      "R168"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short < 580  585 >-CLK_WWAN_100M_N -> Parts:RSHORT283 < 591  724 >-CLK_SSD_100M_P -> Parts:RSHORT290 < 592  593 >-CLK_SSD_100M_N -> Parts:R168"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 13:42:47",
+    "modelo": "m75q2_cez_rev1_3",
+    "serial": "67830023AQ",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "componentes_agrupados": [
+    "L47",
+    "C12/C474",
+    "C792",
+    "L48",
+    "R977",
+    "R737",
+    "R820",
+    "R922",
+    "R943"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "L47",
+      "C12/C474",
+      "C792",
+      "L48",
+      "R977",
+      "R737",
+      "R820",
+      "R922",
+      "R943"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 9
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 13:14:35",
+    "modelo": "m75q2_cez_rev1_3",
+    "serial": "6783001Z6J",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

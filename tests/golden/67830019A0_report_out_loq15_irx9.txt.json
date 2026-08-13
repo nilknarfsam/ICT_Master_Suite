@@ -1,0 +1,50 @@
+{
+  "componentes_agrupados": [
+    "PCB30",
+    "PC1004",
+    "PC1005",
+    "PC1006",
+    "PC1015",
+    "PJ1001",
+    "PU1001",
+    "PRG4",
+    "PUG1",
+    "R10247",
+    "UC1",
+    "RC1966",
+    "UC901"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PCB30",
+      "PC1004",
+      "PC1005",
+      "PC1006",
+      "PC1015",
+      "PJ1001",
+      "PU1001",
+      "PRG4",
+      "PUG1",
+      "R10247",
+      "UC1",
+      "RC1966",
+      "UC901"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [
+      "CHEK-POINT/Pins"
+    ],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "loq15_irx9",
+    "serial": "67830019A0",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

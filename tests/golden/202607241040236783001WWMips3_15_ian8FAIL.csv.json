@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "RU606",
+    "RU605"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RU606",
+      "RU605"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short < 430>-USB30_TX1_CON_N -> Parts:RU606-NP-NC < 432 >-USB30_TX1_CON_P -> Parts:RU605-NP-NC"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 10:40:23",
+    "modelo": "ips3_15_ian8",
+    "serial": "6783001WWM",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

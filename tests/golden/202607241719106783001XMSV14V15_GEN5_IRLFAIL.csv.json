@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "PJ103",
+    "PJ102"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PJ103",
+      "PJ102"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short < 353>-APDIN_2 -> Parts:PJ103 < 354  355 >-APDIN_1 -> Parts:PJ102"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 17:19:10",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783001XMS",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

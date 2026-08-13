@@ -1,0 +1,30 @@
+{
+  "componentes_agrupados": [
+    "RTC24",
+    "UTC2 (2 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RTC24",
+      "UTC2_19_8",
+      "UTC2_19_30"
+    ],
+    "coordenadas": [
+      "E7",
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 3
+  },
+  "meta": {
+    "cor": "red",
+    "data": "02/07/2026 22:49:43",
+    "modelo": "N50Q_5",
+    "serial": "67830001VK",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

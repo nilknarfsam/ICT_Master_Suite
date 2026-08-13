@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "JBAT201_SP",
+    "JHDMI1_SP"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "JBAT201_SP",
+      "JHDMI1_SP"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "loq15_irx9",
+    "serial": "67830015QJ",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

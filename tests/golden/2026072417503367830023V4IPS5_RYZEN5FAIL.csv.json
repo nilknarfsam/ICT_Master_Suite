@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "R6636"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "R6636"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 17:50:33",
+    "modelo": "IPS5_RYZEN5",
+    "serial": "67830023V4",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

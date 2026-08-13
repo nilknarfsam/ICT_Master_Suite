@@ -1,0 +1,27 @@
+{
+  "componentes_agrupados": [
+    "UU216 (2 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "UU216_16_8",
+      "UU216_16_5"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "06/07/2026 07:29:49",
+    "modelo": "N50Q_5",
+    "serial": "6783000BCS",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

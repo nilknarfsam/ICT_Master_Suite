@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "RH86",
+    "RH98"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RH86",
+      "RH98"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "08/07/2026 08:04:23",
+    "modelo": "M75S_5_APH_REV1",
+    "serial": "6783000D2P",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

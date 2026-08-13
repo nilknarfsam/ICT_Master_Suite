@@ -1,0 +1,32 @@
+{
+  "componentes_agrupados": [
+    "PR1229",
+    "PR1226",
+    "PR1227",
+    "XJ1_16_4"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PR1229",
+      "PR1226",
+      "PR1227",
+      "XJ1_16_4"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 4
+  },
+  "meta": {
+    "cor": "red",
+    "data": "13/07/2026 13:16:09",
+    "modelo": "N30S5_i3",
+    "serial": "6783000S1N",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

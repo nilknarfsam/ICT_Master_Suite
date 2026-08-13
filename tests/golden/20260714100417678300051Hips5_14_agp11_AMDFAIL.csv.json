@@ -1,0 +1,32 @@
+{
+  "componentes_agrupados": [
+    "R1012-NP",
+    "Q0805 (2 blocos)",
+    "UU1 (2 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "R1012-NP",
+      "Q0805_1_SD",
+      "Q0805_2_SD",
+      "UU1_807_1",
+      "UU1_807_40"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 5
+  },
+  "meta": {
+    "cor": "red",
+    "data": "14/07/2026 10:04:17",
+    "modelo": "ips5_14_agp11_AMD",
+    "serial": "678300051H",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "R46207",
+    "R46208",
+    "D50003"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "R46207",
+      "R46208",
+      "D50003"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 3
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "t14gen6_lnl",
+    "serial": "678300220K",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

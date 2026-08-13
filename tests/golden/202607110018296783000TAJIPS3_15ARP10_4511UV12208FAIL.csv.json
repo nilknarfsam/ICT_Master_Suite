@@ -1,0 +1,29 @@
+{
+  "componentes_agrupados": [
+    "RA401",
+    "CA403/CA407"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RA401",
+      "CA403/CA407"
+    ],
+    "coordenadas": [
+      "G4",
+      "G2"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "11/07/2026 00:18:29",
+    "modelo": "IPS3_15ARP10_4511UV12208",
+    "serial": "6783000TAJ",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

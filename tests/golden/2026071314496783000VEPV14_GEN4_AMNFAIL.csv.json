@@ -1,0 +1,46 @@
+{
+  "componentes_agrupados": [
+    "PU5301 (4 blocos)",
+    "UC1.511",
+    "JEDP1.20",
+    "PC5322",
+    "PR5327",
+    "UE1.15",
+    "PR5901"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PU5301.2",
+      "UC1.511",
+      "JEDP1.20",
+      "PC5322",
+      "PR5327",
+      "PU5301.16",
+      "PU5301.10",
+      "PU5301.15",
+      "UE1.15",
+      "PR5901"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short <  49   93  164  165  166  168  169  170  223  453  592 >-CHG_ACP -> Parts:PU5301.2 < 185 >-USBC0_RX2_N -> Parts:UC1.511 < 115  191 >-USB20_5_CON_P -> Parts:JEDP1.20 < 185 >-USBC0_RX2_N -> Parts:UC1.511 < 128  129  130  133  506 >-CHG_SRP_R -> Parts:PC5322 < 185 >-USBC0_RX2_N -> Parts:UC1.511",
+      "Short < 131>-CHG_BATDRV_R -> Parts:PR5327 < 185 >-USBC0_RX2_N -> Parts:UC1.511",
+      "Short < 132>-CHG_TB# -> Parts:PU5301.16 < 185 >-USBC0_RX2_N -> Parts:UC1.511 < 134  229  274  278  630 >-VR_HOT_N -> Parts:PU5301.10 < 185 >-USBC0_RX2_N -> Parts:UC1.511",
+      "Short < 135>-BATT_TEMP -> Parts:PU5301.15 < 185 >-USBC0_RX2_N -> Parts:UC1.511",
+      "Short < 136>-EC_SMB_DA1 -> Parts:UE1.15 < 185 >-USBC0_RX2_N -> Parts:UC1.511",
+      "Short < 137>-EC_ON_3VALW -> Parts:PR5901 < 185 >-USBC0_RX2_N -> Parts:UC1.511"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "UNKNOWN",
+    "total_erros": 6
+  },
+  "meta": {
+    "cor": "black",
+    "data": "N/A",
+    "modelo": "N/A",
+    "serial": "N/A",
+    "status": "UNKNOWN",
+    "tipo": "TRI"
+  }
+}

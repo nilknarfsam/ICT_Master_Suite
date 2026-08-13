@@ -1,0 +1,29 @@
+{
+  "componentes_agrupados": [
+    "RC64",
+    "PQ6206/6_1_2/ON"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RC64",
+      "PQ6206/6_1_2/ON"
+    ],
+    "coordenadas": [
+      "C4",
+      "F2"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 11:26:38",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783001XNS",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

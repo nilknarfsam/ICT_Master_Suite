@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "CV2"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "CV2"
+    ],
+    "coordenadas": [
+      "G4"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 07:21:22",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783001JJA",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

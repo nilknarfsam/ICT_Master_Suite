@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "FCH.97",
+    "FCH.141"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "FCH.97",
+      "FCH.141"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short < 438>-PT21_GPIO_CASE1 -> Parts:FCH.97 < 587 >-PT21_GPIO_CASE0 -> Parts:FCH.141"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "04/07/2026 01:30:01",
+    "modelo": "M75S_5_APH_REV1",
+    "serial": "6783000ATK",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

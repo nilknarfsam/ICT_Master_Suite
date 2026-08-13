@@ -1,0 +1,27 @@
+{
+  "componentes_agrupados": [
+    "Q0805 (2 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "Q0805_1_SD",
+      "Q0805_2_SD"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "14/07/2026 09:49:29",
+    "modelo": "ips5_14_agp11_AMD",
+    "serial": "678300051H",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

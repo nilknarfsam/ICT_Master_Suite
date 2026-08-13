@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "PC1026"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PC1026"
+    ],
+    "coordenadas": [
+      "D6"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "01/07/2026 01:40:17",
+    "modelo": "N50Q_5",
+    "serial": "66830030UV",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

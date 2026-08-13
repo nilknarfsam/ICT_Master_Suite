@@ -1,0 +1,30 @@
+{
+  "componentes_agrupados": [
+    "PR246",
+    "CUS72/CUS73/CUS88",
+    "DUS10"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PR246",
+      "CUS72/CUS73/CUS88",
+      "DUS10"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 3
+  },
+  "meta": {
+    "cor": "red",
+    "data": "08/07/2026 10:52:49",
+    "modelo": "M75S_5_APH_REV1",
+    "serial": "6783000D9A",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

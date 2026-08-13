@@ -1,0 +1,20 @@
+{
+  "componentes_agrupados": [],
+  "diagnostico": {
+    "componentes": [],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "PASS",
+    "total_erros": 0
+  },
+  "meta": {
+    "cor": "green",
+    "data": "23/07/2026 12:39:56",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783001S67",
+    "status": "PASS",
+    "tipo": "TRI"
+  }
+}

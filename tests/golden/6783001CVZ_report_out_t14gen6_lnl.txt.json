@@ -1,0 +1,25 @@
+{
+  "componentes_agrupados": [],
+  "diagnostico": {
+    "componentes": [],
+    "coordenadas": [],
+    "curtos": [
+      "From: SVID_DATA               20210    2",
+      "To:   -SVID_ALERT             20212    4"
+    ],
+    "pinos_abertos": [],
+    "secoes": [
+      "Shorts"
+    ],
+    "status": "INFO/ABORT",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "orange",
+    "data": "<MTIME>",
+    "modelo": "t14gen6_lnl",
+    "serial": "6783001CVZ",
+    "status": "INFO/ABORT",
+    "tipo": "AGILENT"
+  }
+}

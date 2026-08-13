@@ -1,0 +1,24 @@
+{
+  "componentes_agrupados": [
+    "CI208"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "CI208"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "e14gen8_iph_intel",
+    "serial": "67830015CA",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

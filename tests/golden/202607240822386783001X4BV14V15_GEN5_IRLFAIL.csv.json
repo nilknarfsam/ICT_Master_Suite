@@ -1,0 +1,30 @@
+{
+  "componentes_agrupados": [
+    "RB19",
+    "UB2 (2 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RB19",
+      "UB2_5_4",
+      "UB2_5_8"
+    ],
+    "coordenadas": [
+      "B1",
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 3
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 08:22:38",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783001X4B",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

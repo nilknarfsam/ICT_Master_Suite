@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "UHM2.9",
+    "USI1.119"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "UHM2.9",
+      "USI1.119"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short <  14  135  203  474  475  735 1095 >-+3V3 -> Parts:UHM2.9 < 103 >-SIO_SMBDAT4_R -> Parts:USI1.119"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "22/07/2026 16:26:13",
+    "modelo": "N50Q_5",
+    "serial": "6783001SZG",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

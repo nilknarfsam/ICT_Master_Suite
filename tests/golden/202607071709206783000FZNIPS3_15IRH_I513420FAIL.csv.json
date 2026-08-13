@@ -1,0 +1,32 @@
+{
+  "componentes_agrupados": [
+    "JFAN1_SWP-NC",
+    "JWLAN1.28",
+    "PU1000.39"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "JFAN1_SWP-NC",
+      "JWLAN1.28",
+      "PU1000.39"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [
+      "Short < 529>-CNV_BRI_DT_WLAN -> Parts:JWLAN1.28 < 664  669  728  744 >-VCCIN_AUX_ISEN_N -> Parts:PU1000.39"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "07/07/2026 17:09:20",
+    "modelo": "IPS3_15IRH_I513420",
+    "serial": "6783000FZN",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

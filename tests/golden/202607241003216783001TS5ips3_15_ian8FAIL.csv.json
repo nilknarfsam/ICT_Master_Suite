@@ -1,0 +1,27 @@
+{
+  "componentes_agrupados": [
+    "UC1 (2 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "UC1.783",
+      "UC1.760"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short < 409  856 >-USB20_6_N -> Parts:UC1.783 < 850  854 >-USB20_6_P -> Parts:UC1.760"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 10:03:21",
+    "modelo": "ips3_15_ian8",
+    "serial": "6783001TS5",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

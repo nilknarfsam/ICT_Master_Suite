@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "C2108"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "C2108"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 16:12:08",
+    "modelo": "IPS5_RYZEN5",
+    "serial": "67830023UN",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

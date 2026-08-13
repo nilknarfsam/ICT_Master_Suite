@@ -1,0 +1,32 @@
+{
+  "componentes_agrupados": [
+    "TPC16",
+    "UC1"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "TPC16",
+      "UC1"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "From: HDA_SDO_CODEC           21436    0",
+      "To:   EPRIVACY_EDP_PANEL      21048    1"
+    ],
+    "pinos_abertos": [],
+    "secoes": [
+      "Shorts",
+      "CHEK-POINT/Pins"
+    ],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "e14gen8_iph_intel",
+    "serial": "67830015AM",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

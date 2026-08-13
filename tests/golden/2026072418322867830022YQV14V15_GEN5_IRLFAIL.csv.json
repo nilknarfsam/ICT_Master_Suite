@@ -1,0 +1,30 @@
+{
+  "componentes_agrupados": [
+    "PR1064",
+    "PR1067",
+    "PC1014"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PR1064",
+      "PR1067",
+      "PC1014"
+    ],
+    "coordenadas": [
+      "A2"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 3
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 18:32:28",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "67830022YQ",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

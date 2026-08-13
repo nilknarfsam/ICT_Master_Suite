@@ -1,0 +1,32 @@
+{
+  "componentes_agrupados": [
+    "CL171/CL201-NP/CL202-NP/CL172",
+    "RL80",
+    "CPE19",
+    "DA19"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "CL171/CL201-NP/CL202-NP/CL172",
+      "RL80",
+      "CPE19",
+      "DA19"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 4
+  },
+  "meta": {
+    "cor": "red",
+    "data": "03/07/2026 16:03:24",
+    "modelo": "M75S_5_APH_REV1",
+    "serial": "6783000B4Z",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

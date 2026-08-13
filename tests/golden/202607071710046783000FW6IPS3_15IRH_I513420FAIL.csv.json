@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "JFAN1_SWP-NC"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "JFAN1_SWP-NC"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "07/07/2026 17:10:04",
+    "modelo": "IPS3_15IRH_I513420",
+    "serial": "6783000FW6",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

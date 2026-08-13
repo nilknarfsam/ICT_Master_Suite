@@ -1,0 +1,32 @@
+{
+  "componentes_agrupados": [
+    "RC65",
+    "RC222",
+    "RN2"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RC65",
+      "RC222",
+      "RN2"
+    ],
+    "coordenadas": [
+      "D2",
+      "C4",
+      "B5"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 3
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 12:47:31",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783001X9A",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

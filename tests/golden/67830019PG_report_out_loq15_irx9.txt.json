@@ -1,0 +1,24 @@
+{
+  "componentes_agrupados": [
+    "RTP6320"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RTP6320"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "loq15_irx9",
+    "serial": "67830019PG",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

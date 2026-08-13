@@ -1,0 +1,54 @@
+{
+  "componentes_agrupados": [
+    "R1708",
+    "PC4428",
+    "PC4438",
+    "PG4403",
+    "PR4419",
+    "PU4403",
+    "QFA",
+    "PC4649",
+    "PR4657",
+    "PU4601",
+    "C6504",
+    "KB1",
+    "R6529",
+    "PC4807",
+    "PU4801"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "R1708",
+      "PC4428",
+      "PC4438",
+      "PG4403",
+      "PR4419",
+      "PU4403",
+      "QFA",
+      "PC4649",
+      "PR4657",
+      "PU4601",
+      "C6504",
+      "KB1",
+      "R6529",
+      "PC4807",
+      "PU4801"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [
+      "CHEK-POINT/Pins"
+    ],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "tb14-16_g8",
+    "serial": "67830018FD",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

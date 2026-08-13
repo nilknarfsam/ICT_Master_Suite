@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "AFB8"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "AFB8"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "10/07/2026 16:32:37",
+    "modelo": "N30S5_i3",
+    "serial": "6783000RJ3",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

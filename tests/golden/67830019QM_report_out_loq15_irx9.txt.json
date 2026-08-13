@@ -1,0 +1,42 @@
+{
+  "componentes_agrupados": [
+    "CH29",
+    "RH157",
+    "UH1",
+    "CG69",
+    "RG72",
+    "UV1",
+    "YG1"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "CH29",
+      "RH157",
+      "UH1",
+      "CG69",
+      "RG72",
+      "UV1",
+      "YG1"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "From: +1.8VALW_PRIM_PCH      214165 Open",
+      "To:   +vccpgppa_1p8          217161"
+    ],
+    "pinos_abertos": [],
+    "secoes": [
+      "Shorts",
+      "CHEK-POINT/Pins"
+    ],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "loq15_irx9",
+    "serial": "67830019QM",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

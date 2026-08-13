@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "JSC1"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "JSC1"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [
+      "TestJet"
+    ],
+    "status": "INFO/ABORT",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "orange",
+    "data": "<MTIME>",
+    "modelo": "t14gen6_lnl",
+    "serial": "6783001CU7",
+    "status": "INFO/ABORT",
+    "tipo": "AGILENT"
+  }
+}

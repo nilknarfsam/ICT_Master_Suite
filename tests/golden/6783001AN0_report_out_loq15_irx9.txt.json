@@ -1,0 +1,52 @@
+{
+  "componentes_agrupados": [
+    "PCB30",
+    "CG51",
+    "RG53",
+    "RG54",
+    "RG57",
+    "UV1",
+    "QG7",
+    "QF1",
+    "QF2",
+    "RG42",
+    "CC902",
+    "RC933",
+    "UC901",
+    "T25"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PCB30",
+      "CG51",
+      "RG53",
+      "RG54",
+      "RG57",
+      "UV1",
+      "QG7",
+      "QF1",
+      "QF2",
+      "RG42",
+      "CC902",
+      "RC933",
+      "UC901",
+      "T25"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [
+      "CHEK-POINT/Pins"
+    ],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "loq15_irx9",
+    "serial": "6783001AN0",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

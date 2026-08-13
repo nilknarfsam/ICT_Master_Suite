@@ -1,0 +1,20 @@
+{
+  "componentes_agrupados": [],
+  "diagnostico": {
+    "componentes": [],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 0
+  },
+  "meta": {
+    "cor": "red",
+    "data": "22/07/2026 09:43:37",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783001PBJ",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

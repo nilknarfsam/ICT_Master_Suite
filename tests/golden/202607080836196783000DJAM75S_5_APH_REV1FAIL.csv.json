@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "FCH.425",
+    "UUS20.10"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "FCH.425",
+      "UUS20.10"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short < 690 1038 >-USB_PT21_TYPEA4_HSDP -> Parts:FCH.425 <1040 >-FUSBCONN1_UP_RXP -> Parts:UUS20.10"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "08/07/2026 08:36:19",
+    "modelo": "M75S_5_APH_REV1",
+    "serial": "6783000DJA",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

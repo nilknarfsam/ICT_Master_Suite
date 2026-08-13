@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "D4903",
+    "U4302.76"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "D4903",
+      "U4302.76"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short <  75>-EAPD_R -> Parts:D4903-NP < 372 >-EC_MUTE_N -> Parts:U4302.76"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "25/07/2026 09:18:19",
+    "modelo": "IPS5_RYZEN5",
+    "serial": "6783002628",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

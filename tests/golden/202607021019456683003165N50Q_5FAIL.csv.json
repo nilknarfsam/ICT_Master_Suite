@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "RC288"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RC288"
+    ],
+    "coordenadas": [
+      "C4"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "02/07/2026 10:19:45",
+    "modelo": "N50Q_5",
+    "serial": "6683003165",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

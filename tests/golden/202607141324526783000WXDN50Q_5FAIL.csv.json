@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "CTC15/CTC16"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "CTC15/CTC16"
+    ],
+    "coordenadas": [
+      "F7"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "14/07/2026 13:24:52",
+    "modelo": "N50Q_5",
+    "serial": "6783000WXD",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "RC189"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RC189"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "23/07/2026 09:33:14",
+    "modelo": "ips3_15_ian8",
+    "serial": "6783001TBP",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

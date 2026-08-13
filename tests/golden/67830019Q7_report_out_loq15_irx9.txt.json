@@ -1,0 +1,44 @@
+{
+  "componentes_agrupados": [
+    "R5834",
+    "R5839",
+    "PR509",
+    "QG2",
+    "QF1",
+    "QV42",
+    "QF2",
+    "UEC1",
+    "UTH1",
+    "UTH2"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "R5834",
+      "R5839",
+      "PR509",
+      "QG2",
+      "QF1",
+      "QV42",
+      "QF2",
+      "UEC1",
+      "UTH1",
+      "UTH2"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [
+      "CHEK-POINT/Pins"
+    ],
+    "status": "FAIL",
+    "total_erros": 3
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "loq15_irx9",
+    "serial": "67830019Q7",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "componentes_agrupados": [
+    "JNFC1",
+    "JSSD1",
+    "PU1001"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "JNFC1",
+      "JSSD1",
+      "PU1001"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [
+      "TestJet"
+    ],
+    "status": "INFO/ABORT",
+    "total_erros": 3
+  },
+  "meta": {
+    "cor": "orange",
+    "data": "<MTIME>",
+    "modelo": "t14gen6_lnl",
+    "serial": "6783001CSR",
+    "status": "INFO/ABORT",
+    "tipo": "AGILENT"
+  }
+}

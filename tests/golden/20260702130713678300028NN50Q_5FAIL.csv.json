@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "PU402_30_12"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PU402_30_12"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "02/07/2026 13:07:13",
+    "modelo": "N50Q_5",
+    "serial": "678300028N",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

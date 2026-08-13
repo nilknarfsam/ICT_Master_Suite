@@ -1,0 +1,29 @@
+{
+  "componentes_agrupados": [
+    "RD8",
+    "UD1_4_1"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RD8",
+      "UD1_4_1"
+    ],
+    "coordenadas": [
+      "G2",
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "14/07/2026 14:12:12",
+    "modelo": "N50Q_5",
+    "serial": "6783000WWQ",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

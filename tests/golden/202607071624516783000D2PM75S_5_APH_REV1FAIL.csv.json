@@ -1,0 +1,35 @@
+{
+  "componentes_agrupados": [
+    "RSD39",
+    "RSI52",
+    "CCOM2",
+    "CSD61",
+    "USD4_3_5"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RSD39",
+      "RSI52",
+      "CCOM2",
+      "CSD61",
+      "USD4_3_5"
+    ],
+    "coordenadas": [
+      "A1",
+      "B2"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 5
+  },
+  "meta": {
+    "cor": "red",
+    "data": "07/07/2026 16:24:51",
+    "modelo": "M75S_5_APH_REV1",
+    "serial": "6783000D2P",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

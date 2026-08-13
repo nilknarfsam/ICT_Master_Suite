@@ -1,0 +1,27 @@
+{
+  "componentes_agrupados": [
+    "RPI302 (2 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RPI302_1_4",
+      "RPI302_2_3"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 09:49:24",
+    "modelo": "IPS3_15IRH_I513420",
+    "serial": "67830021LA",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

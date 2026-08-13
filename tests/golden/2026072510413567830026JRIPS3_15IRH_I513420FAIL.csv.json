@@ -1,0 +1,27 @@
+{
+  "componentes_agrupados": [
+    "UE1 (2 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "UE1.70",
+      "UE1.77"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short < 217>-ESPI_IO3_CPU_EC -> Parts:UE1.70 < 329 >-ESPI_IO2_CPU_EC -> Parts:UE1.77"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "25/07/2026 10:41:35",
+    "modelo": "IPS3_15IRH_I513420",
+    "serial": "67830026JR",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

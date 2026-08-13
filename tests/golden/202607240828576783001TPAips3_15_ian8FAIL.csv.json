@@ -1,0 +1,32 @@
+{
+  "componentes_agrupados": [
+    "PJ5607",
+    "PR5446",
+    "UK2.1",
+    "UC1.442"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PJ5607",
+      "PR5446",
+      "UK2.1",
+      "UC1.442"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short < 201  205  335  340  352  353  354  408  424  436  439  447 >-P_+3VALW_VIN -> Parts:PJ5607-NP < 261  466  620  829 >-VR_HOT_N -> Parts:PR5446-NP < 760  774 >-CPU_CLK_REF_UFS_R -> Parts:UK2.1 < 780 >-CLK_PCIE4_TEST_P -> Parts:UC1.442"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 08:28:57",
+    "modelo": "ips3_15_ian8",
+    "serial": "6783001TPA",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

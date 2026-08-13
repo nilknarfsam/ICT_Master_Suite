@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "CUS64"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "CUS64"
+    ],
+    "coordenadas": [
+      "B1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "02/07/2026 16:35:26",
+    "modelo": "N50Q_5",
+    "serial": "668300313U",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

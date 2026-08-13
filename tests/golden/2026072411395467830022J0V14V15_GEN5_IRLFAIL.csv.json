@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "RC7"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RC7"
+    ],
+    "coordenadas": [
+      "D4"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 11:39:54",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "67830022J0",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "componentes_agrupados": [
+    "RC21",
+    "CSI21",
+    "U1 (11 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RC21",
+      "CSI21",
+      "U1_131_1",
+      "U1_157_1",
+      "U1_160_1",
+      "U1_223_1",
+      "U1_253_1",
+      "U1_292_1",
+      "U1_300_1",
+      "U1_314_1",
+      "U1_480_1",
+      "U1_1709_1",
+      "U1_1727_1"
+    ],
+    "coordenadas": [
+      "C4",
+      "A4",
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 13
+  },
+  "meta": {
+    "cor": "red",
+    "data": "01/07/2026 00:23:13",
+    "modelo": "N50Q_5",
+    "serial": "66830030XN",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

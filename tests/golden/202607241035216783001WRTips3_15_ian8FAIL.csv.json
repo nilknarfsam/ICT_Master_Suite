@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "CA16"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "CA16"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 10:35:21",
+    "modelo": "ips3_15_ian8",
+    "serial": "6783001WRT",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "PC1206",
+    "R43031"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PC1206",
+      "R43031"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "t14gen6_lnl",
+    "serial": "6783001K5S",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

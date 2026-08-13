@@ -1,0 +1,31 @@
+{
+  "componentes_agrupados": [
+    "RC150",
+    "RC152",
+    "CA89/CA4"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RC150",
+      "RC152",
+      "CA89/CA4"
+    ],
+    "coordenadas": [
+      "D4",
+      "G4"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 3
+  },
+  "meta": {
+    "cor": "red",
+    "data": "22/07/2026 01:22:22",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783001J8X",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

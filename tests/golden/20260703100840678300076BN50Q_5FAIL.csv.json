@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "RWL26"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RWL26"
+    ],
+    "coordenadas": [
+      "B6"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "03/07/2026 10:08:40",
+    "modelo": "N50Q_5",
+    "serial": "678300076B",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "RC210",
+    "UC1"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RC210",
+      "UC1"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [
+      "CHEK-POINT/Pins"
+    ],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "e14gen8_iph_intel",
+    "serial": "67830015C4",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

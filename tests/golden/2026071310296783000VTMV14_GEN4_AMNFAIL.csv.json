@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "UC1_532_591"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "UC1_532_591"
+    ],
+    "coordenadas": [
+      "B2"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "UNKNOWN",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "black",
+    "data": "N/A",
+    "modelo": "N/A",
+    "serial": "N/A",
+    "status": "UNKNOWN",
+    "tipo": "TRI"
+  }
+}

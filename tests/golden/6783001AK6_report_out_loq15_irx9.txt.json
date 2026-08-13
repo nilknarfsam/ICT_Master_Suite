@@ -1,0 +1,24 @@
+{
+  "componentes_agrupados": [
+    "RT4461"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RT4461"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "loq15_irx9",
+    "serial": "6783001AK6",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "RSHORT41",
+    "R823"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RSHORT41",
+      "R823"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short < 172  174  628  629  749 >-1V2_SNUB -> Parts:RSHORT41 < 868 >-1V2_UGATE_R -> Parts:R823"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "25/07/2026 08:08:28",
+    "modelo": "m75q2_cez_rev1_3",
+    "serial": "67830023CL",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

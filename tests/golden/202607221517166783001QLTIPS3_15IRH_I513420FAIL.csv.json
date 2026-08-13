@@ -1,0 +1,20 @@
+{
+  "componentes_agrupados": [],
+  "diagnostico": {
+    "componentes": [],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 0
+  },
+  "meta": {
+    "cor": "red",
+    "data": "22/07/2026 15:17:16",
+    "modelo": "IPS3_15IRH_I513420",
+    "serial": "6783001QLT",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

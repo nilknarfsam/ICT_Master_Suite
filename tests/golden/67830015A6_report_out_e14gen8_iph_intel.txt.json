@@ -1,0 +1,32 @@
+{
+  "componentes_agrupados": [
+    "PC1465",
+    "PR6512",
+    "RE55",
+    "UE1"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PC1465",
+      "PR6512",
+      "RE55",
+      "UE1"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [
+      "CHEK-POINT/Pins"
+    ],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "e14gen8_iph_intel",
+    "serial": "67830015A6",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

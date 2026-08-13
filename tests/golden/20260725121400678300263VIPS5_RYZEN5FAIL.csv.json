@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "C4918"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "C4918"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "25/07/2026 12:14:00",
+    "modelo": "IPS5_RYZEN5",
+    "serial": "678300263V",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

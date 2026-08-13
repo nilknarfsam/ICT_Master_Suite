@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "QSQ12/2_3"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "QSQ12/2_3"
+    ],
+    "coordenadas": [
+      "C6"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "02/07/2026 07:14:03",
+    "modelo": "N50Q_5",
+    "serial": "668300316Y",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

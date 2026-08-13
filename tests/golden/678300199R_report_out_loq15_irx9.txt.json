@@ -1,0 +1,32 @@
+{
+  "componentes_agrupados": [
+    "RH193",
+    "JDBG1",
+    "RW5205",
+    "UH1"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RH193",
+      "JDBG1",
+      "RW5205",
+      "UH1"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [
+      "CHEK-POINT/Pins"
+    ],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "loq15_irx9",
+    "serial": "678300199R",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

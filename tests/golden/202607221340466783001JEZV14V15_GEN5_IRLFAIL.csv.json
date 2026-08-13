@@ -1,0 +1,33 @@
+{
+  "componentes_agrupados": [
+    "PQ6205/2_3",
+    "QC1 (2 blocos)",
+    "QC3 (2 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PQ6205/2_3",
+      "QC1/2_3",
+      "QC1/3_2_1/ON",
+      "QC3/2_3",
+      "QC3/3_2_1/ON"
+    ],
+    "coordenadas": [
+      "H2",
+      "F4"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 5
+  },
+  "meta": {
+    "cor": "red",
+    "data": "22/07/2026 13:40:46",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783001JEZ",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

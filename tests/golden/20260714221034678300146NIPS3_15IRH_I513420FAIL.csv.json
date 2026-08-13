@@ -1,0 +1,35 @@
+{
+  "componentes_agrupados": [
+    "PU1000 (10 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PU1000_1_53",
+      "PU1000_3_53",
+      "PU1000_5_53",
+      "PU1000_8_53",
+      "PU1000_9_53",
+      "PU1000_32_53",
+      "PU1000_33_53",
+      "PU1000_35_53",
+      "PU1000_38_53",
+      "PU1000_48_53"
+    ],
+    "coordenadas": [
+      "B2"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 10
+  },
+  "meta": {
+    "cor": "red",
+    "data": "14/07/2026 22:10:34",
+    "modelo": "IPS3_15IRH_I513420",
+    "serial": "678300146N",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

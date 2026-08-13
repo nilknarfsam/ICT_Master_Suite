@@ -1,0 +1,30 @@
+{
+  "componentes_agrupados": [
+    "C4301",
+    "C4304",
+    "C4314"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "C4301",
+      "C4304",
+      "C4314"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 3
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 16:09:38",
+    "modelo": "IPS5_RYZEN5",
+    "serial": "67830023UQ",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

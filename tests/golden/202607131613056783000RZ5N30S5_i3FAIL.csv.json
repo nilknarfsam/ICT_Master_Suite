@@ -1,0 +1,32 @@
+{
+  "componentes_agrupados": [
+    "PR1000",
+    "AU1 (2 blocos)",
+    "XMM1_134_9"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PR1000",
+      "AU1_2_49",
+      "AU1_2_1",
+      "XMM1_134_9"
+    ],
+    "coordenadas": [
+      "A1",
+      "B2"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 4
+  },
+  "meta": {
+    "cor": "red",
+    "data": "13/07/2026 16:13:05",
+    "modelo": "N30S5_i3",
+    "serial": "6783000RZ5",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

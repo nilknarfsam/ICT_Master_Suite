@@ -1,0 +1,24 @@
+{
+  "componentes_agrupados": [
+    "C7110"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "C7110"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "tb14-16_g8",
+    "serial": "67830018NR",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

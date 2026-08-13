@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "RC199"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RC199"
+    ],
+    "coordenadas": [
+      "C5"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "20/07/2026 08:30:58",
+    "modelo": "N50Q_5",
+    "serial": "678300106B",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

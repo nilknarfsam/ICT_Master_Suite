@@ -1,0 +1,20 @@
+{
+  "componentes_agrupados": [],
+  "diagnostico": {
+    "componentes": [],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "PASS",
+    "total_erros": 0
+  },
+  "meta": {
+    "cor": "green",
+    "data": "22/07/2026 13:42:06",
+    "modelo": "IPS3_15IRH_I513420",
+    "serial": "6783001RTV",
+    "status": "PASS",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "PU5301.2",
+    "UC1.511"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PU5301.2",
+      "UC1.511"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short <  49   93  164  165  166  168  169  170  223  453  592 >-CHG_ACP -> Parts:PU5301.2 < 185 >-USBC0_RX2_N -> Parts:UC1.511"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "UNKNOWN",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "black",
+    "data": "N/A",
+    "modelo": "N/A",
+    "serial": "N/A",
+    "status": "UNKNOWN",
+    "tipo": "TRI"
+  }
+}

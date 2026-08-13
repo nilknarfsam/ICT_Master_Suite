@@ -1,0 +1,35 @@
+{
+  "componentes_agrupados": [
+    "PU1600 (2 blocos)",
+    "RSHORT75",
+    "PU1108.3",
+    "PU1000.39",
+    "PU1601.3"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PU1600.1",
+      "PU1600.12",
+      "RSHORT75",
+      "PU1108.3",
+      "PU1000.39",
+      "PU1601.3"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short <  37>-1P1V_VDD_UG -> Parts:PU1600.1 < 116  803 >-1P1V_VDD_SENS -> Parts:PU1600.12 < 170  174  178  182  622 >-VCCCORE_ISEN1_N -> Parts:RSHORT75 < 665 >-VCCCORE_UG2 -> Parts:PU1108.3 < 664  669  728  744 >-VCCIN_AUX_ISEN_N -> Parts:PU1000.39 < 715 >-VCCIN_AUX_UG -> Parts:PU1601.3"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "14/07/2026 13:40:56",
+    "modelo": "IPS3_15IRH_I513420",
+    "serial": "6783000YWF",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

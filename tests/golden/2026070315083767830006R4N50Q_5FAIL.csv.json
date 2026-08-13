@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "CU470"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "CU470"
+    ],
+    "coordenadas": [
+      "B1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "03/07/2026 15:08:37",
+    "modelo": "N50Q_5",
+    "serial": "67830006R4",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

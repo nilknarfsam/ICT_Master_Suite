@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "DLED4/1_3"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "DLED4/1_3"
+    ],
+    "coordenadas": [
+      "G7"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "UNKNOWN",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "black",
+    "data": "N/A",
+    "modelo": "N/A",
+    "serial": "N/A",
+    "status": "UNKNOWN",
+    "tipo": "TRI"
+  }
+}

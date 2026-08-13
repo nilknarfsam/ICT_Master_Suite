@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "JCP1"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "JCP1"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [
+      "TestJet"
+    ],
+    "status": "INFO/ABORT",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "orange",
+    "data": "<MTIME>",
+    "modelo": "e14gen8_iph_intel",
+    "serial": "67830015E3",
+    "status": "INFO/ABORT",
+    "tipo": "AGILENT"
+  }
+}

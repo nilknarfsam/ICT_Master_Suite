@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "HR116",
+    "XJ500.52"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "HR116",
+      "XJ500.52"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short < 634  754 >-m0013 -> Parts:HR116 < 753 >-m0044 -> Parts:XJ500.52"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "10/07/2026 10:17:33",
+    "modelo": "N30S5",
+    "serial": "6783000QCX",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

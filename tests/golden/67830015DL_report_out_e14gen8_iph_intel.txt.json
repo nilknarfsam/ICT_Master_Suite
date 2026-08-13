@@ -1,0 +1,27 @@
+{
+  "componentes_agrupados": [],
+  "diagnostico": {
+    "componentes": [],
+    "coordenadas": [],
+    "curtos": [
+      "From: LANPHYPC_CPU            20214    1",
+      "To:   LANPHYPC                21129    2",
+      "From: CHG_ACIN_EC             21528    0",
+      "To:   SMB_7_SDA_EXP          202122    1"
+    ],
+    "pinos_abertos": [],
+    "secoes": [
+      "Shorts"
+    ],
+    "status": "INFO/ABORT",
+    "total_erros": 4
+  },
+  "meta": {
+    "cor": "orange",
+    "data": "<MTIME>",
+    "modelo": "e14gen8_iph_intel",
+    "serial": "67830015DL",
+    "status": "INFO/ABORT",
+    "tipo": "AGILENT"
+  }
+}

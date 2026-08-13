@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "HR113"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "HR113"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "10/07/2026 11:12:02",
+    "modelo": "N30S5",
+    "serial": "6783000Q80",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "componentes_agrupados": [
+    "PU1001 (2 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PU1001.23",
+      "PU1001.24"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short < 110  517  521 >-CHG_SW2 -> Parts:PU1001.23 < 520  522 >-CHG-HIDRV2 -> Parts:PU1001.24"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "14/07/2026 07:44:22",
+    "modelo": "ips5_14_agp11_AMD",
+    "serial": "678300050W",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

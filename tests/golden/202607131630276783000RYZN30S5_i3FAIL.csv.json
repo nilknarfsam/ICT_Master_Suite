@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "SR85",
+    "SR84"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "SR85",
+      "SR84"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "13/07/2026 16:30:27",
+    "modelo": "N30S5_i3",
+    "serial": "6783000RYZ",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

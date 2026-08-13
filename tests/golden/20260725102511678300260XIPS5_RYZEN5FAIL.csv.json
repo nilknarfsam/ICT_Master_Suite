@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "R4430"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "R4430"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "25/07/2026 10:25:11",
+    "modelo": "IPS5_RYZEN5",
+    "serial": "678300260X",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

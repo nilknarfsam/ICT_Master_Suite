@@ -1,0 +1,29 @@
+{
+  "componentes_agrupados": [
+    "R2304-NP",
+    "UU1 (2 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "R2304-NP",
+      "UU1_1162_1",
+      "UU1_1162_40"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 3
+  },
+  "meta": {
+    "cor": "red",
+    "data": "14/07/2026 14:35:05",
+    "modelo": "ips5_14_agp11_AMD",
+    "serial": "6783000549",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "R1011"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "R1011"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "25/07/2026 07:47:23",
+    "modelo": "m75q2_cez_rev1_3",
+    "serial": "67830023EF",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

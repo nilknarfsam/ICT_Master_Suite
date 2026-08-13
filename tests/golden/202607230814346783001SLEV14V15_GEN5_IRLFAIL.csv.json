@@ -1,0 +1,32 @@
+{
+  "componentes_agrupados": [
+    "PC5496",
+    "PD5400 (2 blocos)",
+    "PU5400_24_28"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PC5496",
+      "PD5400/2_1",
+      "PD5400/3_1",
+      "PU5400_24_28"
+    ],
+    "coordenadas": [
+      "G4",
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 4
+  },
+  "meta": {
+    "cor": "red",
+    "data": "23/07/2026 08:14:34",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783001SLE",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "componentes_agrupados": [
+    "PR201",
+    "R5807",
+    "RH2",
+    "CG69",
+    "RG72",
+    "UV1",
+    "YG1"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PR201",
+      "R5807",
+      "RH2",
+      "CG69",
+      "RG72",
+      "UV1",
+      "YG1"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [
+      "CHEK-POINT/Pins"
+    ],
+    "status": "FAIL",
+    "total_erros": 3
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "loq15_irx9",
+    "serial": "67830019RC",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

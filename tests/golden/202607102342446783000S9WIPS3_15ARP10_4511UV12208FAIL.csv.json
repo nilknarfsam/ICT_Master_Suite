@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "UV150.2",
+    "UC1.U20"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "UV150.2",
+      "UC1.U20"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short <   1   23   82  345  346  347  348 >-GND -> Parts:UV150.2 <  24 >-+VDDCR_SOC -> Parts:UC1.U20"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "10/07/2026 23:42:44",
+    "modelo": "IPS3_15ARP10_4511UV12208",
+    "serial": "6783000S9W",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

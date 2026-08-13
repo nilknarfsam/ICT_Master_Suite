@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "C12100/C12101"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "C12100/C12101"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "10/07/2026 18:11:41",
+    "modelo": "ips5_14_agp11_AMD",
+    "serial": "678300053D",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

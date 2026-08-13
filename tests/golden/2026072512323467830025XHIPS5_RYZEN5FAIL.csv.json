@@ -1,0 +1,44 @@
+{
+  "componentes_agrupados": [
+    "PC1328",
+    "PC1329",
+    "PC1330",
+    "PC1331",
+    "PC1332",
+    "PC1333",
+    "PC1334",
+    "PC1335",
+    "C12100",
+    "C12101"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PC1328",
+      "PC1329",
+      "PC1330",
+      "PC1331",
+      "PC1332",
+      "PC1333",
+      "PC1334",
+      "PC1335",
+      "C12100",
+      "C12101"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 10
+  },
+  "meta": {
+    "cor": "red",
+    "data": "25/07/2026 12:32:34",
+    "modelo": "IPS5_RYZEN5",
+    "serial": "67830025XH",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

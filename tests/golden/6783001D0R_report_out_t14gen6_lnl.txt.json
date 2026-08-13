@@ -1,0 +1,24 @@
+{
+  "componentes_agrupados": [
+    "C63403"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "C63403"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "t14gen6_lnl",
+    "serial": "6783001D0R",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

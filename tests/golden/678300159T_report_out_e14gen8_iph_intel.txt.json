@@ -1,0 +1,24 @@
+{
+  "componentes_agrupados": [
+    "PR1911"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PR1911"
+    ],
+    "coordenadas": [],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "<MTIME>",
+    "modelo": "e14gen8_iph_intel",
+    "serial": "678300159T",
+    "status": "FAIL",
+    "tipo": "AGILENT"
+  }
+}

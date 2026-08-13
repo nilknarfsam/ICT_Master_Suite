@@ -1,0 +1,32 @@
+{
+  "componentes_agrupados": [
+    "CS303/CS304",
+    "QS301/1_2",
+    "US301_4_6"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "CS303/CS304",
+      "QS301/1_2",
+      "US301_4_6"
+    ],
+    "coordenadas": [
+      "G4",
+      "C2",
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 3
+  },
+  "meta": {
+    "cor": "red",
+    "data": "21/07/2026 22:19:17",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783001JJP",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}
