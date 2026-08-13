@@ -1,0 +1,29 @@
+{
+  "componentes_agrupados": [
+    "RV7",
+    "UC1_1359_10"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RV7",
+      "UC1_1359_10"
+    ],
+    "coordenadas": [
+      "G1",
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "23/07/2026 07:14:17",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783001J9M",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

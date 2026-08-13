@@ -1,0 +1,32 @@
+{
+  "componentes_agrupados": [
+    "JEDP1_SWP",
+    "RB25",
+    "QE2/3_2_1/ON"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "JEDP1_SWP",
+      "RB25",
+      "QE2/3_2_1/ON"
+    ],
+    "coordenadas": [
+      "G4",
+      "B2",
+      "A4"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 3
+  },
+  "meta": {
+    "cor": "red",
+    "data": "23/07/2026 07:00:34",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783001JF2",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "CS304",
+    "CS302"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "CS304",
+      "CS302"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "23/07/2026 09:53:31",
+    "modelo": "ips3_15_ian8",
+    "serial": "6783001T91",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

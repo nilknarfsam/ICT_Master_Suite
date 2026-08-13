@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "H11_SWP"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "H11_SWP"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 01:29:08",
+    "modelo": "ips3_15_ian8",
+    "serial": "6783001TJF",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

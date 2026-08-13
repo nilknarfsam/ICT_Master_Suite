@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "RSHORT47",
+    "UE1.28"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RSHORT47",
+      "UE1.28"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short < 119  321  605  623  658  727  729  743 >-VCCIN_AUX_VSSSENSE_CPU -> Parts:RSHORT47 < 556 >-EC_PROCHOT -> Parts:UE1.28"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "22/07/2026 17:28:02",
+    "modelo": "IPS3_15IRH_I513420",
+    "serial": "6783001SVZ",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "componentes_agrupados": [
+    "RC345",
+    "RU28"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RC345",
+      "RU28"
+    ],
+    "coordenadas": [
+      "D2",
+      "H3"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "23/07/2026 07:15:03",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783001J9Q",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

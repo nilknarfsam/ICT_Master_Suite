@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "PL103",
+    "PL104"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PL103",
+      "PL104"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 00:22:51",
+    "modelo": "ips3_15_ian8",
+    "serial": "6783001WWS",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

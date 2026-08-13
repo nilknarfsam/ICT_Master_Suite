@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "JKBL1_1_5"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "JKBL1_1_5"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "23/07/2026 08:40:18",
+    "modelo": "ips3_15_ian8",
+    "serial": "6783001T52",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

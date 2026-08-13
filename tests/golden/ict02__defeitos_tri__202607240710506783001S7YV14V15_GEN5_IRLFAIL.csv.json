@@ -1,0 +1,29 @@
+{
+  "componentes_agrupados": [
+    "RI8",
+    "UC1_1109_10"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RI8",
+      "UC1_1109_10"
+    ],
+    "coordenadas": [
+      "A5",
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 07:10:50",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783001S7Y",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

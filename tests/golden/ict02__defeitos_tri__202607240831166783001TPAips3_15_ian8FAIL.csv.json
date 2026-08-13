@@ -1,0 +1,32 @@
+{
+  "componentes_agrupados": [
+    "RV526",
+    "RPV501_1_4",
+    "PJ5607",
+    "PR5446"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "RV526",
+      "RPV501_1_4",
+      "PJ5607",
+      "PR5446"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short <  59   63  804 >-+5VS_HDMI -> Parts:RV526-NP <  60 >-DDPB_DATA_U -> Parts:RPV501_1_4 < 201  205  335  340  352  353  354  408  424  436  439  447 >-P_+3VALW_VIN -> Parts:PJ5607-NP < 261  466  620  829 >-VR_HOT_N -> Parts:PR5446-NP"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 08:31:16",
+    "modelo": "ips3_15_ian8",
+    "serial": "6783001TPA",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

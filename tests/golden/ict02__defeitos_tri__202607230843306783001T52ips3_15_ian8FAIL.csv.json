@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "CR17",
+    "RC248"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "CR17",
+      "RC248"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 2
+  },
+  "meta": {
+    "cor": "red",
+    "data": "23/07/2026 08:43:30",
+    "modelo": "ips3_15_ian8",
+    "serial": "6783001T52",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "componentes_agrupados": [
+    "JEDP1 (2 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "JEDP1.13",
+      "JEDP1.14"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short < 857>-EDP_TX0_CON_P -> Parts:JEDP1.13    < 860 >-EDP_TX0_CON_N -> Parts:JEDP1.14"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "23/07/2026 08:38:16",
+    "modelo": "ips3_15_ian8",
+    "serial": "6783001T5E",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

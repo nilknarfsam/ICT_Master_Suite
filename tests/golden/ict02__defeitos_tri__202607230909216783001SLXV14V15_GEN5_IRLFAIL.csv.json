@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "PJ6202"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PJ6202"
+    ],
+    "coordenadas": [
+      "H2"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "23/07/2026 09:09:21",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783001SLX",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "componentes_agrupados": [
+    "UV1.2",
+    "UE1 (6 blocos)",
+    "UR7.5"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "UV1.2",
+      "UE1.49",
+      "UE1.38",
+      "UR7.5",
+      "UE1.36",
+      "UE1.48",
+      "UE1.47",
+      "UE1.58"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short <   1   33   36   44  167  179  180  249  413  524  558  571  594  595  610  611 >-GND -> Parts:UV1.2 <  43  446  534  562 >-+3VL_EC_R -> Parts:UE1.49 <  50  335  343 >-PM_SLP_S4_N_EC -> Parts:UE1.38 <  17   52  114  115  140  244  569  649 >-+3VALW_PCH -> Parts:UR7.5 <  48 >-EC_SMB_DA3 -> Parts:UE1.36 <  51 >-EC_SMB_CK3 -> Parts:UE1.48 <  55 >-GPG2 -> Parts:UE1.47 < 126  408 >-ADP_I -> Parts:UE1.58"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 08:34:05",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783001X6N",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

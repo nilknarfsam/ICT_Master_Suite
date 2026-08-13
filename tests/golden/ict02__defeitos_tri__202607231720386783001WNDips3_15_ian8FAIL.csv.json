@@ -1,0 +1,28 @@
+{
+  "componentes_agrupados": [
+    "UC1.320",
+    "PJ5607"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "UC1.320",
+      "PJ5607"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short < 175  183  184  193  194  262  311  318  319  332  333  339  591  595  650  653  654  657  670  720  809  865 >-RSVD_TP24 -> Parts:UC1.320    < 201  205  335  340  352  353  354  408  424  436  439  447 >-P_+3VALW_VIN -> Parts:PJ5607-NP"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "23/07/2026 17:20:38",
+    "modelo": "ips3_15_ian8",
+    "serial": "6783001WND",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

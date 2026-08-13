@@ -1,0 +1,49 @@
+{
+  "componentes_agrupados": [
+    "PR1056",
+    "PC5400",
+    "PC5401",
+    "PC5402",
+    "PC5403",
+    "PC150",
+    "PC151",
+    "RC195",
+    "RC91",
+    "PR5435_1_4",
+    "UC1 (4 blocos)"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PR1056",
+      "PC5400",
+      "PC5401",
+      "PC5402",
+      "PC5403",
+      "PC150",
+      "PC151",
+      "RC195",
+      "RC91",
+      "PR5435_1_4",
+      "UC1_140_38",
+      "UC1_748_38",
+      "UC1_140_40",
+      "UC1_748_40"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 14
+  },
+  "meta": {
+    "cor": "red",
+    "data": "23/07/2026 08:29:59",
+    "modelo": "ips3_15_ian8",
+    "serial": "6783001T5E",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

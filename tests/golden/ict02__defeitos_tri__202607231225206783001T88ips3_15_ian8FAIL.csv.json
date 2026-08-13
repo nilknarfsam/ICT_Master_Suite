@@ -1,0 +1,32 @@
+{
+  "componentes_agrupados": [
+    "H12_SWP",
+    "H13_SWP",
+    "H14_SWP",
+    "JHDMI1_SWP"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "H12_SWP",
+      "H13_SWP",
+      "H14_SWP",
+      "JHDMI1_SWP"
+    ],
+    "coordenadas": [
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 4
+  },
+  "meta": {
+    "cor": "red",
+    "data": "23/07/2026 12:25:20",
+    "modelo": "ips3_15_ian8",
+    "serial": "6783001T88",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

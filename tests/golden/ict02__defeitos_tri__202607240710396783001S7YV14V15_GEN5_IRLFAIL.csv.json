@@ -1,0 +1,32 @@
+{
+  "componentes_agrupados": [
+    "JEDP1_SWP",
+    "RI8",
+    "UC1_1109_10"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "JEDP1_SWP",
+      "RI8",
+      "UC1_1109_10"
+    ],
+    "coordenadas": [
+      "G4",
+      "A5",
+      "A1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 3
+  },
+  "meta": {
+    "cor": "red",
+    "data": "24/07/2026 07:10:39",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783001S7Y",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

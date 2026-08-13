@@ -1,0 +1,26 @@
+{
+  "componentes_agrupados": [
+    "UC1.890"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "UC1.890"
+    ],
+    "coordenadas": [],
+    "curtos": [
+      "Short <  92  684 >-CPU_ECLPM_BREAK -> Parts:UC1.890    < 685 >-VSF9"
+    ],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 1
+  },
+  "meta": {
+    "cor": "red",
+    "data": "23/07/2026 08:41:50",
+    "modelo": "ips3_15_ian8",
+    "serial": "6783001T52",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}

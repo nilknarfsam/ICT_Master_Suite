@@ -1,0 +1,50 @@
+{
+  "componentes_agrupados": [
+    "PR5118",
+    "RC7",
+    "RC64",
+    "RC65",
+    "RC77",
+    "RC212",
+    "RC222",
+    "RC344",
+    "RN2",
+    "RPC226/2_3"
+  ],
+  "diagnostico": {
+    "componentes": [
+      "PR5118",
+      "RC7",
+      "RC64",
+      "RC65",
+      "RC77",
+      "RC212",
+      "RC222",
+      "RC344",
+      "RN2",
+      "RPC226/2_3"
+    ],
+    "coordenadas": [
+      "A2",
+      "D4",
+      "C4",
+      "D2",
+      "D5",
+      "B5",
+      "D1"
+    ],
+    "curtos": [],
+    "pinos_abertos": [],
+    "secoes": [],
+    "status": "FAIL",
+    "total_erros": 10
+  },
+  "meta": {
+    "cor": "red",
+    "data": "23/07/2026 16:00:36",
+    "modelo": "V14V15_GEN5_IRL",
+    "serial": "6783001SCP",
+    "status": "FAIL",
+    "tipo": "TRI"
+  }
+}
