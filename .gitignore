@@ -18,3 +18,10 @@ releases/
 *.sqlite3
 .DS_Store
 crash_log.txt
+
+# .NET Build Output & IDE
+[bB]in/
+[oO]bj/
+.vs/
+*.user
+
